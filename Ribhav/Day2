@@ -1,0 +1,72 @@
+
+1)Various Orientations in programming language
+
+
+
+A)Procedure oriented.
+
+-consists of datatypes and methods
+
+-line by line execution
+
+
+
+B)Object oriented.
+
+-consists of data and objects.
+
+-Data is hidden and only the methods are available to work upon
+
+
+
+C)Component oriented
+
+-contains classes and interfaces
+
+
+
+D)Service Oriented
+
+-using services
+
+
+
+2)OOPS concepts
+
+
+
+A)Encapsulation
+
+-use of small components
+
+-contains data memebers and functions
+
+
+
+B)Abstraction
+
+-data is protected
+
+-no one can see the data memebers and can only excess via functions
+
+
+
+C)Inheritance
+
+-using features of one class
+
+-Types:
+
+	a)Single
+
+	b)Multiple
+
+	c)Multi level
+
+	d)Hierarchical
+
+
+
+D)Polymorphism
+
+-using same object in many forms
