@@ -1,0 +1,65 @@
+----Java platform Independent----
+***Execution of Java Program**
+
+Whenever, a program is written in JAVA, the javac compiles it.
+The result of the JAVA compiler is the .class file or the bytecode and not the machine native code (unlike C compiler).
+The bytecode generated is a non-executable code and needs an interpreter to execute on a machine. This interpreter is the JVM and thus the Bytecode is executed by the JVM.
+And finally program runs to give the desired output.
+
+
+----Inheritance in Java----
+
+Inheritance in Java is a mechanism in which one object acquires all the properties and behaviors of a parent object. 
+It is an important part of OOPs (Object Oriented programming system).
+Types:
+1)Single
+2)Mutilevel
+3)Hieriarchical
+4)Hybrid
+
+
+QUESTION:   Why multiple inheritance is not supported in java?
+To reduce the complexity and simplify the language, multiple inheritance is not supported in java.
+Consider a scenario where A, B, and C are three classes. The C class inherits A and B classes. 
+If A and B classes have the same method and you call it from child class object, there will be ambiguity to call the method of A or B class.
+Since compile-time errors are better than runtime errors, Java renders compile-time error if you inherit 2 classes. 
+So whether you have same method or different, there will be compile time error.
+
+
+----Collections----
+
+      - object that groups multiple elements in a single unit.
+      - used to store, retrieve, manipulate data
+    
+     1) List(interface)
+        ArrayList implements List:
+        *ordered collection
+        *can contain duplicate values
+       
+
+     2)Set( interface)
+       a) Hashset
+        *Hash table
+        *no duplicate values
+        *elements not ordered
+       b) Treeset
+        *sorted data
+        *no duplicate values
+
+     3)Map(interface)
+       *treeMap
+       *hashMap
+        ---store key value pairs
+
+
+----MULTITHREADING----
+
+Multithreading in Java is a process of executing multiple threads simultaneously.
+A thread is a lightweight sub-process, the smallest unit of processing. Multiprocessing and multithreading, both are used to achieve multitasking.
+
+Advantages of Java Multithreading
+1) It doesn't block the user because threads are independent and you can perform multiple operations at the same time.
+
+2) You can perform many operations together, so it saves time.
+
+3) Threads are independent, so it doesn't affect other threads if an exception occurs in a single thread
