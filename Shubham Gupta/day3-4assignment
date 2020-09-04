@@ -1,0 +1,18 @@
+1. java platform independent:The meaning of platform-independent is that the java compiled code(byte code) can run on all operating systems.
+In Java, the main point here is that the JVM depends on the operating system – so if you are running Mac OS X you will have a different JVM than if you are running Windows or some other operating system. This fact can be verified by trying to download the JVM for your particular machine – when trying to download it, you will be given a list of JVMs corresponding to different operating systems, and you will obviously pick whichever JVM is targeted for the operating system that you are running. So we can conclude that JVM is platform-dependent and it is the reason why Java is able to become “Platform Independent”.
+
+2. Inheritance:  When we inherit from an existing class, we can reuse methods and fields of the parent class. Moreover, we can add new methods and fields in our current class also.
+Inheritance is used for Code Reusability and to achieve method overriding or Runtime polymorphism.
+Note: Multiple inheritance is not supported in Java through class.When one class inherits multiple classes, it is known as multiple inheritance. 
+
+3. Abstract class vs Interface:
+ Type of methods: Interface can have only abstract methods. Abstract class can have abstract and non-abstract methods. From Java 8, it can have default and static methods also.
+Final Variables: Variables declared in a Java interface are by default final. An abstract class may contain non-final variables.
+Type of variables: Abstract class can have final, non-final, static and non-static variables. Interface has only static and final variables.
+Implementation: Abstract class can provide the implementation of interface. Interface can’t provide the implementation of abstract class.
+Inheritance vs Abstraction: A Java interface can be implemented using keyword “implements” and abstract class can be extended using keyword “extends”.
+Multiple implementation: An interface can extend another Java interface only, an abstract class can extend another Java class and implement multiple Java interfaces.
+Accessibility of Data Members: Members of a Java interface are public by default. A Java abstract class can have class members like private, protected, etc.
+
+4. Thread in Java:A thread is actually a lightweight process. Unlike many other computer languages, Java provides built-in support for multithreaded programming. A multithreaded program contains two or more parts that can run concurrently. Each part of such a program is called thread and each thread defines a separate path of execution. Thus, multithreading is a specialized form of multitasking.
+To create a new thread, our program will either extend Thread or implement the Runnable interface.
