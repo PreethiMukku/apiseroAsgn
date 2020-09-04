@@ -1,0 +1,114 @@
+Day5
+
+Web Programming 
+
+Rich Client
+--> java  --> main()
+--> class --> java Lab1
+--> Lab1.class
+-->JRE Installed
+--> Processing  ->CPU.RAM.Storage
+
+Thin Client (Web Applications)
+Client--------------Server(Web Server)
+(Browser)		t1.html---------Servlet/JSP
+Network			http -80,
+https://localhost:8080/t1.html
+,protocol
+loopback address,
+IP Adderss,
+google.com(DNS service (Host -> IP address)
+
+Server:
+Microsoft:IIS,
+Java:Tomcat (Web Server +(java code on serverside))
+-------------->html pages
+
+
+
+simple Validation 
+String,minlength
+Notnull
+
+Js(Browser)
+
+-----------------------------
+Step1:Window -> ShowView ->Other ->Servers
+Step2:Create a new server
+Step3:Basic Http Preview
+Finish
+New Project->Static Web Project->target runtime has to be 
+selected as Http Prievew ->Finish
+Go to folder->Web Content->File->New->Html->index.html
+(html5 version)->Finish
+modify index.html ->title and in body include <h1>Hello</h1>
+run ->Choose existing server->Next->Finish
+Browser-->Copy Url and test it on any external browser
+-----------------------------------
+HTML:
+a href link
+img src
+<h1>...
+
+w3 schools ...
+	w3 schools -> Elements
+				  Headings
+				  Paragraphs
+				  HTML table
+Activity based on form,radio buttons,checkbox,dropdown and a button 
+
+-----------------------------
+Css: style,border,
+<style type="text/css">
+h1{
+color:"blue";
+border:2px solid green
+}
+-------------------------
+
+<link rel="stylesheet" href="simple.css">
+---------------------------
+
+alert();//js 
+
+console.log();//F12 debugger in js
+
+------------------------
+DOCUMENT OBJECT MODEL (DOM)
+
+<script type ="text/javascript">
+function test(){
+var name = document.getElementById("uname");
+consolo.log("Hello" + name);
+}
+
+//External Js
+Not used for core logic because only client side validations are put in js
+rest everything resides in server.
+
+Framework for js:JQuery
+
+Format of data: Client <--------------> Server
+		html+js+css
+-------------------------------------
+XML
+<?xml version ="1.0" encoding ="UTF-8"?>
+<notes>
+<note>
+     <from>aa</form>
+     <to>bb</to>
+     <msg>aa</msg>
+</note>
+</notes>
+-------------------------------------------
+
+used for B2B exchange
+-------------------------------------------
+
+Introduction to JSON
+Did introductory examples aon JSP to write code on server 
+
+
+
+
+
