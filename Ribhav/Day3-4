@@ -1,0 +1,33 @@
+A) Features
+	- Object Oriented
+	- Compiled into byte code which is platform independent
+	
+B)Abstraction
+	- data is protected
+	- no one can see the data memebers and can only excess via functions
+
+C) Inheritance
+	- aquiring properties and methods from base class
+	- Types:
+		a) Simple
+		b) Hierarchical
+		c) Multi level
+	- Multiple inheritance is somewhat possible via interface
+	
+D)Polymorphism
+	- using same object in many forms 
+
+E) Collection API
+	- framework
+	- Interface:
+		a) Set - set of items without duplicate items
+		b) List - ordered collection of objects
+		c) Queue - First in first out order
+		d) Map - key value pairs
+		
+F) Threading
+	- Small processes running concurrently.
+	- Advantages:
+		a) No blocking
+		b) Saves time
+		c) Efficient
