@@ -1,0 +1,44 @@
+Java is a platform independent.
+JVM: Java virtual Machine(JVM) is a virtual Machine that provides runtime environment to execute java byte code.
+JRE: The Java Runtime Environment (JRE) provides the libraries, the Java Virtual Machine, and other components to run applets and applications written in the Java programming language. 
+JDK : The JDK also called Java Development Kit is a superset of the JRE, contains tools such as the compilers and debuggers necessary for developing applets and applications.
+
+Object: Object is an instance of a class while class is a blueprint of an object. 
+
+Method: A method is a collection of statements that are grouped together to perform an operation. It is similar to a function defined in other programming languages.
+
+Interface: It is a pure abstract class. No data variables, no actual methods, only abstract methods
+
+Pass by  Value: Java is purely known for Pass by value.
+
+Wrapper Class:
+wrapper classes are objects encapsulating primitive Java types.
+These are all defined in the java.lang package, hence we don't need to import them manually.
+
+Static: Static variable or method can be accessed without instance of a class because it belongs to class.
+
+Method Overloading: It is a concept that allows to declare multiple methods with same name but different parameters in the same class.
+
+Method overriding: It is a process of overriding base class method by derived class method with more specific definition.
+
+Abstract class:
+- An abstract class must be declared with an abstract keyword.
+- It can have abstract and non-abstract methods.
+- It cannot be instantiated.
+- It is used for abstraction.
+
+Abstact method: Method that are declared without any body within an abstract class are called abstract method. The method body will be defined by its subclass. Abstract method can never be final and static. Any class that extends an abstract class must implement all the abstract methods.
+
+Collection: Combination of interfaces, multiple implementations and algorithms.
+- List: Collection of items, no unique values, ordering based on addition.
+- Set: Duplicate values cannot be stored
+- Map: The Map interface maps unique keys to values. Given a key and a value, you can store the value in a Map object. 
+
+Multithreading: Multithreaded programs contain two or more threads that can run concurrently and each thread defines a separate path of execution. This means that a single program can perform two or more tasks simultaneously.
+
+Final: 
+- Final modifier is used to declare a field as final. It can be used with variable, method or a class. If we declare a variable as final then it prevents its content from being modified. The variable acts like a constant. Final field must be initialized when it is declared.
+- If we declare a method as final then it prevents it from being overridden.
+- If we declare a class as final the it prevents from being inherited. 
+
+Exception handling: Try-catch are used for exception handling. The try block is used to enclose the suspected code during program execution. The catch block  handles the exception thrown by the code from the try block. Try block must provide a catch handler or a finally block.
