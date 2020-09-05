@@ -1,0 +1,67 @@
+Create table dept
+(deptno tinyint  ,
+ dname varchar(20),
+ loc varchar(3),
+ constraint deptpk Primary Key (deptno)
+ );
+ 
+   
+ create table emp(
+   empno tinyint,
+   ename varchar(20),
+   salary varchar(20),
+   deptno tinyint,
+   primary key(empno),
+   constraint fkd foreign key(deptno) references dept(deptno)
+ );
+ 
+  create table address(
+   addno tinyint,
+   line1 varchar(20),
+   line2 varchar(20),
+   state varchar(20),
+   empno tinyint,
+   primary key(addno),
+   constraint fke foreign key(empno) references emp(empno)
+ );
+
+
+insert into dept values (1,'CS3','hyd');
+insert into dept values (2,'CS2','blr');
+insert into dept values (3,'CS1','del');
+
+# select * from dept;
+
+
+insert into emp values(1,'san1','324234',1);
+insert into emp values(2,'san2','423',2);
+insert into emp values(3,'san3','234234',3);
+insert into emp values(4,'san43','2434234',1);
+insert into emp values(5,'san45','23423423',3);
+insert into emp values(6,'san456','2432423',1);
+
+
+# select * from emp;
+
+insert into address values(1,'agsgr','wegterg','erre',1);
+insert into address values(2,'agsgr1','wegterg1','erre1',1);
+
+# insert into address values(2,'agsgr','wegterg','erre',-99);
+
+# select * from address;
+
+
+
+# select * from emp where ename like 'a%';
+# select * from emp where ename like '%3';
+# select * from emp where ename like '%an%';
+
+# select * from emp where salary < 234;
+# select * from emp where salary between 234 and 23423;
+
+# select * from emp where deptno = (select deptno from dept where dname='CS3');
+
+# select * from emp where deptno In (select deptno from dept where dname='CS3' or dname = 'CS2');
+
+
+
