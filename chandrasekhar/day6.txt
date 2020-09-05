@@ -1,0 +1,212 @@
+create table dept
+(deptno tinyint primary key,
+ dname varchar(20),
+ loc char(3)
+ );
+ 
+ create table emp(
+  empno int NOT NULL,
+    empname varchar(255),
+    email varchar(255),
+   deptno tinyint,
+  PRIMARY KEY (empno),
+   FOREIGN KEY (deptno) REFERENCES dept(deptno)
+  );
+  
+  insert into dept values (10,'HR','Hyd');
+insert into dept values (20,'IT','Blr' );
+insert into dept values (30,'Fin','Hyd');
+insert into dept values (40,'Training','Blr');
+select * from dept;
+update dept set loc='Pnq' where deptno=30;
+delete from dept where loc='pnq';
+select * from dept;
+insert into emp values(1,'chandu','ad@gmail.com',10);
+insert into emp values(5,'chan','a@gmail.com',20);
+insert into emp values(3,'ndu','sad@gmail.com',40);
+insert into emp values(2,'nu','swad@gmail.com',20);
+
+insert into emp values(4,'ndu','swad@gmail.com',40);
+select * from emp;
+
+create table employee(
+  empno int NOT NULL,
+  PRIMARY KEY (empno)
+  );
+  
+  create table address(
+  empno int NOT NULL,
+  PRIMARY KEY (empno),
+  FOREIGN KEY (empno) REFERENCES employee(empno)
+  );
+  
+  insert into employee values (10);
+insert into employee values (20);
+insert into employee values (40);
+select * from employee;
+select * from address;
+insert into address values (20);
+select * from address;
+insert into employee values (30);
+select * from employee;
+insert into address values (10);
+insert into address values (30);
+select * from address;
+select * from employee;
+
+create table dept(  
+  deptno     int,  
+  dname      varchar(14),  
+  loc        varchar(13),  
+  constraint pk_dept primary key (deptno)  
+);
+
+create table emp(  
+  empno    int,  
+  ename    varchar(10),  
+  job      varchar(9),  
+  mgr      int,  
+  hiredate date,  
+  sal      int,  
+  comm     int,  
+  deptno   int,  
+  constraint pk_emp primary key (empno),  
+  constraint fk_deptno foreign key (deptno) references dept (deptno)  
+);
+
+insert into dept (DEPTNO, DNAME, LOC) values(10, 'ACCOUNTING', 'NEW YORK');
+insert into dept  values(20, 'RESEARCH', 'DALLAS');
+insert into dept  values(30, 'SALES', 'CHICAGO');
+insert into dept  values(40, 'OPERATIONS', 'BOSTON');
+insert into emp  values(  
+ 7839, 'KING', 'PRESIDENT', null,  
+ STR_TO_DATE('17-11-1981','%d-%m-%Y'),  
+ 5000, null, 10  
+);
+
+insert into emp  
+values(  
+ 7698, 'BLAKE', 'MANAGER', 7839,  
+ STR_TO_DATE('1-5-1981','%d-%m-%Y'),  
+ 2850, null, 30  
+);
+insert into emp  values(  
+ 7782, 'CLARK', 'MANAGER', 7839,  
+ STR_TO_DATE('9-6-1981','%d-%m-%Y'),  
+ 2450, null, 10  
+);
+insert into emp  values(  
+ 7566, 'JONES', 'MANAGER', 7839,  
+ STR_TO_DATE('2-4-1981','%d-%m-%Y'),  
+ 2975, null, 20  
+);
+
+insert into emp  values(  
+ 7788, 'SCOTT', 'ANALYST', 7566,  
+ STR_TO_DATE('13-7-1987','%d-%m-%Y') -interval 85 day,  
+ 3000, null, 20  
+);
+
+insert into emp  values(  
+ 7902, 'FORD', 'ANALYST', 7566,  
+ STR_TO_DATE('3-12-1981','%d-%m-%Y'),  
+ 3000, null, 20  
+);
+insert into emp  
+values(  
+ 7369, 'SMITH', 'CLERK', 7902,  
+ STR_TO_DATE('17-12-1980','%d-%m-%Y'),  
+ 800, null, 20  
+);
+insert into emp   values(  
+ 7499, 'ALLEN', 'SALESMAN', 7698,  
+ STR_TO_DATE('20-2-1981','%d-%m-%Y'),  
+ 1600, 300, 30  
+);
+
+insert into emp  values(  
+ 7521, 'WARD', 'SALESMAN', 7698,  
+ STR_TO_DATE('22-2-1981','%d-%m-%Y'),  
+ 1250, 500, 30  
+);
+insert into emp  values(  
+ 7654, 'MARTIN', 'SALESMAN', 7698,  
+ STR_TO_DATE('28-9-1981','%d-%m-%Y'),  
+ 1250, 1400, 30  
+);
+insert into emp  values(  
+ 7844, 'TURNER', 'SALESMAN', 7698,  
+ STR_TO_DATE('8-9-1981','%d-%m-%Y'),  
+ 1500, 0, 30  
+);
+insert into emp  values(  
+ 7876, 'ADAMS', 'CLERK', 7788,  
+ STR_TO_DATE('13-7-1987','%d-%m-%Y')- interval 51 day,  
+ 1100, null, 20  
+);
+
+insert into emp  values(  
+ 7900, 'JAMES', 'CLERK', 7698,  
+ STR_TO_DATE('3-12-1981','%d-%m-%Y'),  
+ 950, null, 30  
+);
+insert into emp  values(  
+ 7934, 'MILLER', 'CLERK', 7782,  
+ STR_TO_DATE('23-1-1982','%d-%m-%Y'),  
+ 1300, null, 10  
+);
+
+select count(*) from emp;
+
+select job, max(sal) from emp
+group by job
+having job='MANAGER';
+
+SELECT ename, d.deptno, d.dname
+FROM dept d, emp e
+where d.deptno = e.deptno;
+
+select deptno from dept;
+select deptno, count(*) from emp group by deptno;
+
+select * from emp;
+SELECT d.deptno
+FROM dept d 
+INNER JOIN emp e ON e.deptno = d.deptno;
+
+SELECT d.deptno, count(e.empno)
+FROM dept d 
+LEFT JOIN emp e ON e.deptno != d.deptno
+GROUP BY d.deptno;
+
+create table emp1
+(empno tinyint , 
+ ename char(20), 
+ salary int, 
+ CONSTRAINT pkEmp primary key (empno)
+);
+
+create table emp2
+(empno tinyint , 
+ ename char(20), 
+ comm int, 
+ CONSTRAINT pkEmp primary key (empno)
+);
+
+insert into emp1 values(1,'First',111);
+insert into emp1 values(2,'Second',222);
+insert into emp1 values(3,'Third',333);
+insert into emp2 values(3,'Third',333);
+insert into emp2 values(4,'Four',1);
+insert into emp2 values(5,'Five',2);
+insert into emp2 values(6,'Six',3);
+
+select * from emp1
+union 
+select * from emp2;
+select * from emp1
+union all
+select * from emp2;
+select empno, ename,salary, 0 as comm from emp1
+union
+select empno, ename, 0 as salary,  comm from emp2;
