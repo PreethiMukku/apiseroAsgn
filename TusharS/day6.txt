@@ -1,0 +1,222 @@
+Day6
+
+Database
+	> Server
+		Start the Server
+		as a service
+			> windows os start
+	> Client
+-----------------------------------
+
+Database server
+		> On same system
+		>one installation
+			> AWS Installation (Server)
+		> Chrome  (MySQL Plugin)--> AWS MYSQL Server
+------------------------------------
+
+RDBMS(structured query language)
+	RDBMS Reltional Database Management System
+NoSQL(each doc can be different)
+	MongoDb
+EX:- 
+1000 facebook
+->Login,frieds..
+--> books you read (2 %)
+--> games you....
+Show data ->main,books,games....
+	>Slow i.e. documnet stucture
+-------------------------------------
+
+db-engines.com-->to track ranking of databases.
+
+Polygot Persistence
+----------------------
+
+dept no,  dname,  loc
+10	   HR	  Pune
+20	   IT	  hyd
+30	   Fin	  Hyd
+
+----------->Structure
+
+DML
+Insert,Update,Delete
+DDL
+Create,alter,drop
+
+C reate a row
+R etrieve a row
+U pdate a row
+D elete a row
+------------------------
+Unique Key per db
+-----------------------
+Referential Integrity
+----------------------
+
+Single Table
+
+create table single(
+deptno tinyint,
+dname varchar(20),
+loc char(3),
+constraint singlepk primary key (deptno) //primary key
+);
+
+CRUD >
+C	insert into single values('1','hr','hyd');
+R	select * from single;
+U	update single set loc ='Pun'where deptno = 1;
+D	delete * from single;
+-----------------------------------
+
+Example:
+
+create table tush(id tinyint,dept varchar
+                 (20),loc char(3),
+                 constraint deptpk Primary Key (id)
+                 ) ;
+                           
+                           
+create table tush1(id tinyint,dept varchar
+                 (20),loc char(3),
+                 constraint locfk Foreign Key (id) REFERENCES tush(id)
+                 ) ;                        
+                               
+                               
+insert into tush values ('2','kjdkd','dhn');
+insert into tush1 values ('2','kjdkd','dhn');
+--select * from tush;
+--select * from tush1;
+
+select * from tush1 t1 inner join tush t on t1.id=t.id;
+
+---------------------------------------------
+create table emp(empno tinyint,empname varchar
+                 (20),salary mediumint,
+                 constraint deptpk Primary Key (empno)
+                 ) ;
+                           
+                           
+create table address(empno tinyint primary key,dept varchar
+                 (20),loc char(3),
+                 constraint locfk Foreign Key (empno) REFERENCES emp(empno)
+                 ) ;
+                 
+ insert into emp values ('2','kjdkd','20000');
+insert into emp values ('3','kjdkd','20000');
+insert into address values ('2','fgfg','dhn');
+insert into address values ('3','fgfg','dhn');
+--insert into address values ('2','fgfg','dhn');
+--insert into address values ('5','fgfg','dhn');
+
+
+
+
+--select * from emp;
+--select * from address;
+
+select * from address t1 inner join emp t on t1.empno=t.empno;
+
+
+------------------------------------------------------
+select * from Tablename
+------------------> All rows,All columns
+select ename,salary from Emp
+select * from Emp where loc ="aaa"
+			salary >> 300 .<.<= >=
+GROUP BY
+COUNT
+DISTINCT
+Avg
+max
+min
+cartesian product
+
+Joins:
+
+self join
+inner join
+	select from table a inner join table b on a.colname=b.colname
+left join
+	select from table a left join table b on a.colname=b.colname
+right join
+	select from table a right join table b on a.colname=b.colname
+-----------------------------------------
+	
+False col 
+	
+select empno, ename,salary, 0 as comm from emp1
+union
+select empno, ename, 0 as salary,  comm from emp2
+
+
+Union Removes duplicacy
+Union all
+
+-------------------------------
+
+M@M Relationship
+Person <------------------->Event
+p1 1<-------------------------------* Many Events
+   *---------------------------------> 1
+
+composite pk
+
+mysql plugin for chrome--->Launch
+
+-h : mydb.cyhhds8qhsga.us-east-1.rds.amazonaws.com
+
+username:admin
+password: MyPassword
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+       
+                        
+                               
+                               
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
