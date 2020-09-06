@@ -20,8 +20,8 @@ Abstract Method->
 -Abstract method should be declared in Abstract class only.
 
 Final Class->
--Can create instance of Abstract class.
--Cannot create derived class from Abstract Class.
+-Can create instance of final class.
+-Cannot create derived class from final Class.
 Final Method->
 -Final method cannot be overridden in derived class.
 
