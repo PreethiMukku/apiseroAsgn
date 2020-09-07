@@ -1,0 +1,21 @@
+@CHARSET "ISO-8859-1";
+h1{
+	color:blue; 
+	border:2px solid red
+}
+h2{
+	color:yellow; 
+	border:2px solid green
+}
+h2{
+	color:yellow; 
+	border:2px solid pink
+	
+}
+
+input:valid {
+  background-color: powderblue;
+}
+input:invalid {
+  background-color: pink;
+}

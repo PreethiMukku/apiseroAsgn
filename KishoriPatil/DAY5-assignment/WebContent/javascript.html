@@ -1,0 +1,23 @@
+
+
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Insert title here</title>
+<script type="text/javascript">
+function test(){
+	var un = document.getElementById("uname").value;
+	console.log(un)
+	console.log('hello,' ,un );
+	var lbl =document.getElementById("lbl");
+	lbl.innerHTML = "Hello," + un;
+}
+</script>
+</head>
+<body>
+Name  : <input type="text" id="uname" /><br/>
+<input type="button" value="Click "  onclick="test()"  /><br/>
+<h1><label id="lbl">aaaaaa</label></h1>
+</body>
+</html>

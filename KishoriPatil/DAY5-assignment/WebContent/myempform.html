@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Employee Information</title>
+</head>
+<body>
+
+
+
+<p>Employee Information</p>
+
+<form  method="post">
+  <label for="no" >empno:</label><br>
+  <input type="number" id="no" name="no" value="enter empno" minvalue="4"><br>
+  <label for="name" >ename:</label><br>
+  <input type="text" id="name" name="name" value="enter ename"required minlength="6" maxlength="10"><br><br>
+   <label for="sal">salary:</label><br>
+  <input type="number" id="sal" name="sal" value="enter salary" ><br><br>
+ 
+
+<br>
+<h2>language preference</h2>
+  <input type="checkbox" id="21" name="Lang1" value="ENGLISH">
+  <label for="21"> ENGLISH</label><br>
+  <input type="checkbox" id="22" name="Lang2" value="MARATHI">
+  <label for="22"> MARATHI</label><br>
+  <input type="checkbox" id="23" name="Lang3" value="HINDI">
+  <label for="23"> HINDI</label><br>
+  <input type="checkbox" id="24" name="Lang4" value="TAMIL">
+  <label for="24"> TAMIL</label><br>
+  <input type="checkbox" id="25" name="Lang5" value="TELAGU">
+  <label for="25"> TELAGU</label><br>
+
+
+<h2>Location</h2>
+ <input type="radio" id="11" name="city" value="PUNE">
+  <label for="11">PUNE</label><br>
+  <input type="radio" id="12" name="city" value="MUM">
+  <label for="12">MUMBAI</label><br>
+  <input type="radio" id="13" name="city" value="DEL">
+  <label for="13">DELHI</label>
+<br><br>
+<label for="1">SELECT DEGREE:</label>
+<select id="1" name="DEGREE">
+  <option value="BE">BE</option>
+  <option value="ME">ME</option>
+  <option value="PHD">PHD</option>
+</select><br>
+
+ <input type="submit" value="Submit"><br>
+
+</form>
+
+</body>
+</html>
