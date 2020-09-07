@@ -13,6 +13,12 @@ Java Features
 	 --> Polymorphism: 
 		Method overloading: Multiple methods in a class with same method name and different method signature(No.of parameters, its type)
 		Method overriding: Done in inheritance, same method signature and motheods present in super and sub class 
+		
+	 --> By default non-extended classes extend object class
+	 --> If we have more classes in a single file various class files are created after javac ==> Recommended using a single file for a single class.
+        Package:
+	 --> To avoid naming collision
+         --> Code maintainability
 	Abstract
 	 --> Abstract class: 
 		A class which has 0 or more abstract methods
@@ -44,7 +50,7 @@ Java Features
 	 --> Java supports multithreading
 	 --> Helps in multitasking
 	 --> Threads share time so increase in no.of threads slows the execution process
-	 --> Class extends thread interface, run method, start methods creates thread
+	 --> Class extends thread interface or implements Runnable interface, run method, start methods creates thread
 	Constructor
 	 --> Initializes object
 	 --> parametric and default
