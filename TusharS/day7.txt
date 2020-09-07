@@ -106,7 +106,7 @@ compile
 install
 deploy
 
-clean compile 
+clean install package
 
 Developer one 
 	> Write code
@@ -116,7 +116,7 @@ Source code
 >Generated Artifacts
 
 Case study
-Dependencies via comm file
+Dependencies via pom file
 ---------------------------------
 Maven install through spring via download 
 -----------------------------------
