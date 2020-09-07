@@ -1,0 +1,122 @@
+Day7
+
+
+main()
+Calc cl = new Cal();
+int ans = c1.add(10,20);
+
+Calc.java
+{
+	int add(int i,int j){
+
+int divide(String str, String str){
+
+}
+
+}
+}
+
+--------------
+
+Compile --> Lab1.java,Calc.java
+
+
+1. Calc.java ->
+
+	1. Logic
+	2. Method Sign
+
+//changing logic to include try catch
+----------------------------------
+
+Checkout calc.java
+	-> Modification,Compile....
+		----> Check in code  -> 
+				Build the project
+				-> Fails
+				-> Successful ->
+
+
+
+Developer1 -> Checkout Calc.java  -->Permission to modify the code
+-->Grant Permission 
+-->Change code
+compile...
+-->CheckIn Code(modified)
+	->build the project  -> commit
+Developer2 -> Checkout Calc.java (Deny Permission)
+
+Code
+-> Version Control
+
+
+Java
+@Deprecated
+--Stop()
+
+
+---------------------------@Version Control----------
+
+
+Local,Centralized,Distributed
+
+
+git
+
+
+git init
+>Empty git repository
+
+git add .  --> Putting current dir in add
+-m added
+commit
+git pull location master
+
+
+
+git init
+git pull  url master
+git commit -a -m message
+git remote adddir
+ url 
+git push
+
+
+get clone -v  url
+
+branching :
+
+Milestone:Something u've achieved
+//github learning lab
+
+javac
+java
+
+batch cmd
+java tools: ANt, Maven
+
+execution
+
+phase clean
+package
+compile
+test compile
+test
+compile
+install
+deploy
+
+clean compile 
+
+Developer one 
+	> Write code
+		>Dependecy > day1.demo1.
+		
+Source code
+>Generated Artifacts
+
+Case study
+Dependencies via comm file
+---------------------------------
+Maven install through spring via download 
+-----------------------------------
