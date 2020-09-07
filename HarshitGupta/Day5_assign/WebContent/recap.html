@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Recap</title>
+<style>
+body {
+	margin: 0px;
+}
+
+#logo {
+	width: 10%;
+	height: 10%;
+}
+
+#heading {
+	margin-left: 35%;
+	font-size: 30px;
+	font-family:Verdana;
+}
+
+#nav {
+	background-color: #cce7e8;
+	padding-bottom:5px;
+}
+
+.button {
+	background-color: #7575FF; /* Green */
+	border: none;
+	color: white;
+	padding: 10px 22px;
+	text-align: center;
+	text-decoration: none;
+	display: inline-block;
+	font-size: 16px;
+}
+
+.nxt {
+	margin-left: 30%;
+}
+
+.prev {
+	margin-left: 30%;
+}
+a{
+text-decoration:none;
+color:black;
+}
+#para {
+	background-color: #ffe8d4;
+	margin-bottom:10%;
+	margin-left: 16%;
+	margin-right:15%;
+	padding:10px 20px;
+	margin-top:20px;
+	border:0px solid #f69d3c;
+	border-width: 0 0 0 15px;
+	box-shadow: 11px 11px 14px -5px rgba(122,106,122,1);	
+}
+</style>
+</head>
+<body>
+	<div id="nav">
+		<img src="logo.png" id="logo"> <span id="heading">Day-5
+			Recap</span>
+	</div><br>
+	<div>
+		<button class="button prev">
+			<a href="https://apisero.com/">Home</a>
+		</button>
+		<button class="button nxt">
+			<a href="index.html">Back</a>
+		</button>
+	</div>
+	<div id="para">
+		<h4>HTML</h4>
+		<pre>
+		--HTML stands for HyperText Markup Language.
+		--It is used to define the structure of a webpage.
+		--There are many inbuilt tags in HTML each coming with its own usage and functionality
+		  For Example table tag is used to layout a structure of a table.
+		--There are attributes of each tag which adds extra features such as nowrap attribute
+		  of a th tag.
+		--Other HTML tag are p,div,heading,img
+		</pre>
+		<h4>CSS</h4>
+		<pre>
+		--CSS stands for cascading stylesheet.
+		--It is used to give styling to the html tags.
+		--There are 3 ways to write css.
+			--Inline css:here we write the styling as an atrribute of a tag within the style attribute.
+			--Internal:Here we define the css in the head section within the style tag
+			--Extertal:Here we use the link tag to link the external css file to this doc
+		--External CSS is used so as it can be reused and is not tightly coupled
+		--Examples of CSS: background-color,color,font-family
+		</pre>     
+		<h4>JS</h4>
+		<pre>
+		--Javascript is used for client side validation,DOM manupulation and asynchrous calls to the server
+		--It is an interpreted language.
+		--JS can also be used in 3 ways : Inline , Internal , External
+		--It makes the UI more interactive
+		--Some examples of Javascript methods are : getElementbyId(),querySelector()
+		</pre>
+		<h4>XML vs JSON</h4>
+		<pre>
+		--XML stands for Extensible Markup Language and JSON stands for Javascript ObjectNotation
+		--XML can have data with many datatypes whereas JSON has only string,int,boolean
+		--JSON saves a lot of space as it is lightweight
+		--XML can emmbed metadata along with the data whereas XML cant
+		</pre>
+		<h4>Dynamic Web Pages</h4>
+		<pre>
+		--Server side sends the dynamic webpage according to the response received
+		--It doesnot show the buisness logic as only the ouput file is sent.
+		--It has same features as static pages of including css and js.  
+		</pre>
+	</div>
+</body>
+</html>
