@@ -1,0 +1,67 @@
+1. JDK, JRE, JVM:
+- Java is a programming language that is platform independenet. All you need to do is to complie the java code using JDK to bytecode (class file). 
+- Next you need to convert that bytecode which is platform independent to binary code by using JVM so that the machine can understand the code.  
+-Java <-- javac --> Bytecode(.class) <--java-->Binarycode
+
+2. Classes:
+- OOPs start with class or classification of your code. You can define multiple classes in one file. 
+- Convention is to keep the class name with first letter in Capital notation. Furthermore, you need to define the class public to be able to run the class. 
+- Name of the file and PUBLIC class should be same. 
+- The .class file built is same as that of number of classes in the code. The public class can only be accessed outside.
+- Public class contains the public static void main to tell the compiler about the actual point of execution. 
+
+3. Arrays:
+- Takes sequential memory address, supports random access.
+- Depends on the type of the data type you define. 
+- Fixed memory location. 
+
+4. Memory allocation:
+- When an array is defined, it takes up actual memory based on the alloted size.
+- When an object is initiated, a pointer is set to the memory location where the actual memory for the object is allocated. 
+- We can have different pointers pointed to the same object, thus the object data can be modified using any of those pointers.
+
+5. Abstract class:
+- A class can be defineded abstract when we don't want others to create the instance of the class, and will be used for inheritance.
+- A class defined abstract can contain normal as well as abstract classes.
+- Class inheriting abstract class should define all the abstract methods, or declare itself as the abstract class. So the last normal class inheriting abstract class should implement all the abstract methods.
+
+6. Final class:
+- Cannot be inherited. It is used when we don't want anyone to inherit and override our class methods.
+- We can create object of the Final class.
+
+7. Encapsulation:
+- Data members are declared as private, and are accessed using public getters and setters.
+
+8. We use Scanner class object to take input from the user. You make the scanner object based on the naming convention. 
+
+9. Java supports only pass by value.
+
+10. Constructor:
+- Everytime we create the instance of the class, the default constructor is called and default values is been set to the data. 
+- We can overload the constructor when we want the desired values to be set while creating the instance of the class.
+- When the object of the derived class is created, even then the constructor of the base class is called.
+
+11. Interface:
+- Can have only abstract methods i.e. we cannot define normal methods and we cannot create instance of the interface.
+- The class implementing interface should define all the declared methods in the interface.
+- When we have 2 derived class implementing the same interface, while creating the instance of the derived class we can have type as that of interface. But having type as the interface, that object would be allowed to access only those methods which are declared in interface and defined in that specific derived class. That instance won't have access to other methods of that derived class. 
+
+12. Access Modifiers:
+
+ 
+13. Error Handling: 
+- We use try catch block for error handling in java. We write the code which is likely to get error in the try block, and if an exception is occured it is catched by catch block and the code inside catch block is executed. 
+
+14. Collection:
+- Collection is an interface having various utilities for storing and using data in an effective manner.
+- List: List can have data of any type, if we don't mention the datatype. The type to be passed is object i.e. we make use of Wrapper class(Integer, Float, etc.). There is no ordering in the list. Can contain duplicate values.
+- Set: Contains only unique values. There is an internal ordering system to check if a value is present in the set or not. TreeSet stores the data in a tree(gives a sorted order) and HashSet uses a hashing technique for storing and ordering of the data.
+- Map: Maps are used for storing key-value pairs. The keys are unique which can atmost contain only one value.
+
+15. Wrapper class:
+- Used for type conversion and also treats datatype variable as the object.
+
+16. Thread: 
+- Multiple threads are created with in the code for parallel processing. 
+- We can extend the Thread class and write our code inside the run method. 
+- Then we use start method to invoke the thread i.e. to execute the code inside the run method. 
