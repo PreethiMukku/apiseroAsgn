@@ -1,6 +1,6 @@
 Java Features
 	Platform Independent
-	  --> Java compiler generates byte code(.class) which cane executed on all systems using JRE associated with system.
+	  --> Java compiler generates byte code(.class) which can be executed on all systems using JRE associated with system.
   	  --> JRE converts byte code to corresponding machine understandable code
 	Secure
 	  --> Java doesn't support pointers which can manipulate memory.
@@ -12,7 +12,7 @@ Java Features
 	 --> Encapsulation: Binding data members and methods, prevents outside access of ata members
 	 --> Polymorphism: 
 		Method overloading: Multiple methods in a class with same method name and different method signature(No.of parameters, its type)
-		Method overriding: Done in inheritance same method signature of a method both in super and sub class 
+		Method overriding: Done in inheritance, same method signature and motheods present in super and sub class 
 	Abstract
 	 --> Abstract class: 
 		A class which has 0 or more abstract methods
@@ -31,7 +31,7 @@ Java Features
 	 --> A class can implement multiple interfaces and an interface can extend multiple interfaces
 	Collection API
 	 --> An interface of collection of objects
-	 --> Every collection has interface --> List, Set, Dequeue, Queue, Map
+	 --> Collection has interfaces --> List, Set, Dequeue, Queue, Map
 				  implementations --> concrete implementations of the collection interfaces
 				  Algorithms --> search, sort
 		List --> ArrayList: Follows insertion order, random accessibility based on index
@@ -56,7 +56,7 @@ Java Features
 	 --> Public: provides accessibility across all classes of same or different packages
 	 --> Private: Accessible only in the same class
 	 --> Protected: Accessible across all classes(derived and other classes) of same package and sub class of different package
-	 --> Default: When no access modifier is specified it is consideered as default
+	 --> Default: When no access modifier is specified it is considered as default
 		      Accessible only in same package classes(derived and other classes)
 	Exception handling
 	 --> Java supports exception handling using try catch block
