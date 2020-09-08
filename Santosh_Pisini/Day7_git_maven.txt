@@ -1,0 +1,26 @@
+GITHUB
+- Distributed Version Control
+- Collaboration
+- Issue tracking
+- Pull requests
+- Revert backing
+
+Types of VC:
+=>Local -> on single machine
+=>Centralized -> 1 repo and each user gets their copy
+=>Distributed -> 1 repo is mirrored on user machine and they need to push and pull to reflect their code with others
+
+git commands:
+init
+pull
+push
+add
+commit
+clone
+
+MAVEN
+- Project management tool
+- POM -Project Objet Model --> .xml file
+- easy to fetch jar's from cloud from cental repo so no need to send the same to other developers
+- packaging 
+- versioning
