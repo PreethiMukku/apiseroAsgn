@@ -1,0 +1,15 @@
+Maven 
+-Provides a formal Hierarchy
+-Dependancy Management
+-Pacaging
+-Workflow of Actions
+
+Maven is basically a server whiich helps us in compiling , building  and testing our java projects.
+
+To use Maven , first download it and assign the JDK 1.8.. and build using maven.
+
+Github - Helps in sharing the code and has good version control , also provides a distributed workstation.
+check out - pull
+check in - push
+
+commands used - git init , git pull , git push , git commit.
