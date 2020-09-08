@@ -1,0 +1,66 @@
+Day 6 - RDBMS/SQL	
+    What is RDBMS:
+	- Relational Database Management System.
+	- There are many tables within a database, each entity is a table and has many attributes with in it.
+    There are relationships defined within the table.
+	- The relationships are defined using keys. Each table has a primary key to uniquely indentify a tuple within the table.
+	- We use foreign key for integrity constraint. 
+    Foreign key is something which is primary key in one table and used as foreign key in another table to maintain intergrity constraint.
+	- There are different data types supported by RDBMS for storing data.
+  eg. varchar, int, etc.
+	- DDL(Data Definition Language) used to create the structure of the table.
+	eg. Create table table-name.
+	- DML(Data Manipulation Language) used to manipulate the data in the table, i.e insert, update, etc.
+  
+    Database Server/Client:
+	- Database are used in applications to store the application data, user details,etc.
+	- We have web applications where database communication happens in the backend(server). 
+    The data is been sent from client side, to the server and then server interacts with database to store or update the data. 
+    Also for the retreival, the data is fetched from the database and server sends this data to the front-end of the application.
+	- In Mobile Applications, database is also within the client side i.e. database is maintained in the mobile itself. 
+  
+    CRUD of single table:
+	- Create -> Where new entries are created within the table. 
+	- Read -> Retrieval of data from the table. We can either read the entire table or use different queries to get the filtered and specific data from the table.
+	- Update -> Data of a specific tuple with in the table will be modifies where the table would be uniquely indentified by its key. 
+	- Delete -> Deleting a tuple with in the table.
+  
+    Relationship in tables:
+        one-one:
+        - one-one to relationships in table are done by using primary key of one table and using that attribute as foreign key in another table.
+        - When we have Employee details to be stored, address has so many attributes like line1, line2, city, state, etc  
+        so for the sake of maintainaility we usually have address as a separate table instead having details maintained in the Employee table itself.
+        - 'emp_id' which is primary key of Employee table is used as foreign key in Address table for one-to-one mapping.
+        
+        one-many:
+        - For one-many mapping again the primary key of one table is used as foreign key in another table, but for one to many mapping there will repetion of tuples. 
+        - One Employee may have many email ids, so if Employee emp1 has 3 emails(e1, e2, e3) then there would be three tuples in the Email table corresponding to Employee emp1.
+        
+        fo_emp_id	email
+        emp1		  e1
+        emp1		  e2
+        emp1		  e3
+        
+        many-many:
+        - For many-many relationship between two tables, an immediate third table is created which has the primary key of both the table. 
+        - Employee to Project is a many to many relationship where many employees can be alloted to many projects. 
+        - So 'emp_id' (primary key) from Employee table and 'p_id' (primary key) from Project table is used in the third table.
+        
+        emp_id	p_id
+        emp1		p1
+        emp2		p1
+        emp3		p2
+        emp1		p2
+        
+    Fetching data from multiple tables:
+        Joins / Unions -> Is used for fetching consolidated data from tables. 
+        We can fetch data from n number of tables using join operation wherein the tables have a relationship between them, for eg a common attribute in between.
+          - (INNER) JOIN: Returns records that have matching values in both tables
+          - LEFT (OUTER) JOIN: Returns all records from the left table, and the matched records from the right table
+          - RIGHT (OUTER) JOIN: Returns all records from the right table, and the matched records from the left table
+          - FULL (OUTER) JOIN: Returns all records when there is a match in either left or right table
+
+        The UNION operator is used to combine the result-set of two or more SELECT statements. 
+        The UNION operator selects only distinct values by default. To allow duplicate values, we use UNION ALL. 
+        For using union operator must have same number of columns or we need to define it explicitly.
+
