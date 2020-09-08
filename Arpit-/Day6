@@ -1,0 +1,76 @@
+RDMS (Relational Database Management):-
+Relational database design (RDD) models’ information and data into a set of tables with rows and columns. 
+Each row of a relation/table represents a record, and each column represents an attribute of data. 
+The Structured Query Language (SQL) is used to manipulate relational databases. 
+The design of a relational database is composed of  stages, where the data are modeled into a set of related tables.
+The stages are:-
+1.Define relations/attributes.
+2.Define primary keys.
+3.Define relationships.
+4.Normalization.
+
+
+
+There are 3 types of relation among the tables :-
+a)one-one
+ex:- adharcard no belonging to specified person.
+b)one-many 
+ex:- one teacher teaching many subject.
+c)many-many
+ex:- Student and courses where single student can take multiple course and particular course can  be taken by many student.
+
+
+Commands to perform on Database :-
+
+SQL Commands:
+
+    SQL commands are instructions. It is used to communicate with the database. It is also used to perform specific tasks, functions, and queries of data.
+    SQL can perform various tasks like create a table, add data to tables, drop the table, modify the table, set permission for users.
+    
+    There are 4 types of SQL commands: DDL, DML, DCL and DQL.
+    
+    1.DDL:-
+    
+    DDL changes the structure of the table like creating a table, deleting a table, altering a table, etc.
+    All the command of DDL are auto-committed that means it permanently save all the changes in the database.
+
+Here are some commands that come under DDL:
+
+    1.CREATE
+    2.ALTER
+    3.DROP
+    4.TRUNCATE
+    
+    2.DML:-
+    
+    DML commands are used to modify the database. It is responsible for all form of changes in the database.
+    The command of DML is not auto-committed that means it can't permanently save all the changes in the database. They can be rollback.
+    
+   Here are some commands that come under DML:
+
+    1.INSERT
+    2.UPDATE
+    3.DELETE
+    
+    3.DCL :-
+    DCL commands are used to grant and take back authority from any database user.
+
+    Here are some commands that come under DCL:
+
+   1. Grant
+   2. Revoke
+   
+   4. DQL :-
+   DQL is used to fetch the data from the database.
+
+  It uses only one command:
+
+   1.SELECT.
+   
+   
+
+
+
+   
+
+
