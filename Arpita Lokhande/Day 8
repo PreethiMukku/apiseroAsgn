@@ -1,0 +1,118 @@
+
+Testing->
+-Testing is important concept from developer's perspective to make sure the code is worth deploying and runnable in every case.i.e test cases.
+
+-Test Driven Developement->
+-In this Test Cases are given first and then developer is asked to create code which satisfies these test cases.
+
+---Advantages->
+   -clarity in terms of what is expected from code.
+   -Saves lot of time in development.
+   -Integration testing
+
+-Test Driven approach gives very basic implementation.
+
+-Behaviour Driven Developement->
+-In this all developers, non-technical and people associated with project come together and discuss code requirements.
+-they design schema,observe the requirement and then implement it.
+-acceptance testing
+
+Coverage->
+-Used while testing hence to make sure how much of code is under testing.
+-can define test cases to methods.
+-how coverage is applied for->
+
+Testing Rich Client->
+   -Junit can be used for testing rich client.
+   -example EmpManagerTest.java
+
+   public class EmpManagerTest {
+	
+	private EmpManager mgr;
+
+	@BeforeClass
+	public static void setUpBeforeClass() throws Exception {
+		
+		System.out.println("Set up before class"); //gets executed before class object initialization
+	}
+
+	@Before
+	public void setUp() throws Exception {
+		System.out.println("Set up");               //gets executed after class object initialization
+		mgr =new EmpManager();
+	}
+
+	@Test
+	public void testAdd() {
+	Emp e= new Emp();
+	e.setEmpno(19);
+	e.setEname("Adef");                           //@test testAdd used to test add() method in EmpManager java file.
+	e.setSalary(2144);
+	mgr.add(e);
+	
+	if(mgr.list().size()!=1)                           //testing for size of list-> if empty set failure.
+		fail("Emp object not added");
+	if(mgr.list().get(0)!=e)                              //testing and verifying for 1st obejct added in the list-> if dont exist set failure
+		fail("emp object not added correctly");
+	}
+
+	@Test
+	public void testList() {                         // testing for list() function in Emp java file which returns list
+		if(mgr.list()==null)                     // testing if list is null or not-> if null set failure.
+			fail("List is null");
+
+	}
+
+}
+
+-------------Failures shown in Junit console are caused due to testcases not executed.(in test java file)------------------------------------
+-------------Errors shown in Junit console are caused due to syntax error or wrong business logic in main java files(not test java files)--------------
+
+
+Testing Thin Client->
+ ------Web Applicaions-> 
+          -manual testing can be done.
+          -check for UI implementation.
+
+Testing REST APIs->
+      -SOA-> 
+          Service Oriented Architecture
+         -services are provided to the other components by application component,through a communication protocol over a network.
+         -business to business communication
+         -use of web services
+        - eg. E-commerce applications
+
+SOAP services->
+-XML data format is accepted
+-Any protocol is used (provides Header for Protocol) eg, HTTP,FTP,etc.
+-Operations can be defined by us.
+-loose coupling.
+
+REST services->
+-Only HTTP protocol is used
+-JSON format mostly used or any other format can be used.
+-Operations-get/put/update/delete/patch
+-Requests can be made using postamn or Advanced Rest Client.
+
+Implementation of REST Service Request->
+
+-GET https://reqres.in/api/users/2
+   200 OK response
+
+-POST https://reqres.in/api/users 
+  (with body and content-type as JSON.)
+  201 Created response
+
+-PUT https://reqres.in/api/users/2
+   (with body and content-type as JSON.)
+ 200 OK response
+
+-DELETE https://reqres.in/api/users/2
+  204 No content response
+
+
+     
+
+
+
+
