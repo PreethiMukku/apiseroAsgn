@@ -1,0 +1,30 @@
+                                                                 Green Field Training Day 6)
+
+
+Relational Database Management Systems(MySql)
+MongoDB(NoSql) - A DB system which does not use structured query language.
+
+DDL(Data Definition Language) - Used for Defining the tables , table values , it's constraints and it's primary key.
+DML(Data Modification Language) - Used to perform CRUD Operations on a given database and also to query the database.
+
+Example 1 - Creation of a Table with details of a Department
+
+create table dept(
+deptno tinyint,
+dname varchar(20),
+location char(3),
+primary key (deptno) 
+);
+
+And operations performed on the table were
+
+insert into dept values('1','Fin','BLr');// to insert value into the table
+select * from dept;// to read table
+update single set loc ='Pun'where deptno = 1;//Update 
+delete * from dept;// Drop the table
+
+Then we learnt how to create instances of tables and then perform operations between the tables using the following  - GROUP BY,DISTINCT , AVG , MAX , MIN and so on .
+
+Joins - Left Outer , Right outer , Outer , Inner , Outer Joins.
+Used to perform various cartesian sets between tables.
+
