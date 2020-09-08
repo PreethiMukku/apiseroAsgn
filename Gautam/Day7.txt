@@ -1,1 +1,13 @@
 
+version control System
+->A version control system is a system that records all the changes made to a file or set of files.
+    ->Local version control system-Local version control system maintains track of files within the local system.
+    ->Centraliized version control system-In centralized version control system the changes in the files are tracked under centralized server.
+    ->Distributed version control system-Distributed version control systems contain multiple repositories. Each user has their own repository and working copy.
+
+
+Github
+->It is used for sharing code and files.It is a git repository hosting service.
+
+Maven
+->Maven is a software project management and comprehension tool.It is based on concept of Project Object Model.It provides dependency management.
