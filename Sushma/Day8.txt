@@ -1,0 +1,125 @@
+Day 8
+
+Maven: 
+- Providing Hierarchy
+	- Src -> java, resources, test files
+- Dependency management
+- Versioning and Configuration management- Packaging
+- Flow of action (Compile, build...)
+- Clean, compile, test, package
+	install -> where .m2 folder(user system) POM.XML 
+			-> downloads from central repository
+-junit jar - configures from mvn repository site/company's repository
+
+Github:
+- Share code and files
+- Versioning -> maintains all versions (also older versions)
+- Distributed version control - Github repository
+
+- git clone, git pull - creates .git folder on local repository
+- commit - changes in the local repositories
+- submit -> one local, one global and company wide repository
+- Checkout -> pull
+- Checkin -> push
+- Remote -> connect to the local repository
+- add Readme.txt -> adding this text to local directory
+- -u -> updates the data from local to git repository (same as --set-upstream command)
+- -M -> branch has created without any changes
+	- If master branch is not there then create it and connect to it
+	- If present connect to it
+- git branch - merged
+
+
+SOA - Service Oriented Architecture
+REST - REpresentation State Transfer
+
+Object Oriented: 
+Client ------> class Emp {10 methods} => call remotely connect + Interface, Emp (original obj)
+
+Component Oriented: 
+- RMI,EJB,Com/DCom,Corba
+
+Disadvantage: 
+client -------> Component (Some protocol)
+				
+				t3
+client(java) ----------> EJB component (WebLogic - t3)
+- Tightly coupled with that component (dependent and modifications are difficult)
+- In future, it may different gateway
+
+Service Oriented:
+- Loosely coupled => can change the service at any time
+  (Interface/Protocol/Methods)
+- Uses Webservices
+
+				    SOA
+Service       --------------->   Service
+Consumer						 Provider 
+
+Simple Object Access Protocol (SOAP):
+- Gives flexibility
+- Business to business communications through web services
+- SOAP is XML based
+	- XML has (n+1) problem like extra characters are used as tags
+	- Parsing
+- Uses HTTP and its features
+- Acces any resources with some functionality
+- Use all CRUD operations
+
+Service Oriented Architecture:
+- SOAP based services	
+	- protocol independent, XML data format
+	- SOAP is a protocol Agnostic - uses ftp, JMS, Wtp
+- REST API based services
+	- HTTP, Json dataformat, get/Ppst/Put/Patch/Delete operations
+	
+Testing:
+- When specifications are provided then Testing is done first by writing the test cases
+- Test Driven Development -> more focused on test cases
+Adv: Clarity interms of what is expected
+	 Saves lots of development time
+Disadv: Not concentrating on code
+	    Performance is not checked
+		
+Test Driven Development (TDD):
+- Light weight development
+- Test first
+- Unit testing - testing code isolated from other layers and dependencies and 
+- Integration testing - whole flow or the program tested together
+
+Behaviour Driven Development (BDD): 
+- collaboration between developers, testers and business owners on what to develop and write in the plain english text format, so that anyone can understand
+- Functional test, no unit test
+
+Before Class: Static variable called only once
+set up: called every test case
+
+Unit Testing: Functionality
+Web UI:
+- Client side rendering
+- Java Script
+- Interactive
+
+JUnit:
+API (Servlet/jsp/node...) --> Test
+
+REST API 
+HTTP Headers:
+- GET - Read only request (Retrieve)
+- POST - Create
+- PUT/PATCH - Updates the existing record
+-DELETE - Deletes the record
+
+- Tests in POSTMAN always written in JavaScript
+
+Rich Client: 
+	- JUnit
+Thin Client (Web applications)
+	- UI based applications
+	- UI Test
+	- User Interaction (UI rendering)
+	
+
+	
+
+
