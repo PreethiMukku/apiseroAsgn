@@ -1,0 +1,137 @@
+ADE Eclipse, Github, Maven
+
+Github->
+-github acts as remote repository used for Version control.
+-Github is example of Distributed version control system.
+-We can commit, push,pull,update the changes in git repository.
+-latest and old versions of application can be retrieved.
+
+Distributed Version Control model and its advantages->
+-it can have multiple repositories.
+
+  git init
+  -used to initialise the git repository locally. (prerequisites-git downlaoded and install
+
+-only commit in local repository will not change remote repository.
+  git commit -a -m mymessage
+  -here -a specifies current repository
+  - -m indicates message, and mymessage is message gets printed on cmd prompt.
+
+-we need to push it into remote repository by giving url
+  -git remote add myself https://github.com/arpitalokhande/tmpdemo
+  -using above command we map a name 'myself' to the url.
+
+  git push --set-upstream  https://github.com/arpitalokhande/tmpdemo master
+  git push -u  https://github.com/arpitalokhande/tmpdemo master
+  -here url for remote repository is specified and branch to which the changes are needed to push is specified(master)
+
+-another person has to pull the changes from remote repository to their local repository.
+ git pull https://github.com/arpitalokhande/tmpdemo master
+ -specify the url remote repository and branch.
+
+-git clone->
+ -using this command we get everything along with .git repository created.
+ -for clone->
+ -create a directory
+ -git clone https://github.com/arpitalokhande/tmpdemo
+ -commit
+ -git commit
+
+-for branch creation
+ -echo "# tmp" >> README.md
+	git init
+	git add README.md
+	git commit -m "first commit"
+	
+	>git branch -M master   (creates master if does not exist)
+
+	git remote add origin https://github.com/Vaishali-Tapaswi/tmp.git
+	git push -u origin master or git push -set--upstream origin master
+-git branch --merged
+->used for merging two branches.
+
+-Checking out->
+ -when a developer wants to modify business logic, he have to ask for permission to modify
+ -once permission is granted, the code is called as checked out code.
+ -thus code is now accessible to only that developer.
+ -git pull command used.
+
+-Checking in->
+ -only one developer has access to modify.
+ -modify and build the project
+ -fails->previous version is stored
+ -successful
+ -git push command used.
+ 
+Creating a local/remote repository, adding files, deleting files and committing changes->
+
+-git init
+
+-git pull https://github.com/arpitalokhande/tmpdemo master   (created tmpdemo with Readme.md in github remote repo)
+
+-git commit -a -m mymessage
+
+-git remote add myself https://github.com/arpitalokhande/tmpdemo
+
+-git push --set-upstream myself master
+   
+clone-->
+
+-git clone https://github.com/arpitalokhande/tmpdemo
+
+-git commit
+
+-git push
+
+
+
+Maven->
+-A repository in Maven holds build artifacts and dependencies.
+-provides Hierarchy like src/test/java, src/main/java, src/test/resources.
+-Dependency Management
+-Packaging
+-Versioning
+-flow of actions->
+    -clean---install---package
+    -compile gets called automatically when package is called.
+-Goals ->
+
+      Clean->
+      -Deletes the target file and all classes associated with it. 
+      -how to run-> project->run->maven build..->clean->run
+
+      Compile->
+      -Compiles the project
+      -how to run-> project->run->maven build..->compile->run
+      -for compilation JRE must be changed to JDK in preferences.
+
+      Test
+      TestCompile
+
+      Package->
+      -packages the installed dependencies , jars,etc 
+
+      -thin jar file-> 
+           -is light weight and has no dependencies downloaded.
+      -thick jar file-> 
+           -is more weight and has all dependencies downloaded.
+
+      -how to run-> project->run->maven build..->package->run
+      -it is called after install.
+
+      Install->
+      -Installs all dependencies from central repository. and are saved in .m2 folder of system user.
+      -how to run-> project->run->maven build..->install->run
+
+Install->
+    from POM.xml
+    from Central Repository server (for org.junit-> https://mvrepository.com/artifact/org.junit)
+  
+    project object model
+    project Description
+    Versioning and configuration management
+    Project dependencies
+    Manage application resources
+    POM XML
+    Maven installation and configuration
+    Creating a new project with Maven 2
