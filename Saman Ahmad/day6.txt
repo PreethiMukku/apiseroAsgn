@@ -1,0 +1,50 @@
+------------------------------------------------------DAY 6-------------------------------
+
+Database
+online sources: db-engines, db-fiddle
+ Main Feature of Oracle is that its gives support for virtual break/distribution of Databases. 
+i.e. a part of DB can be used into operations without the need for calling the entire DB to load into the memory.
+
+RDMS- database in a tabular format. (all entries have same formats/attributes) eg mysql
+
+NoSQL- each document can be different. eg- MongoDB
+
+RDBMS- CRUD operations.
+
+Create: CREATE DATABASE databasename;
+
+Retrieve: SELECT * FROM table_name;
+
+Update: UPDATE Customers
+	SET ContactName = 'Amit', City= 'Sam'
+	WHERE CustomerID = 1;
+
+Delete operations. DELETE FROM Customers WHERE CustomerName='Sam';
+
+
+------------------------ Relationship in tables--------------------------
+        one-one
+        one-many
+        many-many
+
+
+-----------------------Constraints---------------------------------
+SQL constraints are used to specify rules for the data in a table.
+	eg :NOT NULL ,UNIQUE ,PRIMARY KEY ,FOREIGN KEY 
+
+We can create our own contraints names for better identification of where the error has occur in query.
+
+-----------------------------SQL JOINS-----------------------------------
+A JOIN clause is used to combine rows from two or more tables, based on a related column between them.
+Different Types of SQL JOINs:
+(INNER) JOIN
+LEFT (OUTER) JOIN 
+FULL (OUTER) JOIN
+
+
+---------------------------------SQL UNION -----------------------------
+The UNION operator is used to combine the result-set of two or more SELECT statements.
+
+----------eg: SELECT column_name(s) FROM table1
+		UNION ALL
+		SELECT column_name(s) FROM table2;
