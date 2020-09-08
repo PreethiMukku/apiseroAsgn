@@ -1,0 +1,86 @@
+Day 8 – Testing Overview	
+
+
+SOA(service oriented architecture):
+	-used for business to business communication
+	-eg pan card linked to bank
+	-SOA use following web services.
+
+SOAP (Simple Object Access Protocol) services
+	-not tightly coupled
+	-data format :XML 
+	-protocol : ANY (add protocol header i.e protocol independent)
+	-Operations :We Have to define operations
+
+REST (Representational state transfer) services
+	-protocol :HTTP
+	-data format : mostlyJSON but can also use any other format
+	-Operations: get/put/update/delete/patch
+	-restful services supports different files
+	-can be tested with the help of http and https reqs on postman/ARC
+
+
+importance of testing:
+-problems can be found out.
+-Test cases decide first then code
+	-so that all requirements can be matched.
+
+Code coverage:
+- how much of your source is tested. 
+-for which methods added test cases.
+
+-TDD(TEST DRIVEN DEVELOPMENT):
+	-test-first development combined with design and code refactoring.
+	-clearity about -what is expected
+	-saves lots of time of development
+	-automated unit and integration testing
+
+-BDD(BEHAVIOUR DRIVEN DEVELOPMENT)
+	-test first then code approach
+	-all nontechnical people ,developers,testers come together to explore,declare and discover the features and senarios.
+	-testing the behavior of the system from the end users perspective.
+	-acceptance testing
+     
+
+Junit :
+	-Used to test Rich client
+	-goto  >on right clicking on java file >new>junit testing>configure it then the test file is ready u can add your test cases by overriding it.
+
+Postman: 
+	-Used for testing REST API
+	-Testing CRUD operations for "https://reqres.in" like 
+		-get: get records
+		-post: to create new records
+		-put: update records
+		-delete: delete record
+		-patch: update only some part
+
+
+//extra from net
+
+Levels of Code Coverage
+Branch Coverage: This is used to ensure that every branch in a decision-making process is executed. Let’s say a tester is including a fall back for cross browser compatibility using an If…An conditional statement or a Do…While statement in the code. Branch coverage will ensure that all branches (If, Else, Do, While) are tested with appropriate input.
+Function Coverage: This ensures that all necessary functions are tested. It also includes testing functions with different input parameters to test the logic in the functions.
+Statement Coverage: In this, the code is created in a way that every executable statement in the source code is executed at least once. This includes corner cases or boundary cases.
+Loop Coverage: This ensures that every loop in the source code is executed at least once. Certain loops may be executed based on results achieved at runtime. One must be careful to test such loops so as to fortify the code completely.
+Condition Coverage: This reveals how variables in the conditional statements are evaluated. It helps to provide proper coverage to the control flow.
+
+
+What is Test Coverage?
+Unlike code coverage, test coverage is a black-box testing technique. 
+It monitors the number of tests that have been executed. 
+Test cases are written to ensure maximum coverage of requirements outlined in multiple documents
+ – FRS (Functional Requirements Specification)
+ - SRS (Software Requirements Specification
+ - URS (User Requirement Specification), etc.
+
+Test coverage can also be evaluated through different types of testing. 
+However, the type of tests that must be run depends on the business priorities of the testing team and the organization behind them.
+ For example, user-centric web apps prioritize UI/UX tests over functional tests. 
+Conversely, financial apps will prioritize usability and security testing over all other tests.
+
+Advantages of Test Coverage
+It reports on portions of the codebase that have not been covered by necessary test cases.
+It helps to detect the areas of test cases that are useless for the current project. These cases are reported and can be eliminated to make the code lighter.
+It helps developers create additional test cases as required. These additional test cases help ensure that test coverage is maximum.
+It is useful for preventing defect leakage.
