@@ -1,0 +1,28 @@
+1. Overview: A request is sent from client side(browser) to the server, then the url sent as the request a html response is sent back by the server. The domain name in the url is mapped with unique IP address in DNS. The communication happens over http,https,ftp protocols.
+Client -------------------------------------------------------------------------------------------------Server
+Browser <--------------------------------HTML Response -------------------------------->Static Content
+HTML, CSS, Javascript is used for client side coding. The core business logic is written in server in laguages like PHP, JSP, etc. 
+
+2. HTML: Stands for HyperText Markup Language used for client side code to create web pages. Forms the building block of the web page where the entire content to be shown is put and structured using HTML. 
+
+3. <head>: All the external links are included inside the <head> tag. Also the title of the page is given under <title> tag inside the <head> tag.
+
+4. <body>: The actual content of the we page comes under <body> tag.
+
+5. Heading Tag: We have <h1> to <h6> as heading tags.
+
+6. <img>: <img> tag is used to embed the image into the webpage. The link to the image is given under <src> attribute.
+
+7. <a>: Used for hyperlinks.
+
+8. CSS: Cascading Style Sheets used for styling the webpage. We use selectors to style the contents respectively. 
+We have inline CSS where the style is mentioned within the tag. Internal CSS, where we mention the code inside the <style> tag under head section. 
+External CSS, where we have our style coded in another file and in included in the HTML page.
+
+9. Javascript: Is used for client side validations and is also used to call the server. 
+Reduces the overhead as simple validations can be done at the client side itself rather than going to the server side.
+
+10. XML: Can have self defined tags. The data is structered well and mainly used in sharing the content for B2B. 
+It has a overhead of sharing large data, as the size of the file increase as we need to structure and define tags for every content into the file.
+
+11. JSON: JavaScript Object Notation used for sharing data or responses from server to client. Also used by the APIs to share the public data.
