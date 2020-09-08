@@ -1,0 +1,87 @@
+RDBMS
+	--> RDBMS stands for Relational Database Management Systems.
+	--> It is based on relational model
+	-->	ELATIONAL MODEL (RM) represents the database as a collection of relations. A relation is nothing but a table of values. 
+		Every row in the table represents a collection of related data values. These rows in the table denote a real-world entity
+		or relationship.
+	--> examples: SQL, MS SQL Server, IBM DB2, ORACLE, My-SQL
+	
+CLIENT SERVER DATABASE
+	--> Client server database consists of two logical components. 
+	--> One is “Client” and the other one is “Server”. 
+	-->	Clients are those who send the request to perform a specific task to the server. 
+	-->	Servers are normally receive the command sent by the clients, perform the task and send the appropriate result back to the client
+	
+CRUD OPERATIONS
+	--> CRUD is an acronym that stands for Create, Read, Update, and Delete. 
+	--> These are the four most basic operations that can be performed with most traditional database systems 
+	    and they are the backbone for interacting with any database. 
+		--> Create
+			Its an option to add data in a table (new or pre-existing):
+			way to create table
+			CREATE TABLE EMPLOYEE
+				(id   INT, 
+				name VARCHAR(100)
+				);
+				
+				INSERT INTO <tablename> (column1,column2,….)
+				VALUES (value1,value2,….);
+		
+		--> Read
+			‘R’, refers to SELECT (data retrieval) operation. The word ‘read’ retrieves data or record-set from a listed table(s).
+			SELECT * FROM <TableName>
+			
+		--> Update
+			The third letter of CRUD, ‘U’, refers to Update operation. Using the Update keyword, SQL brings a change to an existing record(s) of the table.
+			UPDATE <TableName> SET Column1=Value1, Column2=Value2,… WHERE <Expression>;
+			
+		--> Delete
+			The last letter of the CRUD operation is ‘D’ and it refers to removing a record from a table. 
+			SQL uses the SQL DELETE command to delete the record(s) from the table.
+			DELETE FROM <TableName>
+			WHERE <Expression>
+			
+		These SQL commands are mainly categorized into three categories as:
+		DDL – Data Definition Language
+			CREATE – is used to create the database or its objects (like table, index, function, views, store procedure and triggers).
+			DROP – is used to delete objects from the database.
+			ALTER-is used to alter the structure of the database.
+			TRUNCATE–is used to remove all records from a table, including all spaces allocated for the records are removed.
+			COMMENT –is used to add comments to the data dictionary.
+			RENAME –is used to rename an object existing in the database.
+		DQl – Data Query Language
+			SELECT – is used to retrieve data from the a database.
+		DML – Data Manipulation Language
+			INSERT – is used to insert data into a table.
+			UPDATE – is used to update existing data within a table.
+			DELETE – is used to delete records from a database table.
+			
+RELATIONSHIP IN TABLES
+	In a relational database, a relationship is formed by correlating rows belonging to different tables. A table relationship is established
+	when a child table defines a Foreign Key column that references the Primary Key column of its parent table.
+	
+	--> one-to-many
+		is the most common relationship, and it associates a row from a parent table to multiple rows in a child table.
+	--> one-to-one
+		requires the child table Primary Key to be associated via a Foreign Key with the parent table Primary Key column.
+	--> many-to-many 
+		requires a link table containing two Foreign Key columns that reference the two different parent tables.
+		
+FETCHING DATA FROM MULTIPLE TABLES:
+
+	JOINS
+	A JOIN clause is used to combine rows from two or more tables, based on a related column between them.
+	
+	--> MySQL INNER JOIN (or sometimes called simple join)
+		SELECT columns FROM table1 INNER JOIN table2 ON table1.column = table2.column;
+		
+	--> MySQL LEFT OUTER JOIN (or sometimes called LEFT JOIN)
+		SELECT columns FROM table1 LEFT [OUTER] JOIN table2 ON table1.column = table2.column;
+	
+	--> MySQL RIGHT OUTER JOIN (or sometimes called RIGHT JOIN)
+		SELECT columns FROM table1 RIGHT [OUTER] JOIN table2 ON table1.column = table2.column;
+		
+	UNION AND UNION ALL
+	
+	The UNION command combines the result set of two or more SELECT statements (only distinct values)
+	The UNION ALL command combines the result set of two or more SELECT statements (allows duplicate values).
