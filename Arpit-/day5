@@ -1,0 +1,54 @@
+Overview of web programming :-
+Web programming refers to the writing, markup and coding involved in Web development, which includes Web content, Web client and server scripting and network security.
+The most common languages used for Web programming are XML, HTML, JavaScript, Perl 5 and PHP.
+Web programming is different from just programming, which requires knowledge on the application area, client and server scripting, and database technology.
+
+Basics Definition of HTML,CSS,JAVASCRIPT :-
+1.HTML provides the basic structure of sites, which is enhanced and modified by other technologies like CSS and JavaScript.
+2.CSS is used to control presentation, formatting, and layout.
+3.JavaScript is used to control the behavior of different elements
+
+Description about HTML :-
+HTML stands for HyperText Markup Language. 
+Markup language means that, rather than using a
+programming language to perform functions, HTML uses tags to identify different types of content and the purposes they each serve to the webpage.
+Using HTML, you can add headings, format paragraphs, control line breaks, make lists, emphasize text, create special characters, insert images, create links, build tables, control some styling, and much more.
+
+Description about CSS :-
+ CSS stands for Cascading Style Sheets.
+ CSS describes how HTML elements are to be displayed on screen, paper, or in other media.
+ CSS saves a lot of work. It can control the layout of multiple web pages all at once.
+ External stylesheets are stored in CSS files.
+ CSS is used to define styles for your web pages, including the design, layout and variations in display for different devices and screen sizes.
+ 
+ Description of Javascript :-
+JavaScript is the world's most popular programming language.
+JavaScript is easy to learn.
+JavaScript is a dynamic computer programming language. 
+It is lightweight and most commonly used as a part of web pages, whose implementations allow client-side script to interact with the user and make dynamic pages.
+It is an interpreted programming language with object-oriented capabilities.
+
+Overview of Xml and Json :-
+
+Extensible Markup Language (XML) is a markup language that defines a set of rules for encoding documents in a format that is both human-readable and machine-readable.
+      Points to consider:-
+        1.It is a markup language and uses tag structure to represent data items.
+        2.It supports namespaces.
+        3.It doesnt supports array.
+        4.Its documents are comparatively difficult to read and interpret.
+        5.It has start and end tags.
+        6.It is more secured than JSON.
+        7.It supports various encoding.
+        
+        
+   JSON (JavaScript Object Notation) is a lightweight data-interchange format and it completely language independent. 
+    It is based on the JavaScript programming language and easy to understand and generate. 
+      Points to consider :-
+      1. It is based on JavaScript language.
+      2.It is a way of representing object.
+      3.It does not provides any support for namespaces.
+      4.It supports array.<br>
+      5.Its files are very easy to read as compared to XML.
+      6.It doesnt use end tag.
+      7.It supports only UTF-8 encoding.
+    
