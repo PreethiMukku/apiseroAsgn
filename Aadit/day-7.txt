@@ -1,0 +1,54 @@
+-->Github 
+    - Versioning and controlling of systems is very much required to keep your organization running. 
+    - Version Control allows the companies to work in collabaration and keep on improving the system in a systematic manner. 
+    - Git is one of the most used and very popular version control systems. Github creates repository of your service/product and allows you to constantly improve it with various features it offers. 
+    - It has both command line as well as GUI to allow all kinds of user to benefit from the framework. 
+    - Github makes it easier to divide your work into modules, provides access controls, systematic version updates, 
+      task based management and providing complete logs of the activities. 
+    - Version Control system allows to track,fix,contribute and run tests in multiple ways to improve your system. 
+      It allows you to find out, who made the changes, when the changes were made, information regarding the changes and exactly at which point the changes were made.
+    
+    -There are three main types of version control system:
+    1. Local version system - There is common file which everyone is given access to. Every user makes the changes and updates to the files he's been given access to. 
+    2. Centralized version system - There's one master copy and every user get its own unique copy to work on. 
+    3. Distributed version system - Every user has a mirror image of the master copy and needs to keep a track of its changes
+    to work on his own copy. The full version history is shared among the users. If one user makes the change, the other users first need to include it 
+    in their copy and then continue with their work. 
+
+    - Git helps you in making local repository on your desktop/laptop. This local repository is connected to the remote repository by upstreaming your local git. 
+    - You can only push your changes to the remote repository after commiting those modifications to the local repo first.    
+    
+    - There are two ways in which you can set up your git repo. 
+      1. You initialize the git repo, pull the remote repository, make modifications in the code, add the remote repository to upstream the local repo, add the file using git add(if new file is added)
+         commit the changes made onto the local and finally push the changes to the remote repository. 
+      2. Other method is to completely copy the git repo by cloning the master copy. After that you keep your local copy as a mirror image of your remote repo 
+         and simply add,commit and directly push the changes to the remote repo. No need to initialize or add the remote repo to your local. 
+
+      Two main operations - 
+      Checking-Out - Git pull (checking out all the latest updates from the remote repo) 
+      Checking-In - Git push(pushing all the new modifications onto the remote repo)
+
+
+
+   Maven	
+    Maven is a project management and version&control tool used mainly for java. Maven has its own repository where users can add their jars for easy collaboration. 
+    Maven is used for project build, dependency and documentation of java based applications. 
+    Advantages - 
+	- We can easily build the projects as it includes all the java dependencies along with the server configurations. 
+	- You do not need external java servers like Apache Tomcat for making web-based applications. 
+	- You can create JAR files and share the work with other users. Other users need to install the dependencies and directly use the JAR file for the logical component. 
+	- It updates the central repository while building the projects and installs all the dependencies required for executing the application. 
+	- You can easily integrate with other Version Control System like Git. 
+
+    Features - 
+	- POM.xml - Project object module - A Project Object Model or POM is the fundamental unit of work in Maven. It is an XML file that contains information about the project and configuration details used by Maven to build the project.
+	- On running the code as Maven Build, you need to specify the goal. This goal can be of following types:
+		1. Clean - deletes the target folder from the root directory. 
+		2. Compile - Compiles the code with the JDK (not JRE) dependencies and performs the build operation. 
+		3. Package - Converts the application into the JAR file that can be easily used as a package later on. It by default includes the compile operation. 
+		4. Install - Installs the dependencies required for the package. 
+	- You can easily manage the application resources using Maven. 
+	- Maven encourages the use of a central repository of JARs and other dependencies. Maven comes with a mechanism that your project's clients can use to download 
+	any JARs required for building your project from a central JAR repository. 
+
+    
