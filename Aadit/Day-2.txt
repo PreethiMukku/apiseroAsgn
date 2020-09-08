@@ -2,7 +2,7 @@ OOP:
 		Abstraction:
 		1. Hiding the core lofic form end user and only provding the essential details.
 		2. You dont come to know how the particular method is being executed except for the arguments and the return type of the dunction. 
-    3. Done for data security. 
+   		3. Done for data security. 
 		Encapsulation:
 		1. Binding of the variables and methods in a class
 		2. To access data, need special methods to retrieve and use it. The way it is done is different in various languages but the logic remains the same. 
