@@ -1,0 +1,39 @@
+------------GitHub------------
+-Version Control Systems helps in recording all the changes to the file by keeping the note of all the modifications. There are three types of Version control system.
+1. Localised Version control system -> It is one of the most simplest control systems wherein there is repository which contains all the modified files.
+2. Centralised Version control system -> Here, the changes are stored in a common central repositories. Here anyone can access the data and commit the changes.
+3. Distributed Version control systems -> Here every user has his own repository where he commits changes and uploads it. Others don't have access to these local repositories. If one has 
+                                      to give access others files, he has to pull the data from their repository only if he has permission. Thus, this is the most secure systems of all the three.
+
+-GitHub is an example of distributed version control system.
+-The main purpose of GitHub is to store code and files and helps in maintaining all the versions.
+
+-The concept of checkout and checkin is nothing but pulling and pushing the data.There are series of steps in order to change and modify the data in the GitHub repository, one can opt for git init method of git clone method.
+-The git init method helps in extracting only the specific file from the github repository to the local repository whereas the git clone method extract all the files from the github to local repository.
+
+-The steps in git init method---
+--create a github repository.
+--local directory address>git init.
+--local address> git pull> github address.
+-- modify data in local directory.
+--local address> git commit.
+--provide username address and password.
+--local address> git push -set upstrem "name" master-> This helps in storing the modified data in the github master file.
+
+-The steps in git clone method---
+--create a guthub repository.
+--local directory address> git clone.
+--local address> git pull> github address.
+--modify the data in local directory.
+--local address> git commit.
+--local address> git push.
+
+-----------MAVEN-------------
+-Maven is basically very useful when dealing with project hierarchy.
+-The importance of the MAVEN can be understood by the following points,
+ --Providing proper hierarchy in the project.
+ --It provides a flow of actions.
+ --It helps in dependency management.
+ --This helps in cleaning, compiling and packaging.
+
+-POM file stands for Project Object Model file -> This helps in installing the package. the series followed in MAVEN is clean, install and then packaging.
