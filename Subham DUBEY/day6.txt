@@ -1,0 +1,33 @@
+-Database is collection of data which is stored in an organised manner which helps in easy access, management and modification.
+
+-Database Server -> It uses database application to provide database services to other computers. It basically acts as an service provider.
+-Database Client -> It is a software that is used to connect with the database server. It uses the data from the server and performs operations on it.
+
+-There are basically two popular ways of storing data->
+1. Relational Database Management System (RDMS) -> The data is stored in a structured manner. This is most widely used database system throughout the world. Ex: MySQL.
+2. No SQL -> There is no basic structure for storing the data here. Ex:MongoDB.
+
+-Data Manipulation Language (DML) -> It is a programming language used for performing operations on data. One can add, modify or delete data using this language.
+-Data Definition Language (DDL) -> It is a set of syntaxes which is used for creating and modifying data.
+
+-CRUD Operations
+These are the major operations or primary operations which are majorly performed in a database. CRUD stands for ->
+1. Creating the data -> One needs to have the capability to create data according to one's needs. This operation helps in creating the data.
+2. Retreving the data -> Creation of data makes sense only when one can use the data and work on it. This operation helps in retreiving the data from the database.
+3. Update the data -> This operation helps in updating the data which have be pre-existing in the database.
+4. Delete the data -> This operation helps in deletion of ant data which is unnecessary and doesn't concerns our need.
+
+- Types of Relations 
+1. one-one relation -> In this type of relation, one of the parameter from the data1 table is linked and related to one of the parameters of the data2 table.
+2. one-many relation -> In this type of relation, one of the parameter from the data1 table is linked and related to many parameters of the data2 table. 
+                       This leads to using the functions of primary and foreign key which helps in linking appropriate and required parameters.
+3. many-many relation -> When more than one parameters of both the data tables are required to be linked, then we call it as many-many relation. This involves creation of an intermediate
+                         table which links both the required table.
+                         
+-There are many ways of fetching data from the database. Some of them are:
+1.Union -> This operation helps in incorporating all the data from the multiple table of data. However, the repeated data is only viewed once i.e. there is no duplication of the data.
+  -Union all -> This is also an union operation where all the data is incorporated regardless of being duplicated.
+2. Joins -> This is also one of the way of incorporating specific data from multiple data sets. There are multiple types of joins like left join, inner join, outer join, which perform specific
+            task and extract only the required data as per need.
+                       
+
