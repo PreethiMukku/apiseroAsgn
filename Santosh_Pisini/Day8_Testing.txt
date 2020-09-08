@@ -1,0 +1,35 @@
+SOA
+-Service Oriented Architecture
+- Services are provided to the other components over a network
+- Loosely coupled
+
+SOAP
+- XML only
+- Any protocal
+- More bandwidth
+
+REST
+- HTTP only
+- JSON, XML ...
+- Less bandwidth
+
+==> XML is n+1 problem -> as we are having closing tags additional compared to JSON
+
+Rich Client
+for Emp
+-> We can check for object creation
+For CURD (EmpMngr)
+-> C => checking the length
+-> U => by inserting at specific index and checking the content
+-> R => by chekcing the content we inserted
+-> D => removing the inserted code and length 
+
+
+Testing
+TDD/BDD
+
+HTTP Verbs
+GET -> read
+POST -> create
+PUT -> update
+DELETE -> remove
