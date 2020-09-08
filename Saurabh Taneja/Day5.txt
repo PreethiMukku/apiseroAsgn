@@ -1,0 +1,72 @@
+﻿--------RDBMS ------
+(Relational Database Management system)
+
+
+** It is tabular or structure form of data storage where data is stored in form of rows and columns .
+ 
+To distinguish the records from each other use a Unique Key called as Primary key and it cann't be null . 
+
+-------- SQL--------
+( Structuref Query Language ) 
+
+ **Two Main Language **
+
+1. DDL 
+2. DML 
+ 
+******DDL*******
+CREATE – Create an object 
+DROP – This SQL DDL command helps to delete objects. ...
+ALTER – Used to alter the existing database or its object structures.
+TRUNCATE – This SQL DDL command removes records from tables.
+RENAME – Renaming the database objects.
+-----------------------------------------------------------------------------------------------
+
+
+******DML****** 
+SELECT – retrieve data from the a database.
+INSERT – insert data into a table.
+UPDATE – updates existing data within a table.
+DELETE – deletes all records from a table, the space for the records remain.
+MERGE – UPSERT operation (insert or update)
+-------------------------------------------------------------------------------------------------
+
+(EXAMPLE)
+
+Create table dept
+(deptno tinyint  ,
+ dname varchar(20),
+ loc varchar(3),
+ constraint deptpk Primary Key (deptno)
+ );   
+
+insert into dept values (10,'HR','Hyd');
+insert into dept values (20,'IT','Blr' );
+insert into dept values (30,'Fin','Hyd');
+insert into dept values (40,'Training','Blr');
+
+select * from dept;
+delete from dept where loc='Hyd';
+select * from dept;
+select count(*) from emp;
+THE VARIOUS JOINS ARE----
+
+Various Join Are 
+1. Inner Join 
+2. Left Outer Join 
+3. Right Outer Join 
+4. Full Outer Join 
+
+Other relations--
+
+1. Union 
+2. Union All 
+3. Intersection 
+4. Set Difference 
+
+------------------------------------------------------------------------
+one-to-many: it associates a row from one table to multiple rows in a second table.
+one-to-one: it associates a row from one table to only one row in a second table.
+many-to-many: it associates many rows from one table to multiple rows in a second table.
+
+*******************END*****************************************
