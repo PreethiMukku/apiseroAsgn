@@ -1,0 +1,128 @@
+day8
+
+Overview of day7
+
+Maven?
+	Providing Hierarchy
+	Dependency Management
+	Packaging
+	Versioning and Config Management
+	Flow of actions
+	Clean,Compile,test,package,install->from where(POM)
+	from which server(https:/wwww.mvnrepository.com/artifact.org.junit)
+	
+---------------------
+
+Conflicts
+
+junit jar -2.4
+-> jackson 4.5
+------------------------
+
+GitHub
+-> Share code and files
+-> Versioning
+	> maintains all versions
+-> Distributed 	version control
+Git clone
+Git pull
+	.git (local repo)
+	
+Check out > pull
+Check in  > push
+
+git remote add nm url
+
+Notes on rdbms concept and maven and github
+
+procedure object service orientation 
+
+Object Oriented
+component--------> RMI,EJB,comm,dcomm,Corba
+client-----------> class Emp {10 method}
+
+Tightly Coupled with Component
+
+----------------------------------------
+Service---------------------->Service
+Consumer			Provider
+	1.Loosely Coupled
+---------------------------------------
+XML -> SOAP(Simple Object Access Protocol)
+		int add(int i,int j)
+B to B Communications
+	Web Services
+------------------------------------------
+
+SOAP (XML -> n+1 problem)
+Parsing  
+
+http  --> 
+post  -> http://host:port/emp  -> create
+get   
+delete
+put		
+---------------------------------------------
+
+Service Oriented Architecture
+->SOAP Based Services
+->Rest Based Services
+	Http, json
+
+			SOAP 			REST
+
+1.Protocol		
+2.Data Format
+3.Different Operations
+
+SOA,REST,SOAP
+
+--------------------------------------------------
+
+Testing
+
+Write Code First /Test First
+
+Code First
+	> According to code we should check
+	
+
+TDD/BDD
+
+Eclipse -> java -> 
+Emp
+Emp - empno, ename, salary (private fields) + public get/set, toString
+EmpMangager 
+add(Emp e){}
+list()
+
+B- B
+MakeMyTrip
+
+RESTAPIGo to reqres.in/api/users/2
+Go to PostMan
+
+Create a new request
+Use get,put,post and delete
+
+HTTP Headers
+1. get--> Read only request
+2. post--> Create 
+3. put--> Update existing record
+4. delete--> delete a record
+
+------------------------
+
+Rich Client	> Junit
+Thin Client (Web Application)
+UI Testing
+User Interactioon
+Rest API
+	Postman
+Coverage
+
+
+ 		
+
+
+
