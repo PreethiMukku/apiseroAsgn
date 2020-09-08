@@ -1,0 +1,49 @@
+-----------------------------------------------------------------------------------RDBMS------------------------------------------------------------------------------------------
+-RDBMS means Relational Database Management Systems.
+-The data in an RDBMS is stored in database objects which are called as tables. 
+-Table is basically a collection of columns(fields) and rows(tuples).
+-RDBMS is the basis for SQL, MS SQL Server, IBM DB2, Oracle and MySQL.
+
+------------------------------------------------------------------------------------SQL-------------------------------------------------------------------------------------------
+-SQL is a standard language for storing, manipulating and retrieving data in databases.
+-DDL: DDL changes the structure of the table like creating a table, deleting a table, altering a table . (Create,ALter,Drop,Truncate).
+-DML: DML commands are used to modify the database. (Insert,Update,Delete)
+-EXAMPLE
+
+Create table dept
+(deptno tinyint  ,
+ dname varchar(20),
+ loc varchar(3),
+ constraint deptpk Primary Key (deptno)
+ );   
+
+insert into dept values (10,'HR','Hyd');
+insert into dept values (20,'IT','Blr' );
+insert into dept values (30,'Fin','Hyd');
+insert into dept values (40,'Training','Blr');
+
+# select * from dept;
+# delete from dept where loc='Hyd';
+# select * from dept;
+# select count(*) from emp;
+
+-----------------------------------------------------------------------------------------JOINS-----------------------------------------------------------------------------------
+-JOINS: SQL JOIN clause use when select records rows from two or more tables from the database.INNER JOIN, OUTER JOIN, LEFT JOIN, RIGHT JOIN
+#Inner join: It returns the  all rows from both the tables where the matching condition satisfies.
+   -SELECT ename, d.deptno, d.dname FROM dept d INNER JOIN emp e ON d.deptno = e.deptno
+   
+#Left join: returns all the values from left table and the matching values from the right table.
+   -SELECT ename, d.deptno, d.dname FROM dept d LEFT JOIN emp e ON d.deptno = e.deptno
+
+#Right join: returns all the values from right table and the matching values from the left table.
+   -SELECT ename, d.deptno, d.dname FROM dept d RIGHT JOIN emp e ON d.deptno = e.deptno
+   
+-UNION :It is used to combine the results of two or more SELECT statements without returning any duplicate rows.
+SELECT column_name FROM table1
+UNION
+SELECT column_name FROM table2;
+
+----------------------------------------------------------------------------------------RELATIONSHIPS---------------------------------------------------------------------------
+-one-to-many: it associates a row from one table to multiple rows in a second table.
+-one-to-one: it associates a row from one table to only one row in a second table.
+-many-to-many: it associates many rows from one table to multiple rows in a second table.
