@@ -1,0 +1,90 @@
+RDBMS/SQL	
+What is RDBMS->
+-RDBMS means Relational Database Management Systems.
+-Everything is structured as a relation or Table format.
+-Table has columns and rows where Rows represent each record while Columns represent attributes or fields for record.
+-examples, MySQL, Oracle, Microsoft SQL server.
+-SQL- Structured Query Language.
+
+-SQL has may oprations. They can be classified as DDL,DML,DQL.
+-DDL->Data Definition Language
+    -create a table
+     create table dept(deptno int,dname varchar(14), loc varchar(13),constraint pk_dept primary key (deptno));
+    -drop a table
+     drop table dept;
+    -alter a table
+     alter table dept(deptno int,dname varchar(14), loc varchar(13),city varchar(20),constraint pk_dept primary key (deptno));
+-DML->Data Manipulation Language
+    -insert into table
+     insert into dept (deptno,dname,loc) values (10, 'ACCOUNTING', 'NEW YORK');
+    -update into table
+     UPDATE dept SET dname = "ABC" WHERE deptno=10;
+    -delete from table
+     delete from dept where deptno=10;
+-DQL->Data Query Language
+    -SELECT
+    -select * from dept;
+
+Database Server/Client->
+    -On same system/laptop
+    -AWS installation(server)
+    -MySQL server
+    -chrome mysql plugin
+    
+CRUD of single table
+-CRUD-> Create Retrieve Update Delete
+     -Create
+     create table dept(deptno int,dname varchar(14), loc varchar(13),constraint pk_dept primary key (deptno));
+     -Retrieve
+     select dname,city from dept;
+     -Update
+      update dept set dname = "ABC" WHERE deptname="HR";
+     -Delete
+     delete from dept where deptno=10;
+
+Relationship in tables->
+-Relationship in tables can be defined as below-
+one-one->
+    -one record in a table is associated with only one record in another table.
+    -Emp(1)<-------->Address in Dept(1)
+one-many->
+    -one record in a table can be associated with one or more records in another table.
+    -Emp(1)<-------->Emails(*)
+many-many->
+    -many records in a table can have relation with many records in another table.
+    -Students(*)<------->Subjects(*)
+
+Fetching data from multiple tables->
+-this can be done using joins.
+-Joins / Unions->
+-JOIN->
+   -Inner join
+   -Common records from both tables are retrieved.
+   -SELECT d.deptno, count(e.empno) FROM dept d INNER JOIN emp e ON e.deptno = d.deptno GROUP BY d.deptno
+   
+   -Left join
+   -retrieves all records from left table and common records from right table.
+   -SELECT d.deptno, count(e.empno) FROM dept d LEFT JOIN emp e ON e.deptno = d.deptno GROUP BY d.deptno
+
+    -Right join
+   -retrieves all records from Right table and common records from right table.
+   -SELECT d.deptno, count(e.empno) FROM dept d RIGHT JOIN emp e ON e.deptno = d.deptno GROUP BY d.deptno
+-UNION
+  -Union
+  -Do not allow duplicates.
+  SELECT City FROM Customers UNION SELECT City FROM Suppliers ORDER BY City;
+  
+  -Union all
+  -Allows duplicate records
+  SELECT City FROM Customers UNION ALL SELECT City FROM Suppliers ORDER BY City;
+
+-SQL Queries->
+-Find Maximum/minimum from column
+-select job, max(sal) from emp
+group by job
+having job='MANAGER';
+-select min(sal) from emp where job="PRESIDENT"
+
+-get count
+-select count(*) from emp;
+
