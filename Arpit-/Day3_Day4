@@ -1,45 +1,36 @@
 Java Fundamentals:
 
- Java is a Object Oriented programming language which can be compiled and interpreted, used to develop Standalone applications and Web applets.
- Java platform consists of Java virtual machine (JVM) responsible for hardware abstraction, and a set of libraries that gives Java a rich foundation.
- Java tools include the Java compiler as well as various other helper applications that are used for day-to-day development.
- The most important factor to choose Java is its portability. It can be easily moved from one platform to other platform.
+ Java is a Object Oriented programming language which can be both compiled and interpreted, used to develop Standalone applications and Web applets.
+ 
  Execution in Java program involves two steps:
 	- Compiling source code into Bytecode using javac comp - javac FILENAME.java(syntax)
 	- Executing the Bytecode program using Java interpreter - java FILENAME(syntax)
 
-  Some of the other important features of Java are:
-	  - Robust and Secure
-	  - Distributed Language 
-	  - Simple and Small
-	  - Multithreaded 
-    - Object Oriented
-    - Platform independent
-    - Dynamic
-    -High performance
+  Some of the other important features of Java are
+ - Robust and Secure
+ - Distributed Language 
+- Simple and Small
+- Multithreaded 
+ - Object Oriented
+ - Platform independent
+ - Dynamic
+ -High performance
 
 Naming Conventions:
 	- Classes and Interfaces:-
 		Class names should be nouns, in mixed case with the first letter of each internal word capitalised.Class Name cannot be a Keyword.
-    Interfaces name should also be capitalised just like class names.
-		     Ex:- interface Cars
-				 class TataMotors implements Cars
-				 
+                 Interfaces name should also be capitalised just like class names.
+		  
 	- Methods:-
 		Methods should be verbs, in mixed case with the first letter lowercase and with the first letter of each internal word capitalised.
-			Ex:- void changeGear(int newValue);
-				 void speedUp(int increment);
-
+			
 	- Variables:-
 		Variable names should be short and understandable. Variables can also start with either underscore(‘_’) or dollar sign ‘$’ characters.
 		One character variables are not a best practice except in the case of temporary variables.
 		Constant variables are given in upper case with use of undersocre to separate words
-			Ex:- int speed = 55;
-				 int gear = 4;
-				 int SEATING_CAPACITY = 5; //Constant Variable
-	
+		
 Java Library:
-	
+
 	The Java standard library (or API) includes hundreds of classes and methods grouped into several functional packages.
 	We have to import these into our class to use these library classes and methods.
 	Ex:- Language Support Package - java.language (default package)
@@ -59,40 +50,12 @@ Non-Primitive/Derived:-
 
 	Classes, Interfaces, Arrays,String.
 	
-Type Casting:-
 
-	We often encounter situations where there is a need to store a value of one type into a variable of another type.
-	Casting into smaller type can result in a loss of data.
-	Allowed type castings in java are as follows:
-		From byte To short, char, int, long, float, double
-		From short To int, long, float, double
-		From char To int, long, float, double
-		From int To long, float, double
-		From long To float, double
-		From float To double
-		
 Keywords:
 	
 	They implement specific features of the languages. Java has reserved 60 words as keywords. Since keywords have specific meaning, we can not use them as names for variables.
 		Ex:- abstract, boolean, byte, case, catch, char, class, static, super,......
-		
-Sample program in Java:
 	
-	I/p:-
-	
-	class Practise 
-	{
-		public static void main(String args[]) //The main line, the execution starts here.
-		{
-			System.out.println(“Hello World !”); //Output Line
-		}
-	}
-	
-	O/p:-
-	
-		Hello World 
-		
-
 	Using of Abstract class:
 
 	- Abstract class cannot be instantiated.
@@ -113,7 +76,7 @@ Access Modifiers:
 	- Public: Accessible to all packages.
 	- Protected: Accessible to same class and sub classes in different or same package.
 	- Private: Accessible only to the Same class.
-  - Default - Accessible to same class ,other class , derived class but must be in the same package.
+         - Default - Accessible to same class ,other class , derived class but must be in the same package.
 			  
 Exception Handling:
 	
@@ -121,11 +84,11 @@ Exception Handling:
 	It's of Throwable type .
 	try
 	{
-		statements; //generates exception
+		statements; 
 	}
 	catch(Exception-type e)
 	{
-	statements; //handles exception
+	statements; 
 	}
 	
 Arrays:
@@ -135,14 +98,6 @@ Arrays:
 	- It’s very fast to access any elements in an array, the time taken to access both first element and last element in an array is same.
 	- An array of primitives stores values of the primitives.
 	- An array of objects stores only the references to the objects.
-	- An array itself is actually an object.
-		Ex:- int[] studentMarks = new int[6]; // allocates memory for 10 integers
-			 studentMarks[0] = 100; // initialize second element
-			 studentMarks[1] = 90;
-			 studentMarks[2] = 85;
-			 studentMarks[3] = 77;
-			 studentMarks[4] = 88;
-			 studentMarks[5] = 99;
 	- Lenght of an array is given by using the fucntion arrayName.lenght, it returns a integer value.
 	
 Wrapper Class:
@@ -156,65 +111,32 @@ Wrapper Class:
 		int - Integer
 		long - Long
 		
-Defining Interfaces:
-	
-	The syntax of defining interface is very similar to defining a class. The general form is:
-	
-	interface InterfaceName
-	{
-		variables declaration;
-		methods declaration;
-	}
-	
-Extending Interfaces:
-	
-	Like classes, interface can also be extended. That is, an interface can be subinterfaced from other interfaces.
-	The new subinterface will inherit all the members of the superinterface in manner similar to subclasses.
-	This is achieved using keyword extends as follows:
-	
-	interface name2 extends name1
-	{
-		body of name2
-	}
-	
-Implementing Interface:
-
-	Interfaces are used as “superclasses” whose properties are inherited by classes.
-	It is therefore necessary to create a class that inherits the given interface.
-	This is done as follows:
-	
-	class classname implements Interfacename
-	{
-		body of classname
-	}
-
 Collections:
 
 	A Collection is a collection of similar adn desimilar type of object.
 	
 	List:-
 		This interface is dedicated to the data of the list type in which we can store all the ordered collection of the objects.
-		This also allows duplicate data to be present in it.
-		This list interface is implemented by various classes like ArrayList, LinkedList, Stack, etc.
-		Ex:- List <T> al = new ArrayList<> ();
-			 List <T> ll = new LinkedList<> ();
-			 Where T is the type of the object
+		
+		Ex:- 
+		List <T> al = new ArrayList<> ();
+		 List <T> ll = new LinkedList<> ();
+		Where T is the type of the object
 			 
 	Set:-
 		A set is an unordered collection of objects in which duplicate values cannot be stored.
-		This collection is used when we wish to avoid the duplication of the objects and wish to store only the unique objects.
-		This set interface is implemented by various classes like HashSet, TreeSet, LinkedHashSet, etc.
-		Ex:- Set<T> hs = new HashSet<> ();
-			 Set<T> lhs = new LinkedHashSet<> ();
-			 Set<T> ts = new TreeSet<> ();
-			 Where T is the type of the object.
+		
+		Ex:- 
+		Set<Q> hs = new HashSet<> ();
+		 Set<Q> lhs = new LinkedHashSet<> ();
+		 Set<Q> ts = new TreeSet<> ();
+		 Where Q is the type of the object.
 			 
 	Map:-
 		A map is a data structure which supports the key-value pair mapping for the data.
-		This interface doesn’t support duplicate keys because the same key cannot have multiple mappings.
-		A map is useful if there is a data and we wish to perform operations on the basis of the key.
-		This map interface is implemented by various classes like HashMap, TreeMap, SortedMap, etc.
-		Ex:- Map<T> hm = new HashMap<> ();
-			 Map<T> tm = new TreeMap<> ();
-			 Map<T> sm = new SortedMap<> ();
-			 Where T is the type of the object.
+		
+		Ex:- 
+		Map<R> hm = new HashMap<> ();
+		 Map<R> tm = new TreeMap<> ();
+		 Map<R> sm = new SortedMap<> ();
+	       Where R is the type of the object.
