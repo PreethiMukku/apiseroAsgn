@@ -1,0 +1,50 @@
+-->What is RDBMS
+- Relational Database Management System refers to database having tabular structure. 
+- The structure of the DB is created as a combination of columns and rows. The columns of the table represent different attributes of an entity
+while the rows represent different records with resepct to that relation. 
+- RDBMS is one of the traditional and most commmonly used data saving architectures.
+- To make use of the RDMS, we have different frameworks having different features. But at the most basic form, SQL(Structured Query Langugage) to 
+is used to operate with the data. 
+- Different frameworks providing RDMS are MySQL, Oracale, MS SQL Server etc
+
+SQL - 
+It is mainly classified into following categories:
+1. DDL - Data Definition Language : Mainly used for creating/deleting structure in the database. The most common operations are 
+create table, delete/drop the table, alter table structure etc. You create the table structure and provide the different 
+constraints and conditions on the table. 
+2.DML - Data Manipulation Language : Used to manipulate the data in the tables bu using operations of insert,update,delete rows from the table.
+3.DQL - Data Query Language : Used to query the database and fetch the records from the database. Operations used is SELECT. It is coupled with conditions
+and constraints for fetching the required data. Operations used are where clause, groupby, subquery etc. 
+  
+--> Database Server/Client
+- Database server on MYSQL has to be installed on the user's desktop/laptop. 
+- MYSQL consists of both the server and client side. The business logic is written on the server side. 
+- You can also connect to AWS or remote RDMS structures. Thereby, you can use chrome plugin to connect the AWS table and perform operations. 
+
+--> CRUD of single table: Create, Retrieve, Update and Delete from the table. 
+ Create - forms a new record in the table by using the command 'insert into table values(column values)'
+ Retrieve - query and fetch the records you want from the table. Command is 'select * from table where condition*'
+ Update - This is to alter the row and change the value of a specific column (or multiple columns). Command is 'update table_name set column_name = new_value where column_name = old_value'
+ Delete - Delete the record from the table. Command is 'delete from table_name where column_name = value'
+
+--> Relationship in tables : We need to classify the relationship between the tables in a database. 
+        one-one: 
+	- One to One relation is done when the primary key of one table is used as foreign key in another table having only one record. 
+	- Table having the primary key is the master table and the one with the foreign key is the dependent table. 
+	one-many:
+	- One record in a table is related to one or more rows in the foreign table. 
+        many-many
+	- Situation where many records in the master are indirectly referenced to multiple rows in reference table. 
+	- For doing so, we need an intermediate table between the master and reference table. 
+
+--> Fetching data from multiple tables
+         Joins -> 
+	 This operation is done by joining two tables using foreign key constraint. There are mainly three types of joins in SQL:
+	 1. Inner Join - Common records are retrieved from both the table. 
+	 2. Left Join - Retrieves the record from the left table and common records from the right table. 
+	 3. Right Join - Similarly, fetched all the records from the right and common records from the left table. 
+
+	 Union ->
+	 It doesn't actually join the two tables. It just fetches the records from two tables and displays it together. 
+	 Unlike joins, it avoids the duplicate records. 
+	 Used to combine the result set of two select statements.Union ALL fetches the duplicate from more than one table. 
