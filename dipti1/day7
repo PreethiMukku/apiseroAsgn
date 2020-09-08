@@ -1,0 +1,57 @@
+MVN AND GIT CONCEPTS
+-----------------------------------------
+Checkout and Checkin concepts
+
+Dev1 -> Checkout prog.java  -->Permission to modify the code to only dev1
+-->Grant Permission 
+-->Change code
+compile...
+-->CheckIn Code(modified)
+	->build the project  
+	-> commit
+Dev2 -> Checkout prog.java (Deny Permission)
+
+
+Version Control:
+create local copy of any program to change or modify in it.
+Types:
+Local,Centralized,Distributed
+
+Git Operations/commands:
+git init
+create empty git repository
+
+git add .  --> adding current dir in add
+-m added
+commit
+git pull location master(pull into file)
+
+
+git init
+git pull  url master
+git commit -a -m message
+git remote adddir
+ url 
+git push
+get clone -v  url
+
+Repository operations:
+If different developers wants to add some part of code into existing code,but also flow of the program should be maintained then we create different 
+branches for the same.
+after completion of it we can merge different branches or can be specifilly add one of it depending on the requirements.
+
+Maven:
+With the help of mvn we can control the flow of execution of program.
+We can use different goals while running mvn proj and can export as a executable jar file with others for further use.
+Goals:
+clean,clean install package
+package
+compile
+test compile
+test
+compile
+install
+deploy
+
+If jar file has any dependency then it will be found in .m2 folder of users.
+We can download any dependencies from mvn central repository with the help of pom file.
