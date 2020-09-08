@@ -1,0 +1,30 @@
+----------------------------------------------------------------------------VERSION CONTROL SYSTEM----------------------------------------------------------------------------------
+To keep track of the changes in software development projects. Using it, the developers can work together on code and separate their tasks through branches.
+#Localised Version control system : It contains repository on local system that contains all files.
+#Centralised Version control system : It contains one repository and each user can access that repository by commit and update.
+#Distributed Version control systems: It contains multiple repositories and ach user has their own repository . Firstly user have to push code into local repository then push from local to remote repo.
+
+-------------------------------------------------------------------------------GIT HUB---------------------------------------------------------------------------------------------
+-GitHub helps software teams to collaborate and maintain the entire history of code changes.
+-Share code and files
+
+echo "# tmp" >> README.md
+git init
+git add README.md
+git commit -m "first commit"
+git branch -M master
+git remote add origin https://github.com/Manisha204Rani/MR204.git
+git push -u origin master
+
+git clone
+git pull .git(local repo)
+
+---------------------------------------------------------------------------------MAVEN---------------------------------------------------------------------------------------------
+-providing hierarchy
+-dependency management
+-packaging
+-versioning
+-flow of action : clean,compile,install,test,package
+-install->where(?)--- from where(POM), from which server(mvnrepository site)
+
+-POM(Project Object Model):It is an XML file that contains information about the project and configuration details used by Maven to build the project.
