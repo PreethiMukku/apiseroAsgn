@@ -1,1 +1,26 @@
 
+RDBMS
+->An RDBMS is a database management system designed especially for relational databases.An relational database refers to a database that stores data in a structured format using the rows and columns.
+
+MySql
+MySQL is a database management system that allows to manage relational databases.
+
+
+CRUD operations
+C-Create table
+R-Retreiving data from table
+U-Updating the table 
+D-Deleting records from table
+
+
+Relationship in Tables
+->One-to-One-In this relationship one record in a  table is associated with one and only one record in another table.
+->One-to-Many-In this relationship one record in a table can be associated with one or more records in another table.
+->Many-to-Many-In this relationship multiple records in one table can b associated with multiple records in another table.
+
+Join
+->Sql join is used to combine rows from two tables.
+Types of Joins 
+->Inner Join-returns common records from both the tables. 
+->Left(Outer) Join-returns records from left table with common records from right table.
+->Right(Outer) Join-returns records from right table with common records from left table.
