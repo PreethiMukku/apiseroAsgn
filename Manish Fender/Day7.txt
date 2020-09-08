@@ -1,1 +1,50 @@
 
+Version Control :-
+A version control system, or VCS, tracks the history of changes as people and teams collaborate on projects together. 
+As the project evolves, teams can run tests, fix bugs, and contribute new code with the confidence that any version can be recovered at any time
+
+They are types of Version control system:-
+1. local version system:-
+There is common file which everyone is accessing ,modifying and commiting .
+2. Centralized version system :-
+Centralized version control systems contain just one repository and each user gets their own working copy.
+3. Distributed version system :-
+A distributed version control system (DVCS) is a type of version control where the complete codebase — including its full version history — is mirrored on every developer's computer.
+Changes to files are tracked between computers.
+Commands used on git cmd :-
+-> git init 
+-> git pull
+-> git push
+-> git add(-a)
+-> git -m
+-> git commit
+-> git clone
+GitHub :-
+GitHub is a Git repository hosting service, but it adds many of its own features. 
+While Git is a command line tool, GitHub provides a Web-based graphical interface
+
+Maven :-
+Maven is a powerful project management tool that is based on POM (project object model). 
+It is used for projects build, dependency and documentation. It simplifies the build process like ANT.
+But it is too much advanced than ANT.
+In short terms we can tell maven is a tool that can be used for building and managing any Java-based project. 
+maven make the day-to-day work of Java developers easier and generally help with the comprehension of any Java-based project.
+
+Maven does a lot of helpful task like:-
+We can easily build a project using maven. We can add jars and other dependencies of the project easily using the help of maven.Maven provides project information (log document, dependency list, unit test reports etc.) Maven is very helpful for a project while updating central repository of JARs and other dependencies. With the help of Maven we can build any number of projects into output types like the JAR, WAR etc without doing any scripting.Using maven we can easily integrate our project with source control system (such as Subversion or Git).
+Pom.xml :-
+Elements used for Creating pom.xml file
+project- It is the root element of the pom.xml file.
+modelVersion- modelversion means what version of the POM model you are using. Use version 4.0.0 for maven 2 and maven 3.
+groupId- groupId means the id for the project group. 
+It is unique and Most often you will use a group ID which is similar to the root Java package name of the project like we used the groupId com.project.loggerapi.
+artifactId- artifactId used to give name of the project you are building.in our example name of our project is LoggerApi.
+version- version element contains the version number of the project. 
+If your project has been released in different versions then it is useful to give version of your project.
+Other Elements of Pom.xml file
+Dependencies- dependencies element is used to defines a list of dependency of project.
+Dependency- dependency defines a dependency and used inside dependencies tag. Each dependency is described by its groupId, artifactId and version.
+    name- this element is used to give name to our maven project.
+    scope- this element used to define scope for this maven project that can be compile, runtime, test, provided system etc.
+    packaging- packaging element is used to packaging our project to output types like JAR, WAR etc.
+
