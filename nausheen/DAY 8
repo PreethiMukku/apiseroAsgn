@@ -1,0 +1,205 @@
+WSDL: Stands for Web Service Description Language
+
+In SOAP(simple object access protocol), when you use web service and add a web service to your project, your client application(s) doesn't know about web service Functions. Nowadays it's somehow old-fashion and for each kind of different client you have to implement different WSDL files. For example you cannot use same file for .Net and php client. The WSDL file has some descriptions about web service functions. The type of this file is XML. SOAP is an alternative for REST.
+
+REST: Stands for Representational State Transfer
+
+It is another kind of API service, it is really easy to use for clients. They do not need to have special file extension like WSDL files. The CRUD operation can be implemented by different HTTP Verbs(GET for Reading, POST for Creation, PUT or PATCH for Updating and DELETE for Deleting the desired document) , They are based on HTTP protocol and most of times the response is in JSON or XML format. On the other hand the client application have to exactly call the related HTTP Verb via exact parameters names and types. Due to not having special file for definition, like WSDL, it is a manually job using the endpoint. But it is not a big deal because now we have a lot of plugins for different IDEs to generating the client-side implementation.
+
+SOA: Stands for Service Oriented Architecture
+
+Includes all of the programming with web services concepts and architecture. Imagine that you want to implement a large-scale application. One practice can be having some different services, called micro-services and the whole application mechanism would be calling needed web service at the right time. Both REST and SOAP web services are kind of SOA.
+
+JSON: Stands for javascript Object Notation
+
+/////////////////////////////////////////////////////////////////TESTING AND ITS OVERVIEW///////////////////////////////////////////////////////////////////////
+
+Test-Driven Development is a testing methodology or a programming practice implemented from a developer’s perspective.
+-In this technique, a QA engineer starts designing and writing test cases for every small functionality of an application.
+-This technique attempts to answer a simple question – Is the code valid? 
+-The main intention of this technique is to modify or write a fresh code only when the test fails. Hence it results in lesser duplication of test scripts.
+-This technique is largely popular in agile development ecosystems. In a TDD approach, automated test scripts are written before functional pieces of code.
+-The TDD methodology involves the following steps:
+
+Based on the requirements specified in the documents, a developer writes an automated test case
+-These tests are executed, and in some cases, they fail as they are developed before the development of an actual feature
+-The development team then re-factors the code for the test to pass successfully.
+
+----------------------------------------------------------Benefits of Test-Driven Development:-----------------------------------------------------------------
+-Helps reduce the amount of time required for rework
+-Helps explore bugs or errors very quickly
+-Helps get faster feedback
+-Encourages the development of cleaner and better designs
+-Enhances the productivity of the programmer
+-Allows any team member to start working on the code in the absence of a specific team member. This encourages knowledge sharing and collaboration
+-Gives the programmer confidence to change the large architecture of an application easily
+-Results in the creation of extensive code that is flexible and easy to maintain.
+
+*****************************************************************************************************************************************************************
+
+Business-Driven Development (BDD) is a testing approach derived from the Test-Driven Development (TDD) methodology. 
+-In BDD, tests are mainly based on systems behavior. This approach defines various ways to develop a feature based on its behavior. 
+-In most cases, the Given-When-Then approach is used for writing test cases. Let’s take an example for better understanding:
+
+--------Given the user has entered valid login credentials
+--------When a user clicks on the login button
+--------Then display the successful validation message
+
+
+-----------------------------------------------------------Key benefits of Behavioral-Driven Development approach:----------------------------------------------------
+-Helps reach a wider audience by the usage of non-technical language
+-Focuses on how the system should behave from the customer’s and the developer’s perspective
+-BDD Is a cost-effective technique
+-Reduces efforts needed to verify any post-deployment defects.
+
+***********************************************************************************************************************************************************************
+ _______________________________________________________________HTTP STATUS CODES______________________________________________________________________________________
+1xx Informational
+
+100 Continue
+
+101 Switching Protocols
+
+102 Processing (WebDAV)
+
+2xx Success
+
+200 OK
+
+201 Created
+
+202 Accepted
+
+203 Non-Authoritative Information
+
+204 No Content
+
+205 Reset Content
+
+206 Partial Content
+
+207 Multi-Status (WebDAV)
+
+208 Already Reported (WebDAV)
+
+226 IM Used
+
+3xx Redirection
+
+300 Multiple Choices
+
+301 Moved Permanently
+
+302 Found
+
+303 See Other
+
+304 Not Modified
+
+305 Use Proxy
+
+306 (Unused)
+
+307 Temporary Redirect
+
+308 Permanent Redirect (experimental)
+
+4xx Client Error
+
+400 Bad Request
+
+401 Unauthorized
+
+402 Payment Required
+
+403 Forbidden
+
+404 Not Found
+
+405 Method Not Allowed
+
+406 Not Acceptable
+
+407 Proxy Authentication Required
+
+408 Request Timeout
+
+409 Conflict
+
+410 Gone
+
+411 Length Required
+
+412 Precondition Failed
+
+413 Request Entity Too Large
+
+414 Request-URI Too Long
+
+415 Unsupported Media Type
+
+416 Requested Range Not Satisfiable
+
+417 Expectation Failed
+
+418 I'm a teapot (RFC 2324)
+
+420 Enhance Your Calm (Twitter)
+
+422 Unprocessable Entity (WebDAV)
+
+423 Locked (WebDAV)
+
+424 Failed Dependency (WebDAV)
+
+425 Reserved for WebDAV
+
+426 Upgrade Required
+
+428 Precondition Required
+
+429 Too Many Requests
+
+431 Request Header Fields Too Large
+
+444 No Response (Nginx)
+
+449 Retry With (Microsoft)
+
+450 Blocked by Windows Parental Controls (Microsoft)
+
+451 Unavailable For Legal Reasons
+
+499 Client Closed Request (Nginx)
+ 
+5xx Server Error
+
+500 Internal Server Error
+
+501 Not Implemented
+
+502 Bad Gateway
+
+503 Service Unavailable
+
+504 Gateway Timeout
+
+505 HTTP Version Not Supported
+
+506 Variant Also Negotiates (Experimental)
+
+507 Insufficient Storage (WebDAV)
+
+508 Loop Detected (WebDAV)
+
+509 Bandwidth Limit Exceeded (Apache)
+
+510 Not Extended
+
+511 Network Authentication Required
+
+598 Network read timeout error
+
+599 Network connect timeout error
+
+ 
