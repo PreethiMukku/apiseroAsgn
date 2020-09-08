@@ -1,0 +1,29 @@
+Github:
+- Github is a version control tool used for software development and management.
+- There are different version control models:
+1. Local version control model is where we have local repository and all the changes made to the repository are logged into the database for reference.
+2. Centralized version control model, is where we have a central repository and we have working copy for each user and changes are directly reflected in the central repository.
+3. Distributed version control model: We have one central repository and there are distributed repositories given for each user. 
+   So the changes made are first reflected in their own repository, and then finally pushed to the central repository.
+- git init is used to initialize a folder as git repository.
+- git pull is used to pull the repository from github to our local repository.
+- After working in the files locally we use git add command to add the files into the local repository.
+- git commit is used to commit all the changes made locally which is ready to be pushed into the central repository.
+- Finally, git push is used to push the changes in the local repository to the central repository. 
+  We need set the branch while pushing for the first time (git push -u origin master). Here -u is used for setting master branch as upstream. 
+- git clone is used to completely make a copy of the central repo into our local repository.   
+
+Maven: 
+- Maven is used for project management. 
+- It provides complete hierarchy. Complete file structure is provided with in the maven project. 
+- It is used for dependency management and versioning of the project.
+- Within POM.xml(Project Object Model) we define the dependencies required for the project. 
+- We can have flow of actions bundled and executed together, which we define in the goals.
+- Clean is used to erase the files in the target folder.
+- Install command is used to install all the dependencies defined in the POM.xml file. 
+  This dependencies are downloaded and installed from maven central repository. 
+  But for security purposes we may also have our own central repository defined from where the dependencies would be installed. 
+  This files are installed in '.m2' folder inside user folder.
+- We can combine this whole project along with dependencies using 'package' command which helps in creating a jar file. 
+  If the project is having only internal files and internal dependencies we have thin jar, and when also external dependencies are included within we have thick jar file. 
+  This thick jar file can be used directly in another project which has dependency here.
