@@ -1,0 +1,33 @@
+
+Maven 
+-Provides a formal Hierarchy
+-Dependancy Management
+-Pacaging
+-Workflow of Actions
+
+Maven is basically a server whiich helps us in compiling , building  and testing our java projects.
+
+To use Maven , first download it and assign the JDK 1.8.. and build using maven.
+
+Github - Helps in sharing the code and has good version control , also provides a distributed workstation.
+check out - pull
+check in - push
+
+commands used - git init , git pull , git push , git commit.
+
+Then we brushed through Different orientation of programming
+ - Procedure
+ -Object
+ -Component 
+ -Service - Soap Services and Rest Services
+ 
+ SOA , SOAP , REST
+ 
+ Testing
+ -TDD  
+ -BDD
+ We used JUnit to test the getter and setter functions and performed other validations using JUnit.
+ 
+ REST API - Created a new request and performed CRUD Operations , and validated the same using POSTMAN.
+ 
+ 
