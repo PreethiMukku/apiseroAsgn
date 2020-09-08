@@ -1,0 +1,99 @@
+Day 7
+
+Version Control System:
+- Calc.java -> Can be changed
+- LOgic: If it is business logic, it does not effect
+- When you change the method signature, then it effects and other persons should know
+- Breaking chain: Changing my project build by someone and cannot change anything on your own
+
+- When checkout the code, nobody can change the code parallely. Once check out in done, the code can be changed.
+- Latest version is stored in some specific location
+- Now another person can check in the stored code and modify it and build the project
+	- If build fails, then remodify the code
+	- If success, then no need to modify it
+	
+Developer-1:
+- Check out the Calc.java
+- Permission to modify that code -> Grant the permission/change code/compile
+- Check in code (submit Calc.java (modified version))
+	- build the project -> commit
+	
+Developer-2: 
+- Check out Calc.java (Deny the permission of Develooper-2)
+- At a time only one person can modifythe code
+- Any changes done by any developer, it should be saved
+
+Code snippet:
+- Complete Version Control
+	- Local
+	- Central
+	- Distributed
+
+Java:
+- Thread method
+	- stop() - Cannot stop at that time
+	
+init: 
+- Creates empty git repository
+git add . - Putting current directory in add
+
+Commands for repository on github and for cloning:
+Create a repo on github (tmpdemo)
+	
+	Create a folder on your system (anyname -> tmp11)
+	
+		git init
+		git pull https://github.com/sushmakamuni/tmpdemo master
+			-> see readme.md in current directory
+	           modify readme.md 
+		git commit -a -m message
+		git remote add mynm https://github.com/sushmakamuni/tmpdemo
+		git push --set-upstream mynm master
+		
+		
+		
+	For clone
+		just create a tmp directory 
+		in >git clone https://github.com/sushmakamuni/tmpdemo                                                  
+		change files
+		>git commit	
+
+Maven: 
+- Flow of action (compile, build...)
+- Dependency management
+
+POM.XML => Project Object Model
+- What code to be created or compiled
+- Effective POM => pre-defined tags
+
+
+Maven :
+- Clean
+- Compile
+- Test Compile
+- Test
+- Install
+- Deploy
+- Site
+
+- Can send multiple commands in goals
+	- clean compile package
+	Developer-1: jar onto Github
+		Commit, push
+	Others: pull
+	
+Developer-1: 
+- write code 
+	- Dependency -> Day1.demo1-0.0.4-SNAPSHOT.jar
+	---> Target folder ---> Classes ---> .classfile (Shared by Developer-1)
+	
+- jar file:
+	---> External jar file will not be part of thin file ---> in .m2 folder for that user
+-By default 'package' converts everything into jar files 
+
+Thin jar (4KB):
+- Directory check to dependency is POM file
+- POM -> search for jar files
+
+Thick or Fat jar:
+-  contains all the compiled Java classes from your project, and all compiled Java classes from all JAR files your project depends on
