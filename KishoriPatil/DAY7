@@ -1,0 +1,139 @@
+Day 7 – ADE Eclipse, Github, Maven
+	
+Version Control :
+	-keep track of your code.
+	-Central :- one central repository and users CAN update and commit using this repo. 
+	-Local :- on your system
+	-Distributed :- explained below.
+
+Git(free and open source distributed version control system)
+
+    Version Control Overview
+
+Distributed Version Control model(DVC):
+	-one central repository.
+	-local repository created at clients computer.
+	-client needs to pull and push to and from cental repo.
+	-update and commit to its local copy/dir.
+
+DVC advantages
+	-maintain multiple versions of code.
+	-developers can work in parallel.
+	-audit tracebility on whome,what,why,when ,which changes made.
+	-copy,merge and undo changes
+	-revert the changes.
+	-provide full backup without occupying much space.
+	-ability to share and work on code across the globe.
+
+Git :- Creating a local/remote repository, adding files, deleting files and committing changes:
+
+   -check in username and password
+	    Create a repo on github 
+	
+   -Create a folder in computer
+	>git init  //create empty git repo
+
+	>git add .  --> Putting current dir in add
+
+	>git pull <URL OF YOUR REPO> master 
+		//pull repo to your computer (see files and folders in current directory of comp)
+	then modify any file 
+
+	>git commit -a -m "message for changes made"   
+		//commit changes on local repo/dir with message
+
+	>git remote add mynm(MAPPING NAME ALIAS ANY Name) <url of your repo on git> 
+		//add remote to mynm
+
+	>git push --set-upstream <mynm> master 
+		//push changes to master branch of git central repo (remote url and master is given)
+
+Clone: no need of git init
+	
+	> git clone <ur repo url> 
+		// make a copy of central repo to ur computer.
+	
+	change files from ur local repo which is cloned.
+	go to that ccopied folder in cmd
+
+	>git commit -a -m "message"
+
+	>git push
+		//see changes on git central repo(no need to write set upstream	as we r working on tjhis cloned repo only)
+
+
+add to branch:
+	-echo "# tmp" >> README.md
+	git init
+	git add README.md
+	git commit -m "first commit"
+	
+	>git branch -M master   //to access branch(if not there create )
+
+	git remote add origin https://github.com/Vaishali-Tapaswi/tmp.git
+	git push -u origin master : from current original directory to master(-u is shortcut for set uptream) 
+
+checking out:
+	-asking permission to access and modify the code.
+	-permission is grant then modify ,compile and commit.
+
+check in:
+-no one can take that perticular file for modification if someone is checking in it.
+-check in then compile/build the project.
+-and commit changes to repo.
+	
+
+
+
+
+      MAVEN :
+      
+	-popularly known for
+		-flow of actions: like clean compile n install
+		-lots of things for dependency management.
+	-versioning. 
+	-packaging.
+	-provide hierarchy : src- java,resource,test files
+	-need JDK.
+
+create maven project: - new>maven project>simple project
+
+project object model(POM):
+	-all dependancies of project are mentioned here.
+
+-have 2 things sourcecode and generated artifacts (share only generated artifact).
+
+	
+	predefine goals
+clean : 
+	-everytime create new hierarchy.
+	-clean the created target file.
+	-as within target all files are generated.
+
+package:
+	-create package that is thin and fat jar files.
+	-thin jar :
+		-External Dependancies not included.
+		-user can download it from looking in POM file.
+	-fat jar: code with external dependancy
+
+
+compile:
+	-compile the project.
+	-change jre to jdk
+
+test compile
+test
+
+install
+	-download dependancies (search in pom)
+	-download from maven /central repo OR for security purpose from server mentioned in POM file.
+	-These dependencies are downloaded and installed from maven central repository. 
+	-These files are installed in '.m2' folder inside user folder.
+
+deploy
+
+combination of actiones also allowed:
+-EX:
+-clean compile 
+-clean install package
