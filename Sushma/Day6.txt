@@ -1,0 +1,69 @@
+Day 6
+
+Database:
+-> Db Server
+	-> Start the server
+	-> as a service
+		-> Windows OS start
+-> Db Client
+
+Database Server:
+-> On the same system/laptop
+-> One installation
+	- AWS installation (Server)
+	- Chrome (MySQL plugin) -> AWS SQL Server
+
+Data:
+- Storing in file system/laptop	
+	-> Flat file
+
+Relational DataBase Management System (RDBMS):
+- Structured query language
+- Multiple rows related to each other
+- Multiple tree structure
+	- one - one relationship
+	- one - many relationship
+	- many - many relationship
+	
+No SQL:
+- Each document can be different
+- Popular now
+- MongoDB
+
+Polygot Persistence:
+
+Deptno   dname    loc
+----------------------
+10	      HR	  Pune
+20	      IT	  Hyd
+30	      Fin	  Hyd
+
+- Defines the structure 
+- Table name (Columns stored in the table)
+
+DML - Data Manipulation Language (Insert, Update, Delete)
+DDL - Data Definition Language (Create, alter, drop)
+
+SQL Constraints:
+Specifies rules for the data in the table.
+- Unique Key 
+- Primary Key
+- Foreign Key
+
+Joins:
+- used to combine rows from two or more tables, based on a related column between them
+- Inner Join: Selects records that have matching values in both tables
+Ex: select d.deptno from dept d INNER JOIN emp e ON e.deptno = d.deptno;
+
+- Outer Join:
+	- Left Join: returns all records from the left table and the matched records from the right table 
+	Ex: SELECT d.deptno, count(e.ename) from dept d LEFT JOIN emp e ON e.deptno = d.deptno GROUP BY e.deptno;
+	
+	- Right Join: returns all records from the right table and the matched records from the left table
+	Ex: SELECT e.ename from emp RIGHT JOIN dept d ON e.deptno = d.deptno ORDER BY d.deptno;
+	
+Union:
+- Used to combine the result set of two or more 'Select' statements
+Ex: SELECT * from Emp1 UNION SELECT empno, ename from Emp2;
+
+
