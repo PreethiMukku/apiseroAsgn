@@ -1,0 +1,58 @@
+Day 6 
+
+RDBMS is Relational Database Management system . It is tabular or structure form of data storage where data is stored in form
+of rows and columns . 
+Eah row depicts a tuple or a record and each column means attributes of the data 
+
+To distinguish the records from each other use a Unique Key called as Primary key and it cann't be null . 
+
+To manipuate or play with databases we use SQL ( Structuref Query Language ) 
+
+in SQL we have Two Main Language 
+
+1. DDL i.e Data Definition Language
+2. DML i.e Data Manipulation Language
+
+In DDL we have Commands like 
+
+CREATE – Create an object 
+DROP – This SQL DDL command helps to delete objects. ...
+ALTER – Used to alter the existing database or its object structures.
+TRUNCATE – This SQL DDL command removes records from tables.
+RENAME – Renaming the database objects.
+
+In DML we have 
+SELECT – retrieve data from the a database.
+INSERT – insert data into a table.
+UPDATE – updates existing data within a table.
+DELETE – deletes all records from a table, the space for the records remain.
+MERGE – UPSERT operation (insert or update)
+
+We have Learn all the commands and have executed them on Dumy Data Base 
+
+There are 3 types of Relation that we can maintain Between Two Tables 
+
+1. One - One  : Example Like One Identify card is associated with a specific individual 
+2. One - Many : Example like One Manager manages more than one department in the organization 
+3.Many - Many : Example like Students can enroll in multiple courses and each course have many enrollment . 
+
+We also Discusssed How To Join Two Tables 
+
+Various Join Are 
+
+1. Inner Join 
+2. Left Outer Join 
+3. Right Outer Join 
+4. Full Outer Join 
+
+We have also performed various set Operations the database relations 
+
+1. Union 
+2. Union All 
+3. Intersection 
+4. Set Difference 
+
+Now we can also Group the date using Group By Clause and Also Arrange them in certain order by using Order By clause . 
+
+There are Some NoSQL Data bases Such as JSON or MongoDB  
+

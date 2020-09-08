@@ -1,0 +1,59 @@
+Day 7 
+
+We learnt Git and Maven 
+
+Git is open source Platform  and it is a distributed version-control system for tracking changes in source code during software development. 
+It is designed for coordinating work among programmers, but it can be used to track changes in any set of files.
+
+Commands used with Github :-
+- git init 
+- git pull
+- git push
+- git add(-a)
+- git -m
+- git commit
+- git clone
+
+We have to follow Certain steps to Work in Github 
+
+Create a repo on github 
+	
+	Create a folder on your system 
+		git init
+		git pull the link of the repository from github 
+			-> see readme.md in current directory
+	modify readme.md 
+		git commit -a -m message
+		git remote add demo the link of the repository from github 
+		git push --set-upstream demo master
+		
+Using Remote add we are linking local repository to the remote repository. And When we make any changes in Local Reposioty 
+then we commit it and Push it on to the remote repository.
+
+Maven 
+
+Maven is an automation and management tool. It is written in Java Language and used to build and manage projects .
+To configure the Maven, you need to use Project Object Model, which is stored in a pom
+
+Maven is used to 
+
+1. Provide Hierarchy : i.e src ---> java , resources , test files 
+2.Dependency Management
+3.Versoning and Config Management
+4.It maintain Flow of Actions 
+
+Their are different goals while running mvn proj and can export as a executable jar file with others for further use.
+Goals:
+clean
+package
+compile
+test compile
+test
+compile
+install
+deploy
+
+All dependency are stored in jar File and it will be found in .m2 folder of users.
+We can download any dependencies from mvn central repository with the help of pom file.
+
+
