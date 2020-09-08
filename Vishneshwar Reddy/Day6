@@ -1,0 +1,78 @@
+RDMS: Relational Database Management System
+	- A relational database refers to a database that stores data in a structured format, using rows and columns.
+	- This makes it easy to locate and access specific values within the database.
+	- It is relational because the values within each table are related to each other.
+	- Tables may also be related to other tables.
+	- The relational structure makes it possible to run queries across multiple tables at once.
+		Ex:- Oracle Database, MySQL, Microsoft SQL Server, etc.
+
+Database Server:
+	- A database server is a server which uses a database application that provides database services to other computer programs or to computers.
+	- Database management systems (DBMSs) frequently provide database-server functionality.
+	- Some database management systems (such as MySQL) rely exclusively on the client–server model for database access.
+	
+CRUD Operations in Database:
+	Create - Used to insert row to table
+	Read - Used to retrieve data from table
+	Update - Used to edit rows in a table.
+	Delete - Used to delete rows in a table.
+	
+Table Relations:
+	- One to One Relation
+		This relationship occur when there is exactly one record in the first table that corresponds to exactly one record in the related table.
+		For example, each student can have only one address.
+	
+	- One to Many Relation
+		In this relationship one record in a table can be associated with one or more records in another table.
+		For example, each customer can have many sales orders.
+		
+	Note: We can handle one-one and one-many relationship using foreign key as a common field between the two tables to relate.
+		
+	- Many to Many Relation
+		Multiple records in one table are related to multiple records in another table.
+		For example, one candidate can participate in many events and for one event many candidates can participate.
+		
+	Note: So in this case we can't use a foreign key for making relation. Hence we create a new table using the Join function
+	
+		- Inner Join
+			Selects records that have mathcing values in both tables.
+			
+		- Left Join
+			Returns all records from the left table, and the matched records from the right table.
+			The result is NULL from the right side, if there is no match.
+		
+		- Right Join
+			Returns all records from the right table, and the matched records from the left table.
+			The result is NULL from the left side, when there is no match.
+			
+		- Full Join
+			Returns all records when there is a match in left or right table records.
+			
+Some examples of SQL query statements:
+
+	CREATE DATABASE databaseName;
+		This Query is used to create the database with the given name.
+	
+	CREATE TABLE tableName (column1 datatype, column2 datatype,...);
+		This Query is used to create the table in database with the prescribed columns.
+	
+	SELECT * FROM tableName;
+		This Query is used to fetch all the records from the table.
+	
+	SELECT column1, column2,... FROM tableName;
+		This Query is used to fetch records with column1 and column2 values from the table.
+		
+	SELECT DISTINCT column1, column2,... FROM tableName;
+		This Query is used to fetch distinct records from column1 and column2 of the table.
+		
+	SELECT * FROM tableName WHERE condition;
+		This Query is used to fetch all the records from the table based on the condition.
+		
+	INSERT INTO tableName (column1, column2,...) VALUES (value1, value2,...);
+		This Query is used to insert data into the table with the given values for the respective columns.
+	
+	UPDATE tableName SET column1 = value1, column2 = value2,... WHERE condition;
+		This Query is used to update the records with the given values w.r.t the columns based on the condition.
+	
+	DELETE FROM tableName WHERE condition;
+		This Query is used to delete the records in a atable based on condition.
