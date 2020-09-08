@@ -1,0 +1,92 @@
+Day 5
+
+
+
+Web Programming:
+
+Rich client: 
+- Java-> main()
+- Class --> java Lab1
+- Lab1.class
+- JRE Installed
+- Processing (CPU/Storage/RAM)
+
+Mixed mode in command prompt: 
+- Compiled and Interpreted, where the code changed to native.
+
+Thin Client (Web Applications):
+Client   -----------------> Server(Web Server)
+(Browser)		             t1.html(Servlet/JSP)
+
+cmd> ping abc.com
+- tells the IP address
+- DNS service is running which can map to host IP address
+- Default port is 8080 (in Java)
+- DNS service (Host -> IP Address)
+
+
+               html
+Browser <------------------  Server 
+							t1.html (Consider this as static content - alomost like news paper site)
+
+HTTP - Hyper Text Transfer Protocol
+HTML - Hyper Text Markup Language (Most commonly used to rendered the data)
+
+Three types of languages:
+- Compile Language
+- Interpreted Language
+- Markup Language
+
+Microsoft's most popular server is IIS
+
+Java 
+- Tomcat (Webserver + Java code on server side)
+- JBOSS
+- WebLogic
+
+- We have to write the code in Java, gets extra libraries fom servlet/JSP
+- Code written on Eclipse and deployed on Tomcat
+
+Javascript: 
+- It is executed on the browser
+- Simple validation
+- String, minlength
+- Not null 
+- All these are executed on the browser side
+
+Rich Internet Application:
+- Main business logic is on server side
+- HTML + Javascript + CSS
+- Calling externally should have unique IP address
+
+HTML has 2 things 
+- <Head> and 
+- <Body>
+
+Cascading Style Sheets (CSS):
+- It is a simple mechanism for adding style (fonts, colors, spacing) to Web documents
+- Real sites usees common bunch of CSS
+
+Externalization:
+- stands for writing complete script, we will split in another file to write Javascript
+
+Format of data:
+Client  <--------------  Server
+		  HTML+Js+CSS
+		  
+Popular formats: 
+- XML (Extensible markup language) - used for Business to Business purpose
+- Has (n+1) problem - Too much of data to exchange is bothering
+- Takes more storage
+- Time consumption
+
+After XML, Json format came into existence
+- Json doesnt required to write even a single piece of code
+- Java Script Object Notation
+
+Client Side:
+- Work with HTML, Javascript, XML/Json, CSS
+
+
+
+
