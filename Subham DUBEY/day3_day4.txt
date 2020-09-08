@@ -1,42 +1,57 @@
-Features of Java
+-> Java is a high level, robust, object-oriented and a secure and stable programming language but it is not a pure object-oriented language because it supports primitive data types like int, char etc.Java is a platform-independent language because it has runtime environment i.e JRE and API. Here platform means a hardware or software environment in which anapplication runs. Java codes are compiled into byte code or machine-independent code. This byte code is run on JVM (Java Virtual Machine).
+
+-Features of Java
 -> Simple - Syntax is quite simple, easy and clean to understand.
 -> Object Oriented - It follows a structural form giving more emphasis on data.
 -> Robust - It tries to eliminate error prone codes by emphasizing compile time error checking and runtime checking.
 -> Platform Independent - It is compiled to byte code which is converted to machine code according to the platform it is oprating on.
 -> High Performance - It is an interpreted language. It enables high performance using just in time compiler.
 
-Varaibles in Java
+-Varaibles in Java
 -> It is a name used to store a value of any type during data execution.
-Types of Variables 
+
+-Types of Variables 
 -> Instance Variables - It can be declared inside a class but outsode any method, constructor or block. Thw scope depends on the access modifiers (public, private, default).
 -> Static Variables - These are also called as class variables. These are initialized only once.
 -> Local Variables - These are declared in method, constructor or block. The scope is limited to the block in which it is declared.
 
-Data Types in Java
+-Data Types in Java
 -> Primitive Data type - Once it is declared its type cannot be changed. There are 8 primitive data types. They are: char, boolean, byte, short, int, long, float, double.
 -> Non-Primitive Data type - A reference variable is declared to be specific and that type can never be changed. Ex: String.
 
-OOPS Concepts
+-OOPS Concepts: Object Oriented Programming Systems.
+
 -> Class
 - It is a set of varables and methods. 
 - It is basically a blueprint that the object follows.
 - The data can't be accessible to everyone. One who has the access to the methods will have the permission to work and modify the data. Thus, there cannot be modifications of the data from outside.
+
 -> Object
 - Object is nothing but the instance of the class.
 - It is the object which acts as the medium of communication between two classes.
+
 -> Encapsulation
 - It binds one or more instances into one entity.
+
 -> Abstraction
 - This helps in hiding the important instance like the business logic from the public. It only displays limited information to its viewers.
+
 -> Inheritance
 - Here the information of the instances are stored as separate instances. The common data is stored as the main primary instance which the remaining subset as stored as the extension of the primary instance. One of the problem is that the sub instance is tightly coupled with the primary instance.
+
 -> Polymorphism
 - As the name suggests the data can be morphed or represented in many multiple forms.
 
-Array
-Abstract Class
-Final Class
-Interface
-Exception Handling
-Collection Framework
-Multithreaded process
+-Array -> An array is a group of similar type of variables which is referred by a common name. The variables are arranged in an ordered manner with an indexing from 0.
+
+-Abstract Class -> An abstract class is declared by an abstract keyword. It is used for abstraction. They are not interfaces and can have constructors. Constructors are special methods to initialise an object.
+
+-Final Modifier -> It is used to declare a field as final. It can be used as an method, class or variable. It cannot be overridden when used as an method. If we declare a variable as final, no more changes can be committed. If we declare it as a class, it prevents from being inherited.
+
+-Interface -> It is basically a way to achieve full abstraction. They are syntatically similar to classes but their methods can be declared without any body. One cannot also create instance of an interference. It supports multiple inheritance and can be used to achieve loose coupling.
+
+-Exception Handling -> It is a mechanism to handle runtime exceptions.  Exception is a condition that occurs during program execution and lead to program termination abnormally. It uses try catch block for this process. Try block is used to enclose the suspected code whereas the catch block helps in handling the exception.
+
+-Collection Framework -> Collection in java refers to an object which collects varies elements into single entity. This is done using various classes and interfaces linke array list class, linked list class, map interface, tree set class etc.
+
+-Multithreaded process -> Threads are the ligt weight unit of a process. A program is divided into various smaller processes. These processes are referred to as threads. Multithreading is the process of running these multiple threads simultaneously.
