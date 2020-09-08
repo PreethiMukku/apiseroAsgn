@@ -1,10 +1,144 @@
 Day 6 - RDBMS/SQL	
     What is RDBMS
-    Database Server/Client
+-Relational Database Management System
+-tabular form data
+-eg- sql,oracle
+
+NoSQL- each document can be different. 
+     - eg- MongoDB, 
+
+
+SQL{Structured query lang}
+ - SQL commands are divided as follow:
+	-DQL,DDL,DML,DCL.
+
+-Data Query Language(DQL)
+    -SELECT
+    -EX: select * from EMP;
+
+-Data Definition Language(DDL)
+    - CREATE ,ALTER,DROP,
+    - EX:
+	-create table EMP(Eno int,Ename varchar(20),primary key (deptno));
+	-drop table EMP;
+	-alter table EMP(Eno int,Ename varchar(20),constraint pk_dept primary key (deptno));
+
+-Data Manipulation Language(DML)
+    -INSERT,UPDATE,DELETE
+   	-INSERTinto EMP values (1, 'KISHORI');
+	-UPDATE EMP SET Ename = "AAA" WHERE Eno=1;
+	-delete from EMP where Eno=1;
+-Data Control Language(DCL)
+	-GRANT-gives user’s access privileges to db.
+	-REVOKE-take back user’s access privileges given by using the GRANT command.
+
+
+Database Server:- MYSQLD
+Client:- MYSQL
+
     CRUD of single table
+Create: 
+-EX: create table emp(ename char(20),eno tiny int);
+
+Select:
+-EX:  SELECT * FROM table_name;
+
+Insert:
+-EX: insert into table emp values('kishori',1);
+
+
+Update: 
+-EX: UPDATE emp
+	SET ename = 'shaurya'
+	WHERE eno = 1;
+
+Delete:
+-EX: DELETE FROM EMP WHERE ename='kishori';
+
+PRIMARY KEY:
+-unique.
+-no duplicates allowed.
+Ex:
+	create table Emp(empno tinyint , 
+                 Ename char(20), 
+                 CONSTRAINT epk primary key (empno) 
+                 );
+
+FOREIN KEY:
+-referencial integrity.
+-duplicates allowed.
+-refers to primary key of other table.
+-EX:
+	create table Address(empno tinyint , 
+                 city char(20), 
+                 CONSTRAINT fk foreign key (empno) references Emp(empno));
+
+PRIMARY KEY and FOREIN KEY constraints:
+-if applied then you can't enter unvalid data into foreinkey column.
+
+
+LIKE OPERATOR:
+select * from Emp where Ename like 'r%'; //return NAME starting with r
+ select * from Emp where Ename like '%li'; //return NAME ending with li
+ select * from Emp where Ename like '%sh%'; //return NAME having sh
+ select * from Emp where sal<50; 
+ select * from Emp where sal between 50 and 60;
+ select * from Emp where sal<=60;
+ select * from Emp where sal!=45;
+
+
     Relationship in tables
+
         one-one
+-add forein key with unique constraint.
+
         one-many
+-add forein key.
+
         many-many
-    Fetching data from multiple tables
-        Joins / Unions 
+-use extra table as intermidiate table to create the relationship.
+-composite key: combine primary key for intermediate table
+ 
+
+   Fetching data from multiple tables
+JOINS:
+-Inner join:
+	-return the matching rows from both tables.
+	-EX: select * from emp1
+		JOIN
+	select * from emp2 on emp1.eno=emp2.eno;
+
+-Full outer join:
+	-return all the rows from both tables.
+	-EX: Select * from emp1
+		FULL OUTER JOIN
+	select * from emp2 on emp1.eno=emp2.eno;
+-left outer join:
+	-return all the rows of left table and matching rows from right table.
+	-if no rows in right table then return only left table rows.
+	-EX: Select * from emp1
+		LEFT JOIN
+	select * from emp2 on emp1.eno=emp2.eno;
+
+-right outer join:
+	-return all the rows of right table and matching rows from left table.
+	-if no rows in left table then return only left table rows.
+	-EX: Select * from emp1
+		RIGHT JOIN
+	select * from emp2 on emp1.eno=emp2.eno;
+
+-Self JOIN
+	-table is joined with itself and return values as normal join.
+
+Unions:can be used when no relation bet 2 tables and want to combine.
+-union
+	-return union of two table data eliminating duplicates.
+	-select * from emp1
+		union 
+	select * from emp2
+
+-union all
+	-return union of two table data with duplicates.
+	-EX: select * from emp1
+		union all
+		select * from emp2
