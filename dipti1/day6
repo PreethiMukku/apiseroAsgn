@@ -1,0 +1,60 @@
+DATABASE
+----------------------
+Database: online db-db-fiddle
+ 
+RDBMS(SQL)- database in a tabular format. (all entries have same formats/attributes) eg mysql
+
+NoSQL- each document can be different. eg- MongoDB
+
+RDBMS works with CRUD operations.
+create,update,delete and retrieve.
+
+steps:
+1.creating database:
+CREATE DATABASE databasename;
+
+2.retroving db details:
+SELECT * FROM table_name;
+
+3.updating records/particular record :
+UPDATE Customers
+	SET ContactName = 'xyz', City= 'pune'
+	WHERE CustomerID = 3;
+  
+4.deleting records:
+delete from Customers where CustomerName='abc';
+
+Association:
+SQL constraints are used to specify rules for the data in a table.
+Each record should be unique.
+Duplicate entries are not allowed in database. 
+PRIMARY KEY is associated with the main table and FOREIGN KEY helps to link that table to another.
+
+we can create our own constraint for easy use.
+
+Different types of  Relationship associated with tables,
+are: one-one,one-many,many-many
+        
+Clause:Where, group by etc
+eg: group by:
+select count(*) from emp;
+select job, max(sal) from emp
+group by job
+having job='MANAGER'
+
+SQL JOINS
+A JOIN clause is used to combine two tables based on its column.
+Different Types of SQL JOINs:
+Inner join:
+SELECT d.deptno
+FROM dept d
+INNER JOIN emp e ON e.deptno = d.deptno
+
+Outer Join:
+Left outer join 
+Full outer join
+
+Union:Used to combine two tables.
+eg: SELECT column_name(s) FROM table1
+		UNION ALL
+		SELECT column_name(s) FROM table2;
