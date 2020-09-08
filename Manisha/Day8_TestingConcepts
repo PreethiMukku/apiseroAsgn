@@ -1,0 +1,43 @@
+-client(java)---------t3----------------EJB component
+tighly coupled with component
+
+--------------------------------------------------------------------------------SOA------------------------------------------------------------------------------------------------
+-Service oriented architecture
+-App makes use of services avaliable over the network.
+-MAKEMYTRIP,AMAZON
+-SOAP and REST
+
+--------------------------------------------------------------------------------SOAP-----------------------------------------------------------------------------------------------
+-Simple Object Access Protocol
+-Any protocol
+-Have XML data format
+-Different operations
+
+---------------------------------------------------------------------------------REST----------------------------------------------------------------------------------------------
+-Representational state transfer.
+-CREATE: http->post->http://host:port/emp
+  GET: http://host:port/emp ->retrieve
+  DELETE -> delete
+  PUT->update
+-HTTP headers: get->retrival
+               post->create
+               put->update
+               delete->remove
+
+-Rich client: junit
+-Thin client: UI testing, user interaction
+-REST API: postman
+
+-Emp, EmpManager(CRUD), UI Code -> accept emp
+call add of empmanager()
+  C: length of data added to list
+  R: check inserted data
+  U: check for modification
+  D: remove code
+  
+ ---------------------------------------------------------------------------------JUNIT-----------------------------------------------------------------------------------------
+ -unit testing framework for Java.
+ -first testing then coding
+ -have different annotations : @beforetest, @aftertest,@test
+ -TDD: test driven development for unit testing and integration testing
+ -BDD: behaviour dirven development follows scripts in plian text.
