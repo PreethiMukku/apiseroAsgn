@@ -1,0 +1,91 @@
+
+    1)name starts with "R"
+			SELECT CustomerName FROM Customers
+			WHERE CustomerName LIKE 'A%';
+
+	2)name ends with "li"
+			SELECT CustomerName FROM Customers
+			WHERE CustomerName LIKE '%li';
+
+	3)name has "sh" 
+			SELECT CustomerName FROM Customers
+			WHERE CustomerName LIKE '%li';
+
+
+	3)salary - <,>,<=,>=, !=, between
+			SELECT Empname FROM Employeees
+			WHERE salary BETWEEN 10 AND 20;	
+
+			SELECT Empname FROM Employeees
+			WHERE salary >=30000;	
+
+			SELECT Empname FROM Employeees
+			WHERE salary != 4000;	
+
+	4)deptno is IT
+			SELECT Empname FROM Employeees
+			WHERE deptno = IT;
+
+	deptno is IT or FN (IN)
+
+
+-- JOINS-------------------
+SELECT d.deptno
+FROM dept d 
+INNER JOIN emp e ON e.deptno = d.deptno
+	10,20,30 -> were present in both the tables
+	
+=========================================
+
+SELECT d.deptno
+FROM dept d ;
+
+SELECT d.deptno, count(e.empno)
+FROM dept d 
+LEFT JOIN emp e ON e.deptno = d.deptno
+GROUP BY d.deptno
+
+
+===================================
+create table emp1
+(empno tinyint , 
+ ename char(20), 
+ salary int, 
+ CONSTRAINT pkEmp primary key (empno)
+);
+
+create table emp2
+(empno tinyint , 
+ ename char(20), 
+ comm int, 
+ CONSTRAINT pkEmp primary key (empno)
+);
+
+insert into emp1 values(1,'First',111);
+insert into emp1 values(2,'Second',222);
+insert into emp1 values(3,'Third',333);
+insert into emp2 values(3,'Third',333);
+insert into emp2 values(4,'Four',1);
+insert into emp2 values(5,'Five',2);
+insert into emp2 values(6,'Six',3);
+
+select * from emp1
+union 
+select * from emp2
+
+select * from emp1
+union all
+select * from emp2
+
+
+
+select empno, ename,salary, 0 as comm from emp1
+union
+select empno, ename, 0 as salary,  comm from emp2
+
+mydb.cyhhds8qhsga.us-east-1.rds.amazonaws.com
+
+-------------admin
+-----------MyPassword
+
+https://forms.gle/yHXKB2r1bn24pgkr7
