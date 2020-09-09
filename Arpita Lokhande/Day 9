@@ -1,1 +1,134 @@
+-Web sites are designed on Architectures.
+-Three tier or N tier.
+-N Tier depends on complexity of your code size and we can break it in N multiple tiers.
+
+- Normally it is divided as follows->
+
+Presentation Logic------>Business Logic----->Persistent logic---> Data
+
+Example-> Swiggy Application
+1. Presentation Logic->
+ -It is basically UI side logic
+ -for swiggy, it should show various dishes and restaurants available for delivery.
+ -login the user, check validations on UI.
+
+2. Business Logic->
+  -here actual business logic is implemented
+  -add dishes to cart, calculate price.
+
+3. Persistent Logic->
+  -this is some logic which tries to store your data.
+  -database communication through persistent logic
+  -after we order, our order details are stored to database.
+
+-Other examples such as MakeMytrip.com 
+
+-Hosting of website can be done on single server as well as distributed environment.
+
+For single server->
+it is used if->
+-Less Network calls to site
+-Code size of site is small(small business logic)
+-there are no third party dependencies involved.
+-concurrency is less.
+
+For distribute environment->
+it is used if->
+-There are lots of network calls needed for site
+-Huge code base is there.
+-There are third party dependencies(payment gateways)
+-concurrency/load is high.
+
+***********************************
+Failover->
+
+-When a server crashes and we realise the server is crashed ,time in between called as Down time.
+-Instead of using single server, use two servers.
+-When server 1 crashes or is unavailable then we can use server 2.
+-In this server 2 stays idle otherwise, then it is kind of failover as resources are wasted.
+
+Single Point of Failure(SPOF)->
+-If this part of code or system fails, it will crash whole system.
+
+LoadBalanacer->
+-load balancer balances the load coming to site, it divides the requests and sets equal loads to both server.
+-if server 1 crashes, load balancer expects response from it, and then it redirects the request to Server 2.
+-Both servers share the load.
+-RoundRobin algorithm is used.
+
+Cluster->
+-It is a collection of all servers working as one unit.
+-suppose a file index.html is modified then it will refelect simultaneously in all the servers within that cluster.
+-Load balancer is required for clusters to invoke.
+
+**************************************
+Monolith vs MicroServices
+
+Monolith->
+-It uses 1-tier architecture as all the services and functionalities of code are not distribute and are one single unit.
+-posibility of single point failure.Single error can stop monolith
+-small scale business logics can adopt this.
+
+Microservice->.
+-It is basically breaking of huge application-> 
+						to smaller applications-> 
+									connecting each small application as-> 
+														independent Service.
+-Microservices have common interface but each microservice is different.
+-Microservice increases productivity for complex structure.
+-Distribution of work is done, hence processes execute parallely.
+-there's no single point failure.
+-we can break down work into different components.
+-like unit test, testing can be done.
+
+Scaling Services->
+-Without making any change in performance of application, increase availability of services.
+-Whatsapp had fascility to add 56 members to group->
+-later they changed this upto 256 members per group->
+-without affecting functionality of application,the scaling is done.
+
+*******************************************************
+UBER Microservice application case study->
+
+Uber Application
+
+1. Search -> from.. to.. 
+2. Getting ride-> contact near by drivers -> any one pick the request
+3. Payment processing
+1. Single Application
+   1 server
+2. Micro Services (3)
+   3 server
+
+Uber uses microservice artitecture they usually refer it as ->
+-Domain-Oriented Microservice Architecture.
+-oriented around collections of related microservices. Called as Domain.
+-map search services constitute a domain,
+ fare services are a domain,
+ matching platform (matching riders and drivers) are a domain.
+
+-structured set of flexible, reusable, and layered components.
+-the layer that the domain belongs to establishes what dependencies the microservices within that domain are allowed to take on.(Layer Design)
+
+Layers-->>>
+Infrastructure layer.
+business
+product
+presentation
+
+
+-Each service agnostic to other service. one service need not to know logic for other.
+-SEARCH 
+-considered as domain
+-in macroservice there are Availability Risks. A single regression within a single code base can bring the whole system (in this case, all of Uber) down.
+
+Getting ride-> contact near by drivers -> any one pick the request
+-Can be considered as another domain
+
+advantages
+System reliability-service ca go down and roll back without affecting other
+Separation of concerns
+Clear Ownership - which code is own by which domain is known.
+Developer Velocity. -teams deploy codes independently.
+
 
