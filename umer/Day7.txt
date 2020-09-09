@@ -13,7 +13,7 @@
   - Centralized version control system (CVCS) uses a central server to store all files and enables team collaboration. 
   - It works on a single repository to which users can directly access a central server.
   - Every programmer can extract or "update" their workstations with the data present in the repository or can make changes to the data or "commit" in the repository. 
- ->
+ -> Distributed version control system 
   - These systems do not necessarily rely on a central server to store all the versions of a project file.
 
   - In Distributed VCS, every contributor has a local copy or “clone” of the main repository 
