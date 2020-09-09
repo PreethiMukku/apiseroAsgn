@@ -31,3 +31,23 @@ Cluster
 - various machines 
 - similar to master-client
 - changes will be reflected in all machines 
+
+
+--------------------------------------------------------Mono->Micro
+Supporting Arguments
+- Easy to maintain and scale
+Ex ------ we all know that the number of people searching for cabs is more comparatively more than the people 
+actually booking a cab and making payments. This gets us an inference that the number of processes working on the passenger
+ management microservice is more than the number of processes working on payments.
+- Loosely coupled components
+- Changes in specific module needs to redeployed in that specific module only
+Ex ------ If you want to change anything in the billing Microservices, then you just have to deploy only billing Microservices and don’t have to deploy the others.
+- If a service is down still rest of the services are up
+
+
+Oppose
+- Redoing the most of the code
+- Lenghty process and resource comsuming
+- Entire code needs to be tested
+- Lots of security measures to be taken care of at each service
+- Sometimes cross language support might be difficult
