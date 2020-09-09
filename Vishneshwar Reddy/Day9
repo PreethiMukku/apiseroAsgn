@@ -1,0 +1,34 @@
+Three tirer/ n-tier architecture:
+	This architecture mainly involves three layers for development of a project
+		1. Presentation Layer - this is the layer at which we can develop all the user interface realted to project
+		2. Business Logic Layer - this layer includes the business logic to return the response to the user for his action on the UI
+		3. Database Layer - this layer is used to store/retrieve required data based on users CRUD operations done on the UI.
+		
+		Example: Any online shopping site.
+			 
+			 This site should have presentation layer for user interacting to the site.
+			 Based on user login it should display prices and items for the user, for this the logic is return in the Business logic layer.
+			 Database is used to store the user information like his addresses, previous orders.
+			 Also this site may include multiple API interactions like Payment Gateways, Shipping Services.
+			 
+Fail Over:
+	When a server goes down a standby server is used to perform action which is known as Fail Over. The duration of time till the server goes down is called downtime.
+	
+Load Balancer:
+	This is used to overcome the Fail Over problem. It distributes equal requests for multiple servers, if any of the server get failure it sends the request to other server.
+
+Cluster:
+	All the combine responses are deployed on the cluster instead of deploying it on individual server, because when any server goes down the other server can also act on the user request.
+
+Microservices:
+	The main aspect of microservices is, some types of applications become easier to build and maintain when they are broken down into smaller, composable pieces which work together.
+	Each component is continuously developed and separately maintained, and the application is then simply sum of constituent components.
+
+Pros of Microservices:
+	You can develop and deploy each microservice on a different platform, using different programming languages and developer tools.
+	Microservices use APIs and communication protocols to interact with each other, but they don’t rely on each other otherwise.
+	Development can be done for each microservice simultaneously by different teams which faters the deployment time.
+	
+Cons of Microservices:
+	Poorer performance, as microservices need to communicate.
+	The adoption of multiple dependencies can be a challenge for smaller companies in terms of cost.
