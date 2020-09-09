@@ -1,0 +1,98 @@
+SOA (Service Oriented Architecture) :-
+SOA, or service-oriented architecture, defines a way to make software components reusable via service interfaces.
+Each service in an SOA embodies the code and data integrations required to execute a complete, discrete business function
+(e.g.checking a customer’s credit, calculating a monthly loan payment, or processing a mortgage application).
+ The service interfaces provide loose coupling, meaning they can be called with little or no knowledge of how the integration is implemented underneath. 
+ The services are exposed using standard network protocols—such as SOAP (simple object access protocol)/HTTP or JSON/HTTP—to send requests to read or change data.
+ The services are published in a way that enables developers to quickly find them and reuse them to assemble new applications.
+ 
+ Benefits of SOA :-
+ 1)Greater business agility.
+ 2)Improved collaboration between business and IT.
+ 
+ Web Services :-
+ Web service is an interface for your software. We may have web user interface or a thick client (desktop) user interface for our software. 
+ Imagine web service as another similar interface. This interface is not for humans but for softwares.
+
+ Web/thick client directly serves end user as an interface to interact with the software. Web service serves as an interface to software developers. 
+ Using web service as an API, developers can build external systems that will interact with the software.
+ 
+ 
+ 
+ SOAP (Simple Object Access Protocol):-
+ Simple Object Access Protocol (SOAP) is a standard protocol specification for message exchange based on XML. 
+ Communication between the web service and client happens using XML messages. 
+ SOAP defines the rules for communication like what are all the tags that should be used in XML and their meaning.
+ 
+ Practical implementation of SOAP web service :-
+ 
+ call structure :-
+ <?xml version="1.0"?>
+<soap:Envelope xmlns:soap="http://www.w3.org/2003/05/soap-envelope">
+  <soap:Header>
+  </soap:Header>
+  <soap:Body>
+    <m:GetUser>
+      <m:UserId>123</m:UserId>
+    </m:GetUser>
+  </soap:Body>
+</soap:Envelope>
+
+response :-
+<?xml version="1.0"?>
+
+<soap:Envelope
+xmlns:soap="http://www.w3.org/2003/05/soap-envelope/"
+soap:encodingStyle="http://www.w3.org/2003/05/soap-encoding">
+
+<soap:Body>
+  <m:GetUserResponse>
+    <m:Username>Tony Stark</m:Username>
+  </m:GetUserResponse>
+</soap:Body>
+
+</soap:Envelope>
+
+
+ 
+ REST(Representational State Transfer):-
+
+RESTful web service uses architectures that use HTTP or similar protocols by restricting the interface to use standard operations like GET, POST, PUT, DELETE for HTTP.  
+Practical implementation of RESTAPI web service:-
+[
+  {
+    "id": 29,
+    "type": "programming",
+    "setup": "There are 10 types of people in this world...",
+    "punchline": "Those who understand binary and those who don't"
+  }
+]
+
+
+Code Testing :-
+Code based testing is a way to check whether each and every line of code has been executed. 
+Code based testing is a testing carried out at various levels - code development, code inspection, unit testing. 
+It involves dynamic testing, calculating Cyclomatic complexity, and static testing.
+ 
+ 
+ Junit Testing :-
+It is an open-source testing framework for java programmers. The java programmer can create test cases and test his/her own code.
+It is one of the unit testing framework.
+To perform unit testing, we need to create test cases. The unit test case is a code which ensures that the program logic works as expected.
+The org.junit package contains many interfaces and classes for junit testing such as Assert, Test, Before, After etc.
+
+Annotations for Junit testing
+
+The Junit 4.x framework is annotation based, so let's see the annotations that can be used while writing the test cases.
+
+@Test annotation specifies that method is the test method.
+
+@Test(timeout=1000) annotation specifies that method will be failed if it takes longer than 1000 milliseconds (1 second).
+
+@BeforeClass annotation specifies that method will be invoked only once, before starting all the tests.
+
+@Before annotation specifies that method will be invoked before each test.
+
+@After annotation specifies that method will be invoked after each test.
+
+@AfterClass annotation specifies that method will be invoked only once, after finishing all the tests.
