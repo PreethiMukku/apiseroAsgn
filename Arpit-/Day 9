@@ -57,3 +57,12 @@ Microservices - also known as the microservice architecture - is an architectura
     Independently deployable
     Organized around business capabilities
     Owned by a small team
+    ex:- Uber Microservies .
+    
+    
+Scaling Services :-
+Almost same performance irrespective of load.
+Whatsapp message - 1 sec/10 byte
+Whatsapp group  -> 56 members
+Due to telegram whatsapp changed capacity from 56 to 256
+Earlier 1sec/10byte and after changes 2sec/10 byte.
