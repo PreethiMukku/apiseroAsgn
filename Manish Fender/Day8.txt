@@ -1,0 +1,97 @@
+=+===Day 8=====
+TEST NO 2 :-------
+TEST NO 3 :--------
+
+=>Quick recap of Day 7
++ Maven ?
++ How to use ?
++ Advantages ?
++ Disadvantages ?
+--------------------------------------------------------------------
+==>TESTING<==
+=>What is SOA  ?
++ Service-Oriented Architecture (SOA) is a style of software design where services are provided to the other components by application components, 
+`through a communication protocol over a network.
++ These components can be any type of third party services
++ such as paymentgateway option embeded in an web application
++ In service oriented architecture, a number of services communicate with each other, in one of two ways: through passing data or through two 
+  or more services coordinating an activity. 
+
+=>What are different types of Orientations
+1.Procedure orientation
++ Procedural oriented programming (pop):- A program in a procedural language is a list of instruction where each statement tells the computer
+  to do something. It focuses on procedure (function) & algorithm is needed to perform the derived computation.
+ 
+ 2.Object Orintation
+ + Object-oriented programming (OOP) is a programming paradigm based on the concept of "objects", which can contain data and code: data in the form
+   of fields (often known as attributes or properties),and code, in the form of procedures (often known as methods).
+ 
+ 3.Component Orientation
+ + Component-oriented programming is a technique of developing software applications by combining pre-existing and new components, much the same way
+   automobiles are built from other components.
+   
+ 4.Service Orentation
+ + Service-oriented architecture (SOA) is a style of software design where services are provided to the other components by application components, through a communication protocol over a network. 
+   SOA is also intended to be independent of vendors, products and technologies.
+ 
+ =>What is Http protocol ?
++ HTTP stands for Hyper Text Transfer Protocol
++ WWW is about communication between web clients and servers
++ Communication between client computers and web servers is done by sending HTTP Requests and receiving HTTP Responses
+
+=>Types of http requests
+1	GET -> like a Read operation
+The GET method is used to retrieve information from the given server using a given URI. Requests using GET should only retrieve data and should have no other effect on the data.
+
+2	POST -> like a Create Operation
+A POST request is used to send data to the server, for example, customer information, file upload, etc. using HTML forms.
+
+3	PUT -> like a Update operation
+Replaces all current representations of the target resource with the uploaded content.
+
+4	DELETE -> like a Delete operation
+Removes all current representations of the target resource given by a URI.
+
+
+
+=>What is SOAP ?
++ SOAP stands for Simple Object Access Protocol
++ SOAP is a protocol which was designed before REST and came into the picture. The main idea behind designing SOAP was
+  to ensure that programs built on different platforms and programming languages could exchange data in an easy manner. 
++It support many protocols , and is xml based  
+  
+=>WHAT IS REST ?
++ This was designed specifically for working with components such as media components, files, or even objects on a particular
+  hardware device. Any web service that is defined on the principles of REST can be called a RestFul web service. 
++ A Restful service would use the normal HTTP  of GET, POST, PUT and DELETE for working with the required components.
+
+=>What is JUNIT Testing
++ JUnit is a unit testing framework for the Java programming language. JUnit has been important in the development of 
+  test-driven development, and is one of a family of unit testing frameworks which is collectively known as xUnit that originated with SUnit.
+  
+=>Unit testing of web applications includes many testings such as-
+-Core functionality testing...
+-UI testing..  - Client side rendering
+               - javascript
+               - Interactive
+               - etc...
+  
+=>What is Postman ?
++  Postman is an API(application programming interface) development tool which helps to build, test and modify APIs.
+   It has the ability to make various types of HTTP requests(GET, POST, PUT, PATCH), saving environments for later use,
+   
+=> what is TEST DRIVEN DEVELOPMENT (TDD) ?
+1.Write a Test. Since development is driven by tests, the obvious first step is to create a new test. ...
+2.Confirm the Test Fails. Once the test is created, the next step is to confirm that the test fails. ...
+3.Write Code to Pass Test. ...
+4.Confirm the Test Passes. ...
+5.Refactor. ...
+6.Repeat All Steps.
++ It consist of automated unit test and automated integration test.
+
+=>What is BEHAVIOURAL DRIVEN DEVELOPMENT (BDD)  ?
++ It can be understand by the non technical people.
++  Tester, developer, bussiness people , come all together to create test measures and test cases.
+
+
+ 
