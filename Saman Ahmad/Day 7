@@ -1,0 +1,165 @@
+----------------------------------------------------Day 7 – ADE Eclipse, Github, Maven	----------------------------
+
+
+---------------------Version Control Overview---------------------
+ lets consider a calc.java program,
+		if in future,
+		we change logic--no problem,
+		if we change maethod signature-->change of datatype-->problem
+
+In real-world programming we can never change current class, rather we always keep original file/code and add versions to it.
+
+Any change made into the project in later point of time that leads to Project build failure=> BREAKING CHANGE.
+
+
+Consider a project that has 2 functions,
+Calc.java, lab1.java
+if developer wants to make any change in calc.java, he would:
+	1)checkout the code into his repository(no parallel chechout allowed)
+	2)do the modifications, compile -> build successful
+	3)check in the code
+	if project Build success-> no worries,
+		if failed-> versioning
+
+
+
+                                    ----------------Version control systems--------------------
+Version control systems are a category of software tools that helps record changes to files by keeping a track of modifications done to the code.
+
+	Use of Version Control System:
+	1)A repository: It can be thought as a database of changes. It contains all the edits and historical versions (snapshots) of the project.
+	2)Copy of Work (sometimes called as checkout): It is the personal copy of all the files in a project.we edit to this copy, without affecting the work of others and you can finally commit your changes to a repository when you are done making your changes.
+
+-------------------Types of Version Control Systems:
+
+	1)Local Version Control Systems
+	2)Centralized Version Control Systems
+	3)Distributed Version Control Systems
+
+1)Local Version Control Systems: 
+	It is one of the simplest forms and has a database that kept all the changes to files under revision control.
+         It keeps patch sets (differences between files) in a special format on disk. 
+         By adding up all the patches it can then re-create what any file looked like at any point in time.
+
+
+2)Centralized Version Control Systems:
+	 Centralized version control systems contain just one repository and each user gets their own working copy. 
+   we need to commit to reflecting your changes in the repository. It is possible for others to see your changes by updating.
+
+	Two things are required to make your changes visible to others which are:
+	1)You commit
+	2)They update
+
+
+	Advantages:makes collaboration amongst developers along with providing an insight to a certain extent on what everyone else is doing on the project.
+		 It allows administrators to fine-grained control over who can do what.
+
+	Disadvantages:single point of failure that the centralized repository represents if it goes down during that period collaboration and saving versioned changes is not possible. What if the hard disk of the central database becomes corrupted, and proper backups haven’t been kept? You lose absolutely everything.
+
+3)Distributed Version Control Systems: 
+	Distributed version control systems contain multiple repositories. Each user has their own repository and working copy.
+  Just committing your changes will not give others access to your changes.
+  This is because commit will reflect those changes in your local repository and you need to push them in order to make them visible on the central repository.
+  Similarly, When you update, you do not get other’s changes unless you have first pulled those changes into your repository.
+
+	To make your changes visible to others, 4 things are required:
+
+	You commit
+	You push
+	They pull
+	They update
+
+
+-----------------------------------  Introduction to Git---------------------------------------------
+
+GitHub: GitHub is a code hosting platform for version control and collaboration.
+	 It lets you and others work together on projects from anywhere.
+
+
+-------------->>>GIT Commands used:
+
+1) git init:used to start a new repository.
+	git init [repository name]
+
+2)git add: adds/register a file to the staging area in repository.
+	git add [file]  
+
+3)git commit: records or snapshots the file permanently in the version history.
+	git commit -a “[ Type in the commit message]”  
+
+4)git config: sets the author name and email address respectively to be used with your commits.
+	git config –global user.name “[name]”  
+
+	git config –global user.email “[email address]”  
+
+5)git clone:sed to obtain a repository from an existing URL.
+
+	git clone [url]  
+
+6)git push: sends the committed changes of master branch to your remote repository.
+	git push [variable name] master  
+
+7)git pull: fetches and merges changes on the remote server to your working directory.
+	git pull [Repository Link]  
+
+  
+----------------------------------------------------Lab 1--------------------------------------
+	Create a repo on github (tmpdemo)
+	
+	Create a folder onsystem (anyname -> tmp11)
+		git init
+		git pull https://github.com/Vaishali-Tapaswi/tmpdemo master
+			-> see readme.md in current directory
+	  modify readme.md 
+		git commit -a -m message
+		git remote add mynm https://github.com/Vaishali-Tapaswi/tmpdemo
+		git push --set-upstream mynm master
+---------------
+echo "# tmp" >> README.md
+git init
+git add README.md
+git commit -m "first commit"
+git branch -M master
+git remote add origin https://github.com/Vaishali-Tapaswi/tmp.git
+git push -u origin master
+
+------------------Cloning------------------------
+For clone
+	just create a tmp directory 
+	in >git clone https://github.com/Vaishali-Tapaswi/apisero  
+	change files
+	>git commit	
+
+	
+
+-----------------------------------------------------------------  Introduction to Maven-----------------------------------------------
+
+Maven is an automation and management.
+It helps to build projects, dependency, and documentation
+It allows the developer to create projects using Project Object Model and plugins.
+Goals that can be acheived using Maven:
+Clean, compile, testing, packaging, documentation.
+
+Clean: Deletes the target file and all classes associated with it.
+Compile: Compiles the project. for compilation JRE must be changed to JDK in preferences.
+test: can br used for testing the project.
+Install- Installs all dependencies from central repository. these dependies are saved in .m2 folder of user's system.
+Package: used to packages the project into jars file
+		two types of jar file created:
+
+		thin jar file- is light weight and has no dependencies downloaded.
+		thick jar file-  is more weight and has all dependencies downloaded.
+
+
+------------------project object model
+To configure the Maven, you need to use Project Object Model, which is stored in a pom.xml-file.
+Plugins can be configured and edit in the <plugins> tag of a pom.xml file. And developer can use any plugin without much detail of each plugin.
+When user start working on Maven, it provides default setting of configuration, so the user does not need to add every configuration in pom.xml
+	
+Versioning and configuration management
+
+Project dependencies
+
+Maven installation and configuration
+
+Creating a new project.
