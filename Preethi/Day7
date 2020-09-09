@@ -1,0 +1,35 @@
+Day 7 – IDE Eclipse, Github, Maven
+	
+    Version Control 
+	Records changes to a file or set of files over time so that you can recall specific versions later
+	-> Local version control system
+	-> centralized system
+		Contain just one repository(remote repository) and each user gets their own working copy
+	-> Distributed system
+		Contain multiple repositories. Each user has their own repository(Local repository) and working copy
+		
+  
+    Initialization of repository -> git init
+    Clone -> gives a copy of repository
+    Checking in -> git pull
+    Checking out -> git push
+
+    Maven	
+	Project management and version&control that is based on POM
+	It is used for projects build, dependency and documentation.
+    	A maven repository is a directory of packaged JAR file with pom.xml file
+	Maven local repository is located in local system and created by the maven when we run any maven command.
+	  -> By default, maven local repository is ".m2" directory.
+	Maven central repository is located on the web, created by the apache maven community
+	  -> contains a lot of common libraries 
+
+	POM is an acronym for Project Object Model. 
+	pom.xml file contains information of project and configuration information to build the project
+	Maven Goals:
+		Clean - removes target folder created by previous build
+		Compile - Compiles the source code using JDK dependencies
+		Test - Runs unit tests
+		Package - Converts the application into JAR file, by default compiles the code. 
+		Install - Installs the package
+
+   
