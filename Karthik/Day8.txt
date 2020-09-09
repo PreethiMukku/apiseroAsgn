@@ -1,0 +1,37 @@
+Testing:
+- Testing is important as it helps is detecting errors and bugs in software. Thus, helps in increasing quality of the software and making software more reliable.
+
+Test Driven Development:
+- In TDD, the development phase starts with writing the test cases first.
+- The test cases for each method and functionality are written first according to the client requirements and then keeping this test cases as reference developer does coding.
+
+Behavior Driven Development:
+- In BDD, developers,clients, testers sit together and colate the application requirements. 
+  Thus the entire understanding of the application functionalities is done well at the start itself. 
+- These details are documented, and reffering to this actual development starts.
+- TDD and BDD usually goes hand in hand. With the help of BDD, all the requirements and details are well known at first place and then we follow TDD 
+  i.e. according to the specifications test cases are developed. 
+  
+Rich Client Testing:
+- We use Junit for rich client testing, where a test method is created for each method in the application. 
+  In this test method we have test cases written and check if the method functions according to the requirements and if do we have any bugs in that particular method.
+  
+SOA: 
+- Loosely coupled, faster modifications are per requirement. It defines an architecture for communication between B2B services.
+
+  SOAP:
+  - Supports any protocol.
+  - XML based data format.
+  - We have define our own methods.
+  - Disadvantages: (n+1) problem, parsing problem.
+  
+  REST:
+  - Http protocol.
+  - JSON data format is mainly used. Also supports other data formats.
+  - Methods: put/get/post/delete
+  
+Coverage:
+- Determines whether all the test cases written are covering the entire application code. Thus it is a metric used to know how many code is coverered in testing.
+
+Postman:
+- We use postman for testing APIs. Requests are sent specifying the methods(put/get/post/delete) and body. We get back response in json format.
