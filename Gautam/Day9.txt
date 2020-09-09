@@ -26,6 +26,6 @@ Pros-
 
 Cons
 ->Poorer Performance(network latency)
-->Harder to test and monitor.
+->Security issues
 
 
