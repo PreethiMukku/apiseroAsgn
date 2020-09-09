@@ -55,6 +55,34 @@ Postman:
 		-delete: delete record
 		-patch: update only some part
 
+_---------------
+HTTP Status code:
+
+1xx Informational
+
+2xx Success: 
+EX:
+  -200 OK
+  -201 Created
+  -202 Accepted
+
+
+4xx Client Error:
+EX:
+ -400 Bad Request
+ -401 Unauthorized
+ -405 Method Not Allowed
+ -429 Too Many Requests
+ 
+
+
+5xx Server Error:
+Ex:
+  -502 Bad Gateway
+  -503 Service Unavailable
+
+
+
 
 //extra from net
 
