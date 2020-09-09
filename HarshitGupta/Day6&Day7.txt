@@ -108,4 +108,17 @@ Some commands of git are :
 
 7)git pull: fetches and merges changes on the remote server to your working directory.
 	git pull <url>
-
+Maven: 
+- Maven is used for project management. 
+- It provides complete hierarchy. Complete file structure is provided with in the maven project. 
+- It is used for dependency management and versioning of the project.
+- Within POM.xml(Project Object Model) we define the dependencies required for the project. 
+- We can have flow of actions bundled and executed together, which we define in the goals.
+- Clean is used to erase the files in the target folder.
+- Install command is used to install all the dependencies defined in the POM.xml file. 
+  This dependencies are downloaded and installed from maven central repository. 
+  But for security purposes we may also have our own central repository defined from where the dependencies would be installed. 
+  This files are installed in '.m2' folder inside user folder.
+- We can combine this whole project along with dependencies using 'package' command which helps in creating a jar file. 
+  If the project is having only internal files and internal dependencies we have thin jar, and when also external dependencies are included within we have thick jar file. 
+  This thick jar file can be used directly in another project which has dependency here.
