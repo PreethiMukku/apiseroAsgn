@@ -1,0 +1,88 @@
+presentation logic..................business logic...................persistenet logic(data logic)..........
+...................................................................................................................................................................................      
+
+The difference between N -Tier and 3 Tier is as follows.
+
+////In 3 Tier Application there are three tiers like Presentation Layer , Application Layer and Data layer.
+Here the application layer contains business logic as well .
+Three-tier architecture is a client-server software architecture pattern in which the user interface (presentation), functional process logic ("business rules"), 
+computer data storage and data access are developed and maintained as independent modules, most often on separate platforms.
+
+///On the other hand in N Tier Application layer is divided into 2 i.e. Application Layer and Business Logic layer.
+The Application Layer you can add up to N number depending on the data coming from presentation layer (Different OS , Different platforms etc).
+:::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
+
+SERVER DOWNTIME:
+
+-If there is a glitch in that server or if the server goes down for any reason, your site becomes unavailable as a result. 
+This is known as server downtime. However, because the problem lies with the server and not some programming error on your end.
+:::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
+
+What is Server Load Balancing?
+-Server Load Balancing (SLB) provides network services and content delivery using a series of load balancing algorithms. 
+It prioritizes responses to the specific requests from clients over the network. Server load balancing distributes client traffic to servers to ensure consistent,
+high-performance application delivery.
+-Server load balancing ensures application delivery, scalability, reliability and high availability.
+:::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
+
+clustered environment
+-A cluster is a group of multiple server instances, spanning across more than one node, all running identical configuration. 
+All instances in a cluster work together to provide high availability, reliability, and scalability.
+
+/////Basically there are 3 types of clusters, 
+-Fail-over, Load-balancing and HIGH Performance Computing,
+The most deployed ones are probably the Failover cluster and the Load-balancing Cluster.
+..................................................................................................................................................................................
+Fail-over Clusters consist of 2 or more network connected computers with a separate heartbeat connection between the 2 hosts. 
+The Heartbeat connection between the 2 machines is being used to monitor whether all the services are still in use: 
+as soon as a service on one machine breaks down the other machines try to take over.
+
+-With load-balancing clusters the concept is that when a request for say a web-server comes in, 
+the cluster checks which machine is the least busy and then sends the request to that machine. 
+Actually most of the times a Load-balancing cluster is also a Fail-over cluster but with the extra load balancing functionality and often with more nodes.
+
+-The last variation of clustering is the High Performance Computing Cluster: 
+the machines are being configured specially to give data centers that require extreme performance what they need. 
+Beowulfs have been developed especially to give research facilities the computing speed they need. 
+These kind of clusters also have some load-balancing features; they try to spread different processes to more machines in order to gain performance. 
+But what it mainly comes down to in this situation is that a process is being parallelized and that routines that can be ran separately will be spread
+on different machines instead of having to wait till they get done one after another.
+:::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
+In SOA:
+design huge sysytem-
+break huge system to small sections
+make small sections of services.
+
+Instead of macro project(huge  MONOLITHIC project) go for micro services(break into smaller pieces).
+
+-Simpler To Deploy
+Deploy in literal pieces without affecting other services.
+
+-Simpler To Understand
+Follow code easier since the function is isolated and less dependent.
+
+-Reusability Across Business
+Share small services like payment or login systems across the business.
+
+-Faster Defect Isolation
+When a test fails or service goes down, isolate it quickly with microservices.
+
+Minimized Risk Of Change
+-Avoid locking in technologies or languages - change on the fly without risk.
+:::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
+
+Examples of Microservices-
+
+///Netflix has a widespread architecture that has evolved from monolithic to SOA.  It receives more than one billion calls every day,
+from more than 800 different types of devices, to its streaming-video API.  Each API call then prompts around five additional calls to the backend service.
+
+///Amazon has also migrated to microservices.  
+They get countless calls from a variety of applications—including applications that manage the web service API 
+as well as the website itself—which would have been simply impossible for their old, two-tiered architecture to handle.
+
+///The auction site eBay is yet another example that has gone through the same transition.
+Their core application comprises several autonomous applications, with each one executing the business logic for different function areas.
+:::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
+
+Macroservices should be defined as any application architecture that runs 2-20 individual services,
+with each service representing a medium sized codebase that handles a well defined part of your business,
