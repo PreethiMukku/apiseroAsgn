@@ -1,0 +1,37 @@
+--------------------Service Oriented Architecture------------------------
+
+- Service oriented architecture is a way of providing services to other componenets of the application using a network. This can be achieved by two major methods:
+1. SOAP based services.
+2. REST based services.
+
+- Simple Object Access Protocol (SOAP) based services:
+-> This service is protocol antagonist. It doesn't require any particular protocol to perform the task.
+-> It uses XML data format.
+-> It does not have any particular operation syntax which can be used.
+
+- Representational State Transfer (REST) based services:
+-> This service exclusively uses HTTP protocol to perform the task.
+-> The data format is particularly JSON. However it can also use other types of data formats too.
+-> It uses different operations like get, put, post, delete to perform operations of reterieving, updating, modifying and delete data.
+
+- Service Consumer-----------------------------> Service Provider. If this relation is loosely coupled, the consumer can shift to other service provider whenever he feels the necessity.
+If this relation is tightly coupled then it would require a quite high initial investment from the consumer end.
+
+-------------------------------Testing-------------------------------------
+
+- It is always a question if the code should be written first or the testing should be done first. If we write the code first we will be able to check the check the code but it would lead to more utilisation of time.
+
+- There are two types of Development:
+1. Test Driven Development (TDD) -> Here the parameters for the testing is initially set. These are known as the test code. Once we know the conditions of the test and what exactly is the demand, writing a code becomes lot more simpler.
+                                 This way the chances of the code satisfying the test conditions is high and the time for the development is less.  In this method, the developer has a clarity of what is required.
+
+2. Behaviour Driven Development (BDD) -> In this method, the senior management people, developers and testers meet and decide the requirements. They collaborate explore, define, discover the desired behaviour of the software.
+                                The language used is simple English language and no coding language is involved. This makes even a non-technical person to understand the requirements of the situation.
+
+- Coverage -> It is the extent of the code which g=has been tested. It is basically referred in percentage. A 70-80% coverage is considered to be good testing coverage.
+
+- The different types of test done on different clients are as follows:
+1. Rich client -> Junit test.
+2. Thin client (Web applications) -> UI testing, User Interaction.
+3. Rest API -> Postman.
+
