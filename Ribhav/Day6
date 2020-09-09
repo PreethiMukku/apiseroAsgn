@@ -1,0 +1,30 @@
+A) RDBMS
+	- Relational Database Management System
+	- A database management system based on relational model
+	- Contains tables, rows, columns...
+	- safe and secure
+	- flexible and easy to implement
+	
+B) CRUD Operations
+	- four basic types of SQL commands:
+		a) Create 
+		b) Read
+		c) update
+		d) delete
+	
+C) Tables relationships
+	- One-to-one: only one record in both tables. 
+	- One-to-many: table with primary key relates to zero or more records in another table
+	- Many-to-many: both tables can relate to any number of records in another table.
+	
+D) Joins
+	- used to combine rows from two or more tables
+	- Types:
+		a) inner
+		b) left outer join
+		c) right outer join
+		d) full outer join
+		
+E) Union
+	- used to combine the result-set of two or more statements.
+	- statement  must have same number of columns
