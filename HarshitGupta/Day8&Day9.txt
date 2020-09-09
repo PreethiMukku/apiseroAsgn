@@ -1,0 +1,79 @@
+Different Architectures: 
+
+1)Procedural architecture : Here we divide actions in different procedures called functions.Not much importance is given to data but rather focuses on the procedures
+2)Object Oriented:Object oriented programming can be defined as a programming model which is based upon the concept of objects. Objects contain data in the form of attributes and code in the form of methods. In object oriented programming, computer programs are designed using the concept of objects that interact with real world
+3)Service Oriented:Service-Oriented Architecture (SOA) is an architectural approach in which applications make use of services available in the network. In this architecture, services are provided to form applications, through a communication call over the internet.
+4)Compontent Oriented:Service-Oriented Architecture (SOA) is an architectural approach in which applications make use of services available in the network. In this architecture, services are provided to form applications, through a communication call over the internet
+
+SOAP : 
+SOAP is a protocol
+usually uses XML for communication
+Supports protocols such as http or ftp
+could load metadata with it and has standardized validators
+More characters are used hence would use more resource
+
+REST
+It stands for Restful state transfer
+uses JSON most commonly bt also supports other formats
+Uses Http protocol only
+Json is compact and concise and supports many browsers
+
+Testing 
+Testing is done so as before deployment the application is well tested and would work perfectly under normal or uncertain situations.
+Tesing can be TDD(Test Driven Development) or BDD(Test Driven Development)
+
+TDD:
+Here the test cases are designed first and given to the developers so such it allows devs to have a basic understanding of the problem given.
+later unit testing can be done so as to test the code.
+BDD :
+Here all the requirement are listen in plain test so as it is understood by evryone even the non technical people.This allows devs to think problem and its requirement and develop the application accordingly.
+
+Test Coverage :
+it means what portion of our code gets tested with a given test case.Greater the coverage better is the test case.
+
+Testing for Rich CLients :
+JUnit is used for unit testing in Rich clients where each unit is tested properly and the data is presented in numerical format i.e how many passed or failed.
+
+testing of thin clients:
+Manual UI testing is doe to check for the interface and how it acually feels to be a user
+
+Testing of RIA :
+Postman can be used to check the APIs endpoints
+
+
+N tier Architecture :
+Heere we have different levels of architecture like 1st we can have presention layer which is shown to the user then we can have 
+the buisness logic which will show the data asked by them in our designed manner.Then we could have persistent logic wher we could store the
+data .
+
+Single Hosting :
+here only one server is used for the application .It is suitable  if the code base is small and the requirement is less or during the starting phase of the buisness
+It has simple logic and generally doesnot use any 3rd party service.
+
+Distributed Hosting : Here many servers are deployed with exact same logic so as we can have other servers for managing the load or during failure of any server.here there are many network calls hence could be slow
+
+
+Failover
+If we have 2 servers and desinged in such a way we transfer the requests to Server1 and on server1 being down we send it to server 2.This case is called Failover.
+Here  disadvantage is there is some down time as we need to change the IP of the server and also server 2 has not been tested for usage.
+ 
+Loadbalancer
+In failover case the server 2 has 0 load in normal circumstances bt here we use a load balancers which divides the load acording to some algorithm like RoundRobin or 
+consistent hashing.Now the user will be mapped to this load balancer directly and this will then forward to any server
+
+Cluster
+Cluster is collection of server.NOW IF WE WANT TO CHANGE the html file which is used by all servers then we deploy it in the cluster so that the changes are reflected to 
+each server.
+
+Downtime : The time when the server is down and cant respond to the services asked.This leads to hampering of buisness and also puts a negative impression
+
+Monoliths :
+Here only one server has the whole buisness logic.This is suitable during the start of the buisness or when the codebase or the size of the company is small.
+This is more affordable as less resources are required and also ther are less network calls .Single point of failure.
+
+Microservices :
+Here logic is divided into independent services hosted on different servers.It allows different teams to develop in parallel.
+Allows team to work on different languages and will allow each service to be scaled independently.Here if one service fails whole system doesnt crashes.
+
+
+
