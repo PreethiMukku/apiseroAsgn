@@ -1,0 +1,50 @@
+Testing:
+- Testing is a process of executing a program with the aim of finding error.
+- To make our software perform well it should be error free. There are many types of testings like Unit Testing, Integration Testing, Regression Testing,...
+- There are two types of development of a project:
+	* Test Driven Development(TDD):
+		- Test-driven development starts with developing test for each one of the features.
+		- The test might fail as the tests are developed even before the development.
+		- Development team then develops and refactors the code to pass the test.
+		- Test-driven development is related to the test-first programming evolved as part of extreme programming concepts.
+		
+	* Behavior Driven Development(BDD):
+		- BDD uses human-readable descriptions of software user requirements as the basis for software tests.
+		- An early step in BDD is the definition of a shared vocabulary between stakeholders, domain experts, and engineers.
+		- This process involves the definition of entities, events, and outputs that the users care about, and giving them names that everybody can agree on.
+		
+Coverage:
+- Test coverage is defined as a technique which determines whether our test cases are actually covering the application code and how much code is exercised when we run those test cases.
+- Code coverage of 70-80% is a minimum goal for system test of most projects.
+- Lets say there are 10 requirements and 100 tests created and if 90 tests are executed then test coverage is 90%.
+
+Junit:
+- JUnit is a unit testing framework for Java programming language.
+- It plays a crucial role test-driven development, and is a family of unit testing frameworks.
+- JUnit promotes the idea of "first testing then coding", which emphasizes on setting up the test data for a piece of code that can be tested first and then implemented.
+- Some of the features of JUnit are:
+	* Provides annotations to identify test methods.
+	* JUnit tests can be run automatically and they check their own results and provide immediate feedback. There's no need to manually comb through a report of test results.
+	* JUnit shows test progress in a bar that is green if the test is running smoothly, and it turns red when a test fails.
+	
+Test Suite:
+- A test suite is a collection of test cases that are grouped for test execution purposes.
+
+Postman:
+- Postman is a software development tool. It enables us to test calls to APIs.
+- Here we can test all the CRUD operations for an API.
+	GET - This is used to check whether we can retrieve records using API.
+	POST - This is used to check whether we can insert records using API. We have to send the body along with the request.
+	PUT - This is used to check whether a record is updating or not.
+	PATCH - This is used to check partial update of a record.
+	DELETE - This is used to chekc deletion of a record.
+	
+HTTP Status Codes:
+- HTTP status codes are standard response codes given by web site servers on the internet.
+- The codes help identify the cause of the problem when a web page or other resource does not load properly.
+
+-> 1xx series: Informational response – the request was received, continuing process
+-> 2xx series: Successful response – the request was successfully received, understood, and accepted
+-> 3xx series: Redirection – further action needs to be taken in order to complete the request
+-> 4xx series: Client error – the request contains bad syntax or cannot be fulfilled
+-> 5xx series: Server error – the server failed to fulfil an apparently valid request
