@@ -1,0 +1,61 @@
+Database is storage which is persistent and is used to store info related to the website.It database is an organized collection of structured information, or data, typically stored electronically in a computer system
+DBMS is Database management system.Its types are RDBMS and NoSQL
+
+RDBMS- Items in a relational database are organized as a set of tables with columns and rows. Relational database technology provides the most efficient and flexible way to access structured information.
+
+NoSQL- A NoSQL, or nonrelational database, allows unstructured and semistructured data to be stored and manipulated (in contrast to a relational database, which defines how all data inserted into the database must be composed).
+
+Operations in SQL DB:
+
+Create: It is used to create the table and define the attributed with constraints.Ex:
+CREATE Table Emp(name varchar(15),salary int)
+
+Retrieve: It is used to extract rows from the table based on some condition
+SELECT * FROM table_name;
+
+Update: It is used to udate a set of rows or a specific row according to the given condition
+UPDATE Emp
+SET name = 'Harshit'
+	WHERE empID = 1;
+
+Delete command is used to delete a specific row or  set of rows
+ DELETE FROM Emp WHERE name='Harshit';
+
+Types of Relationship:
+1)one-one: Such a relationship exists when each record of one table is related to only one record of the other table.Ex : Person and Passport
+
+2) one-many:Such a relationship exists when each record of one table can be related to one or more than one record of the other table. This relationship is the most common relationship found. A one-to-many relationship can also be said as a many-to-one relationship depending upon the way we view it.
+Exmple Person and Bank Account
+      
+3)many-many:Such a relationship exists when each record of the first table can be related to one or more than one record of the second table and a single record of the second table can be related to one or more than one record of the first table.
+Example Product and Customer
+
+Constraints:
+SQL constraints are used to specify rules for the data in a table.Constraints can be specified when the table is created with the CREATE TABLE statement, or after the table is created with the ALTER TABLE statement.
+Examples are :
+NOT NULL - Ensures that a column cannot have a NULL value
+UNIQUE - Ensures that all values in a column are different
+PRIMARY KEY - A combination of a NOT NULL and UNIQUE. Uniquely identifies each row in a table
+FOREIGN KEY - Uniquely identifies a row/record in another table
+CHECK - Ensures that all values in a column satisfies a specific condition
+DEFAULT - Sets a default value for a column when no value is specified
+INDEX - Used to create and retrieve data from the database very quickly
+We can create our own contraints names for better identification of where the error has occur in query.
+
+SQL JOINS:
+A JOIN clause is used to combine rows from two or more tables, based on a related column between them.
+Different Types of SQL JOINs:
+The different types of the JOINs in SQL:
+
+(INNER) JOIN: Returns records that have matching values in both tables
+LEFT (OUTER) JOIN: Returns all records from the left table, and the matched records from the right table
+RIGHT (OUTER) JOIN: Returns all records from the right table, and the matched records from the left table
+FULL (OUTER) JOIN: Returns all records when there is a match in either left or right table
+
+
+SQL UNION:
+The UNION operator is used to combine the result-set of two or more SELECT statements.
+
+SELECT column_name(s) FROM table1
+		UNION ALL
+		SELECT column_name(s) FROM table2;
