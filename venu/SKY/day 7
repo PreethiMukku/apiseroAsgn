@@ -1,0 +1,27 @@
+Eclipse: eclipse is a software developement kit.
+it provide s many paltforms for users
+
+-Rich client paltforms
+-modeling plattform
+=webtools plattform
+-server paltforms
+
+-eclipse mainly  using jdk for java developers.
+-tomcat server also can support eclipse
+
+                                GITHUB:
+								 -GITHUB USE FOR OPEN SOURCE PROJECT	
+								 -GIT hub is repository mainly store data of project
+								 -track code across in ur versions
+								 -show case for ur work
+								 -Integration options
+								 
+								 we are using commands gor git hub:
+								   git init, git commint, git push, git pull, git clone
+								   - we can CRUD operations in git hub
+								   
+Maven: maven is a platform for users to reposit their records
+      - using MAVEN we can do CRUD operations
+	  - depencies ,testing 
+	  -we cant create ,install,compile ,diploy the project using maven
+	  -maven is object oriented ,pom xml file

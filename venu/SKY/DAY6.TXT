@@ -1,0 +1,64 @@
+RDBMS: Relational data base management system is to define 
+    dbms with relational model tables.
+	
+Client/server:
+   -client/server is deal with various computing environment that have
+   a large no of computers	and server connected to other.
+   clients are user machine to interface and local processing capabilities,
+   actually server serve to clients 
+	
+
+1.CREATE table:
+CREATE TABLE table_name(
+   column1 datatype,
+   column2 datatype,
+   column3 datatype,
+   .....
+   columnN datatype,
+   PRIMARY KEY( one or more columns )
+);
+--->create table defines the table in the table we can enter the value in above table
+
+cRUD:
+CREATE,RETRIEVE,UPDATE,DELETE IN TABLE
+2.INSERT TABLE:
+          INSERT INTO TABLE_NAME VALUES (value1,value2,value3,...valueN);
+		  -BY USING ABOVE COMMAND WE CAN USE IN EVERY CREATE TABLE
+		  EG:INSERT INTO SYSTE( 1,INTEL,MOUSE,CPU...);
+_
+3.UPDATE:BY USING THIS WE CAN MODIFY TABLE	
+      Syntax:UPDATE table_name
+SET column1 = value1, column2 = value2...., columnN = valueN
+WHERE [condition];
+
+4.DELETE : DELETE FROM table_name
+WHERE [condition];
+we can del the record form table by using where condition.
+
+--JOINS:   SELECT ID, NAME, AGE, AMOUNT
+           FROM CUSTOMERS, ORDERS
+           WHERE  CUSTOMERS.ID = ORDERS.CUSTOMER_ID; 
+		   Here there are two tables in that common data combined as one table.
+		   joins types are: Inner join,Left Joins,right join,full join
+		Union:SELECT column1 [, column2 ]
+FROM table1 [, table2 ]
+[WHERE condition]
+
+UNION;
+
+SELECT column1 [, column2 ]
+FROM table1 [, table2 ]
+[WHERE condition]
+    UNION
+SELECT column1 [, column2 ]
+FROM table1 [, table2 ]
+[WHERE condition]
+
+
+Here, the given condition could be any given expression based on your require   
+
+RELATIONAL TABLES:
+ 1.ONE TO ONE
+ 2.ONE TO MANY
+ 3.MANY TO MAY
+ 4. ONE TABLE FETCHING DATA FROM MULTIPLE TABLES
