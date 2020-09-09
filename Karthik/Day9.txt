@@ -1,0 +1,41 @@
+3-Tier Architecture/ N-Tier Architecture:
+
+- The entire application is divided into many architecture.
+1. Presentation Logic: It usually decides on how effectively the data should should be presented in the fron-end.
+2. Business Logic: This mainly focuses on the actual logic of how the data is collated for the application. For eg, makemytrip application uses various 3rd party services to show data in their webpage.
+3. Persistent Logic: The Database communication Logic.
+4. Database.
+
+Single Server Hosting:
+1. When no or less network calls.
+2. Small code base.
+3. Uses no 3rd party services.
+
+Distributed Server Hosting:
+1. Many network calls.
+2. Large code base.
+3. Uses many 3rd party services.
+
+Failover: When one server fails or crashes, the request is redirected to another duplicate server. 
+
+LoadBalancer: It is used to manage the requests coming from the client and redirect it between the servers to distribute the load. The URL is given the LoadBalancer's IP. So request is sent to LB first, and usually it distributes the load between the servers in a round robin fashion.
+
+Cluster: Cluster is collection of servers. All the servers are considered as one unit i.e. cluster. So we can deploy the application directly in cluster instead of making a copy or deploying in each server.  
+
+www.abc.com------->LoadBalancer------>server1 / server2
+(10.10.10.10)				(10.10.10.21)/(10.10.10.22)
+
+1. One mechanism: Always go to server1 and when it crashes or unavailable then go to server2. This is failover.
+
+2. Second mechanism: Distribute loads between the server using loadbalancer.
+
+Microservices:
+Supporting:
+1. Multiple services are parallely developed and deployed. (Eveyone cannot be good at everything.Suppose , I am good at UI and you are at development.So,in this if we split it into microservice,it would be require less time to make it and also we would be having best of ui and develoment)
+2. Scaling the features simultaneously(Suppose,we want to change taxis appearance on our app.We need not to disturb our whole system architecture and code.We can just change the ui centric part.)
+3. Unit testing of each microservices is very easy as compared to testing monoliths as we will easily know where the problem is arising 
+
+Against:
+1. There are higher chances of communication failure between the services. In monolithic architecture, the application was bundled together. But now suppose, after ride service again another network call is to be made for payment service. 
+2. Microservices has the partitioned database architecture. Business transactions that update multiple business entities in a microservices-based application need to update multiple databases owned by different services.
+Suppose,we did payment ,Now it has to be communicated to driver side code .It has to be updated din different modules independently.
