@@ -1,5 +1,4 @@
 
-
   Developing a website consists of =>client side and server side code.
   Presentation(UI)->business logic->persistent logic which can be used for future reference.
   So websites are also known as 3 tier or n-tier architechture depending on the no of modules used.
@@ -26,6 +25,9 @@ SERVERS:
   Loadbalacer divides whole data betn different servers,so incase of failure of any server will not the execution of any application.
   also loadbalancer distributes reqs on server in such a way that two servers executes reqs alternatively.
   
+  Single Point of Failure(SPOF):(while deplyoing)
+  If any part of code or system fails, then it will affect on whole system.
+  
   Huge system mechanism:
   
   Huge systems has very complex code and it is tightly coupled within module which tends to  more dependency and can have more chances server failure.
@@ -35,3 +37,8 @@ SERVERS:
   which can be brk down into different modules to decrease dependencies betn them.
   Micro services are simpl, latest and have been using by different websites in long run.
   Case study:uber monolith ->uber microservices.
+  
+  Scaling:
+      Scaling means capacity to deal with increasing or decreasing number of  resources.
+      It is also called as scalup or sacledown.
+      
