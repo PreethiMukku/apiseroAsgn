@@ -1,0 +1,37 @@
+
+
+  Developing a website consists of =>client side and server side code.
+  Presentation(UI)->business logic->persistent logic which can be used for future reference.
+  So websites are also known as 3 tier or n-tier architechture depending on the no of modules used.
+  Google uses crowler for checking that if searched data and suggested data is matching or not.
+
+SERVERS:
+  For any website we write our business logic on server,so according to requriments we can use one or multiple servers.
+  
+  Supp one website is working so it is receiving 100+ request at a time.so in that senario we need to use multiple server 
+  to deal with such kind of reqs.
+  If 2 servers are there then by default server1 would received reqs.And if server1 fails then it will redirect it to the server 2 which will be of 
+  same ip address and acts as same server only.
+  In this senario these two servers are working in active/passive mechanism..which means if server 1 is active then another should be off and viceversa.
+  
+  This switching time between server1 to server 2 is known as failover.
+  If server 1 crashes then whichever data is saved before will get lost.
+  
+  If some website is receiving 100+ request then we should used load balancer which balances the load between multiple servers and allocate them task accordingly.
+  By default load balancer has port as 80.
+  
+  If we need to modify some data of server side then we must modify on all servers simultaneously, which is not practically possible so use cluster which is collection of 
+  multiple servers.
+  So whatever are the changes we can modify in cluster itself.
+  Loadbalacer divides whole data betn different servers,so incase of failure of any server will not the execution of any application.
+  also loadbalancer distributes reqs on server in such a way that two servers executes reqs alternatively.
+  
+  Huge system mechanism:
+  
+  Huge systems has very complex code and it is tightly coupled within module which tends to  more dependency and can have more chances server failure.
+  So to avoid it micro services comes into picture.
+  Basically breaking down huge system into smaller sections and used different services on it to make implementation easy,more reliable and consistent.
+  eg:uber-
+  which can be brk down into different modules to decrease dependencies betn them.
+  Micro services are simpl, latest and have been using by different websites in long run.
+  Case study:uber monolith ->uber microservices.
