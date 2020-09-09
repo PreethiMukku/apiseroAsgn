@@ -1,0 +1,209 @@
+	# Day 5 : (Database -mysql)
+	• Database 
+		- Database server
+			- Start the server.
+			- As service
+				- Windows OS start.
+		- Db client
+	-------------------
+	Database server :
+		- On same system/laptop
+		- One installation
+			- AWS installation(server)
+			- Chrome (mysql plugin)----AWS MySQL Server
+	• DB Fiddle  :  https://www.db-fiddle.com/
+	• Core concept :
+		- RDBMS : relational db management system.
+		- Most people goes to oracle bcoz of verticle dist but it’s a licensed prod.
+		- SQL -structured query lang(defined schema)
+		- NOSQL - Dynamic scehma  (mongodb)
+	• SQL :
+		- DDL
+		- DML
+		- Varchar (dynamic),char(fixed).
+		- Need :
+				- C =CREATE
+				- R = retirve
+				- U = Update
+				- D = Delete
+		- Primary key - unique key by which every row can be classified.
+		- Foreign Key - primary key in one table which is associated wiith primary key of another table.(REFERENCE TO PK)
+		- For DDL - diff syntax for oracle,sql
+		create table dept(
+		deptid smallint primary key,
+		deptname varchar(10),
+		loc varchar(3));
+		- For CRUD - Always sql syntax.
+		Insert dept values (01,"himanshi","blr");
+		- SCHEMA :
+		create table dept(
+		deptid smallint,
+		deptname varchar(10),
+		loc varchar(3),
+		  constraint deptpk primary key(deptid)          //if you want to display pk name while error occurs then include it in `pkdept`
+		);
+		  
+		create table Emp(
+		empid smallint,
+		ename varchar(10) not null,
+		salary int,
+		deptno smallint,
+		 constraint emppk primary key(empid),
+		  constraint fkemp FOREIGN KEY (deptno) REFERENCES dept(deptid)
+		);
+		  
+		 QUERY :
+		 Insert dept values (10,"himanshi","blr");
+		  Insert dept values (20,"sara","png");
+		  Insert dept values (30,"abc","hyd");
+		  Insert dept values (40,"def","blr");
+		  
+		  select * from dept;
+		  
+		  Insert Emp values (01,"himanshi",100,10);
+		   Insert Emp values (02,"ab",200,20);
+		    Insert Emp values (03,"cd",300,20);
+		    Insert Emp values (04,"e",300,30);
+		    Insert Emp values (05,"f",400,30);
+		   Insert Emp values (06,"g",500,30);
+		
+		  select * from Emp;
+		//aslo checked it by inserting duplicate pk in emp-->gave me error.
+		//and also check it with dept if 50 which doesn’t exist-->it ave me eror.
+		/hence,correct
+	• Lab 3 
+	Lab2 - Emp<------------------->Address	
+		empno(pk)----------------Address -> 
+		empno(pk)-----> fkey
+		Insert 3 records
+		1. insert a record in Emp not in address
+		2. insert a record in Address not in emp
+		3. insert a duplicate in Emp as well as Address
+	
+	From <https://github.com/Vaishali-Tapaswi/apisero/blob/master/day6/lab.txt> 
+	
+	SCHEMA :
+	create table Emp(
+	empno smallint,
+	ename varchar(10) not null,
+	salary int,
+	constraint emppk primary key(empno)
+	);
+	
+	create table Address(
+	empno smallint,
+	address varchar(10),
+	city varchar(10) not null,
+	pincode int,
+	constraint fkemp FOREIGN KEY (empno) REFERENCES Emp(empno)
+	);
+	
+	QUERY:
+	Insert Emp values (10,"himanshi","100");
+	Insert Emp values (10,"jain","200");
+	
+	select * from Emp;
+	
+	Insert Address values (20,"donwtown","blr",464);
+	Insert Address values (20,"donw","hyd",464);
+	
+	select * from Address;
+	
+	Query Error: Error: ER_DUP_ENTRY: Duplicate entry '10' for key 'PRIMARY'
+	Query Error: Error: ER_NO_REFERENCED_ROW_2: Cannot add or update a child row: a foreign key constraint fails (`test`.`Address`, CONSTRAINT `fkemp` FOREIGN KEY (`empno`) REFERENCES `Emp` (`empno`))
+	Query Error: Error: ER_NO_REFERENCED_ROW_2: Cannot add or update a child row: a foreign key constraint fails (`test`.`Address`, CONSTRAINT `fkemp` FOREIGN KEY (`empno`) REFERENCES `Emp` (`empno`))
+	
+	From <https://www.db-fiddle.com/> 
+	
+	• Retrivel of data :
+		- WHERE clause :
+		- name starts with "R"
+				- Select name from emp where name like %R%
+		- name ends with "li"
+		- name has "sh" 
+		- salary - <,>,<=,>=, !=, between
+		- deptno is IT
+		- deptno is IT or FN 
+	select name from emp  where name like 'R%';
+	select name from emp where name like '%li';
+	select name from emp where name like '%sh%;
+	
+	select name from emp where salary>100;
+	select name from emp where salary>=100;
+	select name from emp where salary between 100 and 200;
+	
+	select name from emp where deptno='IT';
+	select ename from emp where deptno='IT' or deptno='FN';
+	
+	• If you want to convert oracle to sql ,then search (todate->in sql it will be in yyyy-mm-dd and also number to int.See google.OR YOU CAN JUST WRITE A FUNCTION FOR EVERY QUERY.
+	• DISTINCT : distint values of query.
+	• GROUP BY : your data internally makes group of specific clumn you gave.
+	• Avg(),count()
+	• Having
+	• Revise Join notes.
+	• Lab practice : select count(*) from emp;
+		
+		select job, max(sal) from emp
+		group by job
+		having job='MANAGER';
+		
+		
+		select deptno, count(*) from emp group by deptno;
+		
+		SELECT e.ename,d.deptno,d.dname
+		FROM dept d,emp e
+		where d.deptno=e.deptno;
+		
+		select deptno from dept;
+	• Lab 4 practice
+	create table emp1
+	(empno tinyint , 
+	 ename char(20), 
+	 salary int, 
+	 CONSTRAINT pkEmp primary key (empno)
+	);
+	
+	create table emp2
+	(empno tinyint , 
+	 ename char(20), 
+	 comm int, 
+	 CONSTRAINT pkEmp primary key (empno)
+	);
+	
+	insert into emp1 values(1,'First',111);
+	insert into emp1 values(2,'Second',222);
+	insert into emp1 values(3,'Third',333);
+	insert into emp2 values(3,'Third',333);
+	insert into emp2 values(4,'Four',1);
+	insert into emp2 values(5,'Five',2);
+	insert into emp2 values(6,'Six',3);
+	
+	select * from emp1
+	union     //display only unique rows from both table. (it check all the column if same skip else print).
+	select * from emp2
+	
+	select * from emp1
+	union all        // will display all rows irrspctive of duplicaies.(no relation btw two tables.)
+	select * from emp2
+	
+	
+	• False column values :
+	select empno, ename,salary, 0 as comm from emp1
+	union
+	select empno, ename, 0 as salary,  comm from emp2
+	
+	• Usually we don’t have many to many relatinship between tables.
+	Wewill always go through ingtermediate table by linking each of them.
+	To reach a to c , go through  a->b->c
+	
+	• Mysql plugin for chrome ->install-> 
+	set hostname-    mydb.cyhhds8qhsga.us-east-1.rds.amazonaws.com
+	Username -  admin
+	Port -3306 default
+	Password - MyPassword
+	Select to innodb database
+	
+	• Install sql,extract sql->make otpion file with config ->my.ini file ->start the server.
+
+		
+

@@ -1,0 +1,67 @@
+	# Day 7 : SOA ,SOAP, REST, Testing 
+
+	Topics :  Procedure Oriented, Objected Oriented, Component Orient, Service Oriented Archtecture
+
+	• SOA : service oriented architecture.
+		- Imagine you are developing a web-application and you decide to decouple the functionality from the presentation of the application, because it affords greater freedom.
+		- You create an API and let others implement their own front-ends over it as well. What you just did here is implement an SOA methodology, i.e. 
+		using web-services.
+		- use of web services
+		- MMT,Cleartip
+	• SOAP (simple object access protocol )
+		- Any protocol , XML bases
+		- It provides web services communication over web.
+		- Used ofr business tobusinesss communication.
+		- It becomes very difficult as we have n+1 problem in xml.So toomuch of overhead.
+
+	• REST API  
+		- Representational state transfer.
+		- Emp obj in server---> use http protocol and post method --if url is http://---> create a record
+		If same is called with get method,it should retrive .
+		If same with d=called with delete, delete the record.
+		If same with put -----update the record.
+		- In this way  , overhead is reduced. 
+		- Httpprotocol , JSON based mostly .
+		- Rest apis can be created used for other applications
+
+	• Diff btw soap vs rest
+	SOAP :  any protocol 
+		Xml based
+		No specific operations.
+	REST : Http protocol
+		Json based mostly , we can also have other
+		Operations : get/put/delete/post.
+		
+	• Testing : (rich client)
+		• Code first : (BDD - business driven development )
+			- Business logic : Str to int,Divide,Return
+		• Test first(Test driven development - TDD)
+			- Divide("20"."2"),Divide("a"."11"),Divide(10,0)
+			- Advantage -clarity interms of what is expected like okhay,this this acse might come up and we have to incude these in our code.
+			- Saves alots of development time.
+		• Make bsisc java project----select new---jnuit test 4---testing/src--
+		--class give--method you want to test---yesfor build path--done
+		• It will gave the mehtod failed ---because our emehtod needs obj----
+		• Instead when you choose jnuit and fill class do check setup --
+		• Always use  fail()  to print osmehting that might fails.
+
+
+	• Testing (thin client) :(testing our web applications)
+		- UI testing 
+		- Interactive testing.
+	• REST API :
+		- Postman -- testing tool for API.
+		- Suppose you have written an API,You want ot test your api.
+		- MMT----Jetairways conn---is my api working good?
+		- REST API ---POSTMAN par test.
+		- Take req for check from https://reqres.in/
+		- Open postman ---request--post url and do get/post/put etc
+		- Http headers :  
+				- Get-->retrieval
+				- Post--> create
+				- Put/patch --> update existing
+				- Delete  --> delete a record.
+		
+	• Coverage : 
+		- It tells us how much od our code is coevred in test file.
+		- 70 cent is enough.

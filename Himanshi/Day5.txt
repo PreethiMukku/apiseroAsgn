@@ -1,0 +1,86 @@
+ Day 5 : Web programming :
+	
+	• Thin client (web applications)
+		- Client ----(Network)-------Server(web server)
+		Browser<----------html-------t1.html(static content-fixed content)
+		Network         https://  = protocol (for every protocol there is diff port
+				https://hostaddress = google.com(DNS (Host -> IP Address))
+				https://server:8080/ti.html = the client reuest and receivesthis t1 html page.
+	• Html 
+		- hypertext markup langugage
+	• Java -> Tomcat 
+		-  webserver+java codeon server side
+	• Thin client 
+	Github browser ------------github server---storedatabase
+	Username,password
+	Javascript----validation--modifyting something on client side--(always executedand avauble  on client side browser)
+	Google.com(client side code being executed).
+	• Your main code has to be on serverand not on client sid.(here server will be tomcate and we will code in eclipse)
+	• RIA also uses javascript+HTML.
+	• Makehtml file in notepad .save it using.html.check it on server /google.
+	• Google---> C:\apisero(location)  ---- open file from system-not recommnded
+	• Download tomact --extract it in c->work.
+	• You can start and stop any server from bin.
+	• We will configure these things throguh eclipse.
+	Eclipse->Web_project->sttaic eb proj->project name->target runtime(server on which we will deployed)->simple plain http server ->publich directory->
+	• Lab 1:
+		- Window->show view->servers->display no server in console-
+		- Create a new server.
+		- Basic http preview(it wont ask by default it will set anything)->select->finish.
+		- Create static web project ->http preview server choose in target runtime.(this I current runtime server)->finish.
+		- In that project :  Webcontnen in web project->file new -> index.html ->index.5
+		- Give titile and heading
+		- Right click on index.html or run 
+		- Choose an e xisitng server-http preview->next->finish.
+		- Automaitically embedded browser will get openend.
+		- But if you want     to test in on external browser then
+		Copy url ans paste it external.
+	• HTML FORMS :
+		- Take input via html forms.
+		- Make new html page and call it from old html page.
+		- You will see in link that whtever input u are giving is coming there.
+		(
+		/calling dusra html lage from this page
+		<a href="secondhtmlforms.html">Take me to inout html forms page</a>
+		)
+	• CSS :
+		- Deifinig  the style ,color etc as a whole.
+		- You can create a css file -stylesheet alag se using new file .
+		- Now , you can provide this css sheet link to your html files in head
+		Like    <link rel="stylesheet" href="simplecssfile.css">
+		- Now you can run it .All your html files where you have inculded the link will have that css stylesheet.
+		
+	• 404 not fund - stop the server in down area run dusra code.
+	• Whenever you find  8080 in use , 
+	Do following 
+	1. We will find the PID i.e Process Id and then we will kill the process of child process which is using this Port.
+        Find PID:Process ID (every process has unique PID) c:user>user_name>netstat -o -n -a | findstr 0.0.8080
+		Or just copy the address from right click ->properties and put it in browser.
+	• Java script
+		- JavaScript makes HTML pages more dynamic and interactive.
+		- You can aslo write it in separate fie and link it.But we usually  don’t prefer it .
+		- Don’t put anything important /bussiness logic on javascript because full code is viisible by end user on client side.
+		- Dthere are only 2 cent chances of writing js code as we have many framework,libraries which we can directly use.
+	• Format of data 
+	• XML : 
+		- In html,we can only use the tags provided already.
+		- In xml,follows hierarachical structure.
+		- In xml,you can make your own structure.
+		- Not preferred  because of huge overhead.
+		- Only prefer for B2B.
+	• JSON : 
+		- Javascript object notations.
+		- Lots of libraries avalible whenver you want ot ocnvert c->json,java->jsn,js->json,ython->json.
+		- This is the advantage of using json.Without writing single piece of code ,I m able to achieve everyhting.
+
+	• Server side code will only be processedon server and not come on client.we set validation for server side.
+	Php ,nodejsall are server side code.
+	Youwill do evrything in html page.
+	
+	• Assignmnet:
+		- Apisero image.
+		- Coloring note
+		-  button (next)
+		- Next page should have your todays notes.
+
+
