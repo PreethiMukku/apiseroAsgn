@@ -1,0 +1,65 @@
+Programming Paradigms
+Programming is a creative process carried out by programmers to instruct a computer on how to do a task.
+A program is a set of instructions that tells a computer what to do in order to come up with a solution to a particular problem.
+There are a number of alternative approaches to the programming process, referred to as programming paradigms.
+
+Procedural Programming:
+
+Procedural programming uses a list of instructions to tell the computer what to do step-by-step.
+Procedural programming relies on - you guessed it - procedures, also known as routines or subroutines. A procedure contains a series of computational steps to be carried out. Procedural programming is also referred to as imperative programming.
+Procedural programming languages are also known as top-down languages.
+
+Object-Oriented Programming:
+
+Object-oriented programming, or OOP, is an approach to problem-solving where all computations are carried out using objects.
+An object is a component of a program that knows how to perform certain actions and how to interact with other elements of the program. 
+Objects are the basic units of object-oriented programming. 
+
+Component-Oriented Programming:
+
+Component-oriented programming is a technique of developing software applications by combining pre-existing and new components, much the same way automobiles are built from other components.
+Software components are self-contained, self-describing packages of functionality containing definitions of types that expose both behavior and data.
+
+Service-Oriented Architecture:
+
+Service-Oriented Architecture (SOA) is an architectural approach in which applications make use of services available in the network. 
+In this architecture, services are provided to form applications, through a communication call over the internet.
+
+SOA allows users to combine a large number of facilities from existing services to form applications.
+SOA encompasses a set of design principles that structure system development and provide means for integrating components into a coherent and decentralized system.
+SOA based computing packages functionalities into a set of interoperable services, which can be integrated into different software systems belonging to separate business domains.
+
+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+SOFTWARE TESTING USING JUNIT
+
+JUnit is a combination of two words – Java and Unit Testing. Given the popularity of Java in software applications, JUnit has gained in popularity.
+
+Best for Test-Driven Development (TDD) Environment: To take the least number of bugs to QA teams, many engineering teams pick a test-driven development cycle. 
+Developers first perform tests, and issues are resolved, before taking the build for QA testing.
+JUnit uses assertions in the tests, and assertions are most efficient when they fail. So, JUnit helps in the TDD build of the software.
+
+Business driven development is a software development paradigm that focuses on the needs of the business over the tech.
+It is designed for enterprise software, which differs markedly from consumer-facing apps.
+BDD relies on modelling the needs of the business and uses these models to drive the design.
+
+NOTE: Testing provides code coverage and all the results in a single file which can be used for analysis therefore it is important to
+use a framework like junit.
+
+ BasicAnnotations for Junit testing
+The Junit 4.x framework is annotation based, so let's see the annotations that can be used while writing the test cases.
+
+@Test annotation specifies that method is the test method.
+
+@Test(timeout=1000) annotation specifies that method will be failed if it takes longer than 1000 milliseconds (1 second).
+
+@BeforeClass annotation specifies that method will be invoked only once, before starting all the tests.
+
+@Before annotation specifies that method will be invoked before each test.
+
+@After annotation specifies that method will be invoked after each test.
+
+@AfterClass annotation specifies that method will be invoked only once, after finishing all the tests.
+
+
+
