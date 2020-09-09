@@ -1,0 +1,138 @@
+day 9
+
+N-Tier
+
+Web Site -> Polling
+Question -> Do you support somethin
+	-> Yes,No,Not Sure
+	-> Results
+	-> 71 % - Yes, 25 - No , 5 % NS
+1. Browser---->Servlet/JSP--JavaFile--->Database
+   Html (Form)
+   Presentation---Business---Persistent--Data
+   Logic
+   Show option---->invoke apis---->Stored
+-----Booking +Flight+
+		of 15 airliness
+		collect data and show
+Hosting -->Single Server
+1. N?W calls
+2. Small code size
+3. No major 3rd party communication
+Distributed environment
+
+--------------------------
+Shopping Cart(Purchase some items)
+
+
+http status code 
+
+Brower--------------->Server
+
+1. Always to Server1
+FailOver
+2.Both Server to share load
+Server1 (10.10.10.20)
+LoadBalancer --Server1/Server2
+RoundRobin
+H/w Load balancer
+S/w Load balancer
+---------------------
+1.Failover
+Loadbalancer
+Cluster
+
+Server2 (10.10.10.10)
+
+Monoliths:Huge application into smaller sub application-->Connect each app --> as an independent service
+ Company ->10 employees
+---------> 1 person (HR)
+-----------
+10.........100 employees
+---------->2 people
+1000....100000
+----------->
+
+Service Oriented Architecture
+Design one huge system
+---->Break huge system-->small sections -->Services
+
+Suppose 10 services
+each service talks to other services.
+Data Sharing
+Too many N/w communications.  
+Security
+Loose Coupling
+Multiple code bases (REST Services)
+-> Compilation /Deployment
+Macro Project --> Micro Services application
+
+
+Example:
+Uber Application:
+1.Search -> from.. to..
+2.Getting ride 
+3.Payment processing
+1.Single Application
+1.Server
+2.readymaade support available.
+
+
+Task:Should we convert uber monolith to uber microservices
+1.Supporting arguments
+2.And oppose to microservices
+
+Microservices:
+Pros:
+Code Ownership
+SystemReliable
+Bugs can be easily fixed
+Agile
+Separation of concerns
+Loose coupling
+
+Cons:
+Network latency
+Maintainability
+
+
+Huge System  ->MicroServices
+New app
+
+Refer diagram:https://martinfowler.com/bliki/MicroservicePremium.html
+
+Unit + Web Testing
+Postman+Web Testing
+postman+Unit Testing
+
+
+Discussion on Micro Services vs monolithic
+
+-----------------------------------------
+
+New Application / Small 
+	-> small appln
+Refer to diagram - > Productivity Vs complexity
+	https://martinfowler.com/bliki/MicroservicePremium.html
+
+https://qconsf.com/sf2014/system/files/presentation-slides/QConSF-MicroServices-IPC-Netflix-Sudhir-2014.pptx
+
+
+----------------------------------------
+
+Scaling Services :
+
+
+Scalability:
+Almost same performance irrespective of load
+Whatsapp message - 1 sec/10 byte
+Whatsapp group  -> 56 members
+Due to telegram whatsapp changed capacity from 56 to 256
+Earlier 1sec/10byte and after changes 2sec/10 byte
+Scalability -> No. of users are handelled through scalability
+maintain same performance
+how?
+speed gets affected so increase more hardware
+links scalability to machine's capacity.
+
+
