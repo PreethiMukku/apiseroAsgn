@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>My WebPage</title>
+</head>
+<body>
+ <article>
+        <div id="content">
+                         
+                <table border='1' bgcolor="white">
+                    <tbody>
+                    
+                    </tr>
+                    <tr>
+                    <td width="60">
+                    <p>Day 1</p>
+                    </td>
+                    <td width="574">
+                    <p>&middot; Computer Fundamentals</p>
+                    <p>&middot; Application Development</p>
+                    <p>&middot; Types of Clients</p>
+                    <p>&middot; Rich Client</p>
+                    <p>&middot; Thin Clients</p>
+                    <p>&middot; RIA</p>
+                    <p>&middot; Different Orientations</p>
+                    <p>&middot;  Different Types of Languages</p>
+                    </td>
+                    </tr>
+                    <tr>
+                    <td width="60">
+                    <p>Day 2</p>
+                    </td>
+                    <td width="574">
+                    <p>&middot;  Programming Fundamentals</p>
+                    <p>&middot; OOPS Concepts</p>
+                    <p>&middot; Abstraction</p>
+                    <p>&middot; Encapsulation</p>
+                    <p>&middot; Inheritance</p>
+                    <p>&middot; Polymorphism</p>
+                    <p>&middot; Source code vs object code</p>
+                    <p>&middot; Naming conventions</p>
+                    
+                    </td>
+                    </tr>
+                    <tr>
+                    <td width="60">
+                    <p>Day 3</p>
+                    </td>
+                    <td width="574">
+                    <p>&middot; Constructors</p>
+                    <p>&middot; Static Methods</p>
+                    <p>&middot; final Keyword</p>
+                    <p>&middot; Packages</p>
+                    <p>&middot; Overloading and overriding</p>
+                    <p>&middot; Wrapper Classes</p>
+                    </td>
+                    </tr>
+                     <tr>
+                    <td width="60">
+                    <p>Day 4</p>
+                    </td>
+                    <td width="574">
+                    <p>&middot; Abstract class</p>
+                    <p>&middot; Exception handling</p>
+                    <p>&middot; Try , catch ,finally ,Throw</p>
+                    <p>&middot; Collections</p>
+                    <p>&middot; List ,ArrayList ,LinkedList</p>
+                    <p>&middot; Set , HashSet , TreeSet</p>
+                    <p>&middot; Map, TreeMap, HashMap</p>
+                    <p>&middot; Multi Threading</p>
+                 
+                    </td>
+                    </tr>
+                    <tr>
+                    <td width="60">
+                    <p>Day 5</p>
+                    </td>
+                    <td width="574">
+                    <p>&middot; Web Technologies overview</p>
+                    <p>&middot; HTML</p>
+                    <p>&middot; HTML document structure</p>
+                    <p>&middot; HTML 5 Tags and attributes</p>
+                    <p>&middot; Introduction to CSS</p>
+                    <p>&middot; JavaScript in web pages</p>
+                    <p>&middot; Inline Java Script / Page Level Script / External Scripts</p>
+                    <p>&middot; Input Forms </p>
+                    <p>&middot; server side development</p>
+                    </td>
+                    </tr>
+                   
+                    
+                    
+                    </tbody>
+                    </table>
+
+        </div>
+    </article>
+</body>
+</html>
