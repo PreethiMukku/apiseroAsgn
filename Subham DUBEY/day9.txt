@@ -1,0 +1,45 @@
+- The code can be divided into many parts in order to have better efficiency and performance. 
+
+- The logic of the code can be divided into N tier logics. This is basically called as layering or multi tier system. 
+
+- Multi Tier System:
+-> The first layer of three tier system are Performance Logic where we write a logic to display the information and have simple validation. 
+  This helps basically in building up of user interface. Ex: The home page of the makemytrip where the various options are displayed.
+-> The second layer is the Business Logic where the actual data and options are visible.This layer helps in extracting and showing the appropriate results which the customer os looking for. 
+  It incorporates data from various third party businesses. In makemytrip, we get the flight options available between two locations from the various flight companies.
+-> The third layer is the Persistent logic which helps in sytoring the information for the future reference. It hepls in generating a PNR which helps in easy access of the data from the database.
+
+- The dividing of these logic depends further on the network calls on the lines, code size, dependency on the third party and the load on the site. A distribution of the layers further is opted if all these parameters are high.
+
+- Failover -> There are two servers, say server 1 and server 2. The request is sent to server 1 initially. If the server 1 crashes, it sends the request to server 2. The server 2 is used only when the server 1 has crashed and failed. 
+             This is also known as Active-Passive system. However, Server 2 has to be maintained and checked regularly which is nothing but waste of resources.
+
+- Load Balancer -> The number of requests is distributed equally between two servers. This process is done by the load balancer.
+             It directs the requests to a particular server in a certain way, say it uses round robin format where the requests are sent one after the other to each server. If the server 1 does not reply to to the load balancer's request in the stipulated time, then it directs the request to the server 2. Hence there should be certain communication setup between the load balancer and the servers.
+
+- Clusters -> Suppose the html file has to be modified, it should be done in all the servers. Modifying each servers individually would be a tedious task. Hence, these common servers are compiled or collected as a collection. These collection is called as Cluster which acts as one unit.
+            Thus, performing modifications on the cluster becomes more simpler.
+            
+- Hosting/Single Server -> Simple Business logic is one which has less network calls, small code size, No major third party dependency and the Load is less.
+
+- Distributed Environment is required when there is more network calls, huge code base, higher third party dependency and when the load on the server is high.
+
+- 3 tier system can be referred to as Server because the entire data and logic is done here. Server helps in restoring data when accessed from different machines.
+
+- Monoliths are huge applications which are basically used for less complexity code in order to have better performance. However, as the complexity of the code increases the performance decreases.
+  These huge applications can be broken down into smaller independent sub applications which are called as micro services. These are independent services and do not have code dependency on others.
+
+- Uber Monolith be converted to Uber micro services?
+-- Supporting Argument
+-> Monoliths are huge appication. If any small changes are to be made in the code , then one has to build and deploy the whole application again.
+-> The code dependency in case of monoliths are very high.
+-> One can perform tasks parallelly on the micro services which is not possible in monoliths.
+-> The code of the micro services are not dependent on the other. Hence there is no dependency.
+-> There is no single point exit.
+-> Different languages can be used in different micro servers as required by the developer.
+
+--Opposing arguments
+-> Many micro servers leads to problems of management of individual servers.
+-> As the load on the servers increases, the time of response also increases to a considerable extent.
+-> The teams which would be working together in monoliths development would be split into different teams working on individual micro servers, sharing no information. Thus, there will be no transparency of information.
+-> Data handling should be done on each micro servers.
