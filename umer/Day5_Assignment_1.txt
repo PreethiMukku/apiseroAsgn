@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>My WebPage</title>
+<link  rel="stylesheet" href="sample.css">
+</head>
+<body>
+ <header>
+  <img src="apisero.jpg">
+    </header>
+   
+  <br><br>
+  <a href="Lab2.html" style="float:left">back</a>
+  <a href="assgn1.html" style="float:right">Next</a>
+  
+  <br><br>
+  OOP stands for Object-Oriented Programming. Procedural programming is about writing procedures or methods that perform operations on the data, 
+  while object-oriented programming is about creating objects that contain both data and methods.<br>
+  Object-oriented programming has several advantages over procedural programming:<br><br><br>
+
+
+<div class="myDiv">
+  <h2>OOPs Funademtals</h2>
+  <p> OOP stands for Object-Oriented Programming. Procedural programming is about writing procedures or methods that perform operations on the data, 
+  while object-oriented programming is about creating objects that contain both data and methods.<br>
+  Object-oriented programming has several advantages over procedural programming:<br><br><br>.</p>
+</div>
+
+</body>
+</html>
