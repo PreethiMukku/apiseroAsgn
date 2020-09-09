@@ -1,0 +1,88 @@
+Different Architectures: 
+
+1)Procedural architecture
+2)Object Oriented
+3)Service Oriented
+4)Compontent Oriented
+
+ ----------------------------------------------SOA( Service Oriented Architecture) -----------------------------
+	a style of software design where services are provided to the other components by application components, through a communication protocol over a network.
+	used for business to business communication.
+	implemented with web services, which makes the “functional building blocks accessible over standard internet protocols(REST, SOAP)
+	eg-  Amazon and other E-commerce sites, E-payment.
+
+Web services implemented by SOA:
+1) SOAP:
+	SOAP stands for Simple Object Access Protocol.
+	It is a XML-based protocol for accessing web services.
+	It is platform independent and language independent.
+	It is a XML-based protocol for accessing web services.
+	communication between two applications can take place over any protocol.
+	User have to define the various operations.
+
+Disadvantages of Soap Web Services:
+	Parsing need to be done--> So it is slow and consumes more bandwidth and resource.
+	Overhead(XMl-n+1 problem) i.e more variables needed.
+
+2) REST:
+	RESTful web services are light weight, highly scalable and maintainable and are very commonly used to create APIs for web-based applications.
+	REST allows a greater variety of data formats,
+	REST  uses HTTP protocols for communication between two applications.
+	REST is generally faster and uses less bandwidth 
+	different Operations are-- Create , delete, retrive, update(GET,POST,PUT,DELETE)
+	Coupled with JSON, REST is generally considered easier to work with.
+
+	
+
+
+
+
+-----------------------------------------------------------Testing Overview ------------------------------------------------
+
+Testing is the process of evaluating a system or its component(s) with the intent to find whether it satisfies the specified requirements or not.
+
+->>Importance of testing: helps to identify the defects in the early stage & try to avoid the bugs finding & get resolve in the last critical stage.
+
+----------Coverage:
+			Test coverage is defined as a metric in Software Testing that measures the amount of testing performed by a set of test. 
+
+Benefits of Test Coverage:
+	 assure the quality of the test
+	 help identify what portions of the code were actually touched for the release or fix
+	 determine the paths in your application that were not tested
+	 Prevent Defect leakageTime, scope and cost can be kept under control
+	 Defect prevention at an early stage of the project lifecycle
+
+Test Driven Developement (TDD)
+ 		In this ,first all the test cases are developed that need to be satisfied in order to meet the project requirements and then keeping in mind these test cases, the code is developed.
+		saves development time as code is purely written to meet the basic functionality.
+		Developer clearly knows what basic functionalities are required from his end.
+		The complete project is then tested using Integration testing.
+
+Behaviour Driven Developement (BDD)
+	In this, all the developers, tech + non-tech people, project stakeholders, etc come together to discuss the code requirements.
+	It focus on:
+		What a system should do and not on how it should be implemented.
+		Providing better readability and visibility.
+		Verifying not only the working of the software but also that it meets the customer’s expectations.
+		Acceptance Testing is Done is ensure the customer's ecpectations are meet.
+
+
+
+------------------------- Testing Rich Client/Thin Client / Rest APIs----------------------
+
+ Testing Rich Client: Junit testing is done.
+		      It defines the no. of test cases satisfied out the total defined test cases.
+
+ Testing Thin Client:UI testing, user interaction, manually checking funcytionality of links , buttons etc in any web application.
+
+ Testing Rest APIs: POSTMAN is used .
+
+Reqres.com-->>> REST API to respond to our requests.
+		to test functions like GET, POST, PUT, DELETE etc.
+		GET: get records. --------------------------------- 200 ok
+		POST: to create new records-------------------------201 Created
+	        PUT: update records OR create new if not exist.-----200 OK response
+		DELETE: delete the record------------ --------------204 No content response
+
+		
