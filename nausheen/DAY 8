@@ -1,16 +1,43 @@
 WSDL: Stands for Web Service Description Language
 
-In SOAP(simple object access protocol), when you use web service and add a web service to your project, your client application(s) doesn't know about web service Functions. Nowadays it's somehow old-fashion and for each kind of different client you have to implement different WSDL files. For example you cannot use same file for .Net and php client. The WSDL file has some descriptions about web service functions. The type of this file is XML. SOAP is an alternative for REST.
+In SOAP(simple object access protocol), when you use web service and add a web service to your project, your client application(s) doesn't know about web service Functions.
+-Nowadays it's somehow old-fashion and for each kind of different client you have to implement different WSDL files. 
+-For example you cannot use same file for .Net and php client.
+-The WSDL file has some descriptions about web service functions.The type of this file is XML. 
+-SOAP is an alternative for REST.
+ 
+Disadvantages of Soap :
+	Parsing needs to be done...>  Therefore it is slow and consumes more bandwidth and resource.
+	Overhead(XMl-n+1 problem) i.e( more variables needed.)
 
 REST: Stands for Representational State Transfer
 
-It is another kind of API service, it is really easy to use for clients. They do not need to have special file extension like WSDL files. The CRUD operation can be implemented by different HTTP Verbs(GET for Reading, POST for Creation, PUT or PATCH for Updating and DELETE for Deleting the desired document) , They are based on HTTP protocol and most of times the response is in JSON or XML format. On the other hand the client application have to exactly call the related HTTP Verb via exact parameters names and types. Due to not having special file for definition, like WSDL, it is a manually job using the endpoint. But it is not a big deal because now we have a lot of plugins for different IDEs to generating the client-side implementation.
+-It is another kind of API service, it is really easy to use for clients. 
+-They do not need to have special file extension like WSDL files. 
+-The CRUD operation can be implemented by different HTTP Verbs(GET for Reading, POST for Creation, PUT or PATCH for Updating and DELETE for Deleting the desired document) , 
+-They are based on HTTP protocol and most of times the response is in JSON or XML format. 
+-On the other hand the client application have to exactly call the related HTTP Verb via exact parameters names and types. 
+-Due to not having special file for definition, like WSDL, it is a manually job using the endpoint.
+-But it is not a big deal because now we have a lot of plugins for different IDEs to generating the client-side implementation.
 
-SOA: Stands for Service Oriented Architecture
+SOA: Stands for Service Oriented Architecture.
 
-Includes all of the programming with web services concepts and architecture. Imagine that you want to implement a large-scale application. One practice can be having some different services, called micro-services and the whole application mechanism would be calling needed web service at the right time. Both REST and SOAP web services are kind of SOA.
+Includes all of the programming with web services concepts and architecture. Imagine that you want to implement a large-scale application. 
+One practice can be having some different services, called micro-services and the whole application mechanism would be calling needed web service at the right time. 
+Both REST and SOAP web services are kind of SOA.
 
 JSON: Stands for javascript Object Notation
+:::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
+
+Coverage:
+			Test coverage is defined as a metric in Software Testing that measures the amount of testing performed by a set of test. 
+
+Benefits of Test Coverage:
+	 -assures the quality of the test
+	 -help identify what portions of the code were actually touched for the release or fix
+	 -determine the paths in your application that were not tested
+	 -Prevent Defect leakageTime, scope and cost can be kept under control
+	 -Defect prevention at an early stage of the project lifecycle
 
 /////////////////////////////////////////////////////////////////TESTING AND ITS OVERVIEW///////////////////////////////////////////////////////////////////////
 
@@ -53,6 +80,24 @@ Business-Driven Development (BDD) is a testing approach derived from the Test-Dr
 -Reduces efforts needed to verify any post-deployment defects.
 
 ***********************************************************************************************************************************************************************
+**********************************************************Testing Rich Client/Thin Client / Rest APIs*********************************************************************
+
+ Testing Rich Client:- {Junit testing is done.}
+		                    -It defines the no. of test cases satisfied out the total defined test cases.
+
+ Testing Thin Client:-UI testing, 
+                     -user interaction,
+                     -manually checking funcytionality of links,
+                     -buttons etc in any web application.
+
+ Testing Rest APIs: We used postman or can also use rest.
+
+ We used Reqres.com-->>> REST (APIs) to respond to our requests.
+		to test functions like GET, POST, PUT, DELETE etc.
+		GET: get records. --------------------------------- 200 ok
+		POST: to create new records-------------------------201 Created
+	 PUT: update records OR create new if not exist.-----200 OK response
+		DELETE: delete the record------------ --------------204 No content 
  _______________________________________________________________HTTP STATUS CODES______________________________________________________________________________________
 1xx Informational
 
