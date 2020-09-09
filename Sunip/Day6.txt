@@ -1,0 +1,45 @@
+Day 6:- SQL and DBMS 
+
+Types of Relationships:
+1)one-one: Such a relationship exists when each record of one table is related to only one record of the other table.Ex : Person and Passport
+2) one-many:Such a relationship exists when each record of one table can be related to one or more than one record of the other table. This relationship is the most common relationship found. A one-to-many relationship can also be said as a many-to-one relationship depending upon the way we view it.
+
+      
+3)many-many:Such a relationship exists when each record of the first table can be related to one or more than one record of the second table and a single record of the second table can be related to one or more than one record of the first table.
+Example Product and Customer
+
+RDMS: Relational Database Management System
+	--> A relational database refers to a database that stores data in a structured format, using rows and columns.
+	--> This makes it easy to locate and access specific values within the database.
+	--> It is relational because the values within each table are related to each other.
+	--> Tables may also be related to other tables.
+	--> The relational structure makes it possible to run queries across multiple tables at once.
+		Ex:--> Oracle Database, MySQL, Microsoft SQL Server, etc.
+
+Database Server:
+	--> A database server is a server which uses a database application that provides database services to other computer programs or to computers.
+	--> Database management systems (DBMSs) frequently provide database-->server functionality.
+	--> Some database management systems (such as MySQL) rely exclusively on the client–server model for database access.
+	
+CRUD Operations in Database:
+	Create --> Used to insert row to table
+	Read --> Used to retrieve data from table
+	Update --> Used to edit rows in a table.
+	Delete --> Used to delete rows in a table.
+	
+
+Types of joins:-
+
+		--> Inner Join
+			Selects records that have mathcing values in both tables.
+			
+		--> Left Join
+			Returns all records from the left table, and the matched records from the right table.
+			The result is NULL from the right side, if there is no match.
+		
+		--> Right Join
+			Returns all records from the right table, and the matched records from the left table.
+			The result is NULL from the left side, when there is no match.
+			
+		--> Full Join
+			Returns all records when there is a match in left or right table records.
