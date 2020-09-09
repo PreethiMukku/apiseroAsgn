@@ -1,0 +1,66 @@
+--> --> > N tier Architecture --> --> > 
+We have different levels of architecture like 1st we can have presention layer which is shown to the user then we can have 
+the buisness logic which will show the data asked by them in our designed manner.Then we could have persistent logic wher we could store the data
+3 most common forms of n-tier/3-tier application:
+--> --> > Presentation layer - UI
+--> --> > Business Logic layer - business logic, API
+--> --> > Database layer - db connection for access and manupulation
+
+Single Hosting -->  
+--> --> > Only one server is used for the application .It is suitable  if the code base is small and the requirement is less or during the starting phase of the buisness
+--> --> > It has simple logic and generally doesnot use any 3rd party service.
+
+Distributed Hosting -->  Many servers are deployed with exact same logic so as we can have other servers for managing the load or during failure of any server.here there are many network calls hence could be slow
+
+
+Failover--> Failover is a backup operational mode that automatically switches to a standby database, server or network if the primary system fails, 
+	   or is shut down for servicing. Failover is an extremely important function for critical systems that require always-on accessibility.
+
+Load Balancer--> A load balancer is a device that acts as a reverse proxy and distributes network or application traffic across a number of servers. 
+		Load balancers are used to increase capacity (concurrent users) and reliability of applications.
+		They improve the overall performance of applications by decreasing the burden on servers associated with managing and maintaining application and network sessions, as well as by performing application-specific tasks.
+		They follows round robin.
+
+
+Cluster-->Server clustering refers to a group of servers working together on one system to provide users with higher availability. 
+	  These clusters are used to reduce downtime and outages by allowing another server to take over in the event of an outage.
+	  It means that multiple servers are grouped together to achieve the same business and can be regarded as one computer.
+
+
+
+Downtime -->  The time when the server is down and cant respond to the services asked.This usually leads to hampering of buisness.
+
+Advantages of monolith over microservices
+--> --> >Simple to develop.
+--> --> >Simple to test. For example you can implement end-to-end testing by simply launching the application and testing the UI with Selenium.
+--> --> >Simple to deploy. 
+--> --> >Simple to scale horizontally by running multiple copies behind a load balancer.
+
+Microservices-based applications can better handle fault isolation and tolerance, 
+but one of the advantages of monolithic architecture is that it's easier to test things when they're all in one place.
+
+Communication between the components in a monolith occurs within the same application. In a microservices-based application, 
+developers have to use inter-service communication designs to enable the services to talk to each other. 
+Additionally, developers have to consider whether a microservice is communicating with another microservice synchronously or asynchronously.
+
+--> --> >Being more complicated than most monolithic applications
+--> --> >Requiring cultural changes
+--> --> >Often are more expensive than monoliths
+--> --> >Can present security threats
+
+--> --> >In a monolithic application, if there is a security issue in any one component of the application, the entire application becomes vulnerable.
+ --> --> >Teams can find it challenging to isolate a potential security threat because they cannot bring down the entire application to solve a security issue.
+
+
+
+Scalability:
+--> --> > Almost have some performance irrespective of increased/decreased load
+Ex: Whatsapp message (download/upload) - 1 sec/10 byte
+    Earlier Whatsapp message in group  - 56 members was limit 
+    Later Telegram has started 	       - 200 members in a group
+	Then Whatsapp Group increased to   - 256 members
+	Uploaded/Downloaded time           - 2 sec/10 byte
+	
+--> --> > Should link to number of users
+--> --> > Maintains almost same performance
+--> --> > Machine capacity depends on hardware works on performance side
