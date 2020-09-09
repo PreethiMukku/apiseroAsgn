@@ -1,0 +1,40 @@
+TESTING:
+
+Code Coverage:
+How much part of code is getting tested.
+
+Testing is done to make sure that code is working properly and is it ready for deploying.
+we use different test cases for testing particular modules.
+
+Test Driven Developement And Behaviour driven developement:
+  Test Driven Developement 
+  In this Test Cases are given first and then developer is asked to create code which satisfies these test cases.
+  Also we get clarity about what to code according to test cases so it saves time.In this senario we can do unit testing and integration testing.
+
+Behaviour driven developement:
+In this we observe behavior of program while execution and compare if its matches given requirements,
+and checks its behaviour.At the end of it acceptance testing is done.
+
+Testing Rich Client:
+ Junit 
+
+Testing REST services
+Service oriented arch(SOA)
+
+Testing Thin Client
+Web Applicaions 
+checking UI (testing)
+
+REST services
+Uses JSON
+HTTP,HTTPS protocol is used.
+can be test using url on postman.
+Implementation of REST Service Request using 
+get,post,put,delete methods.
+
+SOAP services
+XML based.
+Protocols used HTTP,FTP
+we can define our operations.
+
+Both rest and soap are not that secure.
