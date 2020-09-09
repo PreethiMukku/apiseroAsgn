@@ -1,0 +1,105 @@
+->RDBMS
+  - Relational Database Management System.
+  - DBMS for maintaining relational databases.
+  - Data is stored in structured form(tables) using rows and columns.
+  - Popular examples microsoft SQL server, oracle Database, MySQL, IBM DB2.
+
+-> NoSQL
+  - Unstructured way of storing data.
+  - each Document(row) can have diferent struture.
+  - popular example MongoDb.
+
+-> Database server
+  - on same system/laptop
+  - AWS Installation (Server)
+  - Use Chrome MySQL Plugin to connnect AWS MYSQL Server.
+
+-> DDL
+  - Data definition language
+  - Create, alter, drop
+-> DML
+  - Data manipulation language
+  - Insert,Update, Delete
+
+-> Primary key
+  - uniquely identifies the record in a table
+  - Not Null
+
+-> Foreign Key
+  - link between two tables
+  - field in a table that links to primary key of another table.
+
+-> Referential Integrity
+  - every value in a foreign key column will be found in the primary key of the table from which
+    it is originated.
+
+-> CRUD
+  - C  create (create new entries in database)
+  - R  Read  (fetch the records from database)
+  - U  Update (update the records)
+  - D  Delete (delete the records)
+
+Example :
+
+-> Create table
+  - Create table dept( 
+                     deptno tinyint, 
+                     dptname varchar(10), 
+                     loc char(3),
+                     constraint "dpt_pk" primary key(deptno));
+   
+-> Insert Record
+ - Insert into dept values(1,'IT','hyd');
+
+-> Retrieve
+ - select * from emp;
+
+-> Update Record
+ - update dept set deptname='HR' where deptno=1; 
+
+-> Foreign key
+ - Create table emp(
+                    empno tinyint,
+                    ename varchat(20),
+                    address varchar(20), 
+                    deptno tinyint, 
+                    CONSTRAINT "emp_pk" primary key(empno),
+                    CONSTRAINT "emp_fk" foreign key(deptno) references dept(deptno));
+-> Like
+-> In
+-> between
+-> Alaises
+-> Group By
+-> Having
+-> Distinct
+-> COUNT
+-> Avg
+-> MIN
+-> MAX
+
+-> Relationships
+  -> one -------------(*) Many
+  -> Many (*) ---------- one
+  -> Many (*)-----------(*) Many
+    - person ------------------Event
+    - person -------------M   InterTable   M-----------Event
+ 
+  
+
+-> Joins
+ - combine rows from two or more tables.
+ -> inner join
+   - returns records that have matching values in both tables
+ -> left join
+   - returns all records from left table and matched records from right table
+ -> Right join
+   - returns all records from right table and matched records from left table.
+ -> Full join 
+   - returns all records when there is a match in either left or right table.
+
+-> UNION 
+ - combine the result of two or more select statements
+ - distinct values
+-> UNION ALL
+ - duplicate values.
+ 
