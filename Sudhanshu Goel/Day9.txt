@@ -1,0 +1,80 @@
+3 tier architecture  (used in client server system ) 
+
+1. Presentation Tier / Logic 
+
+First we have interface or client side presentation. It is basically the Fronte end Part of the server or User interface 
+Like In Make My Trip when we visit we see many options as Booking Hotels . Flights , Trains and others . We also see the 
+login Options 
+
+2.  Business Tier / Logic 
+.
+In Middle we have combination of multiple tiers contains the functional business logic which drives an application’s core capabilities
+Example : Implementing the Actual Booking , integrating various services provided by various providers etc .
+
+3. Persistent Logic 
+
+it is the End tier is the The relational database management system on the database server contains the computer data storage logic
+
+When we work on Various Servers we have some terms as 
+
+Fail Over : When one server fails then we need to send the load to server two and then the new server will be taking all the 
+incoming requests and sends the response . 
+
+Load Balancers : When we have many servers then we are using load balancers to distribute the load equally on the servers 
+Cluster : collection of servers , 
+
+=>Failover is the ability to seamlessly and automatically switch to a reliable backup system.
+
+=>A redundant or standby database server, system, or other hardware component, server, or network 
+should be ready to replace any previously active version upon its abnormal termination or failure
+
+=>Cluster is a collection of server which work as a one unit. Each server will be taking the request alternatively so we say that all the servers are working simultaneously.
+
+Example 
+
+www.abc.com------->LoadBalancer------>server1 / server2
+(20.10.10.12)			(20.10.10.10)/ (20.10.10.11)
+
+Single Servers
+
+	*Less Network Calls 
+	*Small Code Base
+	*Less Third Party Communication 
+	*Less Load 
+	
+Distributed Server 
+	*More Network Calls 
+	*Large Code Base
+	*There are third party dependencies(payment gateways)
+	*Concurrency/load is high.
+	
+Monolithic vs Microservices 
+Monolithic is the architecture where we have all the services in one unit. It is basically used when we need to develop
+small software and when load is less 
+
+Where as in microservices we divide the work in smaller units where each unit is responsible for performing different Fucntions
+Each project and services are independent from each other at the code level.
+
+As in Today's world we have very heavy web services needed to we go for Microservices over Monolithic 
+
+Pros Are 
+
+Independent service increase the speed of experimentation
+Services can be build with diverse set of technologies
+Services have independent cycles
+Growth and scale of system becomes good
+Separately portable
+Less dependencies over central server
+Debugging and maintenance will be easy
+Flexible to make changes
+Easier to track the progress
+
+Cons Are 
+Being more complicated than most monolithic applications
+Requiring cultural changes
+Often are more expensive than monoliths
+Can present security threats
+
+Microservices-based applications can better handle fault isolation and tolerance, but one of the 
+advantages of monolithic architecture is that it's easier to test things when they're all in one place.
+We another problem in Microservices is data consistency . as as each service has its own database and transaction management system.

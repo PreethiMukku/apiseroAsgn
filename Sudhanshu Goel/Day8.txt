@@ -1,0 +1,57 @@
+Testing 
+
+Testing is basically done to detect the bugs and errors when we run the Code .  
+It also helps in increasing quality of the software and making software more reliable.
+
+Test Driven Development 
+
+In this the test cases are known before hand then according to the them developer develops the Code . So We adjust the code 
+according to the errors that will occur when we do the testing 
+
+Benefits oF this Approach 
+	*Helps reduce the amount of time required for rework
+	*Helps explore bugs or errors very quickly
+	*Helps get faster feedback
+	*Encourages the development of cleaner and better designs
+	*Enhances the productivity of the programmer
+	
+Behaviour Driven Development
+ 
+ In this approach various teams including customer , Non -Tech , Technical Onces sits together and then they dicusss the
+ requirements of the project and discuss the procedure of the developmnet . It came with a SRS ( Software Requirement Specification)
+ . After all these only the developer starts coding of the project .
+ 
+ Benefits oF this Approach
+	*Helps reach a wider audience by the usage of non-technical language
+	*Focuses on how the system should behave from the customer’s and the developer’s perspective
+	*BDD Is a cost-effective technique
+	*Reduces efforts needed to verify any post-deployment defects
+	
+Coverage->
+-Used while testing hence to make sure how much of code is under testing.
+-can define test cases to methods.
+
+SOAP services->
+-XML data format is  used 
+-loose coupling.
+-Any protocol can be used .
+-Operations can be defined by us.
+
+
+REST services->
+-Only HTTP protocol is used
+-JSON format is only used 
+
+Rest API has many requests such as 
+
+1. GET 
+2. POST 
+3. PUT 
+4. DELETE 
+and many other 
+
+And we have implemented these using Postman . By Using the app we have send the request and check the response . we take
+Data from reqres.in website . For Request like PUT and DELETE we only send the data by writing them in body on the app 
+and then we send it . We also Receive the Response in JSON format 
+
+
