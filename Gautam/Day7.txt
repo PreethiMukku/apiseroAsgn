@@ -10,4 +10,6 @@ Github
 ->It is used for sharing code and files.It is a git repository hosting service.
 
 Maven
-->Maven is a software project management and comprehension tool.It is based on concept of Project Object Model.It provides dependency management.
+->Maven is a software project management and comprehension tool.
+->It is based on concept of Project Object Model.
+->It provides dependency management.
