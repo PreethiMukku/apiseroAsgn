@@ -1,0 +1,43 @@
+SOA:
+  -> Service oriented architecture
+  -> Provides services to clients
+  -> Doesn't depend on client architecture
+  -> SOAP based services -> any protocol + Xml data format
+  -> Rest based services -> Http protocol + any format(Json prefered)
+
+SOAP:
+  ->SOAP stands for Simple Object Access Protocol
+  ->Requests are not tightly coupled, can work with any protocols
+  ->Http get/post are the only protocols supported in SOAP
+  ->Can use any protocol
+  ->Can only work with XML format
+  ->Requires more bandwidth, Since SOAP Messages contain a lot of information
+
+REST:
+  ->REST stands for Representational State Transfer
+  ->Tightly coupled with Http protocol
+  ->Does not need much bandwidth when requests are sent to the server. REST messages mostly just consist of JSON messages
+  ->REST permits different data format such as Plain text, HTML, XML, JSON, etc. Preferred format  is JSON
+
+Testing:
+  Behaviour driven development (BDD):
+	Document oriented
+	Requirements are gathered and functionalities are defined first
+  Test driven development (TDD):
+	Test cases are designed first
+	Bsed on test cases functionality is developed
+	Reduces development time 
+	-> unit testing
+	-> integration testing
+
+Rich client testing -> JUnit(Java applications)
+Thin client testing -> Unit testing(functionality)
+		       Web UI testing
+Rest API -> Postman
+Http methods -> GET -> gives data
+		POST -> creates entity
+		PUT -> updates entity
+		DELETE -> deletes entity
+
+Code coverage -> amount of code covered in testing
+Test coverage -> No.of features covered in testing
