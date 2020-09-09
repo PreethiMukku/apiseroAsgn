@@ -1,0 +1,63 @@
+--------------------------3 TIER /N TIER ARCHITECTURE--------------------------
+
+Presentation    ->   BusinessLogic       ->        Persistance Logic  >    data
+(UI/UX)
+Show pages            Invoking APIs                (Storing info in database)
+option
+
+
+
+*Fail Over-> Switching to another server when the primary server fails.
+Failover is the ability to seamlessly and automatically switch to a reliable backup system.
+
+
+***Load Balancers : When we have many servers then we are using load balancers to distribute the load equally on the servers .
+(handling requests by switching servers).
+
+***Cluster : collection of servers working as a single unit. 
+
+
+Example 
+
+www.abc.com------->LoadBalancer------>server1 / server2
+(20.10.10.12)			(20.10.10.10)/ (20.10.10.11)
+
+Single Servers
+
+	*Less Network Calls 
+	*Small Code Base
+	*Less Third Party Communication 
+	*Less Load 
+	
+Distributed Server 
+	*More Network Calls 
+	*Large Code Base
+	*There are third party dependencies(payment gateways)
+	*Concurrency/load is high.
+	
+------------------------Monolithic ---------------
+(Huge Application)
+Monolithic is the architecture where we have all the services in one unit. It is basically used when we need to develop
+small software and when load is less 
+
+---------------Microservices--------------------------------------------
+Where as in microservices we divide the work in smaller units where each unit is responsible for performing different Fucntions
+Each project and services are independent from each other at the code level.
+
+BENIFITS:
+
+1)Independent service increase the speed of experimentation
+2)Services can be build with diverse set of technologies
+3)Services have independent cycles
+4)Growth and scale of system becomes good
+5)Separately portable
+6)ess dependencies over central server
+7)Debugging and maintenance will be easy
+8)Flexible to make changes
+9)Easier to track the progress
+
+DISADVANTAGES:
+1)Being more complicated than most monolithic applications
+2)Requiring cultural changes
+3)Often are more expensive than monoliths
+4)an present security threats

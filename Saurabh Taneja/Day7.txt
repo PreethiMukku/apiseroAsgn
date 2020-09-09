@@ -1,0 +1,48 @@
+-------------TESTING--------------------
+
+Software Testing is evaluation of the software against requirements gathered from users and system specifications.
+Testing is conducted at the phase level in software development life cycle or at module level in program code.
+
+1)Test Driven Development(TDD):
+It is a testing methodology or a programming practice implemented from a developer’s perspective.
+In this technique, a QA engineer starts designing and writing test cases for every small functionality of an application.
+
+2)Behaviour Driven Development(BDD):
+In BDD, tests are mainly based on systems behavior. This approach defines various ways to develop a feature based on its behavior.
+
+TEST DRIVEN DEVELOPMENT:
+	1)Helps reduce the amount of time required for rework
+	2)Helps explore bugs or errors very quickly
+	3)Helps get faster feedback
+	4)Encourages the development of cleaner and better designs
+	5)Enhances the productivity of the programmer
+	6)Allows any team member to start working on the code in the absence of a specific team member. This encourages knowledge sharing and collaboration
+	7)Gives the programmer confidence to change the large architecture of an application easily
+	8)Results in the creation of extensive code that is flexible and easy to maintain.
+	
+BEHAVIOUR DRIVEN DEVELOPMENT:
+    1)Helps reach a wider audience by the usage of non-technical language
+	2) Focuses on how the system should behave from the customer’s and the developer’s perspective
+	3) BDD Is a cost-effective technique
+	4) Reduces efforts needed to verify any post-deployment defects	
+
+
+-------------------APIS--------------------
+
+1) Rest-apis: Representaional state transfer.(state of the object can either be JSON/XML.
+  It is light-weight and efficent data exchange.
+  *Only HTTP protocol is used
+  *Operations-get/put/update/delete/patch
+  *Requests can be made using postamn or Advanced Rest Client.
+  
+2) SOAP-APIS: Simple object access Protocol  
+  *Supports the xml data format only 
+  *Strongly follows present standards such as messaging structure,a set of encoding rules, and a convention for providing reqs/res.
+  *makes responses langueages and platform independent.
+  
+ CODE COVERAGE:
+	* Code Coverage testing is determining how much code is being tested.
+	* Code Coverage = (Number of lines of code exercised)/(Total Number of lines of code) * 100%
+	* It helps you to measure the efficiency of test implementation
+	* It offers a quantitative measurement.
+	* It defines the degree to which the source code has been tested.
