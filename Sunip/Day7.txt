@@ -1,0 +1,71 @@
+Day 7:--> Github and Maven
+
+Types of Version control system:-
+1. local version system:-->There is common file which everyone is accessing ,modifying and commiting .
+2. Centralized version system :-->Centralized version control systems contain just one repository and each user gets their own working copy.
+3. Distributed version system(DVCS) :-->A distributed version control system (DVCS) is a type of version control where the complete codebase — including its full version history — is mirrored on every developer's computer.
+Changes to files are tracked between computers
+
+GitHub:
+	Git commands:-
+		-> git init 
+		-> git pull
+		-> git push
+		-> git add(-a)
+		-> git -m
+		-> git commit
+		-> git clone
+	--> GitHub is a code hosting platform for collaboration and version control.
+	--> GitHub lets multiple employees work together on projects.
+
+Version Control:-
+	--> Version control allows you to keep track of your work and helps you to easily explore the changes you have made, lets say data, coding, etc.
+	--> There are three models for Version Control Systems. They are:
+		Local Data Model:
+			This is the simplest variations of version control, and it requires that all developers have access to the same file system.
+
+		Client Server Model:
+			Using this model, developers use a single shared repository of files.
+			It does require that all developers have access to the repository via the internet of a local network.
+
+		Distributed Model:
+			Using this model, developers use a single shared repository of files.
+			It does require that all developers have access to the repository via the internet of a local network.
+			This is the model used by GitHub.
+
+Repository:
+	It is a central storage space where our project work can be stored and maintained.
+
+Update a file in a github repository:
+	--> Firstly create a repository on github by enabling a readme.md, to which a file should be updated.	
+	--> Now create a folder on our local system
+	--> From that folder go to the cmd and enter 'git init'
+	--> Now enter the command to pull the repository
+		git pull https://github.com/SunipBhat/tmpdemo master
+	--> Now a readme.md file is added in current directory
+	--> Open that file and make changes and close it.
+	--> Now give the below commands to push our file to the master repository.
+		git commit -->a -->m message
+		git remote add mynm https://github.com/SunipBhat/tmpdemo
+		git push --> set -->upstream mynm master
+	--> Now if we go and see the readme file in the GitHub it should be the updated with our changes.
+	--> In the same way we can also make a duplicate copy of the repository by using clone function.
+
+--> The another main function GitHub provides is tracking the entire details who is performing what in a graphical or details manner.
+--> Also we can give certain permissions to restrict data to some of the users.
+
+Maven:
+	--> Maven is a build automation tool used primarily for Java projects.
+	--> Maven addresses two aspects of building software: how software is built, and its dependencies.
+	--> It comes with pre-->defined targets for performing certain well-->defined tasks such as compilation of code and its packaging.
+	--> Maven dynamically downloads Java libraries and Maven plug-->ins from one or more repositories such as the Maven 2 Central Repository, and stores them in a local cache.
+	--> This local cache of downloaded artifacts can also be updated with artifacts created by local projects. Public repositories can also be updated.
+
+POM.xml file:
+	--> A Project Object Model (POM) provides all the configuration for a single project.
+	--> General configuration covers the project's name, its owner and its dependencies on other projects.
+	--> One can also configure individual phases of the build process, which are implemented as plugins.
+
+--> We can execute maven using goals. Some important goals used for execution are clean, compile, package, install, deploy.
+--> A central feature in Maven is dependency management.
+  Maven's dependency-->handling mechanism is organized around a coordinate system identifying individual artifacts such as software libraries or modules.
