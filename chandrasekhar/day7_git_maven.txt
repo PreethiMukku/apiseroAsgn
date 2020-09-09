@@ -1,0 +1,35 @@
+----------GITHUB----------
+-Github is a web-based platform used for version control.
+-Git simplifies the process of working with other people and makes it easy to collaborate on projects. 
+-Team members can work on files and easily merge their changes in with the master branch of the project.
+- Github comes under Distributed Version Control type of version control.
+- Issues are a great way to keep track of tasks, enhancements, and bugs for your projects using Github's issue tracker.
+- In github pull request helps in collaboration if you propose changes someone reviews and pull and merge them into their branch.
+
+Types of Version Control Systems:
+Local Version Control System
+-Local version control system maintains track of files within the local system.
+-single local machine.
+Centralized Version Control System 
+-In this approach, all the changes in the files are tracked under the centralized server.
+-The centralized server includes all the information of versioned files, and list of clients that check out files from that central place.
+-one repository where each user gets their copy
+Distributed Version Control
+-The clients completely clone the repository including its full history. 
+-If any server dies, any of the client repositories can be copied on to the server which help restore the server.
+-Every clone is considered as a full backup of all the data.
+
+git commands:
+Git supports various features/operations using different commands
+-init
+-pull
+-push
+-add
+-commit
+-clone
+
+--------MAVEN------
+- Maven is a powerful project management tool that is based on POM (project object model which is XML file).
+- It is used for projects build, dependency and documentation.
+- It is written in Java Language and used to build and manage projects written in C#, Ruby, Scala, and other languages.
+- In short terms we can tell maven is a tool that can be used for building and managing any Java-based project.
