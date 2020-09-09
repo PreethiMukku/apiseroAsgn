@@ -1,0 +1,36 @@
+Day 6 - RDBMS/SQL	
+
+RDBMS
+   RDBMS stands for Relational Database Management System
+   Based on relational model
+   Basis for Sql
+   Data is stored in tables(collection of data entries)
+   Table = rows + columns
+   provides vertical distribution of data
+   Keys:
+	Primary key -> Doesn't allow duplicates or null values
+		    -> Uniquely identifies each row/record in a database table
+	Foreign key -> refers to another table in database
+		    -> Uniquely identifies each row/record in any another table in database 
+   Normalization: 
+	efficient organizing of data
+	Avoids redundancy and anamolies
+
+   Database Server/Client
+	Sql and NoSql
+        	
+    Relationship in tables
+        one-one
+        one-many
+        many-many
+
+    Fetching data from multiple tables
+        Joins: 
+	   Used in joining of tables based on commom column in both tables
+	   Inner join, Left join, Right join, Full join, Self join and Cartesian product
+	Union:
+	   Combines the results of two or more SELECT statements without returning any duplicate rows
+	   Two tables must have same number of columns
+	   Same number of column expressions
+	   The same data type and
+	   Have them in the same order
