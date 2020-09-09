@@ -63,7 +63,10 @@ Ex: select d.deptno from dept d INNER JOIN emp e ON e.deptno = d.deptno;
 	Ex: SELECT e.ename from emp RIGHT JOIN dept d ON e.deptno = d.deptno ORDER BY d.deptno;
 	
 Union:
-- Used to combine the result set of two or more 'Select' statements
+- Used to combine the result set of two or more 'Select' statements (only distinct values)
 Ex: SELECT * from Emp1 UNION SELECT empno, ename from Emp2;
+
+
+- The UNION ALL command combines the result set of two or more SELECT statements (allows duplicate values)
 
 
