@@ -59,3 +59,53 @@ The UNION operator is used to combine the result-set of two or more SELECT state
 SELECT column_name(s) FROM table1
 		UNION ALL
 		SELECT column_name(s) FROM table2;
+		
+Version Control System :
+Version control systems are a category of software tools that help a software team manage changes to source code over time. Version control software keeps track of every modification to the code in a special kind of database. If a mistake is made, developers can turn back the clock and compare earlier versions of the code to help fix the mistake while minimizing disruption to all team members.
+Types of Version Control Systems:
+
+1.Local Version Control Systems
+2.Centralized Version Control Systems
+3.Distributed Version Control Systems
+
+Local Version Control Systems: It is one of the simplest forms and has a database that kept all the changes to files under revision control. RCS is one of the most common VCS tools. It keeps patch sets (differences between files) in a special format on disk. By adding up all the patches it can then re-create what any file looked like at any point in time.
+
+Centralized Version Control Systems: Centralized version control systems contain just one repository and each user gets their own working copy. You need to commit to reflecting your changes in the repository. It is possible for others to see your changes by updating.
+
+Two things are required to make your changes visible to others which are:
+
+1.You commit
+2.They update
+
+It has some downsides as well which led to the development of DVS. The most obvious is the single point of failure that the centralized repository represents if it goes down during that period collaboration and saving versioned changes is not possible. What if the hard disk of the central database becomes corrupted, and proper backups haven’t been kept? You lose absolutely everything.
+
+Distributed version control systems contain multiple repositories. Each user has their own repository and working copy. Just committing your changes will not give others access to your changes. This is because commit will reflect those changes in your local repository and you need to push them in order to make them visible on the central repository. Similarly, When you update, you do not get other’s changes unless you have first pulled those changes into your repository.
+
+To make your changes visible to others, 4 things are required:
+
+You commit
+You push
+They pull
+They update
+
+Some commands of git are :
+
+1) git init:used to start a new repository.
+	git init
+
+2)git add: adds a file to the staging area in repository.
+	git add [file]  or git add .to add all the files
+
+3)git commit: records or snapshots the file permanently in the version history.
+	git commit -m “Message”  
+
+4)git clone:used to obtain a repository from an existing URL and downloads the files and also the .git file.
+
+	git clone <url>  
+
+6)git push: sends the committed changes of master branch to your remote repository.
+	git push <remote name> master  
+
+7)git pull: fetches and merges changes on the remote server to your working directory.
+	git pull <url>
+
