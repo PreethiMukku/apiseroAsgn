@@ -1,1 +1,31 @@
+3-Tier Architecture
+->This type of architecture consists of 3layer
+    ->Presentation-It is front end part of the application.
+                  ->It consists of user interface.
+     ->Business Logic-It basically depends on business needs and requirements.
+     ->Persistent Logic-It deals with the database communication, like the data storage,retreival etc.
+ 
+ Failover
+->we have another server for every server operating.
+->If any server crashes we can switch to another server.
+
+LoadBalancer
+->It basically helps in balancing load between different servers.
+
+Cluster
+->It refers to collection of servers.
+->Any changes in one server is reflected back in all the servers.
+
+Microservices
+->Is a variant of service oriented architecture.
+->It structures application as a collection of services.
+
+Pros-
+->Better scalability
+->Less dependency
+
+Cons
+->Poorer Performance(network latency)
+->Harder to test and monitor.
+
 
