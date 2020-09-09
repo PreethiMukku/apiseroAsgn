@@ -51,3 +51,10 @@ Oppose
 - Entire code needs to be tested
 - Lots of security measures to be taken care of at each service
 - Sometimes cross language support might be difficult
+
+
+
+https://martinfowler.com/bliki/MicroservicePremium.html
+
+https://qconsf.com/sf2014/system/files/presentation-slides/QConSF-MicroServices-IPC-Netflix-Sudhir-2014.pptx
+
