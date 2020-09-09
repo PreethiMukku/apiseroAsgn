@@ -1,1 +1,31 @@
+Importance of Testing
+ ->Testing is an important part of software development as it helps to identify faults in the software.
+ 
+ Test Driven Development
+ ->In this approach test cases is created first and then the actual code development takes place.
+ ->If the test fails then the new code is written to pass the test cases.
+ 
+ Behaviour Driven Development
+ ->In this development the developers,QA collaborate.
+ ->It also encourages teams to share information of how the application should behave.
+ 
+ 
+ Soap Services
+ ->SOAP stands for simple object accesss protocol.
+ ->Data format - XML.
+ ->it supports any protocol.
+ 
+ Rest Services
+->REST stands for Respresentational state transfer.
+->Data format - Json.
+->it supports only http protocol.
+->Operations-GET,POST,PUT.
 
+
+Junit 
+->It is a unit testing framework.
+->Used to test Rich client.
+
+
+Postman
+->It is used to test REST api.
