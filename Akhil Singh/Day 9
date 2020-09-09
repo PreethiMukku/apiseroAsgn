@@ -1,0 +1,77 @@
+Basic Infrastructure of Cluster/Database/Servers
+
+Multitier Architecture - A task performed by multiple layers in an SOA.
+For Example - 
+Browser----------->Servlet/JSP------------>Java File----------->Database
+                   Presentation----------->Business Logic-------->Persistent Logic-------->Database(RDBMS) 
+                   Logic(Valida
+                   tion/Business
+                   Logic)
+                   
+Hosting - Single Server
+-Network Calls
+-Small Code Size
+-No Major 3rd party communication
+-Less Load.
+
+Hosting - Distributed Environment
+-More Network calls
+-Huge Code Base
+-Used in Flight Biling/Hotels/Payment Gateways
+-More Load
+
+Hosting Websites on Servers-2 approaches are used
+-Always go to server 1 - If server 1 crahses or is unavailable then communicate with Server 2(Active Passive Relationship).Second server is idle and hence wastes 
+resources , we experience Failover(Failover is defined as the time gap between communicating 2 servers , in which one of them become unavailable).
+-Using 2 servers - Both the servers can share the services offered and the load .
+
+The Workflow is as follows:
+Request-------->Load Balancer---------->Server1/Server2(1st Approach)
+(abc.com)
+
+abc.com/t1.html--------->Load Balancer----------->Server1(2nd Approach)
+                                 |--------------->Server2
+                               
+If we modify t1.html , we have to deploy the same on both servers.
+
+Cluster - Collection of servers working as a single unit , therefore if we modify any aspects , it must be modified on all the servers.
+
+Oracle Web Logic Server - Hosted websites on the server to see the workflow.
+
+Monoliths - Huge stand alone applications.We have to break this application into multiple sub parts and use apis' to help them communicate.
+i.e Macro Projects-----------Converted to------------->Micro Services.
+
+Discussion
+Should we convert UBer monolith to Uber operating under Micro Services?
+My Supportive arguments as to why it has to be converted to operate on microservice platform-
+Supporting Arguments - 
+1.In a monolothic software , a single error or anomaly can result in the entire system crashing as all the funtions are interdependent.
+2.It is difficult to perform testing on monolithic code , compared to micro service testing.
+3.There is also clear distribution and segregation of workload among departments when we use microservices.
+4.Engineers can deploy their code , whuch doesn't depend on the mainstream code and thus enables engineers to work and test their code at their own pace.
+5.Uber can be converted to a microservice platform and use multiple third party  services such as:
+(i)Location Services(Google Maps).
+(ii)Payment Gateways(Gpay , PhonePe , Credit/Debit Cards).
+
+Uber has microservices for the following - 
+1.Passenger Data Management
+2.Passenger Web UI                                               
+3.Driver Data Management
+4.Trip Management
+5.Push notifications
+
+we can leverage the potential of every language and platform for our features. 
+Like for example, for ML/analytics python/R frameworks will perform much better than any other
+does it makes sense?
+
+Uber was first developed for a small city , at that duration uber was a purely monolithic based software , but once the application started gaining traction , 
+scalability using monolithic posed great challenges.
+
+All the features had to be re-built, deployed and tested again and again to update a single feature.
+Fixing bugs became extremely difficult in a single repository as developers had to change the code again and again.
+Scaling the features simultaneously with the introduction of new features worldwide was quite tough to be handled together.
+
+
+
+                                 
+                                
