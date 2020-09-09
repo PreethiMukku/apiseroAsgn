@@ -1,0 +1,47 @@
+Git Version Control System
+
+A version control system is a software that tracks changes to a file or set of files over time so that you can recall specific versions later. 
+It also allows you to work together with other programmers.
+The version control system is a collection of software tools that help a team to manage changes in a source code. It uses a special kind of database to keep track of every modification to the code.
+
+Developers can compare earlier versions of the code with an older version to fix the mistakes.
+
+Git comes with built-in GUI tools like git bash, git-gui, and gitk for committing and browsing.
+It also supports several third-party tools for users looking for platform-specific experience.
+
+Git Flow / Git Branching Model
+
+It is referred to as Branching Model by the developers and works as a central repository for a project. 
+Developers work and push their work to different branches of the main repository.
+
+STAGE & SNAPSHOT
+Working with snapshots and the Git staging area
+git status
+show modified files in working directory, staged for your next commit
+
+git add [file]
+add a file as it looks now to your next commit (stage)
+
+git reset [file]
+unstage a file while retaining the changes in working directory
+
+git commit -m “[descriptive message]”
+commit your staged content as a new commit snapshot
+
+BRANCH & MERGE
+
+Isolating work in branches, changing context, and integrating changes
+git branch
+list your branches. a * will appear next to the currently active branch
+
+git branch [branch-name]
+create a new branch at the current commit
+
+git checkout
+switch to another branch and check it out into your working directory
+
+git merge [branch]
+merge the specified branch’s history into the current one
+
+git log
+show all commits in the current branch’s history
