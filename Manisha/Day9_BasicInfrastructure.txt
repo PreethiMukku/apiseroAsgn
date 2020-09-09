@@ -1,0 +1,85 @@
+--------------------------------------------------------------------------------3-TIER ARCHITECTURE---------------------------------------------------------------------------------
+-Browser--------->servlet/JSP------------------>java file----------------->database
+- 3-Tier Application program is one that is distributed among three separate computers in a distributed network.
+  #Presentation Layer: It provides the user interface
+  #Logic layer: This layer contains the business logic,process commands.
+  #Databse: Information is stored and retrived from the database.
+  
+  #Exmaple: MakeMyTrip ---> Presentation Layer: first page of MMT
+                            Logic Layer: Search any flight to app returns us all flight data-->invoke API of 15 airlines ,collate data and show
+                            Database(Persistent Layer): store d ata in db for future reference like PNR number
+                            
+ --------------------------------------------------------------------------------------HOSTING---------------------------------------------------------------------------------------
+ -Single Server Hosting : Having less code base, less network calls, no third party service,no load
+- Distributed Server Hosting : Having large code base, more network calls, complex,use third party service,heavy load
+
+---------------------------------------------------------------------------------------FAILOVER-------------------------------------------------------------------------------------
+-If we have two servers S1(active server) ans S2(passive server) then request will always goes to S1 and request will only goes to S2 when S1 get crash or not avaliable.
+-Waste of resources because S2 is idle.
+-www.ask.com------------------------------------->S1(10.10.10.20)
+                                                  S2(10.10.10.21)
+                                                 
+-----------------------------------------------------------------------------------LOAD BALANCING-----------------------------------------------------------------------------------
+-The number of client request are distributed to servers equally to balanced the load.
+-Load Balancer act an an intermediate between client and server. Lb works on Round Robin that  accept request from client and distributed on servers
+-Http://abc.com ----------> IP address(10.10.10.10)-Load Balancer-------------------->1st request to S1
+                                                                                      2nd request to S2
+                                                                                      3rd request to S3
+
+
+
+-------------------------------------------------------------------------------------CLUSTER--------------------------------------------------------------------------------------
+-It is a collection of servers which are considered as a single unit.
+-Deploy application in cluster instead of individual server.The modifications will done on all servers within the cluster.
+
+-------------------------------------------------------------------------------------MONOLITHIC ---------------------------------------------------------------------------------
+- Design one huge application.
+-Centralized system.
+-Simpler
+-Less codebase
+-Producitivity increases Complexity decreases
+
+-Example : UBER--> (+)all the features such as passenger management, billing, notification features, payments and driver management were composed within a single framework.
+                   (-)All the features had to be re-built, deployed and tested again and again to update a single feature.
+                   (-)Fixing bugs became extremely difficult in a single repository as developers had to change the code again and again.
+                   
+-------------------------------------------------------------------------------------MICROSERVICES-------------------------------------------------------------------------------
+-The huge application broken down into smaller sub sections(microservices). 
+-Each service has independent code and have no dependency on others.
+-Disadvantages: data sharing,network communicationoverhaed,security,loose coupling,multiple code base(REST services)
+
+
+UBER CAN BE CONVERTED FROM MONOLITH TO MICROSERVIES!!!!!
+##Pros
+  - Use different technologies
+  - If you want to change anything in the billing Microservices, then you just have to deploy only billing Microservices and don’t have to deploy the others.
+  - Supports Individual deployment units
+  - Adding new features would be easy
+  - Easy to debug
+  - Ensure security of each services
+  
+##Cons
+  -Requires more resources
+  -data tracking not easy
+  -larger system
+  -large implementation
+  -increase remote calls
+  -It will increase efforts for uber for the configuration  and other operations.
+----------------------------------------------------------------------------------------SCALABILITY------------------------------------------------------------------------------
+- have some performance irrespective of increased/decreased load
+Ex: Whatsapp message - 1 sec/10 byte
+    Whatsapp grp  - 56 members was limit 
+    Telegram        - 200 members in a group
+	  Whatsapp Group changed from 56   - 256 members
+	  after that         - 2 sec/10 byte
+
+- number of users increases  but maintain same performance
+  
+
+
+
+
+ 
+ 
+ 
+
