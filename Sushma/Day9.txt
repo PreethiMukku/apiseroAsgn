@@ -1,0 +1,178 @@
+Day 9
+
+An N-Tier Application program is one that is distributed among three or more separate computers in a distributed network.
+
+3 most common forms of n-tier/3-tier application:
+- Presentation layer - UI
+- Business Logic layer - business logic, API
+- Database layer - db connection for access and manupulation
+
+Develop a small website: 
+- Polling
+Browser -------------> Server side code -------------------------> Java file -------------------------> Database
+						(Servlet/JSP --> HTTP Form)					(Separate Java code 				(Inserting record)
+																	  to communicate)
+																	  
+3 Tier/N-Tier:
+
+Presentation ---------------> Business Logic ----------------> Persistent Logic ----------------> Data 
+																(Try to store your				 (RDBMS/No SQL)
+																 info in database)
+																 
+Ex: Show option -----------------> invoke APIs of 15 airlines -----------------> Stored -------------------> PNR
+									collate data and show)					  (Booking flights,
+																				Id)
+																				
+Hosting -------> Single Server (db server)
+- Network calls
+- Small code size
+- No major third party communication
+- Load
+
+Distributed Environment:
+- Network calls
+- Huge code size
+- Third party communications (Ex: Flight carrier/Hotels/Payment Gateway)
+- Load
+
+Depending on complexity we can use single seerver or multiple servers
+ 
+Single server:
+
+Browser -----------------------> Server (HTTP)
+
+Ex: http://abc.com  ---------------------> abc.com (from server)
+
+Multiple servers:
+
+http://abc.com ----------------> Server-1
+								 Server-2
+
+- Always request should go to the server-1 first
+- If server-1 crashes/not reachable then go to server-2
+
+Failover: 
+- It ia backup operational mode that automatically switches to a standby database, server or network. If the primary system fails or is shutdown for servicing
+- wastage of resources
+- 
+
+abc.com/t1.html ---------------> Load Balancer  -----------------> Server-1 (crashed)/Server-2
+								(waiting server-1 wait for 
+								(Timeout-30sec) then connect
+   								 to then connect to server2)
+								 
+Modify(t1.html) (deploy yout application on server-1 as well as server-2)
+- server-1+server-2+server-3 -> as same members -> then we call this as 'Cluster'
+
+- Cluster: Collection of serrvers but should work as one unit
+- Load balancer: Methodical and efficient distribution of network or application traffic across multiple servers in a server farm. 
+                 Each load balancer sited between client devices and backend servers, receiving and then distributing incoming requests to any available server capable of fulfilling them
+- Both the serrvers running and share the load
+
+Ex: http://abc.com -------------> Load Balancer --------------> Server-1/Server-2
+    (10.10.10.10)				 (Equal load on 
+							       both servers)
+
+
+
+
+	   
+High Expectations:
+1. Server
+	- Cluster
+	- Server
+	- Deployment
+2. Single Language
+3. Compiled and deployed as one unit => called as Monolith (huge application)
+
+Service Oriented Architecture:
+Huge application: 
+- Entire bundle is becoming one unit and now we have to break it into small applications
+- Connect each application as independent service
+- Each service has other services
+- Data sharing
+- Network communication overhead
+- Loosely coupled
+- Security
+
+Multiple Code bases 
+- Compilation/Deployment
+- Small servers are used
+
+Huge Application: 
+Single code base -----------> multiple code bases (choice of language/tools)
+=> Single language -> known tools (java/eclipse/maven/junit)
+    - Process of compilation/testing/distributing -> same
+    - Time taken
+	
+=> Deployment is simple -> deployment is difficult for multiple code project deployment/compilation is different (Even if same code/lang still deployment/compilation is difficult)
+
+=> Time
+
+
+Huge Application: (Web Applications)
+
+Unit testing + web testing
+-> Micro services (Payment/request/UI) => Integration Testing of UI
+-> Unit Testing + Test locally or Postman
+-> Unit Testing (Postman) + Web Testing -> Real time Networking overheads
+
+Microservices:
+-> Part of one microservice team 
+-> Developing microservice is very simple
+-> Architecture - for developer it is complex to build micro services 
+
+Uber Application
+
+1. Search -> from.. to.. 
+2. Getting ride-> contact near by drivers -> any one pick the request
+3. Payment processing
+1. Single Application
+   1 server
+2. Micro Services (3)
+   3 server
+   28
+ ---------> Convert Uber Monolith to Uber Microservices 
+ 1. Supporting Arguments
+ 2. Oppose
+
+Pros: 
+- Small code base - easier for new team members
+- Adding new functionality would be easier
+- Simpler management
+- Distribution of work effectively useful -> development and deploy
+- Testing simpler and easy to debug
+- Third party Co-ordination
+- Tracking of changes are easier
+
+Cons: 
+- More resources (more CPU)
+- Testing each micro service
+- First level implementation may take time
+- High number of remote calls
+- too many microservices
+- Security issues (deployment style)/ across sub modules
+
+Where to keep data for Microservices:
+- Goole Drive
+- Google Email
+- Google forms
+-------------> Google accountts -------> Accept username, password -----> check validity
+         ----> Share email address/unique
+		 
+2 Levels:
+- Individual Data -> Microservices -> Forms
+- Shared data -> All micro services -> Account details
+
+Scalability:
+- Almost have some performance irrespective of increased/decreased load
+Ex: Whatsapp message (download/upload) - 1 sec/10 byte
+    Earlier Whatsapp message in group  - 56 members was limit 
+    Later Telegram has started 	       - 200 members in a group
+	Then Whatsapp Group increased to   - 256 members
+	Uploaded/Downloaded time           - 2 sec/10 byte
+	
+- should link to number of users
+- Maintains almost same performance
+- Machine capacity depends on hardware works on performance side
+
