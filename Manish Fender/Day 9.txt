@@ -1,0 +1,73 @@
+Three tier Architecture
+1.Presentation Logic
+->Show options on website, whole frontend part 
+2.Bussiness logic
+->What to show?
+->To whome what to show 
+->ex: recommendation system, implementation of api
+3.Persistent logic
+->Database communication/ Data
+->store / retrival of data with particular requirement
+->storing data for future use etc
+
+Small scale web applications
+=>hosting:single server
+=>Network calls : low
+=>No third party communication
+=>Load: low
+
+
+Large scale web applications
+=>hosting:Multiple  server
+=>Network calls : high
+=>many third party communication
+=>Load: low / high depend on time
+
+
+Failover
+=>Failover is the ability to seamlessly and automatically switch to a reliable backup system.
+=>A redundant or standby database server, system, or other hardware component, server, or network 
+should be ready to replace any previously active version upon its abnormal termination or failure
+
+
+LoadBalancer
+=>Load balancing is defined as efficient distribution of network and  server.  
+=>Each load balancer sits between client devices and backend servers, receiving and then distributing incoming requests to any 
+available server capable of fulfilling them
+
+Cluster
+=>Cluster is a collection of server which work as a one unit(s1+s2+s3)
+=>Is suppose a file index.html is modified then it will refelect simultaneously in all the servers within that cluster.
+
+
+
+MICRO SERVICES CASE STUDY
+
+Uber engineers took a few general design decisions aimed to reduce coupling among microservices:
+
+ 1. Adopting MVCS, an extension of the well-known Model-View-Controller approach that explicitly includes a service layer, hosting the application logic. This allowed Uber to decouple the business logic from the persistence layer, making it thus easier to modify the latter.
+  Replacing PostgreSQL with UDR, Uber’s globally replicated datastore to enable serving trips simultaneously from several datacenters.
+  Similarly, Uber engineers made important architectural decisions aimed to deal with the consequences of having a high number of services:
+
+2  Asynchronous networking: to handle the increase in the number of service requests, Uber engineers relied on Tornado, a Python event-loop-based asynchronous networking library which touts being able to scale to tens of thousands of open connections at once. One of the advantages of using Tornado was its ability to integrate well with Uber’s existing Python networking code, which was structured around a synchronous paradigm.
+  Service discovery and resiliency: with the increased number of services a key feature is discovering services and identifying points of failure. This includes collecting metrics like failure rates and SLA violations, detect unhealthy hosts and doing circuit breaking to prevent cascading failures. Uber addressed these concerns by using TChannel over Hyperbahn, a network multiplexing and framing protocol for RPC that they developed and open-sourced.
+  Strict interface definitions: Uber chose Thrift to define service interfaces using an IDL and to generate client-side source files for a variety of languages. Thrift makes it possible to detect any consumer trying to make a call that does not comply with the interface definition.
+  Finally, Reinhold explains, Uber keeps a healthy production environment by applying three principles:
+
+3 running load tests to identify bottlenecks and breaking points.
+4 using containers to use hardware more efficiently.
+6 simulating service disruption to ensure the system is able to recover and to identify its vulnerabilities.
+
+
+Microservices:
+Pros:
+Code Ownership
+SystemReliable
+Bugs can be easily fixed
+Agile
+Separation of concerns
+Loose coupling
+
+Cons:
+Network latency
+Maintainability
