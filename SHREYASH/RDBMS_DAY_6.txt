@@ -1,7 +1,7 @@
 RDBMS
 	--> RDBMS stands for Relational Database Management Systems.
 	--> It is based on relational model
-	-->	ELATIONAL MODEL (RM) represents the database as a collection of relations. A relation is nothing but a table of values. 
+	-->	RELATIONAL MODEL (RM) represents the database as a collection of relations. A relation is nothing but a table of values. 
 		Every row in the table represents a collection of related data values. These rows in the table denote a real-world entity
 		or relationship.
 	--> examples: SQL, MS SQL Server, IBM DB2, ORACLE, My-SQL
