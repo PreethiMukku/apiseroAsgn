@@ -6,8 +6,7 @@
   - place where all files are stored
   - It  contains full history of the project
   - can be local or remote
-  - You commit
-  - They update
+  
 
 -> Types of version control systems
  -> Centralized version control system
@@ -17,11 +16,11 @@
  ->
   - These systems do not necessarily rely on a central server to store all the versions of a project file.
 
-  - In Distributed VCS, every contributor has a local copy or ìcloneî of the main repository 
+  - In Distributed VCS, every contributor has a local copy or ‚Äúclone‚Äù of the main repository 
     i.e. everyone maintains a local repository of their own which contains all the files and metadata present in the main repository.
 
-  - They can update their local repositories with new data from the central server by an operation called ìpullî 
-    and affect changes to the main repository by an operation called ìpushî from their local repository.
+  - They can update their local repositories with new data from the central server by an operation called ‚Äúpull‚Äù 
+    and affect changes to the main repository by an operation called ‚Äúpush‚Äù from their local repository.
 
   - You commit
   - You push
