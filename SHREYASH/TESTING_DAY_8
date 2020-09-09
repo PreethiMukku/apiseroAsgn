@@ -1,0 +1,100 @@
+TESTING
+	--> testing is the process of verifying a system with the purpose of identifying any errors, gaps or missing requirement versus the actual requirement.
+	--> Basic Development Technique:
+		1) Test Driven Development: Test-Driven Development is a testing methodology or a programming practice implemented from a developer’s perspective.
+			In this technique, a QA engineer starts designing and writing test cases for every small functionality of an application.
+		2) Behaviour Driven Development: Business-Driven Development (BDD) is a testing approach derived from the Test-Driven Development (TDD) methodology.
+			In BDD, tests are mainly based on systems behavior. This approach defines various ways to develop a feature based on its behavior.
+			
+BENEFITS OF TEST DRIVEN DEVELOPMENT:
+	* Helps reduce the amount of time required for rework
+	* Helps explore bugs or errors very quickly
+	* Helps get faster feedback
+	* Encourages the development of cleaner and better designs
+	* Enhances the productivity of the programmer
+	* Allows any team member to start working on the code in the absence of a specific team member. This encourages knowledge sharing and collaboration
+	* Gives the programmer confidence to change the large architecture of an application easily
+	* Results in the creation of extensive code that is flexible and easy to maintain.
+	
+BENEFITS OF DEVELOPMENT DRIVEN DEVELOPMENT:
+	* Helps reach a wider audience by the usage of non-technical language
+	* Focuses on how the system should behave from the customer’s and the developer’s perspective
+	* BDD Is a cost-effective technique
+	* Reduces efforts needed to verify any post-deployment defects
+
+CODE COVERAGE:
+	* Code Coverage testing is determining how much code is being tested.
+	* Code Coverage = (Number of lines of code exercised)/(Total Number of lines of code) * 100%
+	* It helps you to measure the efficiency of test implementation
+	* It offers a quantitative measurement.
+	* It defines the degree to which the source code has been tested.
+
+ILLUSTRATION OF TEST COVERAGE: 
+
+	* Testing Rich Client->
+		--> Junit can be used for testing rich client.
+	public class EmpManagerTest {
+		private EmpManager mgr;
+		
+		@BeforeClass
+		public static void setUpBeforeClass() throws Exception {
+		System.out.println("Set up before class");
+	}
+
+	@Before
+	public void setUp() throws Exception {
+		System.out.println("Set up");              
+		mgr =new EmpManager();
+	}
+
+	@Test
+	public void testAdd() {
+	Emp e= new Emp();
+	e.setEmpno(19);
+	e.setEname("Adef");                          
+	e.setSalary(2144);
+	mgr.add(e);
+	
+	if(mgr.list().size()!=1)                          
+		fail("Emp object not added");
+	if(mgr.list().get(0)!=e)                             
+		fail("emp object not added correctly");
+	}
+
+	@Test
+	public void testList() {                         
+		if(mgr.list()==null)                     
+			fail("List is null");
+
+	}
+
+}
+
+		--> Failures caused while executing JUnit test is due to testcases not executed.
+		--> Errors caused are due to syntax error or wrong business logic.
+
+
+	* Testing Thin Client:
+          --> manual testing.(UI & Functionality)
+
+	* Testing REST APIs:
+		  --> Though Postaman or other tools
+      
+	  
+SERVICE ORIENTED ARCHITECTURE:
+    --> services are provided to the other components by application component,through a communication protocol over a network.
+    --> business to business communication
+    --> use of web services
+    -- eg. E-Cart sites
+
+	SOAP services->
+		--> XML data format is accepted
+		--> Any protocol is used (provides Header for Protocol) eg, HTTP,FTP,etc.
+		--> Operations can be defined by us.
+		--> loose coupling.
+
+	REST services->
+		--> Only HTTP protocol is used
+		--> JSON format mostly used or any other format can be used.
+		--> Operations-get/put/update/delete/patch
+		--> Requests can be made using postamn or Advanced Rest Client.
