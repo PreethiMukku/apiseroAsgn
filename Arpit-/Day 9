@@ -1,0 +1,59 @@
+N tier /Multi-tier/3-tier Architecture :-
+
+An N-Tier Application program is one that is distributed among three or more separate computers in a distributed network.
+
+The most common form of n-tier is the 3-tier Application, and it is classified into three categories.
+
+    User interface programming in the user's computer
+    Business logic in a more centralized computer, and
+    Required data in a computer that manages a database.
+
+This architecture model provides Software Developers to create Reusable application/systems with maximum flexibility.
+
+In N-tier, "N" refers to a number of tiers or layers are being used like – 2-tier, 3-tier or 4-tier, etc. It is also called “Multi-Tier Architecture”.
+
+The n-tier architecture is an industry-proven software architecture model. It is suitable to support enterprise level client-server applications by providing solutions to scalability, security, fault tolerance, reusability, and maintainability. 
+It helps developers to create flexible and reusable applications. 
+
+It includes basically 3 layers :- Presentation,Application and Database.
+
+These three layers can be further subdivided into different sub-layers depending on the requirements.
+
+Some of the popular sites who have applied this architecture are
+
+    MakeMyTrip.com
+    Sales Force enterprise application
+    Indian Railways – IRCTC
+    Amazon.com, etc.
+    
+    Distributed Server System :-
+    It is a System, where the components located at server computers coordinate and communicate their actions only by passing messages. 
+    It is a collection of multiple systems situated at different nodes but appears to the user as a single system.
+
+    It provides a single data communication network which can be managed separately by different server.
+    An example of Distributed server– where different clients are connected within LAN architecture on one side and on the other side they are connected to high-speed switches along with a rack of servers containing service nodes.
+    
+    Load balancer :-
+    Load balancing is defined as the methodical and efficient distribution of network or application traffic across multiple servers in a server farm. 
+    Each load balancer sits between client devices and backend servers, receiving and then distributing incoming requests to any available server capable of fulfilling them.
+    
+    FailOver :-
+    Failover is the ability to seamlessly and automatically switch to a reliable backup system.  
+    A redundant or standby database server, system, or other hardware component, server, or network should be ready to replace any previously active version upon its abnormal termination or failure.
+
+  Single Point of Failure :-
+  A single point of failure (SPOF) is a part of a system that, if it fails, will stop the entire system from working. 
+  SPOFs are undesirable in any system with a goal of high availability or reliability, be it a business practice, software application, or other industrial system.
+
+Monolithic application :-
+Monolithic application describes a single-tiered software application in which the user interface and data access code are combined into a single program from a single platform. 
+A monolithic application is self-contained, and independent from other computing applications.
+
+Microservices :-
+Microservices - also known as the microservice architecture - is an architectural style that structures an application as a collection of services that are
+
+    Highly maintainable and testable
+    Loosely coupled
+    Independently deployable
+    Organized around business capabilities
+    Owned by a small team
