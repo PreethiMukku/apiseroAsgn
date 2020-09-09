@@ -1,0 +1,57 @@
+3-tier architecture
+  Presentation layer -> UI
+  Business Layer -> core functionalities
+  Persistent Layer -> store data
+Hosting web applications
+  Single server hosting -> Less complex websites -> * Less network calls   * No third party communication
+						    * Small code size      * Less Load
+
+  Distributed environment -> complex websites -> * More network calls         * Huge codebase
+						 * Third party communication  * Heavy Load
+Failover
+ ->Failover is the process of automatically switching to another server if current server crashes
+ -Passive server which process the requests if active server terminates
+
+LoadBalancer
+ ->Load balancing is defined as efficient distribution of load(client requests).  
+ ->Load balancer sits between client devices and backend servers
+ -> Receives client requests and redirects them to server, works using round robin/ weight based round robin/ random
+ ->Reduces down time
+
+Cluster
+ ->Cluster is a collection/group of servers which work as a single unit
+ ->Any changes or modifications will be reflected in all the servers within that cluster
+
+Monolith applications
+ -> Entire code is bundled
+ -> Adding features or modification in code is difficult
+ -> Hard to debug
+ -> Easy to maintain small sized monolith apps
+ -> Small change in code base makes redeployment of entire code
+ -> Single point of failure
+Micro services
+ Pros:
+ -> System is broken to smaller modules called micro services
+ -> Each micro service focuses on single functionality
+ -> Loose coupling, less dependency on other components
+ -> Debugging is easier
+ -> Adding new features or modifications in code is easier
+ -> Less complex and simplicity in code
+ -> Parallel development
+ -> Different technologies can be used
+ Cons:
+ -> Increase in micro services reduces maitainability
+ -> Testing and monitoring them is difficult
+ -> Increase in remote calls
+ -> First level implementation may take time 
+ -> Requires more resources
+ -> Difficulty in supporting multiple languages
+
+Scalability -> Same level of performance in case of increase or decrease in load
+
+New Application / Small 
+	-> small appln
+Refer to diagram - > Productivity Vs complexity
+	https://martinfowler.com/bliki/MicroservicePremium.html
+
+https://qconsf.com/sf2014/system/files/presentation-slides/QConSF-MicroServices-IPC-Netflix-Sudhir-2014.pptx
