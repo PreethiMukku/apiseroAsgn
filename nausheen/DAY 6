@@ -1,0 +1,92 @@
+Database
+online sources: 
+
+db-engines:A database engine (or storage engine) is the underlying software component that a database management system (DBMS) uses to create, read, update and delete 
+(CRUD) data from a database. ...
+A 'database instance' refers to the processes and memory structures of the running database engine.,
+
+db-fiddle:Free online SQL environment for experimenting and sharing.(SQL DB playground)
+Videos
+ Main Feature of Oracle is that its gives support for virtual break/distribution of Databases. 
+i.e. a part of DB can be used into operations without the need for calling the entire DB to load into the memory.
+
+RDMS- A software system used to maintain relational databases is a relational database management system (RDBMS).
+-Many relational database systems have an option of using the SQL (Structured Query Language) for querying and maintaining the database.
+-Database in a tabular format. (all entries have same formats/attributes) eg mysql
+
+//////////////////////////////////////////////////////////////////////// CRUD operations.///////////////////////////////////////////////////////
+
+Create: CREATE DATABASE databasename;
+
+Retrieve: SELECT * FROM table_name;
+
+Update: UPDATE Customers
+	SET ContactName = 'Amit', City= 'Sam'
+	WHERE CustomerID = 1;
+
+Delete operations. DELETE FROM Customers WHERE CustomerName='Tom';
+
+
+------------------------What is  Relationship in tables?--------------------------
+one-one: when a single record in the first table is related to only one record in the second table, and a single record in the second table is related to only one 	                    record in the first table
+
+one-many:A one-to-many relationship exists between a pair of tables when a single record in the first table can be related to one or more records in the second table,
+but a single record in the second table can be related to only one record in the first table.
+      
+many-many:A pair of tables bears a many-to-many relationship when a single record in the first table can be related to one or more records in the second table 
+and a single 			record in the second table can be related to one or more records in the first table.
+
+
+--------------------------------------------------------------What are Constraints?????????????---------------------------------
+
+-SQL constraints are used to specify rules for the data in a table. 
+-Constraints are used to limit the type of data that can go into a table. 
+-This ensures the accuracy and reliability of the data in the table. 
+-If there is any violation between the constraint and the data action, the action is aborted.
+	eg :Not Null Constraint.
+Check Constraint.
+Default Constraint.
+Unique Constraint.
+Primary Constraint.
+Foreign Constraint.
+
+We can create our own contraints names for better identification of where the error has occur in query.
+:::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
+
+FETCHING DATA FROM MULTIPLE TABLES :
+JOIN
+UNION
+-----------------------------What are SQL JOINS????????????????????????????-----------------------------------
+
+A JOIN clause is used to combine rows from two or more tables, based on a related column between them.
+JOINS in SQL are commands which are used to combine rows from two or more tables, based on a related column between those tables.
+Different Types of SQL JOINs:
+1)(INNER) JOIN: Returns records that have matching values in both tables
+	eg:SELECT Orders.OrderID, Customers.CustomerName
+		FROM Orders
+		INNER JOIN Customers ON Orders.CustomerID = Customers.CustomerID;
+
+2)LEFT (OUTER) JOIN:Returns all records from the left table, and the matched records from the right table
+	eg>	SELECT Customers.CustomerName, Orders.OrderID
+		FROM Customers
+		LEFT JOIN Orders ON Customers.CustomerID = Orders.CustomerID
+		ORDER BY Customers.CustomerName;
+		
+3) RIGHT (OUTER) JOIN: Returns all records from the right table, and the matched records from the left table
+	eg.	SELECT Orders.OrderID, Employees.LastName, Employees.FirstName
+		FROM Orders
+		RIGHT JOIN Employees ON Orders.EmployeeID = Employees.EmployeeID
+		ORDER BY Orders.OrderID;
+
+4)FULL (OUTER) JOIN: Returns all records when there is a match in either left or right table
+	eg.	SELECT Customers.CustomerName, Orders.OrderID
+		FROM Customers
+		FULL OUTER JOIN Orders ON Customers.CustomerID=Orders.CustomerID
+		ORDER BY Customers.CustomerName;
+---------------------------------SQL UNION -----------------------------
+-The SQL UNION Operator The UNION operator is used to combine the result-set of two or more SELECT statements.
+-Each SELECT statement within UNION must have the same number of columns. 
+-The columns must also have similar data types.The UNION operator is used to combine the result-set of two or more SELECT statements.
+eg: SELECT column_name(s) FROM table1
+		UNION ALL
+		SELECT column_name(s) FROM table2;
