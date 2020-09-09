@@ -1,0 +1,56 @@
+--------Testing---------
+testing is simply executing a system in order to identify any gaps, errors, or missing requirements in contrary to the actual requirements.
+
+--------TDD--------
+-In TDD (Test Driven Development), the test is written to check the implementation of functionality, but as the code evolves, tests can give false results. 
+-tests are written, before writing the bare minimum of code
+-The code will then be refactored in order to pass the test, with the process being repeated for each piece of functionality.
+
+The sequence of steps for TDD as below:
+
+Write test
+Run test
+Check for failed tests
+Make changes to the code
+Repeat from step 2 until the system passes all test cases.
+
+---------BDD---------
+-BDD (Behavior Driven Development) is also a test-first approach, but differs by testing the actual behavior of the system from the end users perspective.
+-written in a shared language, which improves communication between tech and non-tech teams and stakeholders. 
+-tests are written ahead of the code, but in BDD, tests are more user-focused and based on the system’s behavior.
+
+----------SOA--------
+Service Oriented Architecture
+style of software design where services are provided to the other components by application components, through a communication protocol over a network.
+
+-----------SOAP-------
+Simple Object Access Protocol
+XML based messaging protocol
+uses wsdl for communication between consumer and provider
+transfer is ovet HTTP and also SMTP,FTP etc
+result returned is not human readable.
+
+---------REST--------
+Representational state transfer
+An architectural style protocol
+Uses XML or JSON to receive and send data
+transfer is over HTTP only
+result is human readable like xml or json mostly
+
+REST sevice request 
+we can check by looking in reqres.in website to see various operational requests where postman is used(testing REST API)
+-----GET----- 
+Request /api/users?page=2
+Response ok 200 
+
+----POST-----
+Request /api/users
+Response ok 201
+
+------PUT----
+Request /api/users/2
+Response ok 200
+
+-----DELETE-----
+Request /api/users/2
+Response 204(NO response)
