@@ -1,0 +1,33 @@
+Mutlitier
+- Client–server architecture
+- Distributed network
+
+=>Presentation layer - UI
+=>Business Logic layer - blogic, API
+=>Database layer - db connection for access and manuplation
+
+- we can change any layer implementaion as and when needed to business needs
+- easy to scale
+
+
+Ex-> Makemytrip,cleartrip
+
+
+FailOver
+- if i have 2 serves , s1 handles all incomming requests
+- iff s1 is down then s2 is used in that case
+- then s2 is down then we say its FAILOVER
+- I'm not sure about DNS updation thing while server's fail
+
+LoadBalancer
+- distribution of load
+- to have single point of entry
+- multiple servers 
+- needs to deploy in all servers if there is 
+- better compared to single one
+
+Cluster
+- same info 
+- various machines 
+- similar to master-client
+- changes will be reflected in all machines 
