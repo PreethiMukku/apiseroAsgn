@@ -1,0 +1,68 @@
+Cloud computing->
+-computing services over the internet such as network,storage,databases,servers,etc.
+-we pay only for cloud services we use.
+-low operating costs.
+-scaling of business
+
+***********
+
+Why to use Cloud->
+
+-for a project we need->
+-server machines->have to pay large for it.
+-services-their pay/usage
+-Maintainance is high-Installation,configuration,H/W,S/W support.
+
+-we need infraastructure-> networking,virtualisation,servers,storage.
+-we need platform->OS,Middleware,Runtime
+-we need Software->Application, Data.
+
+-Cloud provides services like infrastructure,platform and software.
+
+IAAS->
+-In this cloud service provides us infrastructure as a service.
+-All networking,servers, storage,virtualisation is managed by cloud.
+- we manage the rest.
+-Amazon Web services AWS
+
+PAAS->
+-In this cloud service provides us Platform as a service.
+-All networking,servers, storage,virtualisation also with OS needed, Middleware applications and Runtime environment is managed by cloud.
+- we manage the rest.
+-online code compilers.
+
+SAAS->
+-In this cloud service provides us Software as a service.
+-Here everything is managed by the cloud,we just use this services.
+eg,zoom,Cisco WebEx.
+
+cloud Advantages->
+1.On demand self service
+-can activate the services whenever consumer wants it.
+2.broad network access
+-mobiles,laptop all devices have access.
+3.Resource pooling
+-location independent,can access from any location.
+4.Rapid Elasticity
+-scale up, scale down
+5.Measured service
+-we pay for what we use.
+6.Multitenacity
+-multiple consumers can use one service at time.
+****************
+
+Client-----Load Balancer----Auto Scaling
+Autoscaling group
+-it contains all EC2 instances which are created for that project.
+-when we specify autoscaling, instance gets automatically created.
+-we can set maximum, minimum and desired capacities for whatever scale up and scale down we need.
+
+Loadbalancer->
+-multiple services can have multiple load balancers.
+-Can be used in EC2 instances in aws.
+
+-Scaling policies
+-we can define scaling policies. eg. simple scaling
+-we can add cloudwatch alarm.
+-through this we can set actions like adding or removing capacity units.
+-and wait for certain timestrand specified by us for allowing capacity.
