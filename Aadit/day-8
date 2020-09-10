@@ -1,0 +1,48 @@
+Test driven development - we first write the test cases before development of the code. This will help us to know 
+the edge cases of the logical component. 
+Coverage- 
+Code coverage refers to how much lines of code have been tested. It signifies the part of code where 
+test cases have been created. 
+Testing Rich Client/Thin Client / Rest APIs-
+Testing Rich Client involves the testing of business logic. Two main parts are done- 
+1. Test Driven Development (TDD) - first make the test cases to reduce the development time
+2. Behaviour Driven Development (BDD)  - -In this all developers, non-technical and people associated with project come together and discuss code requirements.
+
+Thin Client - It involves:
+1. UI Testing
+2. Interactive Testing
+
+REST API - for testing REST APIs, we make use of HTTP methods like GET,POST,PUT,DELETE. We test the 
+working using the POSTMAN. The postman sends the request to the endpoint and displays the results. 
+	GET - to retrieve the data (and send the data as arguments in url)
+	POST - to send/insert the data (you send the data to server in the body and not in url)
+	PUT - to update the data row
+	DELETE - to delete the data row
+
+JUnit - 
+This is the java testing implementation where you can test your code. It will give you the success/failure
+count for every single test case you specify for your code. It is used to test the rich client. We saw the example
+of Employee Manager and created test cases for that. 
+Failure in test cases means that code is not executed in the java file. 
+Error in JUnit console signifies the syntax error or logical error in your code. 
+
+
+SOA - Service Oriented Architecture. 
+The services are provided to the client for serving business logic and need. The companies make use 
+of the services directly from the provider. They are usually tied as loosely couples where client 
+can easily change the providers.  
+Ex - Payment Gateway
+Web Services - 
+1. SOAP - 
+-Any Protocol
+-The XML messages are send through FTP(in most cases)
+-No specific operations
+- Loose coupling 
+2. REST - 
+-HTTP Protocol
+-JSON Based only
+-Operations: get/put/delete/post 
+
+*REST API is usually prefered over SOAP in current system because of the functionalities it provides. 
+SOAP is only considered where validation of data is required. As far as security is concerned, REST uses
+HTTPS protocol for easy and secure transfer of the packets. 
