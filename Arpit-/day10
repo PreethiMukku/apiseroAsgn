@@ -1,0 +1,137 @@
+Cloud overview Aws Demo :-
+-] why cloud ?
+
+Cloud computing facilitates the access of applications and data from any location worldwide and from any device with an internet connection. 
+Cost savings; Cloud computing offers businesses with scalable computing resources hence saving them on the cost of acquiring and maintaining them
+
+Developing in the cloud enables users to get their applications to market quickly. Hardware failures do not result in data loss because of networked backups. 
+Cloud computing uses remote resources, saving organizations the cost of servers and other equipment.
+
+
+ex:- (scenario where cloud computing becomes necessary ) 
+ machine ---> server(3)
+               ----> load balancer (1)
+
+client------>load balancer(IP)-------> s1,s2,s3 (server)
+
+-]purchasing all these machines ---> service
+           1) service-pay/usage
+           2.)cost
+           3.)Maintenance,good qualit,configuration,hardware and software support.
+
+-] Instead of our own Data center ------------> service
+
+ex:- premises(Scomp---->10 classroom ----->20 machine each)
+      -offer you 200 Machine(max) as service.
+
+
+-] 5 essential Characteristics For cloud computing :-
+   
+1)on demand self services ------->Cloud computing provides resources on demand, i.e. when the consumer wants it. This is made possible by self-service and automation. 
+Self-service means that the consumer performs all the actions needed to acquire the service herself, instead of going through an IT department.
+(not any human interaction).
+
+
+
+2)Broad N/w access --------->
+Broad network access refers to resources hosted in a private cloud network (operated within a company's firewall) 
+that are available for access from a wide range of devices.(portable to any devices(mobile,laptop etc)) 
+
+
+
+3)Resource pooling ------->Resource pooling allows cloud providers to pool large-scale IT resources to serve multiple cloud consumers. 
+Different physical and virtual IT resources are dynamically assigned and reassigned according to cloud consumer demand, 
+typically followed by execution through statistical multiplexing. 
+ex:-  (0.200)------->Huge hardware /software resource availability.
+
+
+
+4)Rapid elasticity --------> Rapid elasticity is a cloud computing term for scalable provisioning, or the ability to provide scalable services. 
+Experts point to this kind of scalable model as one of five fundamental aspects of cloud computing.
+(scale up,scale down)--------->ex:- (website only launching olympics game live streaming )
+
+
+
+5)Measured service ---------> This is a reference to services where the cloud provider measures or monitors the provision of services for various reasons, i
+ncluding billing, effective use of resources, or overall predictive planning.
+(Details about the usage as Measurement for record ).
+
+
+
+
+6)Multi Tenacity --------->multiple customers of a cloud vendor are using the same computing resources.
+Despite the fact that they share resources, cloud customers aren't aware of each other, and their data is kept totally separate.
+
+(**Scenario when and how cloud computing is done by companies)----------
+
+
+-]Amazon/Microsoft/Google --------->Huge hardware-------->virtualization---------->different operationg system-------->how much RAM
+
+                         --------> Most of counteries (create hardware setup)
+                                     -------->Region
+                                          -------->2..*zones
+
+
+laptop---------->Regions
+laptop---------> Remote Database (Machine)------------>Mysql
+
+----------------)
+
+-]Cloud service :-
+
+
+
+
+1)IAAS :-Infrastructure as a service (IaaS) is a cloud computing offering in which a vendor provides users access to computing resources such as servers, storage and networking.
+Organizations use their own platforms and applications within a service provider's infrastructure.
+
+ex:-Amazon(EC2) ,Aws,Google computing engine .
+
+
+2)PAAS :-In the Platform-as-a-Service (PaaS) model, developers essentially rent everything they need to build an application, relying on a cloud provider for development tools, infrastructure, and operating systems.
+This is one of the three service models of cloud computing.
+
+ex:-online compilers ,w3school,Mysql by Aws IRDS .
+
+
+
+3)SAAS:-Software as a service (SaaS) is a software distribution model in which a third-party provider hosts applications and makes them available to customers over the Internet. 
+SaaS is one of three main categories of cloud computing, alongside infrastructure as a service and platform as a service (IaaS and PaaS).
+
+
+ex:-Google drive,Zoom video call,office365 .
+
+-] Two Services Through Aws :-
+
+*] Auto scaling :-Helps you to reintialize the instance if your instance get killed or crashed.
+   ---------->(desired value=1,Maximum value=1,Minimum value=1)-------->can be changed as per requirement.
+     ------>Step scaling  (Add 10 Machine together)
+   ------->Simple scaling (step by step machine adding)
+ex:- Autosaciling Params:-(ec1,host1,host2,host3)
+     >10000 request/network ------>create one more instance (can be changed as per requirement)
+     <2000 request/network ------> delete one instance  (can be changed as per requirement)
+     
+     
+ *]Load Balancer(lb) :- (2server)
+ lb-------->Round robin (s1,s2)
+ Balancing server load equally using round robin algorithm.
+ 
+ *] Practically we use both together in project implementation .
+ client------>LB-------->(AutoScailing) (Target group)
+ AutoScailing is basically good when load is known.
+ 
+-]DNS Mapping is supported by aws to hide the functionality(approach) from the end user. 
+ 
+ 
+ 
+ 
+---------> NetworkIn :-
+(incoming bytes >10000)------> Scale up feature.
+(incoming bytes <2000)------>scale down feature.
+
+
+
+
+
+
+
