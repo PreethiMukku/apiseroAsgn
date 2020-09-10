@@ -1,7 +1,10 @@
 3-tier architecture
-  Presentation layer -> UI
-  Business Layer -> core functionalities
-  Persistent Layer -> store data
+  => Breaking the system into subparts(layers)
+  => Responsibility seggregation principle -> performs only one functionality
+  Presentation layer -> UI -> Client interfaces to get data inplace
+  Business Layer -> core functionalities of application ->  
+  Persistent Layer -> store data, DB communication
+
 Hosting web applications
   Single server hosting -> Less complex websites -> * Less network calls   * No third party communication
 						    * Small code size      * Less Load
@@ -10,17 +13,24 @@ Hosting web applications
 						 * Third party communication  * Heavy Load
 Failover
  ->Failover is the process of automatically switching to another server if current server crashes
- -Passive server which process the requests if active server terminates
+ ->Passive server which process the requests if active server terminates
 
 LoadBalancer
  ->Load balancing is defined as efficient distribution of load(client requests).  
- ->Load balancer sits between client devices and backend servers
- -> Receives client requests and redirects them to server, works using round robin/ weight based round robin/ random
- ->Reduces down time
+ ->Load balancer sits between client devices and backend servers and distributes requests
+ ->Receives client requests and redirects them to available server, works using round robin/ weight based round robin/ random
+	-> supports multiple algorithms 
+ ->Load balancer is used in both thin clients(web) and rich clients
+->Reduces down time
+ ->No acknowledment is received from failed server
+	-> uses timeout -> if there is no response with in time then it redirects to another server 
 
 Cluster
  ->Cluster is a collection/group of servers which work as a single unit
  ->Any changes or modifications will be reflected in all the servers within that cluster
+ ->Deployment and management of servers is easy
+ ->Provides high availability and handles failovers of servers 
+ ->In case one server fails then other server in the same cluster will serve the request
 
 Monolith applications
  -> Entire code is bundled
@@ -29,6 +39,7 @@ Monolith applications
  -> Easy to maintain small sized monolith apps
  -> Small change in code base makes redeployment of entire code
  -> Single point of failure
+
 Micro services
  Pros:
  -> System is broken to smaller modules called micro services
