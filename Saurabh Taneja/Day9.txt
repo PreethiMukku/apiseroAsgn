@@ -1,0 +1,27 @@
+CLOUD COMPUTING :
+
+1)Storing data/applications on remote servers.
+2)processing data/applications from servers.
+3)Accessing data/applications via internet.
+
+*On demand availability of computer system resources without direct active management by user.
+
+MODELS:
+
+1)IaaS(Infrasructure as a service) : Instant computing infrastructure , Provisioned and managed over the internet. helps in cost cuting by buying and managing own physical servers.
+
+2)PaaS(Platform as a service): Development and deployment environment in cloud.
+
+3)Saas(Software as a service): way of deliverying applications over the internet  as a service.
+
+
+--------------AWS---------------
+
+For Paas We make EC2 server instance and there we install node.js application and We try  printing Hello World on the server using AWS 
+
+Next we make some auto scaling groups and check how the instances get scaled up or down according to the number of request that are coming .
+We add 1 instance when the Network In goes greater than 10,000 / minute  and We remove 1 instance when Network In goes less than 2000 /Minute .
+
+Now As we were working on more than One server so We also added a Load Balancer which is used to distribute load equally on the servers .
+It used the round robin format to send the request to the servers.
+
