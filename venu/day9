@@ -1,0 +1,88 @@
+CLUSTER: 
+   A Group of servers to one unit, or
+   make appears to computer works faster,
+   
+   High Availability:
+   server Integration;
+   Data transaction servers: manage core business processes.
+   Web application servers: manage the end-user experience.
+   Appliance servers manage: specific network functions.  
+    active/passive: a server working while another waiting for that work to replicate
+   active/active:  both servers are working and replicate each other.
+ Definition
+
+
+Infrastructure of server:
+ To make the infrastructure work, you must set the servers up in the right way, monitor their operation, and manage 
+ their services. Not a simple task by any means  
+ 
+ 
+ There are groups of them: different types, different functions, clusters for scalability, and so forth. 
+ You organize them to support them and enable them to work better together. 
+ Collectively, the way the servers are organized and the tools are provided to support them constitutes the infrastructure.
+ 
+ LOAD BALANCing & FAIL OVER:
+   
+- Load Balancing is all about improvising performance (scale) while Failover Clustering is improvising uptimes 
+  mitigating system failures.
+	-Another difference is, you would find Load Balancing happening at web/application servers (stateless hopefully) 
+	- failover clustering at database servers (state full). 
+	Industry seems to be using word “Cluster” (set of connected nodes) for both – but with different 
+	intents of Load & Failover.
+
+Definition of N-Tier Architecture:
+N-tier architecture is also called multi-tier architecture because the software is engineered to have 
+the processing, data management, and presentation functions physically and logically separated.  
+That means that these different functions are hosted on several machines or clusters, ensuring 
+that services are provided without resources being shared and, as such, these services are delivered at top capacity. 
+ The “N” in the name n-tier architecture refers to any number from 1.
+ 
+ changes you make will not affect the other functions.  And if there is a problem, you can easily pinpoint where it originates.
+
+A More In-Depth Look at N-Tier Architecture
+N-tier architecture would involve dividing an application into three different tiers.  
+These would be the
+
+  --logic tier,
+  --presentation tier, and
+   --the data tier
+   The application logic tier.  :
+   The application logic tier is where all the “thinking” happens, and it knows what is allowed by your application and 
+   what is possible, and it makes other decisions.  This logic tier is also the one that writes and reads data into the data tier.
+
+   The data tier. The data tier is where all the data used in your application are stored.  
+   You can securely store data on this tier, do transaction, and even search through volumes and 
+   volumes of data in a matter of seconds.
+
+The presentation tier.  The presentation tier is the user interface.  
+This is what the software user sees and interacts with.  
+This is where they enter the needed information.  
+This tier also acts as a go-between for the data tier and the user, 
+passing on the user’s different actions to the logic tier.
+
+
+ MICROSERVICES VS MONOLITH
+   So my primary guideline would be don't even consider microservices unless you have a system that's too complex 
+   to manage as a monolith. The majority of software systems should be built as a single monolithic application. 
+   Do pay attention to good modularity within that monolith, but don't try to separate it into separate services.
+
+    The complexity that drives us to microservices can come from many sources including dealing with large teams [2],
+	multi-tenancy, supporting many user interaction models, allowing different business functions to evolve independently,
+	and scaling. But the biggest factor is that of sheer size - people finding they have a monolith that's too big to 
+	modify and deploy.
+
+    At this point I feel a certain frustration. Many of the problems ascribed to monoliths aren't essential to that style.
+	I've heard people say that you need to use microservices because it's impossible to do ContinuousDelivery with 
+	monoliths - yet there are plenty of organizations that succeed with a cookie-cutter deployment approach: 
+	Facebook and Etsy are two well-known examples.
+
+    I've also heard arguments that say that as a system increases in size, you have to use microservices in order to
+	have parts that are easy to modify and replace. Yet there's no reason why you can't make a single monolith with well 
+	defined module boundaries. At least there's no reason in theory, in practice it seems too easy for module boundaries 
+	to be breached and monoliths to get tangled as well as large.
+
+    We should also remember that there's a substantial variation in service-size between different microservice systems.
+    I've seen microservice systems vary from a team of 60 with 20 services to a team of 4 with 200 services.
+	It's not clear to what degree service size affects the premium.
+
+ 
