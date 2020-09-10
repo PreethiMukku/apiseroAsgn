@@ -1,0 +1,87 @@
+website polling 
+question -->do u support something
+yes, no, may be not sure
+
+Results
+70% yes 25% no 5% may be not sure
+
+N-tier / 3-tier architecture
+presentation layer-------business logic -----persistent logic
+MVC comes under design pattern in presentation layer
+Example: make my trip
+follows huge code base
+distributed server
+thrid party communication
+more faster as distributed server architecture
+
+single server
+networks calls less
+less code size
+load less
+no third party communication
+
+distributed server
+complex application
+huge code base
+3 party communication
+more network calls
+loads high
+
+crawler
+checks continuosly for search relevent in the website content
+
+https status code
+500 error - server accepts but processing error
+400 error- client side
+300 error- more than one response to request
+200 error - successful
+100 error - info resources
+
+server down time
+page not found error-- server crash/not started
+10.40 -->5 down time
+10.45--> server starts
+example:
+newspaper comment - no much effect if not accepted while server crash
+online exam- in middle crash servers then exam closed affected
+google drive- data stored and then in middle of upload few will be not uploaded
+
+Failover
+-When a server crashes and we realise the server is crashed ,time in between called as Down time.
+-use two servers will help to avoid failover.
+-When server 1 crashes or is unavailable then we can use server 2.
+
+Load balancer
+-load balancer balances the load coming to site, it divides the requests and sets equal loads to both server.
+-load balancer waits for server response after wait time complete assumes server crash and then it redirects the request to Server 2.
+-Both servers share the load.
+-RoundRobin algorithm is used.
+
+cluster
+-It is a collection of all servers working as one unit.
+-if a file is modified then it will refelect simultaneously in all the servers within that cluster.
+-Load balancer is required for clusters to invoke.
+
+Monolithic architecture	
+Basic: Monolithic architecture is built as one large system and is usually one code-base
+Scale: It is not easy to scale based on demand
+Database: It has shared database
+Deployment: Large code base makes IDE slow and build time gets increase.
+Tightly Coupled and Loosely coupled: It extremely difficult to change technology or language or framework because everything is tightly coupled and depend on each other
+
+Microservices architecture
+Basic: Microservices architecture is built as small independent module based on business functionality
+Scale: It is easy to scale based on demand.
+Database: Each project and module has their own database
+Deployment: Each project is independent and small in size. So overall build and development time gets decrease.
+Tightly coupled and loosely coupled: Easy to change technology or framework because every module and project is independent
+
+Uber Application
+
+1. Search -> from.. to.. 
+2. Getting ride-> contact near by drivers -> any one pick the request
+3. Payment processing
+1. Single Application
+   1 server
+2. Micro Services (3)
+   3 server
