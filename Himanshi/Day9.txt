@@ -1,0 +1,52 @@
+	# Day 8 : Basic infrastructure /Cluster/LB
+	
+	• Browser--servlet/JSP(HTML forms)----JavaFile---Database   //multitier
+				Three tier/N Tier architecture
+	Presentation-------business logic-----persisitent logic--data  logic
+	(logic,validaton)
+	
+	Show option---invoke api  of 15 airlines and collect sara and show
+	------------------stores---pnr,booked id
+	
+	• Three-tier architecture is a client-server software architecture pattern in which the user interface (presentation), functional process logic ("business rules"), computer data storage and data access are developed and maintained as independent modules, most often on separate platforms.
+
+	• Browser ---------------------------server (abc.com)
+	Https://abc.com---------------------- server 1
+							Server 2, 3-----
+		1. Always to server 1 --in case of server1 crash/unavailble ---server 2(meanwhile this was sitting idle from long----Failover ---incase of server 1 crash got to server2  -wastage of resources)
+		2. Both the servers to share the load
+		Serv 1 :10.10.10.20
+		Ssrv2 : 10.10.10.21 
+		https://abc.com -(10.10.10.10)---load balancer((10.10.10.10))    (roundrobbin)---------server1/server2.
+		
+		Req(abc.com/t1.html)----loadbalanver---sserver1---crashes--if not communicating back to loadbalancer-------timout---send ssame req to server2.
+		
+			1. Modify t1.html (deploy(saving it on server) your app on server1 as well as server 2)
+			2. But suppose if we add server 3 serv4 ----
+			3. It becomes very difficult to deploy it on all server
+			4. So,what I will do is I will make cluster--collections of servers  as one unit.
+			5. And we can noe deploy our appplication on cluster itself.
+		
+	Failover : we don't have to always require extra server globally its not true.As we might have small applications lin which one server would be enough.Instead , its more okhat to say that , failure ---incase of one server crash/unavailable ---we can go to next server.
+	During load balancing ---both servers share the load in some defined way.So if our server1 fails midway ,our laod balancer will not get the ack and hence,send the req back to server2
+	Cluster : its a collection of servers. Suppose ,I have to modify the file on server 1 and dynamically, we can add  server2,serv3 in this it will be a task to modify the same file n each server.Instead,we will have a cluster which is a collection of all server and we can modify the cluster at once.
+	
+	• Monoliths/Microservices-Huge application,Entire code is bundled as one unit.Then we break into smaller sub applications as independent services.
+			- Each ervice--> other service
+			- Data sharing
+			- Network communication overhead
+			- Security
+			- Loose coupling
+			- Multiple  code bases(REST Services)
+			- Implementation issues.
+	• TASK :Uber-->why uber should be monoliths/micro
+		1. Eveyone cannot be good at everything.Suppose , I am good at UI and you are at development.So,inthis if we split it into microservice,it would be require less time to make it and also we would be having best of ui and develoment.Hence,Multiple services are parallely developed and deployed. 
+		2. Its very easy to scale any service independently..Suppose,we want to change taxis appearance on our app.We need not to disturb our whole system architecture and code.We can just change the ui centric part. 
+		3. Unit testing or Fixing bugs of each microservices is very esay as compared to testing monoliths as we will easily know where the problem is arising .
+		4.  There are higher chances of communication failure between the services. In monolithic architecture, the application was bundled together. But now suppose, after ride service again another network call is to be made for payment service. 
+		5. Microservices has the partitioned database architecture. Business transactions that update multiple business entities in a microservices-based application need to update multiple databases owned by different services.
+		Suppose,we did payment ,Now it has to be communicated to driver side code .It has to be updated din different modules independently.
+		
+		https://martinfowler.com/bliki/MicroservicePremium.html
+		
+		https://qconsf.com/sf2014/system/files/presentation-slides/QConSF-MicroServices-IPC-Netflix-Sudhir-2014.pptx
