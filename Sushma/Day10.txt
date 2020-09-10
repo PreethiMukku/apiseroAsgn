@@ -1,0 +1,122 @@
+Day 10
+
+Rather than using 3-tier and N-tier - Responsibility Segregation Principle is used ( Almost used every where for even small companies)
+
+Cluster:
+- High availability (main reason)
+- Fail Over
+- Load balancing functionality
+- Working on cluster - End user does not know 
+
+Load balance:
+- Can happen in Rich client
+- API gateway
+- Rest service
+
+Cloud Computing:
+Why cloud?
+- Rather than owning their own computing infrastructure or data centers, companies can rent access to anything from applications to storage from a cloud service provider.
+
+ machine -> server(3)
+         -> load balancer (1)
+
+client------>load balancer(IP)-------> s1,s2,s3 (server)
+			 (Software/Hardware)
+
+- Instead of purchasing all these machines --> service
+
+Benefits:
+- Pay per usage
+- Cost 
+- Maintainability - Installation,  Configuration, Hardware, Software support
+
+- Instead of we having our own data center(machines) taken as Service
+
+Premises(Software company ----> 10 classrooms ----> 20 machines each)
+      -offer you 200 machines as service
+	  
+5 Essential characteristics:
+- On demand self services: 
+	- Anytime I want I can create my own machine (like self-service and automation)
+	- No human interaction needed
+
+- Broad Network Access:
+	- Resources hosted on a private cloud network
+	- That are available for access from a wide range of devices.
+	
+- Resource pooling: 
+	- The resources are pooled using virtualization and should be dynamically allocated based on the customer demands
+	- Resources available are limited 
+	- Hardware/software resource availability.
+
+- Rapid elasticity: 
+	- The resources allocation must be elastic based on the requests
+	- Scalability services (scale up and scale down)
+
+- Measured service:
+	- The cloud usage must be measured and prove it and even quote it
+	
+=> Amazon/Microsoft/Google
+-> Uses huge hardware -> Virtualization
+	-> Different OS -> How much RAM
+-> Most of the countries (Created Software setiup)
+	-> Region (Problem faced all time then the entire region is down)
+		- At least 2 zones should be there
+		- From my laptop, I can connect any particular region
+		
+		Laptop ----> Machine in the ----> MySQL
+					 remote system
+					 
+=> Cloud Services:
+- IAAS Infrastructure: 
+	- Storage(Hard disk)/Processing(Servers)/Network
+	- configure and install the middlewares and applications according to our requirement
+	  IAAS - AWS(EC2) -> download MySQL, installable, install it, configure it
+
+- PAAS Platform: 
+	- Developers rent everything they need to build an application, relying on a cloud provider for development tools, infrastructure, and operating systems
+		PAAS - AWS - MySQL installed and Configured and longtime maintenance --> RDS
+			   AWS - RDS - Example of Platform as service
+
+- SAAS Software:
+	- The instance machines, resources, middleware and runtime everytime and we can directly use the software as a service
+	  SAAS - IAAS + PAAS + software -> just configure and use it
+=> Google drive comes as software as a service
+
+Downside: 
+- When software as service, it is lightly coupled with the provide 
+Ex: Google forms Vs Survey monkey
+ - Google forms cannot be imported to survey monkey (need to recreate all the forms)
+
+=>  Java/node (server)
+	-> OS, installation JDK, JRE, Eclipse
+	-> machine is shared with me
+	
+=> AWS
+Amazon Elastic Compute Cloud (EC2)
+- We create a EC2 instance, connect to the serrver and scale up or scale down the instances by adding policies
+- We can add or remove the instances by providing the capacity values 
+Auto scaling:
+Ex:	 Group size (Adding instances)  --> Desired capacity     - 1
+	                                  --> Minimum capacity     - 1
+				                            --> Maximum capacity     - 1 (Scale up)
+									
+	 Group size (Removing instances)  --> Desired capacity     - 1
+	                                  --> Minimum capacity     - 1
+				                            --> Maximum capacity     - 1 (Scale down)
+
+
+Load Balancer:
+2 EC2 instances
+Client ----------connects -----> Load Balance -------> EC2
+- Client directly connects to load balance and load balance to EC2 server (Tomcat)
+Load Balance -------- >Round Robin (server-1, server-2)
+Client -> Load Balance --> Auto scaling
+
+
+- DNS Mapping is supported by aws to hide the functionality(approach) from the end user. 
+
+NetworkIn (Auto scaling):
+- Autoscaling Params (EC1- host1,host2,host3)
+	 > 10000 requests/Network in ---> Create one more instance(Scale up)
+	 < 2000  request/Network in  ---> Remove 1 instance (Scale down)
