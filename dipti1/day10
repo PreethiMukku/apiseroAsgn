@@ -7,9 +7,8 @@ Cloud computing supports the access of any data from any location with the help 
 adv:Cost savings in terms of multiple machines and servers.
 eg:
 client------>load balancer-------> s1
-              (IP)
-				                  -------->s2
-				                  -------->s3
+              (IP)        -------->s2
+			  -------->s3	                 
                           
 so instead of using multiple server abd machines we can simply use cloud services, which supports custom design of different resources.
 
