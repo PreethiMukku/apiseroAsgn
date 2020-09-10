@@ -36,10 +36,10 @@
 -> One can perform tasks parallelly on the micro services which is not possible in monoliths.
 -> The code of the micro services are not dependent on the other. Hence there is no dependency.
 -> There is no single point exit.
--> Different languages can be used in different micro servers as required by the developer.
+-> Different languages can be used in different micro services as required by the developer.
 
 --Opposing arguments
--> Many micro servers leads to problems of management of individual servers.
+-> Many micro services leads to problems of management of individual servers.
 -> As the load on the servers increases, the time of response also increases to a considerable extent.
--> The teams which would be working together in monoliths development would be split into different teams working on individual micro servers, sharing no information. Thus, there will be no transparency of information.
--> Data handling should be done on each micro servers.
+-> The teams which would be working together in monoliths development would be split into different teams working on individual micro services, sharing no information. Thus, there will be no transparency of information.
+-> Data handling should be done on each micro services.
