@@ -1,0 +1,84 @@
+-> SOA 
+ -> Servive Oriented Architecture
+ -> Architecture in which applications make use of services available in the network.
+ -> Combine facilities from existing services to form application.
+ -> Service Provider
+ -> service consumer
+
+-> SOAP
+ -> Simple Object Access Protocol
+ -> XML based protocol for accessing the web service.
+ -> Exchange data between applications built on different platform.
+ -> Any protocol http ,ftp
+ -> XML -> n+1 problem
+ -> Parsing
+
+-> REST API
+ -> Reresentational state transfer.
+ -> http protocol ,mostly JSON(javascript object notation) format.
+
+-> GET
+ -> retrieves the representation of resource at the specified URL
+-> POST
+ -> create the new resource.
+-> DELETE
+ -> delete a resource at specified URL.
+-> PUT
+ -> updates resource at specified URL.
+
+----------------------------------------Testing overview -------------------------------------------------
+
+-> Test driven development(TDD)
+ ->Test Driven Development is the process in which test cases are written before the code that validates those cases.
+  -> The following sequence of steps is generally followed:
+     - Add a test – Write a test case that describe the function completely. 
+       In order to make the test cases the developer must understand the features and requirements using user stories and use cases.
+     - Run all the test cases and make sure that the new test case fails.
+     - Write the code that passes the test case
+     - Run the test cases
+     - Refactor code – This is done to remove duplication of code.
+     - Repeat the above mentioned steps again and again
+ -> TDD ensures that your application actually meets requirements defined for it.
+ -> TDD have very short development lifecycle.
+
+-> Behavior driven development(BDD)
+  - Behavior Driven Development (BDD) is a software development process that originally emerged from Test Driven Development (TDD). 
+  - BDD uses examples to illustrate the behavior of the system that are written in a readable and understandable language for everyone involved in the development.
+  - Providing better readability and visibility.
+  - Enables writing the examples in a language using the business domain terms to ensure easy understanding by everyone involved in the development including the customers.
+ 
+-> Unit testing
+  - Unit Testing is defined as a type of software testing where individual components of a software are tested.
+  - Unit Testing of software product is carried out during the development of an application. 
+    An individual component may be either an individual function or a procedure.
+  - Unit Testing is typically performed by the developer.
+  - There are 2 type of Unit Testing: Manual, and Automated.
+
+-> Unit Testing Tools:
+ Here are some commonly used Unit Testing tools:
+ 1. Jtest
+ 2. Junit
+ 3. NUnit
+ 4. EMMA
+ 5. PHPUnit
+
+-> Advantages of Unit Testing:
+  - Unit Testing allows developers to learn what functionality is provided by a unit and how to use it to gain a basic understanding of the unit API.
+  - Unit testing enables to test parts of the project without waiting for others to be completed.
+
+-> Graphical User Interface Testing (GUI) Testing
+  - Graphical User Interface Testing (GUI) Testing is the process for ensuring proper functionality of the graphical user interface (GUI) for a specific application.
+  - GUI testing generally evaluates a design of elements such as layout, colors and also fonts, font sizes, labels, text boxes, text formatting, captions, buttons, lists, icons, links and content.
+  - GUI testing processes may be either manual or automatic and are often performed by third -party companies, rather than developers or end users.
+
+---------------Postman ------------------------
+
+- Postman is an API(application programming interface) development tool which helps to build, test and modify APIs. 
+- Almost any functionality that could be needed by any developer is encapsulated in this tool. 
+- It is used by over 5 million developers every month to make their API development easy and simple.
+- It has the ability to make various types of HTTP requests(GET, POST, PUT, PATCH), saving environments for later use, converting the API to code for various languages(like JavaScript, Python).
+
+-> Coverage  
+ - It tells us how much of our code is coevred in testing.
+
+  
