@@ -1,0 +1,56 @@
+MICROSERVICES
+Microservices architecture is an evolution of SOA.
+
+A microservices architecture takes this same approach and extends it to the loosely coupled services which can be developed, deployed, and maintained independently. 
+Each of these services is responsible for discrete task and can communicate with other services through simple APIs to solve a larger complex business problem.
+
+Key Benefits of a Microservices Architecture
+As the constituent services are small, they can be built by one or more small teams from the beginning separated by service boundaries which make it easier to scale up the development effort if need be.
+Once developed, these services can also be deployed independently of each other and hence its easy to identify hot services and scale them independent of whole application.
+Microservices also offer improved fault isolation whereby in the case of an error in one service the whole application doesn’t necessarily stop functioning. When the error is fixed, 
+it can be deployed only for the respective service instead of redeploying an entire application.
+Another advantage which a microservices architecture brings to the table is making it easier to choose the technology stack (programming languages, databases, etc.) 
+which is best suited for the required functionality (service) instead of being required to take a more standardized, one-size-fits-all approach.
+
+
+
+Monolith vs Microservices
+
+Disadvantages of Monolithic applications:
+
+1. It becomes too large in size with time and hence, difficult to manage.
+2. We need to redeploy the whole application even for a small change.
+3. As the size of the application increases, its start-up and deployment time also increases.
+For any new developer joining the project, it is very difficult to understand the logic of large Monolithic application even if his responsibility is related to a single functionality.
+4. Even if a single part of the application is facing a large load/traffic, we need to deploy the instances of the whole application in multiple servers. It is very inefficient and takes up more resources unnecessarily. Hence, horizontal scaling is not feasible in monolithic applications.
+6. It is very difficult to adopt any new technology which is well suited for a particular functionality as it affects the whole application, both in terms of time and cost.
+7. It is not very reliable as a single bug in any module can bring down the whole monolithic application.
+
+Advantages of monolithic applications:
+
+Simple to develop relative to microservices where skilled developers are required in order to identify and develop the services.
+Easier to deploy as only a single jar/war file is deployed.
+Relatively easier and simple to develop in comparison to microservices architecture.
+The problems of network latency and security are relatively less in comparison to microservices architecture.
+
+
+Advantages of microservices:
+
+1. It is easy to manage as it is relatively smaller in size.
+2. If there’s any update in one of the microservices, then we need to redeploy only that microservice.
+3. Their start-up and deployment time are relatively less.
+4. It is very easy for a new developer to on-board the project as he needs to understand only a particular microservice providing the functionality he will be working on and not the whole system.
+5. If a particular microservice is facing a large load because of the users using that functionality in excess then we need to scale out that microservice only. 
+    Hence, microservices architecture supports horizontal scaling.
+6. Each microservice can use different technology based on the business requirements.
+
+
+Disadvantages of microservices:
+
+1. it is much more complex than the monolothic applications. Its complexity increases with the increase in number of microservices.
+2. Skilled developers are required to work with microservices architecture which can identify the microservices and manage their inter-communications.
+3. Independent deployment of microservices is complicated.
+4. Microservices are costly in terms of network usage as they need to interact with each other and all these remote calls results into network latency.
+5. Microservices are less secure relative to monolithic applications due to the inter-services communication over the network.
+6. Debugging is difficult as the control flows over many microservices and to point out why and where exactly the error occurred is a difficult task.
+7. If a particular microservice goes down due to some bug, then it doesn’t affect other microservices and the whole system remains intact, continues providing other functionalities to the users.
