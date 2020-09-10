@@ -1,0 +1,29 @@
+A)SOAP
+	- simple object access protocol
+	- XML based protocol
+	- uses:
+		a) data transfer
+		b) connection between client and server
+	- Http request
+	- structure:
+		a) header
+		b) body
+		
+B) REST
+	- representational state transfer
+	- JSON based protocol
+	- Operations:
+		a) Get
+		b) Put
+		c) Post
+		d) delete
+	- features:
+		a) simple
+		b) easy and fast transfer of data
+	
+B)Testing 
+	- code should be written first and then checked.
+	- Unit testing
+	- Postman
+	- Rich client -> Junit
+	- REST api -> postman
