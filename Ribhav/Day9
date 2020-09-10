@@ -1,0 +1,32 @@
+A)3 tier architecture
+	-layers:
+		a) presentation
+		b) business
+		c) database
+	- Examples:
+		a) presentation -> ASP.NET
+		b) business -> c#
+		c) database -> SQL
+	
+B)Monoliths
+	- single-tiered
+	- components:
+		a) presentation
+		b) business logic
+		c) Database layer
+	- features:
+		a) Simple to develop
+		b) deployement is easy
+	- drawbacks:
+		a) Maintenance
+		b) updation is difficult
+		
+C) Microservices
+	- loosely coupled services
+	- connected via API gateway
+	- features:
+		a) Faster application
+		b) good for large application
+	- drawbacks:
+		a) complex structure
+		b) testing is difficult
