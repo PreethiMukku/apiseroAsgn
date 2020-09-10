@@ -23,6 +23,8 @@ Microservices
 Pros-
 ->Better scalability
 ->Less dependency
+->Loosely coupled
+->Language neutral
 
 Cons
 ->Poorer Performance(network latency)
