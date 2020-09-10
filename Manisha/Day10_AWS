@@ -1,0 +1,69 @@
+--------------------------------------------------------------------------------------CLOUD COMPUTING------------------------------------------------------------------------------
+-It enables users to access same files and applications from  any device.
+-Cloud servers are located in data centers all over the world. 
+-Users and companies don't have to manage physical servers.
+
+-ex:
+ machine ---> server(3)
+            load balancer (1)
+
+client------>load balancer(IP)-------> s1,s2,s3 (server)
+purchasing all these machines ---> service
+           - service-pay/usage
+           - cost
+           - Maintenance,configuration,hardware and software support.
+- 5 characteristics of cloud computing:  
+    1) On-demand self-services: CC services does not require any human interaction. Whenever use wants he can craete their own service or machine.
+    2) Broad network access: In this resources are available on cloud and it can be accessed from anywhere by pc,mobile.
+    3) Rapid elasticity: The resources allocation must be elastic based on the requests.Scale up and Scale down according to user request.
+    4) Resource pooling: The IT resource(networks, servers, storage, applications, and services) present are shared across multiple application.
+    5) Measured service: TThe user should be able to use a specified amount of the service from the service provider and be able to prove it according to pay per usage.
+    
+----------------------------------------------------------------------------------------CLOUD SERVICES-----------------------------------------------------------------------------
+#IAAS: Infrastructure as a service
+      - In this case the service provider offers services of network, storage, servers, virtualization and asks the operating system the user wants to work on.
+      -  The activities of installing the middleware, using the data and configuring a application is completely done by the user
+      - Create service and anyone can access this.
+      - no load balancer.
+      - taken machine from amazon and create own application on machine.
+      - service provider provides storage(hdd)/processing(server)/network
+      - EX--> Amazon ec2 instance-> download my sql installable, installl it,AZURE
+
+#PAAS: Platform as a service
+      - Along with Machine instance, also the middlewares and runtimes are provided where we can use those to have our own application. 
+      - AWS - MySQL installed and Configured and longtime maintenance --> RDS
+			   AWS - RDS 
+
+#SAAS: Software as a service
+       - The instance machines, resources, middleware and runtime everytime and we can directly use the software as a service
+	     - SAAS - IAAS + PAAS + software -> just configure and use it
+       - Google drive ,office 360,cisco webex, zoom
+       
+ -----------------------------------------------------------------------------------------AUTOSCALING----------------------------------------------------------------------------
+ - Created EC2 instance on AWS whcih act as IaaS----> Then Node js application was installed and run on our own---->Using the code we displayed "Hello World" message on the server----->When the instance was terminated, the server went down.
+ - Allows you to automatically add or remove EC2 instances according to conditions given.
+ - AutoScailing is good when load is known.
+ - Reintialize the instance if instance get killed or crashed.
+ - Minimum value: minimum number of instances in each Auto Scaling group
+ - Maximum value: maximum number of instances in each Auto Scaling group
+ - Desired capacity: no of instance present within defined min and max range
+ - Scale up: add instances automatically for max limit -----> MIN=1, MAX=5
+ -Scale down: decrease instances -->min=2
+ 
+ -----------------------------------------------------------------------------------------LOAD BALANCING-------------------------------------------------------------------------
+ -Client ----------connects -----> Load Balance -------> EC2
+- Client directly connects to lb and lb connecto EC2 server (Tomcat).
+-  lb-------->Round robin (s1,s2)
+   lb server load equally using round robin algorithm.
+- We use LB and autoscaling both together.So that instances which are initialized by autoscaling in case of heavy traffic/mentioned condition those can actually be used for load distribution by load balancer.
+   client------>LB-------->(AutoScailing) (Target group)
+   AutoScailing is basically good when load is known.
+ -DNS Mapping Can also be done by AWS to hide the approach(LIKE sUSAGE OF LOAD BALANCER /SERVER CHANGED) from the end user. 
+ - Developmet server
+	  Used to develop,test and deploy the projects by the developer.
+- Production server
+	  Used by the admin to deploy the project from development server at the end.
+
+ 
+      
+      
