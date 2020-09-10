@@ -1,0 +1,70 @@
+OVERVIEW OF AWS DEMO
+
+service registry open to all services ..
+and selects which one should be selected..
+
+we have to map the services to  data using map , which resides in memory.
+
+responsibility segregation principle:
+mostly implemented
+/// 
+Instead of own data center we can go for services
+
+For a cloud:
+
+5 Essential characters:
+- on demand services: (No human interaction)
+-Broad n/w access: Allows to connect in any way(mobile, laptop,etc)
+-Resource pooling: (The range of maxm services they can provide, we require huge hardware and software)
+-Rapid Elasticity: if i increase my load from 2 to 200 , i should get offered. Scale up and Scale down.
+-Measured service : pay as per usage
+-Multi Tenacity
+
+::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
+
+IAAS: INFRASTRUCTURE AS PLATFORM
+ PROVIDES-
+-VIRTUALIZATION
+-SERVER(processing)
+-STORAGE(hardisk)
+-NETWORKING
+- AWS EC2.. download my sql installable, installl it..
+
+PAAS: PLATFORM AS A SERVICE
+-VIRTUALIZATION
+-SERVER(processing)
+-STORAGE(hardisk)
+-NETWORKING   +
+
+-MIDDLEWARE
+-OS
+-AMAZON RDS
+
+SAAS: IAAS+PAAS+ SOFTWARE
+GOOGLE APPS, OFFICE 365
+
+::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
+
+amazon
+Amazon Elastic Compute Cloud (Amazon EC2) is a web service that provides secure, resizable compute capacity in the cloud.
+ -It is designed to make web-scale cloud computing easier for developers.
+ -Amazon EC2's simple web service interface allows you to obtain and configure capacity with minimal friction.
+-An EC2 instance is a virtual server in Amazon's Elastic Compute Cloud (EC2) for running applications on the Amazon Web Services (AWS) infrastructure. 
+-AWS is a comprehensive, evolving cloud computing platform; 
+-EC2 is a service that allows business subscribers to run application programs in the computing environment.
+--ec2- load balancer
+ec2.......launch template....create template.
+bitnami tomcat selected.
+auto scaling
+::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
+
+LOAD BALANCING:
+
+-Elastic Load Balancing automatically distributes incoming application traffic across multiple targets, such as Amazon EC2 instances, containers, IP addresses,
+and Lambda functions.
+-It can handle the varying load of your application traffic in a single Availability Zone or across multiple Availability Zones.
+auto scalinggroup
+
+-When you create a step scaling policy, you specify one or more step adjustments that automatically scale the number of instances dynamically 
+based on the size of the alarm breach. 
+Each step adjustment specifies the following: A lower bound for the metric value. An upper bound for the metric value.
