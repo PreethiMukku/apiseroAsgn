@@ -13,8 +13,8 @@
   This tier is often built on web technologies such as HTML, JavaScript, CSS, or through other popular web development frameworks, and communicates with others layers through API calls.
 
 -> Business Logic Layer :
-   The application tier contains the functional business logic which drives an application’s core capabilities. 
-   It’s often written in Java, .NET, C#, Python, C++, etc.
+   The application tier contains the functional business logic which drives an applicationâ€™s core capabilities (make api calls)
+   
 
 -> Data Layer :
    The data tier comprises of the database/data storage system and data access layer. Examples of such systems are MySQL, Oracle, PostgreSQL, Microsoft SQL Server, MongoDB, etc.
@@ -36,6 +36,7 @@
 -> Load balancer
    - Load balancing is defined as the methodical and efficient distribution of network or application traffic across multiple servers in a cluster.
    - Each load balancer sits between client devices and backend servers, receiving requests and then distributing incoming requests to any available server capable of fulfilling them.
+   - support failover
 -> Fail over
   - When a server goes down ,a standby server is used to perform action which is known as Fail Over
 
@@ -55,6 +56,6 @@
    - as services communicate with each other, the resulting high number of remote calls
     can lead to higher costs associated with network latency andd processing.
    - each microservice deployed independently and requiring its own runtime envronment
-      and cpu,there is also higher resource demand.
+      
 
 
