@@ -103,3 +103,11 @@ Huge Application
 Micro Services
 -> Unit testing + postman
 -> parallel development
+-> Testing is different than done in Monolithic Applications. 
+-> Has a lot of advantages over monolithic with respect to reliability, maintainibility etc. 
+
+Issues:
+- More time in initial development
+- Too many microservices
+- More documentation for integrating the different microservices. 
+- Dependency on other programming languages and frameworks will create a lot of issues and make the process tedious while compilation.
