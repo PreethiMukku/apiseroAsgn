@@ -19,6 +19,16 @@ REST:
   ->Does not need much bandwidth when requests are sent to the server. REST messages mostly just consist of JSON messages
   ->REST permits different data format such as Plain text, HTML, XML, JSON, etc. Preferred format  is JSON
 
+
+RSS feed of Times of India any newspaper --> Web Service(SOAP)/Rest ?
+answer:  SOAP -> 1) data format is xml (cms file)
+		 2) check for request type
+
+To determine service provided by website (SOAP/REST)
+1) Determine requests types(xhr or any) + protocol type (http=>rest service)
+2) check data format -> Xml (Rss feed(cms file)), JSON/text etc => Rest service
+
+
 Testing:
   Behaviour driven development (BDD):
 	Document oriented
