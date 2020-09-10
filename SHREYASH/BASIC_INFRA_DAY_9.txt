@@ -1,0 +1,84 @@
+BASIC INFRASTRUCTURE : SERVER, CLUSTER AND LOAD BALANCERS
+
+The architecture of a system can be seen as either single tier or multi-tier. An n-tier architecture divides 
+the whole system into related but independent n modules, which can be independently modified, altered, changed, or replaced.
+
+	--> In 1-tier architecture, the DBMS is the only entity where the user directly sits on the DBMS and uses it.
+	--> If the architecture of DBMS is 2-tier, then it must have an application through which the DBMS can be accessed.
+	Programmers use 2-tier architecture where they access the DBMS by means of an application.
+	--> N-Tier: An N-Tier Application program is one that is distributed among three or more separate computers in a distributed network.
+
+	Some of the popular sites who have applied this architecture are
+		* MakeMyTrip.com
+		* Sales Force enterprise application
+		* Indian Railways – IRCTC
+		* Amazon.com, etc.
+		
+	Advantages:
+		* Scalability
+		* Data Integrity
+		* Reusability
+		* Reduced Distribution
+		* Improved Security
+		* Improved Availability
+		
+	Disadvantages:
+		* Increased Efforts
+		* Increase in Complexity
+		
+ILLUSTRATION:
+MAKE MY TRIP
+	* PRESENTATION LAYER: Showing the UI ----> Its page rendered on dearch
+	* BUSINESS LAYER: Invoking API/Webservices/(service class in JSP-SERVLET) ---> on seaching any airline the no. of times diffferent apis were evoked
+	* PERSISTENT LAYER: Java code pertaining SQL query --> After API evocation no. of queries fired
+    * DATA LAYER: Data Logics --> after booking data that what stored and etc
+	
+IMPORTANT TERMINOLOGIES:
+
+	DOWNTIME: Downtime or outage duration refers to a period of time that a system fails to provide or perform its primary function.
+	FAILOVER: Failover is a backup operational mode in which the functions of a system component (such as a processor, server, network, or database,
+		  for example) are assumed by secondary system components when the primary component becomes unavailable through either failure or scheduled down time.
+	LOADBALANCE: Load balancing is defined as the methodical and efficient distribution of network or application traffic across multiple servers
+			in a server farm. Each load balancer sits between client devices and backend servers, receiving and then distributing incoming
+			requests to any available server capable of fulfilling them.
+	CLUSTER: It means that multiple servers(ALL STANDALONE) are grouped together to achieve the same business and can be regarded as one UNIT(HOSTING TOGETHER).
+	
+MONOLITHIC ARCHITECTURE: A monolithic architecture is the traditional unified model for the design of a software program. Monolithic, in this context, means 
+						composed all in one piece. 
+						
+MICROSERVICE: a variant of the service-oriented architecture (SOA) structural style – arranges an application as a collection of loosely coupled service.
+
+
+DISCOURSE: UBER APPLICATION
+
+Uber uses microservice artitecture they usually refer it as ->
+-Domain-Oriented Microservice Architecture.
+-oriented around collections of related microservices. Called as Domain.
+-map search services constitute a domain,
+ fare services are a domain,
+ matching platform (matching riders and drivers) are a domain.
+
+-structured set of flexible, reusable, and layered components.
+-the layer that the domain belongs to establishes what dependencies the microservices within that domain are allowed to take on.(Layer Design)
+
+Layers-->>>
+Infrastructure layer.
+business
+product
+presentation
+
+
+-Each service agnostic to other service. one service need not to know logic for other.
+-SEARCH 
+-considered as domain
+-in macroservice there are Availability Risks. A single regression within a single code base can bring the whole system (in this case, all of Uber) down.
+
+Getting ride-> contact near by drivers -> any one pick the request
+-Can be considered as another domain
+
+advantages
+System reliability-service ca go down and roll back without affecting other
+Separation of concerns
+Clear Ownership - which code is own by which domain is known.
+Developer Velocity. -teams deploy codes independently.
+	
