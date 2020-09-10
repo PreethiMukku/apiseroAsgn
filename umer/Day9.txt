@@ -1,0 +1,60 @@
+-> 3 tier achitechture 
+  - This architecture mainly involves three layers for development of a project
+  - 3-tier architectures provide many benefits for production and development environments by modularizing the user interface, business logic, and data storage layers.
+  - Doing so gives greater flexibility to development teams by allowing them to update a specific part of an application independently of the other parts.
+  - This added flexibility can improve overall time-to-market and decrease development cycle times by giving development teams 
+    the ability to replace or upgrade independent tiers without affecting the other parts of the system.
+  - For example, the user interface of a web application could be redeveloped or modernized without affecting the underlying functional business and data access logic underneath. 
+  - This architectural system is often ideal for embedding and integrating 3rd party software into an existing application
+
+-> Presentation layer :
+  The presentation tier is the front end layer in the 3-tier system and consists of the user interface. 
+  This user interface is often a graphical one accessible through a web browser or web-based application and which displays content and information useful to an end user. 
+  This tier is often built on web technologies such as HTML, JavaScript, CSS, or through other popular web development frameworks, and communicates with others layers through API calls.
+
+-> Business Logic Layer :
+   The application tier contains the functional business logic which drives an application’s core capabilities. 
+   It’s often written in Java, .NET, C#, Python, C++, etc.
+
+-> Data Layer :
+   The data tier comprises of the database/data storage system and data access layer. Examples of such systems are MySQL, Oracle, PostgreSQL, Microsoft SQL Server, MongoDB, etc.
+   Data is accessed by the application layer via API calls.
+
+  Browser---------------servelet/JSP------------------JAVA file for DB comm -------------DB 
+                       HTML(form)                      Buisiness logic                    Persistance logic
+                     (presentation logic)
+
+
+-> Server Downtime 
+  - refers to periods of time during which a server  is shut off or unavailable for use.
+  - server downtime affects customer loyalty and your business reputation.
+
+-> server cluster
+  - group of servers working together as one unit  to provide users with higher availability.
+  - these clusters are used to reduce downtime and outages by allowing another server to take over in the event of outage.
+
+-> Load balancer
+   - Load balancing is defined as the methodical and efficient distribution of network or application traffic across multiple servers in a cluster.
+   - Each load balancer sits between client devices and backend servers, receiving requests and then distributing incoming requests to any available server capable of fulfilling them.
+-> Fail over
+  - When a server goes down ,a standby server is used to perform action which is known as Fail Over
+
+->    Microservices:
+	The main aspect of microservices is, some types of applications become easier to build and maintain when they are broken down into smaller, composable pieces which work together.
+	Each component is continuously developed and separately maintained, and the application is then simply sum of constituent components.
+
+->  Pros of Microservices:
+        - ease of implementing different technologies.
+        - increase project performance
+        - the time for developing project becomes faster, as each individual developer
+          works on different feature(service) and finally we combine all of them.
+        - if we want to update the feature only that feature has to be tested.
+	- You can develop and deploy each microservice on a different platform, using different programming languages and developer tools.
+	
+-> Cons
+   - as services communicate with each other, the resulting high number of remote calls
+    can lead to higher costs associated with network latency andd processing.
+   - each microservice deployed independently and requiring its own runtime envronment
+      and cpu,there is also higher resource demand.
+
+
