@@ -1,0 +1,35 @@
+A)Git
+	- code management system
+	- distributed version control system
+	- free and open source
+	- secure
+	- commands: pull, push, commit etc.
+	
+B) Version control
+	- system that records changes and  various versions are also saved
+	- Types:
+		a) local
+		b) centralized
+		c) distributed
+		
+C) Git commands
+	- create a repo
+	- git init 
+	- git pull "directory"
+	- modify
+	- git commit
+	- git push
+
+D) Maven
+	- project management tool
+	- many developers can work at the same time
+	- Features
+		a) simple setup
+		b) compatible
+	- POM 
+		a) project object model
+		b) elements:
+			1. dependecies
+			2. plugin lists
+			3. plugin executions
+			4. resources
