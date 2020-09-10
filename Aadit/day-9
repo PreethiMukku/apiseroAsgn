@@ -1,0 +1,105 @@
+-->Basic Infrastructure Server/Cluster/LB
+Web Site -> Polling 
+Question -> Do you support something 		----> (SITE REQUIREMENT)
+	-> Yes,No,Not Sure
+-> Results 
+	-> 70% - Yes, 25- No ,5- NS
+Design - 
+1. HTML (Form) -----> Server Side Code(SERVLET/JSP)-----{JAVAFILE}----> Database
+The data from FE going all the way to the database server through different layers. This is called Multi-tier 
+where each part has its own functionality. 
+
+Browser ------> Servlet/JSP ---Javafile----> Database
+		HTML Form 
+		Presentation - Business Logic - persistent logic - data
+		Logic
+		Validation
+This makes the core three layers of any website like google, makemytrip where 
+only the presentation logic changes but the basic architecture remains the same. 
+
+
+
+-->What is N-Tier/3 Tier Architecture (Java Context)
+N-tier refers to any number of architecture layers in your system depending on your
+business logic. As you keep on increasing the business/technical complexity, the N number 
+keeps increasing. 
+
+Hosting -> Single Server 
+1. Network
+2. Small Code Size
+3. Load on the website
+4. No major third party dependency
+
+Distributed Environment 
+1. Network Calls
+2. Huge Code Base
+3. Too many communication end points
+4. Load and Concurrency
+
+So architecture of having single/multiple servers depends on a lot many parameters where you need to decide whether to have single server or multiple servers. 
+
+Example - MakeMyTrip website has a lot of dependencies and a huge code base. Having a single server for such a huge website, would make it very difficult to manage
+the resources and might overwhelm the server with the network load. So in those scenarios, one needs to have a distributed environment. 
+On the other hand, one page websites like blogs can be handled from a single server environment. 
+	
+Browser -------------------> Server
+Let's say the server is crashed and we don't want any downtime, what we need to do is 
+there are multiple ways to handle this. 
+
+1. Active-Passive - at a time only one server is working. If first server 
+crashes, the second server takes over on the same IP address. Till the first crashes
+it sits ideal. But this causes waste of resources. This is failover strategy. 
+
+2. Both Server to share load (Load Balancing Strategy)
+Server 1 - Server 1 10.10.10.20
+Server 2 - Server 2 10.10.10.21
+http://abc.com(10.10.10.10) ------> LoadBalancer ---- Server1/Server2 
+					RoundRobin
+By doing this we share the total load between two servers and they work at half capacity. So whenever
+one of the server gets down, the loadbalancer waits for that server to respond for some time
+but it fails to send a response, it redirects the entire load to another server. 
+
+3. Now another point to consider is that if we want to modify a file in server 1, I also have 
+to modify the code in the server2 (can be more than 2 servers). 
+ So when we want to treat server1+server2+server3 -> Cluster
+ 	Cluster: Collection of servers -> One Unit
+	
+We can deploy the server individually which will fail to handle the down time. 
+That's the reason we deploy the cluster which is a collection of servers. The clusters has
+an option to start one or multiple server.
+Deployment for Clustered applications (demo done on Oracle)
+
+
+-->Monolith : Huge Application bundled as one. 
+We need to break this application into small apps and connect each application
+as an independent service. 
+- Break huge system -> small sections <-> Services for each other (in SOA)
+
+Issues:
+Data Sharing
+Network Communication overhead
+Security
+Loose Coupling 
+
+Advantages: 
+1. Can make multiple code bases. You can communicate between two
+different language/platform frameworks.But it will have the issue of compilation/deployment. 
+They will also need multiple small servers and need communication between them. 
+
+Macro Project ------> Micro Services
+ 
+Micro Services 
+Small applications dont need micro services. 
+
+Huge Application 
+	->Single Code Base--------------> Multiple Code Base (Choice)
+		-> Single language->known tools
+		-> Process of compilation/testing/distributing -> same
+		-> time taken 
+	-> deployment is simple -----> deployment/compilation
+	-> Time taken
+	-> Unit testing + Web testing
+
+Micro Services
+-> Unit testing + postman
+-> parallel development
