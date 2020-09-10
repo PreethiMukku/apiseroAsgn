@@ -17,7 +17,7 @@ FailOver
 - if i have 2 serves , s1 handles all incomming requests
 - iff s1 is down then s2 is used in that case
 - then s2 is down then we say its FAILOVER
-- I'm not sure about DNS updation thing while server's fail
+- DNS updation thing while server's fail
 
 LoadBalancer
 - distribution of load
