@@ -1,0 +1,32 @@
+Why Cloud?
+Instead of having our own physical servers we go for cloud, as it helps in maintainability, reduces cost and also helps in scaling down or scaling up based on the requirements. 
+While having physical servers we have to increase the number of machines when we have more requests and then when the requests are less then the resources are been wasted.
+
+5 essential characteristics of cloud computing:
+On-demand self-service: We should be able to access and manage the resources on our own.
+
+Broad network access: The management capabilities are allowed to access over laptop, mobile, etc
+
+Resource pooling: The resources are pooled using virtualization and should be dynamically allocated based on the customer demands. 
+
+Rapid elasticity: The resources allocation must be elastic based on the requests. 
+If suppose the requeste are more than more resources should be allocated(scaling up)and if the demand/requests decreases then the resources should be freed up(scale down).
+
+Measured Service: The cloud usage should be measured and monitored, and we pay per usage.
+
+Different Cloud Service:
+
+IaaS: Machine instances are given for use, we have to configure and install the middlewares and applications according to our need.
+
+Paas: Along with Machine instance, also the middlewares and runtimes are provided where we can use those to have our own application. 
+eg We can have MySQL RDS directly instead of having a machine and then installing and configuring it on our own.
+
+saas: The instance machines, resources,middleware and runtime everytime and we can directly use the software as a service.
+eg gmail
+
+In aws, we create a EC2 instance and can either scale up or scale down the instances by adding policy. 
+We have to set the metric accordingly the instances would be added or removed. This is auto-scaling. 
+Also we need to mention the maximum and minimum instances we would be needing.
+
+We can also set a Load Balancer to distribute the requests among the EC2 instances in aws. 
+This Load Balancer usually follows a round robin fashion. We can predetermined number of instances or we can go for autoscaling along with load balancer.
