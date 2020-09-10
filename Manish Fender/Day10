@@ -1,0 +1,90 @@
+====>Day 10<======
+
+Recap for Day 9 :----
++ How MicroServices Communicate
++ Flow of MicroServices
++ Three/N tier Architecture
+	-Persentation layer
+	-Bussiness layer
+	-Persistance
++Responsiblity segration Principle(Imp)
+	-Each microservie should work with one unit Responsiblity
++ Cluster  ?
++ Load balancer ?
+  index.html-------------->Load blancer------------->server(Not responding)error
+							(Responds back)handshake
+ 							(Wait Acknowledge)wait 30 seconds
+
+---------------------------------------------------------------------------------------------------
+
+==>Cload computing<==
+ESSENTIAL CHARACTERISTICS
+->On demand self service
+	-no human interaction	
+->Broad network
+	-0 to anny number availablity
+->Resource pooling
+	-need lots of empty resources which can be readly use at any given time
+->Rapid elasticity
+	-scale up and down
+->Measured Service
+	-pay according to usage only with proof
+
+
+HOW COMMUNICATION IS DONE BETWEEN CLIENT AND SERVER  ???
+	
+
+CLIENT------------------------>LOAD BALANCER------------------------>SERVER
+reruests -->	                software/hardware       	          (s1,s2,s3)
+				
+LOADBALANCER:--
++ Loadbalancer handle all the requests from the client and send it to the server using algorithm to balance the load.
+  popular algorithm to handle the requests is round robin algorithm.
++  Multiple Microservice : Each microservice can have a seprate loadbalancer.
+
+DIFFERENT TYPES OF SERVERS :----
+Developmet server
++ This server is used to develop,test and deploy the projects by the developer.
+
+Production server
++ This server is used by the admin people to finally deploy the project from development server
+
+
+Why Cloud   ????
+Insted of having own datacenter we can use the exixting data centers managed by by other ,and can use it as a service
+
+CLOUD----->SERVICE
+IAAS : Infrastructure as a service.
+	Ex : AWS (Amazon web services0),  Microsoft Azure, Google Compute Engine (GCE)
+PASS : Platform as a service.
+	Ex: AWS Elastic Beanstalk, Windows Azure.
+SASS : software as a service.
+	Ex :Google Apps, Dropbox, Salesforce, Cisco WebEx,
+ 
+ 
+CLOUD COMPUTING ADVANTAGES :---
++ Flexiblity
++ Disaster Recovery
++ Automatics software Updates
++ Capatial Expenditure Free
++ Capacity / Scaling
++ Increased speed and Agilty
++ Increased collobaration
++ Security
+
+
+
+--------:SCALING :---------
+AutoScaling : Reinitializing instances automatically
+
+Scaleup policy: Increase in instances/machines/servers.
+		In  upscaling if No. of requests or networkIn or (it could be any parameters set) based on which it increases
+		 the Number of instances/machines/servers automatically for max limit we have set. Ex 5 instances.
+
+ScaleDown policy: Decrease in instance/machines/servers.
+		In  ScaleDown if No. of requests or networkIn or (it could be any parameters set) based on which it Decreases 
+		the Number of instances/machines/servers automatically for min limit we have set. Ex 2 instances.
+
+
+
+				
