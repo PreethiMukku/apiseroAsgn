@@ -1,0 +1,30 @@
+Cloud computing is very useful in modern day scenario as it allows the setup to be scalable and also it handles the cumbersome task of maintainance.It provides services from 
+a remote machine and charges on a per use basis.The main features of cc are:
+On-demand self-service: We should be able to access and manage the resources with no manual intervention.
+
+Broad network access: The management capabilities are allowed to access over laptop, mobile, etc
+
+Resource pooling: The resources are pooled using virtualization and should be dynamically allocated based on the customer demands. 
+
+Rapid elasticity: The resources allocation must be elastic based on the requests. 
+If suppose the requeste are more then more resources should be allocated(scaling up)and if the demand/requests decreases then the resources should be freed up(scale down).
+
+Measured Service: The cloud usage should be measured and monitored so that it could be produced whenever asked, and we pay per usage.
+
+
+Iaas Amazon EC2 setup was done where it provided OS and remote machine to setup too.Thus iaas provides with the whole infrastructure and also maintains it.
+Paas Here were get platform as a service for example Java playgroud where we are provided with compilers and runtime machines.Firebase Authentication is also an example
+Saas Here companies provide Software as a service .Here we pay on a per use basis. Example Gmail,Drive,Google Forms
+
+Scaling up and Scaling Down :
+Here we saw how we can design EC2 with Scaling groups where we can increase the instances according to the number of bytes requested or any other suitable metric automtically.
+Scaling up means when we plan to scale uo i.e increase the number of instances running so as to meet the current demand
+Scaling down means we will reduce the number of running instances as we dont require that much resources hence reducing the bill.
+
+LoadBalancers : We could setup loadbalancers such that the load on different servers are distributed and not on a single server such the whenever service is demanded
+it could be responded quickly.Algos like RoundRobin or Hearbeat can be used to spread the load.
+Ideally only Scaling up or dowm is not a solution as the load will still be on the server 1 but we acually configure a load balancer which is then mapped to our
+domain name then the Load balancer will distribute the load and if the network request on the load balancer exceeds we could add more instances for better service.
+
+https://devops.com/introductiontodevops/
+https://www.mulesoft.com/resources/api/microservices-devops-better-together
