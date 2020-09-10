@@ -1,0 +1,37 @@
+----------Cloud Overview--------------
+
+- Cloud is providing services to the companies in terms of resources and machines without direct active management of the user.
+
+- Why Cloud is required?
+-> The initial investment of setting up and procuring the resources would be very high for the industry. Availing the cloud services would rather be cheaper.
+-> Lesser time is required to install and deploy the cloud services.
+-> The management of the resources would not be a major concern for the user.
+
+-The 5 essential characters of cloud
+1. On demand self services -> The services should on the machine should be that of user. There should be least human interaction when new resources has to be installed.
+2. Broad network access -> The service should be accessed from anywhere and on any device like PC, laptop, mobile.
+3. Resource pooling -> This checks the resource providers capacity. It determines how much more resources the resourcer can provide.
+4. Rapid elasticity -> The resourcer should be able to scale up or scale down the resources according to the demand of the user.
+5. Measured services -> The user should be able to use a specified amount of the service from the service provider and be able to prove it.
+
+- Cloud as a Service
+1. Infrastructure as a Service (IaaS) -> In this case the service provider offers services of network, storage, servers, virtualization and asks the operating system the user wants to work on.
+                                 The activities of installing the middleware, using the data and configuring a application is completely done by the user. Ex: AWS EC2 instance.
+2. Platform as a Service (PaaS) -> In PaaS, The user is availed additional services of middleware and runtime apart from all the services provided by the IaaS. This basically means that the user 
+                                 has to use the middleware provided as service to come up with an application. Ex: AWS RDS.
+3. Software as a Service (SaaS) -> Here, SaaS is combination of IaaS, PaaS and Software. The user has everything ready. He/She has to only customize the application according to their requirement.
+                                 Ex: Online compilers, Office 365, Google Suite.
+          
+-Demo          
+
+-> The first demo was done on Infrastructure as a Service where we created a EC2 instance on AWS whcih provided as the requisites as IaaS in Windows OS. Node js application was installed and run on our own.
+   Using the code we displayed "Hello World" message on the server. However when the instance was terminated, the server went down.
+   
+-> Then we revisted the demo on Platform as a Service were RDS was initially created on day 6.
+
+-> Then we had a demo on scaling the servers up an down by setting the scaling parameters. The scaling parameters were sent such that if there was more than 10000 requests in a minute on the host 1, a new server is launched.
+  If the requests is less than 2000 per minute, a server is removed. Here even if the instance is terminated, the server shows the output since the minimum, desired and  maximum number of servers is fixed.
+
+-> In the next demo, we launched a load balancer in the instance after creating two servers. It used the round robin format to send the request to the servers.
+
+-> The last demo was creating an instance with both auto scaling and load balancer.
