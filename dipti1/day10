@@ -1,0 +1,50 @@
+Cloud and AWS services
+-----------------------------------------------------------------
+
+ what and why cloud ?
+
+Cloud computing supports the access of any data from any location with the help of internet connection.
+adv:Cost savings in terms of multiple machines and servers.
+eg:
+client------>load balancer-------> s1
+              (IP)
+				                  -------->s2
+				                  -------->s3
+                          
+so instead of using multiple server abd machines we can simply use cloud services, which supports custom design of different resources.
+
+why should one use cloud services:   
+
+	1.do not have to depend on someone for any configurations we can proceed with self demand and can perform any operations.
+
+	2.Broad network access: 
+	we can access any services from anywhere with the help of network.
+	
+	3.provides scalability:
+	we can scaleup and scaledown thr resources as per input provided.
+
+      4.Measured services:
+	The services which can be measured in some unit,and have some proof of 	usage,accordingly we can pay and can consume services.
+	 
+CLOUD SERVICES:
+
+1. IAAS :-Infrastructure as a service is a cloud based service which offers different users access to computational resources such as servers, storage and n/w.
+eg: Amazon EC2 
+
+2.PAAS :In the Platform-as-a-Service provides os with its latest versions we just have to perform different operations.
+eg: database fiddle
+
+3. SAAS:-Software as a service is a  service which provides all funtionalites as iaas+paas.we just need to do some configurations and 
+we can use this service from anywhere through login.
+eg:Google drive
+
+Load Balancer:
+balances the load between multiple servers
+Load balancers uses Round robin  algorith which is scheduling algorith used to distribute load across servers. 
+
+ Auto scaling: Helps you to reintialize the instance if your instance get killed or crashed.
+ 
+Whenever new requests comes from any site that are directly communicate with load balancer which then communicates with autoscaling and 
+then accordingly load gets assigned.
+All cloud services uses loadbalancer+autoscaling for easy execution of services.
+
