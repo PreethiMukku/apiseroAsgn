@@ -1,0 +1,29 @@
+TESTING OVERVIEW:
+
+  TESTING is executing system or evaluating identifies,error,compile,gaps
+      unit test is in s/w company developer conduct test .
+	  
+	How to Test REST API:
+API testing requires an application to interact with API. To test an API, you require two things,
+
+Testing Tool/Framework to drive the API
+Writing down your own code to test the API
+Rest API can be tested with tools like:
+
+Advanced Rest Client
+Postman-Rest Client
+Curl in Linux
+in this testing we are using get,post,put,delete
+Postman-Rest:
+we are goig through crud operation
+from data  get: is used to retrieval of data by the lingk
+             or calling data by link
+		    post: creating the data or inserting data body
+			put :update the data or modify
+			del: delete data 
+			
+			https://www.bseindia.com/stock-share-price/indian-bright-steel-coltd/ibrigst/504731/
+			https://docs.aws.amazon.com/whitepapers/latest/aws-overview/six-advantages-of-cloud-computing.html
+			From Vaishali to Everyone:  04:57 PM
+https://devops.com/introductiontodevops
+https://www.mulesoft.com/resources/api/microservices-devops-better-together
