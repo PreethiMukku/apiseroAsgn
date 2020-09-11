@@ -1,0 +1,164 @@
+#Monolith
+  -Development-> Deploymeny -> Testing
+			(Deployer ---> Adminitrator)
+			
+#MicroServices
+  -20 MicroServices-> 50 people ----> 2 to 3 people  per MicroServices so 2 to 3 for development ,deployment
+  -20 different environments , 20 different servers
+  -development is broken into smaller pieces so good to maintain
+  -for each MicroServices complitation style is different
+  -java -> javac,war file->tomcat
+  -nodejs->npm->directory->node launchfile
+
+#End to End development
+  I am responsible for development , for deployment 
+  
+#Business Agility:
+	-Time to Market acceleration
+	- Experimentation
+	  expecting new platform
+  - Rapid prototyping
+	- IOT/IOS support
+	  In meeting rooms when we enter lights automatically switch on and off
+    
+#Technical Innovation:
+ - Polygot Enablement
+ - DevOps Automation
+ - API Support
+--------------------------------------------------------------------------------------------DEVOPS----------------------------------------------------------------------------- 
+
+#Introduction:
+ - Development+operations
+ - Business Agility + TI +IC
+ - Application Development=> Development Environmnt+test enviornmnt+ Qa environments + production enviornmnt
+ - DevOps goals are grouped into four categories: culture, automation, measurement, and sharing (CAMS)
+
+#Benefits:
+  - Faster, better product delivery
+  - Faster issue resolution and reduced complexity
+  - Greater scalability and availability
+  - More stable operating environments
+  - Better resource utilization
+  - Greater automation
+  - Greater visibility into system outcomes
+  - Greater innovation
+
+#Devops Methods:
+  - SCRUM: Scrum defines how members of a team should work together to accelerate development and QA projects.
+  - Agile: Agile  prescribes shorter software development lifecycles instead of lengthy, traditional “waterfall” development methods.
+  
+#Devops Toolchain
+  - PLAN: Specifies busniess requirements.Tools include Jira or Git.
+  - CODE: Creation of software code.Tools include GitHub, GitLab, Bitbucket, or Stash.
+  - BUILD: Manage software builds and versions.Tools include  Gradle, Maven.
+  - TEST: Involves continuous testing (manual or automated) to ensure optimal code quality.Tools include JUnit,Selenium,TestNG.
+  - DEPLOY:Include tools that help manage, coordinate, schedule, and automate product releases into production. Tools include Jenkins, OpenStack, or Jira.
+  - OPERATE: Manages software during production. Tools include Ansible, Puppet, PowerShell, Chef, Salt, or Otter.
+  -MONITOR: Identifying and collecting information about issues from a specific software release in production.Tools include Slack.
+  
+#Containers -> Docker
+	-approach to operating system virtualization. 
+	-user can work with a program and its dependencies using resource procedures that are isolated.
+	-container usage in online services benefits storage with cloud computing information security, availability and elasticity.
+
+#Infrastructure as code(Jenkins:-DevOps tool) :
+  -It offers all automated things for multiple environment upto it's deployment
+    EX : Vagrant code
+  -establishing for configure,instantiation---> dont have to remember 
+  	Vargant up --->(compilation command).
+  -for  infrastructure as a code below all happens in one click :
+	-java eclipse -> (compile -->load on github(automated jar creation,run test cases)--deploy on Aws 
+  
+-------------------------------------------------------------------------------------------------SDLC---------------------------------------------------------------------------
+Software Development Life Cycle (SDLC) is a process used by the software industry to design, develop and test high quality softwares. 
+
+  1. Planning: Analyze problem and determine solutions in terms of resources,cost,time. 
+	2. System analysis  : Analyze needs of the end users	
+	3. system design : The system and software design docu.ments are prepared as per the requirement specification document. This helps define overall system architecture.
+	4. Development :  developers start build the entire system by writing code.
+	5. Integration and testing: The testing team starts testing the functionality of the entire system. This is done to verify that the entire application works according to the customer requirement.
+	6. Implementation: Once the software testing phase is over and no bugs or errors left in the system then the final deployment process starts. Based on the feedback given by the project manager, the final software is released and checked for deployment issues if any.
+	7. Operations and Maintenance: To ensure that needs continue to be met and that the system continues to perform as per the specification mentioned in the first phase.
+
+#WaterFall Model: 
+ - The waterfall model is a sequential design process in which progress is seen as flowing steadily downwards (like a waterfall) through the phases of Conception, Initiation,
+    Analysis, Design, Construction, Testing, Production/Implementation, and Maintenance.
+ - The output of one phase becomes the input for next phase
+ - In this Testing is done at the end of model
+ - There is no backtraking in this
+ 
+---------------------------------------------------------------------------------AGILE------------------------------------------------------------------------------------------
+#Introduction:
+   - Brainstorm (Requirement Analysis) -> Design -> Development -> QA -> Deployment -> Delievered to client -> next iteration to brainstorm
+		- The cycle continues as sprints ( will have multiple sprints)
+		- Modifications can be done after each sprint 
+    - Drawback: - Long-term projects suffer from incremental delivery
+		          - The level of collaboration can be difficult to maintain
+              
+#Agile 4 pillars        
+   - Individuals and interactions over processes and tools :  over processes and tools   
+   - Working software over comprehensive documentation: over comprehensive documentation 
+   - Customer collaboration over contract negotiation: Keep customer as top priority
+   - Responding to change over following a plan :Flexibility to multiple changes
+   
+#There are several different frameworks that can be used in order to run an Agile project. Some of the more popular frameworks include:
+   - Scrum
+   - Kanban
+   - Extreme Programming
+   - DSDM
+   
+#12 Agile priciples:
+    - Our highest priority is to satisfy the customer through early and continuous delivery of valuable software.
+    - Welcome changing requirements, even late in development. Agile processes harness change for the customer's competitive advantage.
+    - Deliver working software frequently, from a couple of weeks to a couple of months, with a preference to the shorter timescale.
+    - Business people and developers must work together daily throughout the project.
+    - Build projects around motivated individuals. Give them the environment and support they need, and trust them to get the job done.
+    - The most efficient and effective method of conveying information to and within a development team is face-to-face conversation.
+    - Working software is the primary measure of progress.
+    - Agile processes promote sustainable development. The sponsors, developers, and users should be able to maintain a constant pace indefinitely.
+    - Continuous attention to technical excellence and good design enhances agility.
+    - Simplicity--the art of maximizing the amount of work not done--is essential.
+    - The best architectures, requirements, and designs emerge from self-organizing teams.
+    - At regular intervals, the team reflects on how to become more effective, then tunes and adjusts its behavior accordingly.
+    
+ #Benefits: 
+    - Any project that evolves over time or does not have clear scope and requirements at the beginning.
+    - Organizations that work in a fast-changing environment, such as technology. 
+    - Organizations that need to work closely with their customers and other external parties throughout the life of the project.
+    - Companies that emphasize process and product improvement and are constantly looking to innovate. 
+    - Projects that have a lot of interdependent tasks, where the team needs to work closely together and frequently communicate to ensure success. 
+    - Companies that need to create a prototype before building the final project outcome. 
+    - Projects that require rapid feedback from stakeholders about each product iteration before moving on to the next version or draft.
+    
+-----------------------------------------------------------------------------------------------UAT------------------------------------------------------------------------------
+- USer acceptance test
+- coming because of usage and interaction.
+- not done by tester or end users
+- done by the user or client to determine whether it can be accepted or not.
+- beta testing is an example
+- set clear expectations
+- don't foucs on finding bugs
+- how user likes whatver you have done
+- this is the final testing performed once the functional, system and regression testing are completed.
+- last step before the product goes live or before the delivery of the product is accepted.
+
+----------------------------------------------------------------------------------------------JIRA-------------------------------------------------------------------------------
+- Atlassian product
+- This software is used for bug tracking, issue tracking, and project management
+- Issue Tracker:
+		- It is a bug and issue tracker
+		- It is a part of family of products designed to help teams of all types to manage work
+- Jira Core:
+		- Jira Core provides the basic Jira project management platform for other applications 
+- Jira Software:
+		- If you want to use Jira Software, you have to have Jira Software licences for it
+ - Jira Service Desk:
+		-you need Service Desk licences for it
+- Jira Data Center:
+		- Data Centre is a different licencing scheme, but still has the distinction between Core, Software and Service Desk
+    
+ #Reports in jira: To track the progress in Agile, a Burndown Chart shows the actual and estimated amount of work to be done in the sprint.
+                    A typical burndown chart will look somewhat like this, where the red line indicates the actual task remaining while the blue line indicates ideal task
+                    remaining during the scrum cycle.
+
+
