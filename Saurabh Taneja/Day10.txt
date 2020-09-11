@@ -1,0 +1,50 @@
+-----------------DevOps---------------------
+
+*DevOps=Development + operations
+Developer---> deployment--->testing
+
+*DevOps is a set of practices that combines software development (Dev) and IT operations (Ops)
+*It aims to shorten the systems development life cycle and provide continuous delivery with high software quality
+*DevOps is complementary with Agile software development
+*Several DevOps aspects came from Agile methodology
+
+*Tools of DevOps:
+	1.Github
+	2.Docker etc.
+	
+	
+ISSUE TRACKING:
+While developing some system one can come accross many issues which can be solved by iteration phase and by prioritizing for the same.
+Eg: JIRA
+
+---------------AGILE AND ITS METHODOLOGY---------------------------
+
+The meaning of agile is the ability to move quickly and easily.
+Agile works on project which needs faster execution and feedback mechanism.
+Also agile provides you to change any requirement after its completion also.
+Agile is a iterative process.
+ 
+METHODOLOGY:
+	Individuals and interactions over processes and tools
+	Working software over comprehensive documentation
+	Customer collaboration over contract negotiation
+	Responding to change over following a plan
+
+Agile process flow:
+	1.Requirement analysis
+	2.design
+	3.development
+	4.quality assuarance
+	5.deployment
+	
+---------------------------------------------USER ACCEPTANCE TESTING-------------------------------
+User acceptance testing (UAT) is done at the end user to check  is particular product is working according to given requirements or not.
+Also if we study User acceptance testing before developement phase then will get some idea in advance  about on what basis they are gonna test that particular product.
+
+- Why important?
+	- The UAT checks whether the system meets all requirements specified by user and business scenarios.
+	   The UAT is the last stage of testing information system. Person responsible for UAT: UAT is the last phase; hence,
+	   the testing is performed by end-users and some project analysts.
+
+
+JIRA is a platform which helps to track and solve issue associated with any code,so also known as Issue tracker.
