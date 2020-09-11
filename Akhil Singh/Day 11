@@ -1,0 +1,112 @@
+DevOPs ----->Developement + Operation
+1.Monolith - 24hrs
+Developement -->Deployment--->Testing
+Deployment done by Admin
+
+2.Microservices
+-10 to 20 microservices----->Compilation----->Deployment
+          Java----->Javac----->War file----->Tomcat
+          NodeJs------>npm----->Directory----->node launch file
+          
+Now we look into End to End Developemet
+
+Business Agility
+-Time to market acceleration
+-Experiementation
+-Rapid Prototyping
+-Flexible Patnering
+-IOT/IOS Support
+
+Technical Innovation
+-Polygot Enablement -->Multiple Languages/Platforms
+-DevOps Automation 
+-API Support
+-Microservices Architecture.
+Blue Green Deployment
+
+DevOps Tools
+1.To easily connect to teams
+-Skype
+-Slack
+-Github
+
+2.Issue Tracking 
+-Rapid Response
+-Tools-Zendesk
+       Jira
+       Redmine
+       
+3.Source Control
+-Controlled Assets
+-Centralized and Decentralized Repositories
+
+Our Developement workflow can be automated.
+Automation - Integration of Github with jenkins , there must be automatic Jar files , automatic test cases and be deployed on AWS.
+
+Containers---->When one OS Kernel is divided via virtualization.
+
+System Developement Life Cycle
+-Planning
+-System Analysis and Requirements.
+-System Design
+-Developement
+-Integration and Testing
+-Implementation
+-Operation and Maintainence
+
+After every step , validation procedures are done and only then can we go to the next phase.
+This model is not the scenario cause wastage of resources and we cannot go back to the previous phases
+hence we move ro Agile Methods.
+
+Agile Manifesto
+We follow these principles:
+Our highest priority is to satisfy the customer
+through early and continuous delivery
+of valuable software.
+
+Welcome changing requirements, even late in
+development. Agile processes harness change for
+the customer's competitive advantage.
+
+Deliver working software frequently, from a
+couple of weeks to a couple of months, with a
+preference to the shorter timescale.
+
+Business people and developers must work
+together daily throughout the project.
+
+Build projects around motivated individuals.
+Give them the environment and support they need,
+and trust them to get the job done.
+
+The most efficient and effective method of
+conveying information to and within a development
+team is face-to-face conversation.
+
+Working software is the primary measure of progress.
+
+Agile processes promote sustainable development.
+The sponsors, developers, and users should be able
+to maintain a constant pace indefinitely.
+
+Continuous attention to technical excellence
+and good design enhances agility.
+
+Simplicity--the art of maximizing the amount
+of work not done--is essential.
+
+The best architectures, requirements, and designs
+emerge from self-organizing teams.
+
+At regular intervals, the team reflects on how
+to become more effective, then tunes and adjusts
+its behavior accordingly.
+
+User Acceptance Testing(UAT)-Final level of testing , show customer the end results and then launch.
+
+Tips for UAT
+-Set Clear Expectations
+-UAT Should be done early and at regular intervals.
+
+Jira - Issue tracking software
+- A demo was implemented showing the entire workflow of Jira.
