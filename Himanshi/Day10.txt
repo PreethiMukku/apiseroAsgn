@@ -1,0 +1,51 @@
+	# Day 9 ( Cloud overview and AWS Demo ):
+	
+	• Suppose, abhi few users but at sale too many users ---too many servers required--hence,if we install them pre---wastage of resources.So,instead of having our own data centre--we can go for data centre whoch we can take as a service from AWS Cloud.
+	• Purchasing server/db/-- all machines  as a sevice.
+		- I use services and I only pay for them..
+		- Manitainbility ---installation,configuration,
+
+	• Essentials of  cloud :
+		- On deman self services---antime I should eb able to create my own machine,install any amount of machine.----no human interaction.
+		- Broad netwrok access----laptop,mobile
+		- Resouce pooling/huge hardware/software----free pool pfresources should be availble.
+		- Rapid elasticity------scale up /scale down
+		- Measured services
+		- Multi tenacity
+
+	• Amazon/Microsoft/Google 
+		- Huge hardware -- virtualization
+		- Most of countries ----created hardware setup
+				- Region--->different zone----if one zone crashes,other zone takes over--or load balacong will also be done.
+	• Cloud ----servies offer
+	
+		
+		• IAAS (Infrastructure as a services) :
+				- Storage(harddisk)/processing(server)/network .
+				- I get the machine with prefilled memory netwrok storage cpu everything.I just have to select my OS anf they will install that os for me and give me an IP to which I can connect and this is where my amchine will be present.
+				- I taek infa frm amazon(machine  from amazon) and do my project on it instead of my machine and deliver to . Anyone can access it.
+		• PAAS (Platform as a service) :
+				- Os,middleware,runtime ias also provided by cloud.We juts have to give data and applicatin .
+				- Eg : online compiler,database(I just want a databas eon mu computer as my amchine cant support this many gb storage -----so I can have a  remote database)
+		• SAAS (Software as a service) :
+				-  Iaas +Paas+software ------just configure and use it.
+				- Google drive,g suite,citrix gotomeeting,cisco webex.
+	• Difference :
+		- IAAS : aws(ec2(our remote machine))--download mysql-install mysql--configure it.
+		- PAAS : aws rds ---mysql installed and configured/maintainence--RDS.
+		- SAAS :googledrive .you just startnusing it.
+
+
+	• Task :
+		-  remote server---java/node/---java --set up os,instalaltin/eclipse--PAAS
+		- Office 365 ---SAAS
+		- Service--newspaper--toi--I want a service ---should it be a saop/rest ?
+				- If we can seu this wbiste as  a service?
+					- Output will be json format + req should be goin on http----rest services.
+					
+	• Scaling : 
+		- Scale up :increase machine
+		- Scale down : decrease down machine
+		Scaling out is when you add more instances to your Auto Scaling Group and scaling in is when you reduce the number of instances in your Auto Scaling Group. When you scale out, you distribute your load and risk which in turn provides a more resilient solution,
+		- Step scaling :
+		When you create a step scaling policy, you specify one or more step adjustments that automatically scale the number of instances dynamically based on the size of the alarm breach. Each step adjustment specifies the following: A lower bound for the metric value. An upper bound for the metric value.
