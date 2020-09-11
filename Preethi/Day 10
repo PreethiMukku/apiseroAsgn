@@ -1,0 +1,55 @@
+Communication b/w microservices -> Rest client is used
+Flow of microservices
+
+Cloud computing -> provides computation power
+Cloud services -> provides services through internet, No dependency on client architecture
+  -> Features
+	-> on demand self services -> high availability of services at any time to use on our own
+				   -> No other person interaction should be required for using services
+ 	-> Broad network access -> mobile, laptop
+ 	-> Resource pooling -> Availability of certain(necessary) resources(collection of services) to use at any point of time
+	-> Rapid elasticity -> able to do scale up(increase) and scale down(decrease) immediatly
+	-> Measured services -> measure the usage of services and prove that a certain amount of services are used
+			     -> Pay for only used services
+
+Huge hardware --> Virtualization --> Not presented physicially
+Middleware -> any tools/ service providers -> eclipse etc.
+
+Cloud services
+  -> IAAS Infrastructure as a service
+	Storage/ Processing/ Network 
+	-> AWS(EC2) -> download, install and configure mysql
+  -> PAAS Platfrm as a service
+	OS, installatons and configurations 
+	eg: online compiler
+	-> AWS(RDS) -> MySql already installed and configured 
+  -> SAAS Software as a service
+	Iaas + Paas + software
+	Only configuration is done by user to use it
+	No ownership on application
+	Eg: Google apps(Google drive), zoom, Office 365
+	Advantages:
+		Least cost
+		Flexibility to use it from any where (no fixed position)
+		Service provider takes care of updations and maintainance
+	Cons: 
+		Tightly coupled Eg: migrating from google forms to suvey monkey forms we have to create evrything from scratch
+AWS:
+  -> ec2 -> elastic compute cloud
+	provides scalable computing capacity
+  	1)fully automated scalling 2) scheduled scalling 3) manual scalling
+  -> create a server instance 
+	instance types-> configure instance type-> storage type etc..
+  -> configure instance
+	location, zone, tenacity...
+  -> security configuration should be done
+
+  Scaling up/down:
+	Auto scalling -> create a scalling policy -> configure it (create cloud alarm)
+
+  Load balancer   
+	create->configure->configure security group->configure routing->Register target group
+
+
+
+
