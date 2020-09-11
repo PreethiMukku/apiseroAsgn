@@ -1,0 +1,196 @@
+DevOps :-  
+(Development + operation)
+ 
+why DevOps ??
+
+---]Monolithic ---->(24hrs) ---------> weblogic
+   Development------->Deployment------>Testing
+      (Deployer------->Adminstration)
+
+
+---]Microservices (Compilation,Deployment)------->10/20 microservices(20 different environments) ------->50 people------>2/3people ------->  Development and deployment.
+
+ex :- Java-----> javac ---->war file -------> tomcat.
+         
+          Nodejs------>npm-------->directory-------->node launch file.
+
+.]end to end development --------> from start of the project to the deploment of the project to the client (end user).
+
+
+
+---] Business Agility :-
+
+1)Time-to market Accelaration :-
+
+2)Rapid prototypin :-
+
+3)Experimentation :-
+
+4)Flexible partnering :-
+
+5)iot/ios support :-
+
+
+
+---]Technical innovation :-
+
+
+
+-] Infrastructure choice :-
+
+
+
+
+*****]Intersection of this all three gives us DevOps as the best choice .
+
+
+-]Application Development :-
+
+1)Development environment :-
+
+2)QA Environment :-
+
+3)Testing Environment :-
+
+
+4)Production Environment :-
+
+
+
+
+
+
+----]DevOps Technology Categories :-
+
+ collaboration tool :- 
+
+
+Issue tracking :-
+
+
+source control :-
+
+
+-]  Aws/server1 --------->CPU(128) + GB RAM--------->good for monolithic 
+(microservice)---------->small code base -------->alot of overhead
+
+
+
+
+-]server--->Container (Containerization) (light weight)------->Docker  (physical ----->Host O.S (OS KERNEL) ----------> Application(each one with no such guest operation))--------> (DevOps tool)
+
+-]Aws(EC2)(linus/windows)----->configure,load balancer,Autoscaling ------->manual
+
+
+
+----]Infrastructure as code(Jenkins---DevOps tool) :-
+It offers all automated stuff now for (multiple environment upto it's deployment)
+
+
+ex :-
+       Vagrant code
+establishing for configure,instantiation -------> dont have to remember 
+
+------->Vargant up -------->(compilation command).
+
+java eclipse ---------> (compile ------->load on github(automated jar creation,run test cases) ------> deploy on Aws )<------------this all happens in one click <---------(infrastructure as a code)
+
+
+
+-------] SDLC :- (software development life cycle ) 
+-----] (Waterfall model )
+1)planning  :-
+
+
+
+2)System Analysis and Requirement :-
+
+ 
+3)System Design :-
+
+ 
+4)Development:-
+
+
+ 
+5) Integration and Testing :-
+
+
+6)Implementation :-
+
+
+7)Operation and Maintenance :-
+
+
+-------] V- model :-
+
+  requirement Analysis <------------------> Acceptance Testing
+
+   system Design <---------------------------->  System Testing
+
+Architecture Design <---------------------------->Integration and Testing
+
+Module Design  <----------------------->Unit Testing
+
+                                       CODING
+
+
+----------]Agile Method (feedback mechanism):-
+
+
+Brainstorm--->Discover----->Design ------>Development----->QA-------->Test -------->Deployment----->Deliver to client (done) if not then---------->Next iteration------->(start again) Brainstorm
+
+
+-]Principle and Manifestor of Agile :-
+
+
+
+
+
+
+
+
+
+
+-]   UAT  (User Acceptance Testing) :-
+
+
+
+
+
+
+    importance of UAT :-
+
+
+
+
+
+ex:- video needed to be downloaded before watching (earlier) <----------  Changed as UAT demanded it.
+
+
+------]JIRA (BUG AND ISSUE TRACKER)  :-
+
+
+   3 parts(component) of JIRA :-
+
+1)JIRA CORE :-
+
+2)JIRA SOFTWARE :-
+
+
+3)JIRA SERVICE DESK :-
+
+
+----------]JIRA AS SOFTWARE (STUDY):-
+
+
+CREATE issue-------->Priority level--------->Register
+
+
+(Reporter) ---------> Assignee(Resolver)
+
+
+-]Reports status will be shown as Done,to-do or something else when Assignee resloves the issue.
+
+
+ex:-  Jira.spring.io <-------(JIRA as a software can be used here ).
