@@ -1,0 +1,174 @@
+Day 11
+
+===========>DevOps Introduction<============
+     DEVELOPERS + OPEARTIONS TEAM
+DevOps is the combination of cultural philosophies, practices, and tools that increases an organization's ability to deliver applications
+and services at high velocity: evolving and improving products at a faster pace than organizations using traditional software development 
+and infrastructure management processes
+
+DevOps consist of:----
+1.Bussiness Agilty
+2.Technical Innovation
+3.Infractructure Choice 
+
+------: BENIFITS OF DevOps :-----
+
+Speed :--
+Move at high velocity so you can innovate for customers faster, adapt to changing markets better, and grow more efficient at drivin
+business results. The DevOps model enables your developers and operations teams to achieve these results. For example, microservices 
+and continuous delivery let teams take ownership of services and then release updates to them quicker.
+
+Rapid Delivery :--
+Increase the frequency and pace of releases so you can innovate and improve your product faster. The quicker you can release new features
+and fix bugs, the faster you can respond to your customers’ needs and build competitive advantage. Continuous integration and continuous
+delivery are practices that automate the software release process, from build to deploy.
+
+
+Reliability :--
+Ensure the quality of application updates and infrastructure changes so you can reliably deliver at a more rapid pace while maintaining
+a positive experience for end users. Use practices like continuous integration and continuous delivery to test that each change is functional 
+and safe. Monitoring and logging practices help you stay informed of performance in real-time.
+
+
+Scale :--
+Operate and manage your infrastructure and development processes at scale. Automation and consistency help you manage complex or changing 
+systems efficiently and with reduced risk. For example, infrastructure as code helps you manage your development, testing, and production
+environments in a repeatable and more efficient manner.
+
+Improved Collaboration :--
+Build more effective teams under a DevOps cultural model, which emphasizes values such as ownership and accountability. Developers and
+operations teams collaborate closely, share many responsibilities, and combine their workflows. This reduces inefficiencies and saves 
+time (e.g. reduced handover periods between developers and operations, writing code that takes into account the environment in which it is run).
+ 
+ 
+Security :--
+Move quickly while retaining control and preserving compliance. You can adopt a DevOps model without sacrificing security by using automated 
+compliance policies, fine-grained controls, and configuration management techniques. For example, using infrastructure as code and policy
+as code, you can define and then track compliance at scale.
+
+
+------: DevOps Practices/Categories :-----
+DevOps practices reflect the idea of continuous improvement and automation. Many practices focus on one or more development cycle phases.
+These practices include:
+
+Continuous development:-- This practice spans the planning and coding phases of the DevOps lifecycle. Version-control mechanisms might be involved. 
+
+Continuous testing:--This practice incorporates automated, prescheduled, continued code tests as application code is being written or updated.
+Such tests can speed the delivery of code to production.
+
+Continuous integration (CI):-- This practice brings configuration management (CM) tools together with other test and development tools to track
+how much of the code being developed is ready for production. It involves rapid feedback between testing and development to quickly identify
+and resolve code issues.
+
+Continuous delivery:--This practice automates the delivery of code changes, after testing, to a preproduction or staging environment. An staff 
+member might then decide to promote such code changes into production.
+
+Continuous deployment (CD):-- Similar to continuous delivery, this practice automates the release of new or changed code into production.
+A company doing continuous deployment might release code or feature changes several times per day. The use of container technologies, such
+as Docker and Kubernetes, can enable continuous deployment by helping to maintain consistency of the code across different deployment platforms
+and environments.
+
+Continuous monitoring:-- This practice involves ongoing monitoring of both the code in operation and the underlying infrastructure that supports 
+it. A feedback loop that reports on bugs or issues then makes its way back to development.
+
+Infrastructure as code:-- This practice can be used during various DevOps phases to automate the provisioning of infrastructure required for a 
+software release. Developers add infrastructure “code” from within their existing development tools. For example, developers might create a 
+storage volume on demand from Docker, Kubernetes, or OpenShift. This practice also allows operations teams to monitor environment configurations, 
+track changes, and simplify the rollback of configurations.
+
+
+------: DevOps Toolchain:------
+Plan:-- This phase helps define business value and requirements. Sample tools include Jira or Git to help track known issues and perform project
+management.
+Code:--This phase involves software design and the creation of software code. Sample tools include GitHub, GitLab, Bitbucket, or Stash. 
+
+Build:-- In this phase, you manage software builds and versions, and use automated tools to help compile and package code for future release
+to production. You use source code repositories or package repositories that also “package” infrastructure needed for product release. 
+Sample tools include Docker, Ansible, Puppet, Chef, Gradle, Maven, or JFrog Artifactory.
+
+Test:--This phase involves continuous testing (manual or automated) to ensure optimal code quality. Sample tools include JUnit, Codeception,
+Selenium, Vagrant, TestNG, or BlazeMeter.
+
+Deploy:-- This phase can include tools that help manage, coordinate, schedule, and automate product releases into production. Sample tools
+include Puppet, Chef, Ansible, Jenkins, Kubernetes, OpenShift, OpenStack, Docker, or Jira.
+
+Operate:-- This phase manages software during production. Sample tools include Ansible, Puppet, PowerShell, Chef, Salt, or Otter.
+
+Monitor:--This phase involves identifying and collecting information about issues from a specific software release in production. 
+Sample tools include New Relic, Datadog, Grafana, Wireshark, Splunk, Nagios, or Slack.
+
+
+-----------:  AGILE Method  :------------
+
+	-Brainstorm--->Discover---->Design --->Development--->QA---->Test ---->Deployment--->
+		- if done Deliver to client and if not then--->Next iteration----->(start again) Brainstorm
+	-the method is based on the concept of 
+		-ongoing waves or sprints of project planning and execution, 
+		-enabling you to continuously adapt and mature your plan, scope, and 
+		-design throughout the project. 
+	-require an iterative approach, which supports incremental, frequent, and consistent deliveries of workable products to your customer or client.
+	-different frameworks that can be used in order to run an Agile project :
+		-kanban
+		-Scrum : how members of a team should work together to accelerate development and QA projects. 
+
+
+Manifesto for Agile Software Development
+
+	-Individuals and interactions over processes and tools
+	-Working software over comprehensive documentation
+	-Customer collaboration over contract negotiation
+	-Responding to change over following a plan
+
+
+Principle of Agile :--
+	-Our highest priority is to satisfy the customer through early and continuous delivery of valuable software.
+	-Welcome changing requirements, even late indevelopment. Agile processes harness change for the customer's competitive advantage.
+	-Deliver working software frequently, from a couple of weeks to a couple of months, with a preference to the shorter timescale.
+	-Business people and developers must work together daily throughout the project.
+	-Build projects around motivated individuals.Give them the environment and support they need, and trust them to get the job done.
+	-The most efficient and effective method of conveying information to and within a development team is face-to-face conversation.
+	-Working software is the primary measure of progress.
+	-Agile processes promote sustainable development. The sponsors, developers, and users should be able to maintain a constant pace indefinitely.
+	-Continuous attention to technical excellence and good design enhances agility.
+	-Simplicity--the art of maximizing the amount of work not done--is essential.
+	-The best architectures, requirements, and designs emerge from self-organizing teams.
+	-At regular intervals, the team reflects on how to become more effective, then tunes and adjusts its behavior accordingly.
+
+
+Benefits of adopting an Agile method:
+	Continuous customer contact :--
+ 		-there’s ongoing contact with customers throughout the entire process and iterative deliveries to ensure your team is on track, so the end product will be exactly what the customer wants.  
+	The ability to adapt :-- :--
+		-if your customer told you halfway through a project that they needed a scope change Using  Agile, changes can be incorporated with minimal effort, no matter how far along in the project your team is, as it can easily be added to the next iteration.   
+	Faster delivery :--
+		-as continuous development approach therefor ensures that your team is constantly delivering workable products. This means that instead of waiting for 6 to 12 months or longer for an end product, your client is getting a working version of the product at much shorter intervals, typically every 2 to 4 weeks. 
+	Lower project risk :--
+		-Since team is developing versions of the product regularly and getting customer feedback early on, the risk of a project failing is minimized. By breaking a large project into iterations,your risk is also reduced to the failure of an iteration . You’re more likely to find small problems early, that can be addressed easily, rather than discovering a large issue only at the time of final testing before the end delivery. 
+	Ongoing innovation :--
+		-collaboration and continuous improvement, both of which can lead to innovation and the development of new products and features. By co-locating teams and having daily meetings, brainstorming and idea creation is supported.
+
+When Not to Use the Agile Project Management Method :--
+	-The outcome of your project is stable and well understood. 
+	-Your customer doesn’t want Agile. 
+	-Your company cannot support Agile. 
+	-Your organization cannot support daily collaboration. 
+	-The company structure cannot support cross-functional teams.
+
+UAT  (User Acceptance Testing) :--
+	-last stages of the software development life cycle.
+	-performed after the software has been tested(LIKE UNIT AND INTREGRATION )
+	-known as End User Testing.
+	-gives users the chance to interact with the software and find out if everything works as it should if features have been overlooked, miscommunicated, not communicated
+	-EX:- for facebook, video needed to be downloaded before watching (earlier) -  Changed as UAT demanded it.
+
+
+
+JIRA
+	-BUG AND ISSUE TRACKER
+	-3 component of JIRA :-
+		-JIRA CORE 
+		-JIRA SOFTWARE 
+		-JIRA SERVICE DESK
+
+	-Creation of report,assigning it to member,closing the report.
+
