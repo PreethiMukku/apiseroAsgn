@@ -1,0 +1,91 @@
+-->--> >CLOUD-->--> >
+The practice of using a network of remote servers hosted on the Internet to store, manage, and process data, rather than a local server or a personal computer.
+Cloud computing is the delivery of different services through the Internet. These resources include tools and applications like data storage, servers, databases, networking, and software.
+As long as an electronic device has access to the web, it has access to the data and the software programs to run it.
+
+-->Types of Cloud services
+
+1)IAAS :-Infrastructure as a service (IaaS) is a cloud computing offering in which a vendor provides users access to computing resources such as servers, storage and networking.
+Organizations use their own platforms and applications within a service provider's infrastructure.
+ex:-Amazon(EC2) ,Aws,Google computing engine .
+
+2)PAAS :-In the Platform-as-a-Service (PaaS) model, developers essentially rent everything they need to build an application, relying on a cloud provider for development tools, infrastructure, and operating systems.
+This is one of the three service models of cloud computing.
+ex:-online compilers ,w3school,Mysql by Aws IRDS .
+
+3)SAAS:-Software as a service (SaaS) is a software distribution model in which a third-party provider hosts applications and makes them available to customers over the Internet. 
+SaaS is one of three main categories of cloud computing, alongside infrastructure as a service and platform as a service (IaaS and PaaS).
+ex:-Google drive,Zoom video call,office365 .
+
+Characteristics
+ 
+1)on demand self services -->
+Cloud computing provides resources on demand, i.e. when the consumer wants it. This is made possible by self-service and automation. 
+Self-service means that the consumer performs all the actions needed to acquire the service herself, instead of going through an IT department.
+(not any human interaction).
+
+2)Broad N/w access -->
+Broad network access refers to resources hosted in a private cloud network (operated within a company's firewall) 
+that are available for access from a wide range of devices.(portable to any devices(mobile,laptop etc)) 
+
+3)Resource pooling -->
+Resource pooling allows cloud providers to pool large-scale IT resources to serve multiple cloud consumers. 
+Different physical and virtual IT resources are dynamically assigned and reassigned according to cloud consumer demand, 
+typically followed by execution through statistical multiplexing. 
+ex:-  (0.200)-->Huge hardware /software resource availability.
+
+4)Rapid elasticity --> Rapid elasticity is a cloud computing term for scalable provisioning, or the ability to provide scalable services. 
+Experts point to this kind of scalable model as one of five fundamental aspects of cloud computing.
+(scale up,scale down)-->ex:- (website only launching olympics game live streaming )
+
+5)Measured service --> 
+This is a reference to services where the cloud provider measures or monitors the provision of services for various reasons, i
+ncluding billing, effective use of resources, or overall predictive planning.
+(Details about the usage as Measurement for record ).
+
+6)Multi Tenacity -->
+Multiple customers of a cloud vendor are using the same computing resources.
+Despite the fact that they share resources, cloud customers aren't aware of each other, and their data is kept totally separate.
+
+
+COMMUNICATION between CLIENT and SERVER  ???
+
+
+CLIENT------------------------>LOAD BALANCER------------------------>SERVER
+reruests -->	                software/hardware       	          (s1,s2,s3)
+
+LOADBALANCER:--
++ Loadbalancer handle all the requests from the client and send it to the server using algorithm to balance the load.
+  popular algorithm to handle the requests is round robin algorithm.
++  Multiple Microservice : Each microservice can have a seprate loadbalancer.
+
+DIFFERENT TYPES OF SERVERS :----
+Developmet server
++ This server is used to develop,test and deploy the projects by the developer.
+
+Production server
++ This server is used by the admin people to finally deploy the project from development server
+
+
+ADVANTAGES
++ Flexiblity
++ Disaster Recovery
++ Automatics software Updates
++ Capatial Expenditure Free
++ Capacity / Scaling
++ Increased speed and Agilty
++ Increased collobaration
++ Security
+
+
+
+--------:SCALING :---------
+AutoScaling : Reinitializing instances automatically
+
+Scaleup policy: Increase in instances/machines/servers.
+		In  upscaling if No. of requests or networkIn or (it could be any parameters set) based on which it increases
+		 the Number of instances/machines/servers automatically for max limit we have set. Ex 5 instances.
+
+ScaleDown policy: Decrease in instance/machines/servers.
+		In  ScaleDown if No. of requests or networkIn or (it could be any parameters set) based on which it Decreases 
+		the Number of instances/machines/servers automatically for min limit we have set. Ex 2 instances.
