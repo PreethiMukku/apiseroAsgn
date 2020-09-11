@@ -1,0 +1,49 @@
+CC:
+-> On-demand availability of computer system resources, especially data storage and computing power, without direct active management by the user. 
+-> Has data centers across the world.
+
+CC Props:
+-> Low costs
+-> High performance
+-> Scalability
+-> Low maintenance
+-> Use anywhere
+
+CC Characteristics:
+-> On-demand self-service
+-> Broad N/w access
+-> Resource pooling
+-> Rapid elasticity
+-> Metered services
+
+
+Cloud Services:
+==> IAAS:
+	Customization from OS, middleware(language), runtime, applications, and data is allowed.
+	AWS EC2
+==> PAAS:
+	Customization from applications and data is allowed.
+	Github, Amazon Relational Database Service
+==> SAAS:
+	Here we directly use the service and not bother about anything.
+	Gmail, Zoom
+
+
+Auto-Scaling:
+To reinitialize a new instance if older one gets killed or crashed.
+AutoScailing is preferred when the load is known.
+==> Step scaling -> All instance together 
+==> Simple scaling -> 1 after 1
+
+-> Desired, Min, and Max instances can be configurable
+
+--> Auto scaling to 0 when you want to remove auto-scaling.
+
+
+Load Balancer:
+To distribute the load that we are getting on our servers.
+Usually, we use the round-robin algorithm.
+Flexibility to add or remove servers.
+==> In real-time we use a load balancer and auto-scaling together.
+
+--> AWS has inbuilt DNS mapping to hide functionality from the end-user.
