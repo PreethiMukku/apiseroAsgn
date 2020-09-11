@@ -1,0 +1,26 @@
+Cloud-
+->Cloud computing facilitates the access of applications and data from any location and from any device with an internet connection.
+->It also helps businesses to save cost on acquiring and maintaining different servers.
+->It also helps businesses to easily scaling up or down according to the bussiness needs.
+
+Advantages of cloud
+->Flexibility
+->Security
+->Reduced cost of software
+->Accessibility
+
+
+IAAS-Infrastructure as a service
+->storage,processing,servers etc.eg-AWS(EC2)
+
+PAAS-Platform as a service
+->It provides a platform to develop and manage application.eg-AWS RDS.
+
+SAAS-Software as a service
+->In this the whole application/software is provided as a service over internet.eg-google drive.
+
+
+In aws 
+->we created EC2 instance which is a example of IAAS.
+->we created auto scaling policy.
+->we also set a load balancer which usually follows round robin approach to balance load between different servers.
