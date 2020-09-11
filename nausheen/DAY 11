@@ -1,0 +1,131 @@
+DevOps---->Development + operations
+
+Business Agility:
+>Time to Market Acceleration
+>Rapid Prototyping
+>Flexible Partnering
+>Iot/Ios Support
+____________________________________________________________________________________________________________________________________________________________________________
+Technical innovation'
+
+Essential TOOLS:
+ISSUE TRACKING:
+-ZENDESK
+-JIRA
+-REDMINE
+
+COLLABORATION:
+-SLACK
+-GITHUB
+
+
+SERVER -----> INTO SMALLER UNITS(CONTAINERS)
+DOCKERS 
+
+Infrastructure as code
+>config instance
+> dont remember
+>multiole environments
+
+vagrnt up..shows alls wever 
+
+SDLC:SOFTWARE DEVELOPMENT LIFECYCLE
+-PLANNING(scope of problem and solutions)
+-SYSTEM ANALYSIS AND REQUIREMENTS(functional requirements of project and solution, analyzing and meet their expectations)
+
+-SYSTEM DESIGN
+:::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
+
+AGILE:
+The meaning of agile is the ability to move quickly and easily.
+ Therefore, an Agile approach enables project teams to adapt faster and easier compared to other project methodologies.
+
+What Is Agile Methodology?
+Agile methodology is an approach to project management that uses 4 key pillars and 12 principles to organize projects. 
+_______________________________________________________________________________________________________________________________________________________________________________
+
+The 4 key pillars of the Agile Manifesto book are designed for valuing:
+
+//Individuals and interactions over processes and tools
+//Working software over comprehensive documentation
+//Customer collaboration over contract negotiation
+//Responding to change over following a plan
+
+AGILE:(FLOW DIAGRAM)
+Brainstorm:Requirement analysis
+design: design development and progress
+development:
+quality assuarance:
+deployment :
+delivered to client: 
+
+
+Agile has a high level of customer involvement and includes frequent reviews of progress with both the project team and the customer. 
+
+There are several different frameworks that can be used in order to run an Agile project. 
+Some of the more popular frameworks include:
+-Scrum
+-Kanban
+-Extreme Programming
+-DSDM
+
+UAT:USER ACCEPTANCE TESTING
+-at the end user
+The aim of the User Acceptance Testing of web apps is to ascertain that the developed software can handle required tasks in real-world scenarios. 
+Also, it allows the development team to check if the final product is working according to specifications laid out during the designing phase.
+:::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
+
+<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<DevOps Tool chain:>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+
+Plan. :This phase helps define business value and requirements.
+ Sample tools include Jira or Git to help track known issues and perform project management.
+
+Code. 
+-This phase involves software design and the creation of software code. 
+Sample tools include GitHub, GitLab, Bitbucket, or Stash.
+
+Build. 
+-In this phase, you manage software builds and versions, and use automated tools to help compile and package code for future release to production. 
+-You use source code repositories or package repositories that also “package” infrastructure needed for product release.
+- Sample tools include Docker, Ansible, Puppet, Chef, Gradle, Maven, or JFrog Artifactory.
+
+Test. 
+-This phase involves continuous testing (manual or automated) to ensure optimal code quality. 
+Sample tools include JUnit, Codeception, Selenium, Vagrant, TestNG, or BlazeMeter.
+
+Deploy.
+ This phase can include tools that help manage, coordinate, schedule, and automate product releases into production. 
+-Sample tools include Puppet, Chef, Ansible, Jenkins, Kubernetes, OpenShift, OpenStack, Docker, or Jira.
+
+Operate. 
+-This phase manages software during production. Sample tools include Ansible, Puppet, PowerShell, Chef, Salt, or Otter.
+Monitor. 
+-This phase involves identifying and collecting information about issues from a specific software release in production. 
+-Sample tools include New Relic, Datadog, Grafana, Wireshark, Splunk, Nagios, or Slack.
+____________________________________________________________________________________________________________________________________________________________________________
+
+What Is DevOps?
+DevOps is an evolving philosophy and framework that encourages faster, better application development and faster release of new or
+revised software features or products to customers.
+
+The practice of DevOps encourages smoother, continuous communication, collaboration, integration, visibility,
+and transparency between application development teams (Dev) and their IT operations team (Ops) counterparts.
+
+This closer relationship between “Dev” and “Ops” permeates every phase of the DevOps lifecycle: 
+from initial software planning to code, build, test, and release phases and on to deployment, operations, and ongoing monitoring.
+ 
+This relationship propels a continuous customer feedback loop of further improvement, development, testing, and deployment. 
+____________________________________________________________________________________________________________________________________________________________________________
+
+Benefits of DevOps:
+
+-Faster, better product delivery
+-Faster issue resolution and reduced complexity
+-Greater scalability and availability
+-More stable operating environments
+-Better resource utilization
+-Greater automation
+-Greater visibility into system outcomes
+-Greater innovation
+
+
