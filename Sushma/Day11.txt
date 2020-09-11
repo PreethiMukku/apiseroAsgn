@@ -1,0 +1,186 @@
+Day 11
+
+DevOps:
+Development + Operations
+
+- DevOps is a set of practices that combines software development (Dev) and IT operations (Ops)
+- It aims to shorten the systems development life cycle and provide continuous delivery with high software quality
+- DevOps is complementary with Agile software development
+- Several DevOps aspects came from Agile methodology
+
+- Monolith -> Deploy
+
+Development ------> Deployment -----------> Testing
+	              (Deployer team/
+	               Admin team)
+	
+
+- Micro Services
+	10/20 micro services --> distribution of 50 people ->2/3 people (Development/Deployment)
+	- Each MicroService, they are slightly different in compilation and deployment
+	 
+	 	Java -> javac, war file -> tomcat
+		Nodejs -> npm -> directory -> node launchfile
+		
+- End to End development
+	- End of Devlopment and End of Deployment
+	- 20 microservices have 20 servers, checking for servers start
+
+Business Agility:
+	- Time to market acceleration
+	- Experimentation
+	- Rapid Prototyping
+	- Flexible Partnering
+	- IoT/IoS Support
+
+- Polygot Enablement: 
+	- Supports multiple languages, platforms, support
+	- Part of data in MySQL and part of data in MongoDB
+	- For developer, additional responsibility of software operations
+
+-DevOps:
+	Development
+	Operations
+Tools:
+	- Collaboration is most important
+		Ex: Slack
+- Easily connect teams:	
+	- for communication
+Tools:
+	- Slack
+	- Skype
+	- WordPress
+	- GitHub Wiki
+Issue Tracking: 
+- Rapid response
+Tools:
+	- Zendesk
+	- Jira 
+	- Redmine
+Source Control:
+	- Controlled assets
+Tools:
+	- GitHub
+=> AWS/Server-1
+	-> Smallest instance/Biggest instance
+		-> CPU(128) + GB RAM
+		-> then it is monolith
+=> Microservices:
+	-> Small code
+	-> Small Expectation
+
+- AWS Server -> 1 micro service
+			- Now-a-days, working on only one server
+			- Break into smaller units -> containers -> Dockers
+			- Instead virtualization, Containerization is used
+			- The container usage in online services benefits storage with cloud computing information security, availability and elasticity
+
+ java(Eclipse) -> Compile -> GitHub 
+			- New Event
+			- Checkin for any new development for GitHub
+			- Automatic artifact (jar creation)
+			- Run test cases
+			- Deploy it on AWS
+
+Code (output -> directory, war..)
+AWS EC2 (Linux) -> Configure LB, autoscaling -> Manual (No automation)
+
+Popular Implementation is infrastructure as code 
+	- Configure, instance
+	- Don't need to remember
+	- Multiple such environments
+Entire development workflow can be automated
+
+Application Development:
+- Development Environment - Configure, customize and use source control
+- Test Environment - Test controlled data and perform controlled testing 
+- QA Environment - Test against data, hardware, software that closely simulate the production environment and where you allow intended users to test
+- Production Environment - Applications is actually available for business use
+
+Software Development LifeCycle (SDLC):
+	- Waterfall Model:
+		- Planning -> System Analysis and Requirements -> Design -> Development -> Integration and Testing -> Implementations -> Operations and maintenance
+Drawback: - Takes lot of time 
+		  - Cannot go back to the previous step for modifications
+		  
+	- V-Model: 
+		- Both development and testing started at the same time
+		- It is an extension of waterfall model in which testing is done on each stage parallel with development in a sequential way
+		- It is known as the Validation or Verification Model
+Drawback: - Least flexible
+		  - If any changes happen in midway, then the test documents along with requirement documents has to be updated
+		  
+	- Agile: 
+		- Brainstorm (Requirement Analysis) -> Design -> Development -> QA -> Deployment -> Delievered to client -> next iteration to brainstorm
+		- The cycle continues as sprints ( will have multiple sprints)
+		- Modifications can be done after each sprint 
+Drawback: - Long-term projects suffer from incremental delivery
+		  - The level of collaboration can be difficult to maintain
+
+Agile manifesto and Principles:
+	- Individuals and interactions 
+		- over processes and tools
+		- Daily feedback -> 2 days
+		- Asking questions - Orally
+	- Working software 
+		- over comprehensive documentation
+	- Customer collaboration
+		- over contract negotiation
+		- Keep customer as top priority
+	- Responding to change 
+		- over following a plan
+		- Open interms of changes 
+		- Flexibility to multiple changes
+- Excellence support for tools for Agile
+
+=> Twelve Principles of Agile Software:
+- Our highest priority is to satisfy the customer through early and continuous delivery of valuable software.
+- Welcome changing requirements, even late in development. Agile processes harness change for the customer's competitive advantage.
+- Deliver working software frequently, from a couple of weeks to a couple of months, with a preference to the shorter timescale.
+- Business people and developers must work together daily throughout the project.
+- Build projects around motivated individuals. Give them the environment and support they need, and trust them to get the job done.
+- The most efficient and effective method of conveying information to and within a development team is face-to-face conversation.
+- Working software is the primary measure of progress.
+- Agile processes promote sustainable development. The sponsors, developers, and users should be able to maintain a constant pace indefinitely.
+- Continuous attention to technical excellence and good design enhances agility.
+- Simplicity--the art of maximizing the amount of work not done--is essential.
+- The best architectures, requirements, and designs emerge from self-organizing teams.
+- At regular intervals, the team reflects on how to become more effective, then tunes and adjusts its behavior accordingly.
+
+User Acceptance Testing: 
+- Why important?
+	- The UAT checks whether the system meets all requirements specified by user and business scenarios. The UAT is the last stage of testing information system. Person responsible for UAT: UAT is the last phase; hence, the testing is performed by end-users and some project analysts.
+
+- Who performs?
+	- Unlike many other types of testing, UAT isn't performed by professional testers. Product end users are people who take part in this activity
+
+- Where do we see the same?
+	- Beta testing
+	- This is typically the last step before the product goes live or before the delivery of the product is accepted. This is performed after the product itself is thoroughly tested
+
+=> 7 tips to conduct great UAT:
+- Set clear expectations
+- UAT should occur early and often
+- Find relevent test participants
+- Prepare test assignments
+- Don't focus on finding defects
+- Clarity in all findings
+- Communicate feedback
+
+Jira:
+	- Atlassian product
+	- Jira has evolved into a powerful work management tool for all kinds of use cases, from requirements and test case management to agile software development
+	- Issue Tracker:
+		- It is a bug and issue tracker
+		- It is a part of family of products designed to help teams of all types to manage work
+	- Jira Core:
+		- Jira Core provides the basic Jira project management platform for other applications 
+	- Jira Software:
+		- If you want to use Jira Software, you have to have Jira Software licences for it
+	- Jira Service Desk:
+		-you need Service Desk licences for it
+	- Jira Data Center:
+		- Data Centre is a different licencing scheme, but still has the distinction between Core, Software and Service Desk
+
+	
+
