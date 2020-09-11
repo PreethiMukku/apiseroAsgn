@@ -118,7 +118,7 @@ ex:- Autosaciling Params:-(ec1,host1,host2,host3)
  
  *] Practically we use both together in project implementation .
  client------>LB-------->(AutoScailing) (Target group)
- AutoScailing is basically good when load is known.
+ AutoScailing is basically good when load is unknown.
  
 -]DNS Mapping is supported by aws to hide the functionality(approach) from the end user. 
  
