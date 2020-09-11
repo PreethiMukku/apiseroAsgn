@@ -1,0 +1,71 @@
+Cloud computing->
+Cloud computing is the on-demand availability of computer system resources, especially data storage and computing power, without direct active management by the user.
+On-demand self-service. Cloud computing resources can be provisioned without human interaction from the service provider. ...
+Broad network access. ...
+Multi-tenancy and resource pooling. ...
+Rapid elasticity and scalability. ...
+Measured service.
+
+Why to use Cloud->
+
+Machine -> servers(3)
+        -> Load balancer(1)
+client  -> Load balancer-->s1,s2,s3
+software and hardware
+4 spare machines --> money wastage
+100 requests -> 1 server
+10000 requests -> 5 servers (costs to buy increases)
+Instead of this we can have services to use and pay for what we use 
+->purchsing all these machines rental bases-> services
+    -> service ->pay per usage
+    -> cost
+    -> maintainability -> installation, configuration, hardware, software support
+
+
+-Cloud provides services like infrastructure,platform and software.
+
+IAAS-(infrastructure as a service.)
+-All networking,servers, storage,virtualisation is managed by cloud.
+- we need to manage all the other like os, middleware, software etc.
+-Amazon Web services AWS
+
+PAAS-(Platform as a service.)
+-All networking,servers, storage,virtualisation, Operating system, Middleware applications and Runtime environment is managed by cloud.
+- we need to take of pthers like software.
+-online code compilers.
+
+SAAS-(Software as a service.)
+-each and every thing is managed by the cloudn from networking to software,we just use this services.
+-zoom calls
+
+cloud essential characteristics
+1.On demand self service
+-can activate the services whenever consumer wants it.
+2.broad network access
+-mobiles,laptop all devices have access.
+3.Resource pooling
+-location independent,can access from any location.
+4.Rapid Elasticity
+-scale up, scale down
+5.Measured service
+-we pay for what we use.
+6.Multitenacity
+-multiple consumers can use one service at time.
+
+Client------->Load Balancer------->Auto Scaling
+Autoscaling
+- scale up scale down is done automatically.
+- autoscaling params
+if morethan 10000 requests create one more instance 
+if lessthan 2000 requests delete one instance
+-it contains all EC2 instances which are created for that project.
+-when we specify autoscaling, instance gets automatically created.
+
+Loadbalancer-
+-load balancer uses round robin for server allocation.
+-Can be used in EC2 instances in aws.
+-load balancer helps for server allocation in faster and efficient way.
+
+-Real time Scenario
+client -----> load balancer-----> target form(auto scaling)
+Autoscaling is mostly used when we have unknown load on the load balancer through n number of requests.
