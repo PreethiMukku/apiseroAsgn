@@ -1,0 +1,49 @@
+Recap of Day 9
+Resposibility Segregation Principle
+Cloud Overview AWS Demo
+
+Cloud Computing - Why Cloud?
+Cloud computing facilitates the access of applications and data from any location worldwide and from any device with an internet connection. 
+Cost savings; Cloud computing offers businesses with scalable computing resources hence saving them on the cost of acquiring and maintaining them.
+
+The Old Approach - 
+Machines/PC-------->Servers---------->Clusters
+Server Scenario
+Client------->Load Balancer------->Servers(s1,s2,s3)
+
+Now we take it further 
+
+Purchasing all these Machines
+-Services - Pay/Usage
+-Cost
+-Maintainability - Installation/Configuration of Hardware/Software abd maintaining of other resources.
+-Instead of using custom data centres we can use it as a service.
+
+1.On Demand Self Service
+-Create new machines.
+
+2.Broad Network access
+-Laptops, DEsktops etc.
+
+3.Resource Pooling(Huge Hardware/Software)
+-Must be available with you
+
+4.Rapid Elasticity
+-Whenever load or traffic increases , no. of servers must increase and vice versa , i.e that is scale up and down whenever necessary.
+
+5.Measured Service
+-Be able to use how much ever and pay for just that and a proof is recorded.
+
+
+
+Popular Cloud Vendors - Amazon/Microsoft/Google
+Most countries created a hardware setup in each mainstream region---->Region(H/W Created here)------>We have minimum two zones whee regions are big , they also have support for 10 zones or so.
+From our PC we can connect to any region.
+
+As a Service
+1.Infrastructure as a Service(IAAS) - Services such as Storage , Processing and Network.
+2.Platform as a service(PAAS) - Services such as Operating System , Installations and configurations.PAAS is a combination of Infrastructure , Middleware and Run Time which
+is managed by the vendor.
+3.Software as a Service(SAAS) - IAAS+PAAS+Software----->We just configure it and use its services
+
+Hosted a Web application on AWS.
