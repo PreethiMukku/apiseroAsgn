@@ -1,0 +1,102 @@
+DevOps
+---------------------------------------------------------------------------------------------
+
+	DevOps---->Development + operations
+  
+	Developer---> deployment--->testing
+  
+	End to End developement: 
+		Developer should provide service from development to its deployment of the software. 
+
+Business Agility:
+  Time to Market Acceleration
+  Experimentation
+  Rapid Prototyping
+  Flexible Partnering
+
+What really DevOps do?
+
+All developers who are developing some systems on day to day basis they need some changes in terms of exposure of language or trying some another ideas while developing systems 
+and on the other hand all operations which are associated with it needs stability....
+so wall of confusion  gets created between both the senarios..
+here DevOps comes with the solution, that while devloping new ideas it takes care of all operations associated with it..
+so DevOps  take care of both development as well as operations.
+
+Some tools of DevOps:
+	1.Github
+	2.Docker etc.
+
+ISSUE TRACKING:
+While developing some system one can come accross many issues which can be solved by iteration phase and by prioritizing for the same.
+Eg: JIRA
+
+SOFTWARE DEVELOPMENT LIFECYCLE (SDLC)
+	1.Planning
+	2.Define Requirements
+	3.Design and Prototyping
+	4.Software development
+	5. Testing
+	6.Deployment
+	7.Operations and Maintenance
+
+Benefits:
+	Greater scalability and availability
+	Faster issue resolution and reduced complexity
+	Faster product delivery
+
+AGILE AND ITS METHODOLOGY:
+
+The meaning of agile is the ability to move quickly and easily.
+Agile works on project which needs faster execution and feedback mechanism.
+Also agile provides you to change any requirement after its completion also.
+Agile is a iterative process.
+ 
+METHODOLOGY:
+	Individuals and interactions over processes and tools
+	Working software over comprehensive documentation
+	Customer collaboration over contract negotiation
+	Responding to change over following a plan
+
+Agile process flow:
+	1.Requirement analysis
+	2.design
+	3.development
+	4.quality assuarance
+	5.deployment
+
+V model :
+
+	                      	requirement Analysis---------------------------- Acceptance Testing
+
+		                              system Design ---------------------------System Testing
+
+		                                     Architecture -----------------Integration and 
+			                                        Design		                 Testing
+
+			                                               Module-------Unit Testing
+			                                                Design  
+
+		
+V model says that while designing left side developer should think simultaneously think of right side...which tends to faster execution.
+
+Waterfall model:
+WATERFALL model is a sequential model that divides software development into pre-defined phases.
+ Each phase must be completed before the next phase can begin with no overlap between the phases. 
+Each phase is designed for performing specific activity during the SDLC phase.
+
+USER ACCEPTANCE TESTING
+User acceptance testing (UAT) is done at the end user to check  is particular product is working according to given requirements or not.
+Also if we study User acceptance testing before developement phase then will get some idea in advance  about on what basis they are gonna test that particular product.
+
+JIRA is a platform which helps to track and solve issue associated with any code,so also known as Issue tracker.
+
+	 components of JIRA 
+		 JIRA CORE 
+		 JIRA SOFTWARE 
+		 JIRA SERVICE DESK
+
+We can perform different operations in JIRA like creating dashboard for any new project.
+We can raise issue/bug and can assign to anyone for its solution.once it gets solved one can 
+see all details on dashboard.
+
+
