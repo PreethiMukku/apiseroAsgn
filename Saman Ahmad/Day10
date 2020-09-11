@@ -1,0 +1,107 @@
+---------------------------------------------- Cloud Computing---------------------------------------
+
+
+ Cloud Computing is defined as storing and accessing of data and computing services over the internet.
+ It doesn't store any data on your personal computer. It is the on-demand availability of computer services like servers, data storage, networking, databases, etc.
+ The main purpose of cloud computing is to give access to data centers to many users. Users can also access data from a remote server.
+
+---------------------------   why cloud?
+	
+	Lower IT infrastructure and computer costs for users
+	Improved performance
+	Fewer Maintenance issuesInstant software updates
+	Improved compatibility between Operating systems
+	Backup and recovery
+	Performance and Scalability
+	Increased storage capacity
+	
+
+
+--------------------------5 essential cahracterstics:
+1) on demand self access: You can use it whenever you need it and pay per use. 
+
+2)broad n/w access: You must be able to access from across the web using any device with internet connectivity. Wherever you are, 
+		your cloud data will be accessible through web browsers, as well as on laptop or mobile devices. 
+
+3)resource polling: Multiple tenants can share the same space and resources can be assigned, re-assigned, and distributed as needed. 
+
+4)rapid elasticity:Cloud can grow and shrink as much as possible without affecting any of its users or their information. 
+
+5)measured service:You can examine how often people are using the cloud. 
+		Many cloud service providers utilize a pay-as-you-go model to ensure that their clients are getting what they pay for, no more and no less. 
+
+
+large companies (Amazon, google) have Data center created at a few locations
+Virtualization- VMware
+diff OS  
+
+
+
+-------------------------------------Services offered by cloud!
+IaaS -- : A Cloud Provider provides a user with a virtual machine or any other resources without letting the user worry about the physical aspects of the machine. More importantly, the user gets access to the operating system in IaaS.
+ 	Therefore, you can install/uninstall any software on these servers.
+what we need to have: storage, n/w, server, virtualization
+	what is offered: OS , miidleware, runtime , app
+	create a instance at EC2 of linux m/c, install eclipse, configure, etc
+
+PaaS--:  In this service, one does not get access to the operating system.
+	 If you need a web server with PHP installed on it, they will give you this web server, without giving you access to the OS.
+	you get is a dashboard through which you can upload and deploy your files; 
+	the rest is managed by the Cloud Provider, i.e., software installation, security patch on OS, etc.
+
+	what we need to have: storage, n/w, 
+	what is offered:server, virtualization OS , miidleware, runtime , app
+	AWS- instance with eclipse installed + configured
+
+
+SaaS-	In SaaS, one just gets the access to the software which is installed on the server.
+	No dashboard is provided, and no access to the operating system is given, for example, Netflix. 
+
+	what we need to have: only a browser
+	what is offered:storage, n/w, server, virtualization OS , miidleware, runtime , app
+	
+
+Problem with SaaS---> tightly coupled. project made on one s/w wont resemble with other s/w. it will need modifications.
+	eg google forms wont work on survey monkey.
+
+
+how to decide if a service is REST?
+protocol-http
+response data-Json or any other format per se.
+
+
+how to decide if a service is SOAP?
+any soap request cant go without soap data.
+
+
+AWS(Amazon Web Services) :
+
+	provides on-demand cloud computing platforms and APIs to individuals, companies, and governments, on a metered pay-as-you-go basis
+	Responsibility segregation principle.
+
+(EC2) :
+ 	It provides secure, resizable compute capacity in the cloud. It is designed to make web-scale cloud computing easier for developers. 
+	Amazon EC2’s simple web service interface allows you to obtain and configure capacity with minimal friction.
+	It provides you with complete control of your computing resources and lets you run on Amazon’s proven computing environment.
+	
+Scalling: on demand we can increase/ decrease the instances of the servers.
+	scale up and scale down.
+
+Auto scaling process---> defining the min and max instances, and setting alarms when we want the scalling to be done
+			 and leaving the rest for AWS to create/delete the instances according to the requests.
+
+LOAD BALANCER: efficiently distributes incoming network traffic across a group of backend servers, also known as a server farm or server pool.
+
+	load balancer performs the following functions:
+
+	Distributes client requests or network load efficiently across multiple servers
+	Ensures high availability and reliability by sending requests only to servers that are online
+	Provides the flexibility to add or subtract servers as demand dictates
+
+Load Balancing Algorithms:
+	Round Robin – Requests are distributed across the group of servers sequentially.
+	Least Connections – A new request is sent to the server with the fewest current connections to clients
+	Least Time – Sends requests to the server selected by a formula that combines the
+			fastest response time and fewest active connections. 
+	Hash – Distributes requests based on a key you define, such as the client IP address or
+		the request URL
