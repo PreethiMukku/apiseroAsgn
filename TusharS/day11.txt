@@ -1,0 +1,221 @@
+day 11
+
+DevOps Introduction
+DevOps is a set of practices that combines software development (Dev) and IT operations (Ops).
+It aims to shorten the systems development life cycle and provide continuous delivery with high software quality. 
+DevOps is complementary with Agile software development; several DevOps aspects came from Agile methodology.
+-->Development + Operations
+---------------------------------
+Monolith  ->
+Development -> Deployment -> Testing
+	(Deployer --> Administrator)
+	Weblogic 
+-------------------------------
+Micro Services
+	10/20 micro services
+	->MicroService
+	 ->Compilation,Deployment
+		Java -> javac, war file -> tomcat
+		Nodejs -> npm -> directory -> node launchfile
+	End to end development
+	-> Development,Deployment
+
+Business Agility:
+
+Time to Time Acceleration
+
+Experimentation
+Rapid Prototyping
+Flexible Partner
+IOT/IOS Support
+
+
+Technical Innovation:
+Polygot Enablement
+DevOps Automation
+API Support
+
+Infrastructure Choices:
+
+BA+TI+IC = DevOps
+
+Development+Operation = DevOps
+
+Collaboration
+->Slack
+->Skype
+->WordPress
+->GitHub Wiki
+Issue Tracking
+->ZENDESK
+->Jira
+->Redmine
+
+Containers--> Docker
+
+A Container in cloud computing is an approach to operating system virtualization. 
+By this, the user can work with a program and its dependencies using resource procedures that are isolated.
+The container usage in online services benefits storage with cloud computing information security, availability and elasticity.
+
+---------------------
+Code(output -> directory, war,..)
+AWS 
+Infrastructure as code
+Infrastructure as Code (IaC) is the management of infrastructure (networks, virtual machines, load balancers, 
+and connection topology) in a descriptive model, using the same versioning as DevOps team uses for source code. 
+Like the principle that the same source code generates the same binary, an IaC model generates the same environment every time it is applied. 
+IaC is a key DevOps practice and is used in conjunction with continuous delivery.
+
+
+Software Development Life Cycle
+
+SDLC phases:
+1. Planning
+2. Analysis and Requirement 
+3. Design
+4. Development
+5. Testing
+6. Deployment
+7. Maintenance
+
+Phase 1: Requirement collection and analysis:
+The requirement is the first stage in the SDLC process. It is conducted by the senior team members with inputs from all the stakeholders and domain experts in the industry. Planning for the quality assurance requirements and recognization of the risks involved is also done at this stage.
+
+This stage gives a clearer picture of the scope of the entire project and the anticipated issues, opportunities, and directives which triggered the project.
+
+Requirements Gathering stage need teams to get detailed and precise requirements. This helps companies to finalize the necessary timeline to finish the work of that system.
+
+Phase 2: Feasibility study:
+Once the requirement analysis phase is completed the next step is to define and document software needs. This process conducted with the help of 'Software Requirement Specification' document also known as 'SRS' document. It includes everything which should be designed and developed during the project life cycle.
+
+There are mainly five types of feasibilities checks:
+
+Economic: Can we complete the project within the budget or not?
+Legal: Can we handle this project as cyber law and other regulatory framework/compliances.
+Operation feasibility: Can we create operations which is expected by the client?
+Technical: Need to check whether the current computer system can support the software
+Schedule: Decide that the project can be completed within the given schedule or not.
+Phase 3: Design:
+In this third phase, the system and software design documents are prepared as per the requirement specification document. This helps define overall system architecture.
+
+This design phase serves as input for the next phase of the model.
+
+There are two kinds of design documents developed in this phase:
+
+High-Level Design (HLD)
+
+Brief description and name of each module
+An outline about the functionality of every module
+Interface relationship and dependencies between modules
+Database tables identified along with their key elements
+Complete architecture diagrams along with technology details
+Low-Level Design(LLD)
+
+Functional logic of the modules
+Database tables, which include type and size
+Complete detail of the interface
+Addresses all types of dependency issues
+Listing of error messages
+Complete input and outputs for every module
+Phase 4: Coding:
+Once the system design phase is over, the next phase is coding. In this phase, developers start build the entire system by writing code using the chosen programming language. In the coding phase, tasks are divided into units or modules and assigned to the various developers. It is the longest phase of the Software Development Life Cycle process.
+
+In this phase, Developer needs to follow certain predefined coding guidelines. They also need to use programming tools like compiler, interpreters, debugger to generate and implement the code.
+
+Phase 5: Testing:
+Once the software is complete, and it is deployed in the testing environment. The testing team starts testing the functionality of the entire system. This is done to verify that the entire application works according to the customer requirement.
+
+During this phase, QA and testing team may find some bugs/defects which they communicate to developers. The development team fixes the bug and send back to QA for a re-test. This process continues until the software is bug-free, stable, and working according to the business needs of that system.
+
+Phase 6: Installation/Deployment:
+Once the software testing phase is over and no bugs or errors left in the system then the final deployment process starts. Based on the feedback given by the project manager, the final software is released and checked for deployment issues if any.
+
+Phase 7: Maintenance:
+Once the system is deployed, and customers start using the developed system, following 3 activities occur
+
+Bug fixing - bugs are reported because of some scenarios which are not tested at all
+Upgrade - Upgrading the application to the newer versions of the Software
+Enhancement - Adding some new features into the existing software
+
+
+Waterfall model
+
+The waterfall is a widely accepted SDLC model. In this approach, the whole process of the software development is divided into various phases. In this SDLC model, the outcome of one phase acts as the input for the next phase.
+
+This SDLC model is documentation-intensive, with earlier phases documenting what need be performed in the subsequent phases.
+--------------------
+
+Agile:
+
+Principles
+
+The Twelve Agile Manifesto Principles
+The Twelve Principles are the guiding principles for the methodologies that are included under the title “The Agile Movement.” They describe a culture in which change is welcome, and the customer is the focus of the work. They also demonstrate the movement’s intent as described by Alistair Cockburn, one of the signatories to the Agile Manifesto, which is to bring development into alignment with business needs.
+
+The twelve principles of agile development include:
+
+Customer satisfaction through early and continuous software delivery – Customers are happier when they receive working software at regular intervals, rather than waiting extended periods of time between releases.
+Accommodate changing requirements throughout the development process – The ability to avoid delays when a requirement or feature request changes.
+Frequent delivery of working software – Scrum accommodates this principle since the team operates in software sprints or iterations that ensure regular delivery of working software.
+Collaboration between the business stakeholders and developers throughout the project – Better decisions are made when the business and technical team are aligned.
+Support, trust, and motivate the people involved – Motivated teams are more likely to deliver their best work than unhappy teams.
+Enable face-to-face interactions – Communication is more successful when development teams are co-located.
+Working software is the primary measure of progress – Delivering functional software to the customer is the ultimate factor that measures progress.
+Agile processes to support a consistent development pace – Teams establish a repeatable and maintainable speed at which they can deliver working software, and they repeat it with each release.
+Attention to technical detail and design enhances agility – The right skills and good design ensures the team can maintain the pace, constantly improve the product, and sustain change.
+Simplicity – Develop just enough to get the job done for right now.
+Self-organizing teams encourage great architectures, requirements, and designs – Skilled and motivated team members who have decision-making power, take ownership, communicate regularly with other team members, and share ideas that deliver quality products.
+Regular reflections on how to become more effective – Self-improvement, process improvement, advancing skills, and techniques help team members work more efficiently.
+
+
+Advantages of Agile model:
+
+Customer satisfaction by rapid, continuous delivery of useful software.
+People and interactions are emphasized rather than process and tools. Customers, developers and testers constantly interact with each other.
+Working software is delivered frequently (weeks rather than months).
+Face-to-face conversation is the best form of communication.
+Close, daily cooperation between business people and developers.
+Continuous attention to technical excellence and good design.
+Regular adaptation to changing circumstances.
+Even late changes in requirements are welcomed
+
+Disadvantages of Agile model:
+
+In case of some software deliverables, especially the large ones, it is difficult to assess the effort required at the beginning of the software development life cycle.
+There is lack of emphasis on necessary designing and documentation.
+The project can easily get taken off track if the customer representative is not clear what final outcome that they want.
+Only senior programmers are capable of taking the kind of decisions required during the development process. Hence it has no place for newbie programmers, unless combined with experienced resources.
+
+-------------------
+
+User Acceptance Testing
+
+User acceptance testing (UAT), otherwise known as Beta, Application, or End-User Testing,
+is often considered the last phase in the web development process,
+the one before final release or installation of the website or software for the client, or final distribution of it.
+
+UAT is the usage of the software by people from the intended audience and recording and correcting of any defects which are discovered. 
+It’s the closest thing to a “_real world_” test available. It gives users the chance to interact with the software and find out if 
+everything works as it should if features have been overlooked, miscommunicated, not communicated, and so on.
+-----------------
+
+Jira
+----------------------------
+
+https://jira.spring.io/projects/BATCH/issues/BATCH-2659?filter=allopenissues
+
+Creation of report,assigning it to member,closing the report on Jira.
+
+
+Jira Software is part of a family of products designed to help teams of all types manage work.
+Originally, Jira was designed as a bug and issue tracker.
+But today, Jira has evolved into a powerful work management tool for all kinds of use cases,
+from requirements and test case management to agile software development.
+In this guide, you'll learn which features and functionalities of Jira can help your team with your unique needs.
+
+
+
+UAT live examples 
+in whatsapp,etc.
+
+	
