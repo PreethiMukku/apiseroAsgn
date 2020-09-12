@@ -1,5 +1,5 @@
 Integration:
-- Integration is connecting different services or components into our system. 
+- Integration is connecting different services or components into one system. 
 - Previously we had component based architecture, were the entire components were built with in. 
 - Now moving towards SOA, integration plays an important role as we need to integrate many services into our system. 
 
