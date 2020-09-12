@@ -1,0 +1,237 @@
+
+In Monolithic  App:-->
+Developement--------------------->Deployment by admin------------------------>Testing
+
+
+in Microservices App:-->
+ eg: 20 microservices---------------------->Compilation------------------------------>Deployment
+          Java-------------->Javac----------------->War file------------------>Tomcat
+         
+end-to-end Development is needed.
+
+Business Agility
+	Time to market acceleration	
+	Experiementation
+	Rapid Prototyping
+	Flexible Patnering
+	IOT/IOS Support
+
+
+                          ---------------------------------------------DevOps Introduction-------------------------------------------
+                          
+Devops?----->> dev + ops
+
+--Its a set of  practice of DevOps encourages smoother, continuous communication, collaboration, integration, 
+visibility, and transparency between application development teams (Dev) and their IT operations team (Ops).
+--customer satisfaction, faster, better application development and faster release of new or revised software features or products to customers.
+--a continuous customer feedback loop of further improvement, development, testing, and deployment.
+
+
+DevOps Methods:
+There are a few common DevOps methods that organizations can use to speed and improve development and product releases. 
+They take the form of software development methodologies and practices.
+
+Scrum:
+	 Scrum defines how members of a team should work together to accelerate development and QA projects. 
+	Scrum practices include key workflows and specific terminology (sprints, time boxes, daily scrum [meeting]), and designated roles (Scrum Master, product owner).
+
+Kanban:
+	Kanban prescribes that the state of software project work in progress (WIP) be tracked on a Kanban board.
+
+Agile:
+	 Many DevOps methods, including Scrum and Kanban, incorporate elements of agile programming.
+	 Some agile practices are associated with greater responsiveness to changing needs and requirements, documenting requirements as user stories, 
+   performing daily standups, and incorporating continuous customer feedback
+	Agile also prescribes shorter software development lifecycles instead of lengthy, traditional “waterfall” development methods.
+
+
+DevOps Toolchain:
+
+There are various tools which are used to streamline, shorten, and automate the various stages of the software delivery workflow (or “pipeline”):
+the following shows a sample of tools used at various DevOps lifecycle stages.
+
+
+collaboration:--- eg: Skype,slack,etc
+Plan:-- This phase helps define business value and requirements. 
+	eg: Jira or Git to help track known issues and perform project management.
+Code:-- This phase involves software design and the creation of software code.
+	eg: GitHub, GitLab, Bitbucket, or Stash.
+Build:--In this phase, you manage software builds and versions, and use automated tools to help compile and package code for future release to production.
+	eg: Docker, Ansible, Puppet, Chef, Gradle, Maven, or JFrog Artifactory.
+Test:-- This phase involves continuous testing (manual or automated) to ensure optimal code quality. 
+	eg:JUnit, Codeception, Selenium, Vagrant, TestNG, or BlazeMeter.
+Deploy:--This phase can include tools that help manage, coordinate, schedule, and automate product releases into production. 
+	eg:Puppet, Chef, Ansible, Jenkins, Kubernetes, OpenShift, OpenStack, Docker, or Jira.
+Operate:--This phase manages software during production.
+	 eg: Ansible, Puppet, PowerShell, Chef, Salt, or Otter.
+Monitor:--This phase involves identifying and collecting information about issues from a specific software release in production. 
+	eg: New Relic, Datadog, Grafana, Wireshark, Splunk, Nagios, or Slack.DevOps Technology Categories :-
+
+
+
+
+DevOps Practices
+
+Continuous development
+Continuous testing:
+Continuous integration (CI). 
+Continuous delivery. 
+Continuous monitoring. 
+Infrastructure as code.
+
+
+
+Benefits of DevOps
+
+Faster, better product delivery
+Faster issue resolution and reduced complexity
+Greater scalability and availability
+More stable operating environments
+Better resource utilization
+Greater automation
+Greater visibility into system outcomes
+Greater innovation
+
+
+
+
+Containers:
+	operating system virtualization. 
+	user can work with a program and its dependencies using resource procedures that are isolated.
+	container usage in online services benefits storage with cloud computing information security, availability and elasticity.
+
+
+System Developement Life Cycle (SDLC): 7 steps-
+	Planning
+	System Analysis and Requirements.
+	System Design
+	Developement
+	Integration and Testing
+	Implementation
+	Operation and Maintainence
+
+
+
+Infrastructure as code:
+	Automation for multiple environment from start to it's deployment
+	 eg: cmd: ---> Vargant up 
+on one go:
+	java (eclipse) --->compile -->load on github--->automated jar creation--->run test cases---->deploy(AWS)
+
+
+
+------------------------------------software development life cycles-------------------------------------------
+--------------Waterfall model: Once the requirement specification is done, it cant be modifief in any later point of time.
+		
+		planning 
+			System Analysis and Requirement 
+					System Design 
+						Development
+							Integration and Testing 
+									Implementation (DEPLOYMENT)
+											Operation and Maintenance 
+
+
+----------------V- model :
+
+	              	requirement Analysis <--------------------------------------------------------------------> Acceptance Testing
+
+		                        system Design <------------------------------------------------------------>System Testing
+
+				                              Architecture Design <-------------------------------->Integration and Testing
+
+				                                            	Module Design  <-------------->Unit Testing
+-
+                                     			                                CODING	
+
+
+
+
+AGILE Method  : Agile is the ability to create and respond to change
+		It is a way of dealing with, and ultimately succeeding in, an uncertain and turbulent environment.
+		Agile is a software development methodology to build a software incrementally using short iterations of 1 to 4 weeks 
+		so that the development is aligned with the changing business needs.	
+		Based on repeated iterations of sprints(design, develop,test, discover) and customer feedback untill the required speacifications are fulfilled.
+		
+		steps:--1)Brainstorming 2)Discover 3)Design  4)Development  5)QA  6)Testing 7)Deployment
+		
+
+
+Agile Software Development Manifesto : 
+
+	Individuals and interactions over processes and tools
+	Working software over comprehensive documentation
+	Customer collaboration over contract negotiation
+	Responding to change over following a plan
+
+
+12 Principles of Agile :
+	Our highest priority is to satisfy the customer through early and continuous delivery of valuable software.
+	Welcome changing requirements, even late indevelopment. Agile processes harness change for the customer's competitive advantage.
+	Deliver working software frequently, from a couple of weeks to a couple of months, with a preference to the shorter timescale.
+	Business people and developers must work together daily throughout the project.
+	Build projects around motivated individuals.Give them the environment and support they need, and trust them to get the job done.
+	The most efficient and effective method of conveying information to and within a development team is face-to-face conversation.
+	Working software is the primary measure of progress.
+	Agile processes promote sustainable development. The sponsors, developers, and users should be able to maintain a constant pace indefinitely.
+	Continuous attention to technical excellence and good design enhances agility.
+	Simplicity--the art of maximizing the amount of work not done--is essential.
+	The best architectures, requirements, and designs emerge from self-organizing teams.
+	At regular intervals, the team reflects on how to become more effective, then tunes and adjusts its behavior accordingly.
+
+
+ Agile method Advantages: 5 major advantages:
+	Continuous customer contact:	 
+	The ability to adapt 	
+	Faster delivery
+	Lower project risk
+	Ongoing innovation
+		
+
+When Not to Use the Agile Project Management Method
+	The outcome of your project is stable and well understood. 
+	Your customer doesn’t want Agile. 
+	Your company cannot support Agile. 
+	Your organization cannot support daily collaboration. 
+	The company structure cannot support cross-functional teams.
+
+----------------------------------- User Acceptance Testing (UAT)--------------------------------- 
+---User Acceptance Testing (UAT) is a type of testing performed by the end user or the client to verify/accept the software system before moving 
+	the software application to the production environment.
+---UAT is done in the final phase of testing after functional, integration and system testing is done.	
+
+
+-----Who Performs UAT? Client and  End users
+
+
+----Need of User Acceptance Testing?
+
+1)Developers code software based on requirements document which is their "own" understanding of the
+ requirements and may not actually be what the client needs from the software.
+2)Requirements changes during the course of the project may not be communicated effectively to the	  
+ developers.
+
+
+
+                    ------------------------------------------------------------JIRA----------------------------------------
+
+Jira is project management software first and foremost, but it began its life in 2002 as an issue tracking platform for software developers. 
+It is now offered in three separate packages:
+
+Jira Core: The basic Jira project management platform.
+Jira Software: Offers all functions of Jira Core, but also includes additional Agile functionality.
+Jira Service Desk: Meant for IT professionals or other forms of service desks. This guide will ignore Jira Service Desk since it is not relevant to 
+	
+	-https://jira.spring.io/projects/BATCH/issues/BATCH-2659?filter=allopenissues
+
+
+Reports---------------> To track the progress in Agile, a Burndown Chart shows the actual and estimated amount of work to be done in the sprint.
+                        A Burndown chart have red line  blue line where red line indicates the actual task remaining while the blue line indicates ideal task	
+	
+
+Issue Tracker:----------It is a part of family of products designed to help teams of all types to manage work
+Jira Core:----------Jira Core provides the basic Jira project management platform for other applications 
+Jira Software:------------> for using Software, need of licence.
+Jira Service Desk:---------->Service Desk licences required.
+
+
