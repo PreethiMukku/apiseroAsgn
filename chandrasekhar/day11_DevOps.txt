@@ -1,0 +1,165 @@
+DevOps(Development and Operations)
+  In software development process there is a wall of confusion between development and operations so we break this by combining both development and operations together.
+  Devops helps in faster, efficient communication and transfer between development and operations teams
+  Helps in faster bug tracking and resolving and re releasing the product
+Key features of DevOps are:
+
+Provides Collaboration
+Easily scalable
+Automation
+Provides continuous build, test, integrate and deployment
+Faster delivery of new features and Reduced IT Costs.
+Better release control & versioning and Better development velocity.
+More frequent software releases and Reduce Time for Action.
+Increase Customer Satisfaction & Retention and Business Efficiency.
+Improve Response Time and Business Agility.
+Increase Ops alignment to business goals.
+
+
+Monolith
+  -Development-> Deploymeny -> Testing
+			(Deployer ---> Adminitrator)
+
+MicroServices
+  -10/20 MicroServices(10/20 different environments)-> 50 people ----> 2/3 people  per MicroServices so 2 to 3 for development ,deployment
+  -Microservice(compilation, deployment)
+  -as if in java-->javac--> jat file--> tomcat
+  -if nofdejs--->npm-->directory-->node launch file
+  -development is broken into smaller pieces to maintain easily
+  
+End to End development
+  from development till the deployment phase were done. 
+
+Business Agility:
+	-Time to Market acceleration
+	- Experimentation
+	  expecting new platform
+  - Rapid prototyping
+	- IOT/IOS support
+	  smart office and smart home to turn on lights.
+
+Technical Innovation:
+ - Polygot Enablement
+ - DevOps Automation
+ - API Support
+
+Devops Methods:
+Devops methods helps in faster and efficient development of product 
+  - SCRUM
+  - Agile
+  - Kanban
+  
+Devops main areas of usage:
+  -collaboration tool: helps in collaborationa nd communication between teams
+ 		-Skype,slack.
+	-Issue tracking: Rapid reponse and faster detection and resolving
+		-Jira, Redmine, zendesk
+	-source control: control of source data efficiently
+		-Github.
+
+Containers -> Docker
+	-each  micro service have a separate container that helps in execution. 
+	-user can work with a program and its dependencies using resource procedures that are isolated.
+	-container usage in online services benefits storage with cloud computing information security, availability and elasticity.
+
+Infrastructure as code(Jenkins:-DevOps tool) :
+  -configure and instance
+  -provides multiple environment from development till the deployment
+  java eclipse --> compile --> github
+  (check in for any new deployables for github)
+  -> automatic artifacts(jar creation)
+  -> run test cases
+  -> deploy it on aws
+
+Software Development Life Cycle (SDLC)
+ SDLC is a process used by the software industry to design, develop and test high quality softwares. 
+
+  1. Planning: Analyze problem and determine solutions in terms of resources,cost,time. 
+	2. System analysis  : Analyze needs of the end users	
+	3. system design : The system and software design docu.ments are prepared as per the requirement specification document. This helps define overall system architecture.
+	4. Development :  developers start build the entire system by writing code.
+	5. Integration and testing: The testing team starts testing the functionality of the entire system. This is done to verify that the entire application works according to the customer requirement.
+	6. Implementation: Once the software testing phase is over and no bugs or errors left in the system then the final deployment process starts. Based on the feedback given by the project manager, the final software is released and checked for deployment issues if any.
+	7. Operations and Maintenance: To ensure that needs continue to be met and that the system continues to perform as per the specification mentioned in the first phase.
+
+WaterFall Model: 
+ - The waterfall model is a sequential design process in which progress is seen as flowing steadily downwards (like a waterfall) through the phases of Conception, Initiation,
+    Analysis, Design, Construction, Testing, Production/Implementation, and Maintenance.
+ - The output of one phase becomes the input for next phase
+ - In this Testing is done at the end of model
+ - There is no backtraking in this
+ 
+ V model :
+
+		-requirement Analysis <--------------------------> Acceptance Testing
+
+		       -system Design <------------------------->System Testing
+
+		    -Architecture Design <------------------>Integration and Testing
+
+		           -Module Design  <----------->Unit Testing
+
+                                   CODING	
+
+AGILE Methodology:
+Introduction:
+   - Brainstorm (Requirement Analysis) -> Design -> Development -> QA -> Deployment -> Delievered to client -> next iteration to brainstorm
+		- The cycle continues as sprints ( will have multiple sprints)
+		- Modifications can be done after each sprint 
+    - Drawback: - Long-term projects suffer from incremental delivery
+		          - The level of collaboration can be difficult to maintain
+
+Agile 4 pillars        
+   - Individuals and interactions over processes and tools :  over processes and tools   
+   - Working software over comprehensive documentation: over comprehensive documentation 
+   - Customer collaboration over contract negotiation: Keep customer as top priority
+   - Responding to change over following a plan :Flexibility to multiple changes
+
+There are several different frameworks that can be used in order to run an Agile project. Some of the more popular frameworks include:
+   - Scrum
+   - Kanban
+   - Extreme Programming
+   - DSDM
+
+12 Agile priciples:
+    - Our highest priority is to satisfy the customer through early and continuous delivery of valuable software.
+    - Welcome changing requirements, even late in development. Agile processes harness change for the customer's competitive advantage.
+    - Deliver working software frequently, from a couple of weeks to a couple of months, with a preference to the shorter timescale.
+    - Business people and developers must work together daily throughout the project.
+    - Build projects around motivated individuals. Give them the environment and support they need, and trust them to get the job done.
+    - The most efficient and effective method of conveying information to and within a development team is face-to-face conversation.
+    - Working software is the primary measure of progress.
+    - Agile processes promote sustainable development. The sponsors, developers, and users should be able to maintain a constant pace indefinitely.
+    - Continuous attention to technical excellence and good design enhances agility.
+    - Simplicity--the art of maximizing the amount of work not done--is essential.
+    - The best architectures, requirements, and designs emerge from self-organizing teams.
+    - At regular intervals, the team reflects on how to become more effective, then tunes and adjusts its behavior accordingly.
+
+
+USER ACCEPTANCE TESTING(UAT)
+- USER acceptance test
+- testing done based on usage and interaction.
+- done by the user or client to determine whether it can be accepted or not.
+- set clear expectations
+- don't foucs on finding bugs
+- how user likes whatver you have done
+- this is the final testing performed once the functional, system and regression testing are completed.
+- last step before the product goes live or before the delivery of the product is accepted.
+- Example : whats up increased number of users in a video chat from 1 to 8 members (UAT on demand)
+
+JIRA(Atlassian product)
+- This software is used for bug tracking, issue tracking, and project management
+- Issue Tracker:
+		- It is a bug and issue tracker
+		- It is a part of family of products designed to help teams of all types to manage work
+- Jira Core:
+		- Jira Core provides the basic Jira project management platform for other applications 
+- Jira Software:
+		- If you want to use Jira Software, you have to have Jira Software licences for it
+ - Jira Service Desk:
+		-you need Service Desk licences for it
+- Jira Data Center:
+		- Data Centre is a different licensing scheme, but still has the distinction between Core, Software and Service Desk
+- https://jira.spring.io/projects/BATCH/issues/BATCH-2659?filter=allopenissues	
+	-Creation of report,assigning it to member,closing the report.
+
