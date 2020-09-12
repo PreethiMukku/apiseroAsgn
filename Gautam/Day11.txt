@@ -1,0 +1,30 @@
+Devops
+->combination of development and operations.
+->It encourages faster, better application development and faster release of new or revised software or products.
+
+
+Benefits of devops
+->Faster and better product delivery.
+->Better resource utilization
+->Better scalability
+->Fater issue resolution
+
+Agile
+->Agile method is based on the concept of ongoing waves or sprints. 
+->It enables  to continuously adapt  and design throughout the project. 
+->meaning of agile is the ability to move quickly and easily.
+
+Manifesto for agile software development
+->individuals and interactions over processes and tools
+->Working software over comprehensive documentation
+->Customer collaboration over contract negotiation
+->Responding to change over following a plan
+
+User Acceptance Testing(UAT)
+->User Acceptance Testing (UAT) is a type of testing performed by the end user.
+->It is basically done after unit,integration testing.
+->It is done to verify the software
+
+Jira
+->It is a bug and issue tracker.
+->designed to help teams of all types manage work. 
