@@ -1,0 +1,98 @@
+	# Day 10 : (DevOPs ,Application development, UAT, Agile ,Jira )
+	
+	• https://devops.com/introductiontodevops/
+	• https://www.mulesoft.com/resources/api/microservices-devops-better-together
+
+	• DevOps :
+			- Development + operations.
+			- Business agility +trchnicwal innovattion + infrastructure choices ===DevOps
+			- 
+					
+			 
+			- Dev will always an additional responsibility.+overhead.
+			-  java code --deployment check on github--jar creation--run test case--deploy it on aws ----I want everyhitng of this to happened in once click and at once ---this is DevOps.
+			- Tools : 
+			
+			
+			- Collabration - Slack,skype---communication within group.
+			- Issue tracking : Jira ---visibility of incompleted task, dashboard of  all the changes and bugs history(compltee collection ogbugs history).
+			- Source control ---Github--if I puuling a source code,none can take it till I push it again.
+			- Application development :
+			- 
+		
+	• SDLC : 
+				- Waterfall model :
+					- Planning.
+					- System analysis and requirements.
+					- Systems design
+					- Development.
+					- Integration and testing
+					- Implementation
+					- Operations and maintainence.
+				- But this model is not much effiecient as we cnt go back and if our ssytems annalysis and requi stops,there is now way we can go froward tod eveloment hence wastege of resources.
+				- We discovered agile methodlogy.
+	• Agile  :
+			- 
+					
+			- Manifesto :
+				- Individuals and interactions over processes and tools
+				- Working software over comprehensive documentation
+				- Customer collaboration over contract negotiation
+				- Responding to change over following a plan
+			- Principles :
+				- Our highest priority is to satisfy the customer
+				through early and continuous delivery
+				of valuable software.
+				- Welcome changing requirements, even late in
+				development. Agile processes harness change for
+				the customer's competitive advantage.
+				- Deliver working software frequently, from a
+				couple of weeks to a couple of months, with a
+				preference to the shorter timescale.
+				- Business people and developers must work
+				together daily throughout the project.
+				- Build projects around motivated individuals.
+				Give them the environment and support they need,
+				and trust them to get the job done.
+				- The most efficient and effective method of
+				conveying information to and within a development
+				team is face-to-face conversation.
+				- Working software is the primary measure of progress.
+				Agile processes promote sustainable development.
+				The sponsors, developers, and users should be able
+				to maintain a constant pace indefinitely.
+				- Continuous attention to technical excellence
+				and good design enhances agility.
+				- Simplicity--the art of maximizing the amount
+				of work not done--is essential.
+				- The best architectures, requirements, and designs
+				emerge from self-organizing teams.
+				- At regular intervals, the team reflects on how
+				to become more effective, then tunes and adjusts
+				its behavior accordingly.
+			- We don’t have delivered to client and interaction with client in iterative model .but in agile we do have it.
+			- Where we cant use agile :
+			https://www.wrike.com/project-management-guide/agile-methodology-basics/
+			
+			
+			
+			
+			
+	• UAT (User acceptance testing ) :
+			- User Acceptance Testing (UAT) is the final stage of any software development life cycle. This is when actual users test the software to see if it is able to carry out the required tasks it was designed to address in real-world situations. 
+			- The principle of UAT is simple: It allows you to verify if a solution/software/application works for the user.
+			- Done by end user/client/us.
+			- 
+		
+	• Jira :
+		- Bug and Issue tracker.
+	• DevOps toolchain :
+		- https://www.netapp.com/us/info/what-is-devops.aspx
+		- Followers of DevOps practices often use certain DevOps-friendly tools as part of their DevOps “toolchain.” The goal of these tools is to further streamline, shorten, and automate the various stages of the software delivery workflow (or “pipeline”). Many such tools also promote core DevOps tenets of automation, collaboration, and integration between development and operations teams. The following shows a sample of tools used at various DevOps lifecycle stages.
+		• Plan. This phase helps define business value and requirements. Sample tools include Jira or Git to help track known issues and perform project management.
+		• Code. This phase involves software design and the creation of software code. Sample tools include GitHub, GitLab, Bitbucket, or Stash.
+		• Build. In this phase, you manage software builds and versions, and use automated tools to help compile and package code for future release to production. You use source code repositories or package repositories that also “package” infrastructure needed for product release. Sample tools include Docker, Ansible, Puppet, Chef, Gradle, Maven, or JFrog Artifactory.
+		• Test. This phase involves continuous testing (manual or automated) to ensure optimal code quality. Sample tools include JUnit, Codeception, Selenium, Vagrant, TestNG, or BlazeMeter.
+		• Deploy. This phase can include tools that help manage, coordinate, schedule, and automate product releases into production. Sample tools include Puppet, Chef, Ansible, Jenkins, Kubernetes, OpenShift, OpenStack, Docker, or Jira.
+		• Operate. This phase manages software during production. Sample tools include Ansible, Puppet, PowerShell, Chef, Salt, or Otter.
+		• Monitor. This phase involves identifying and collecting information about issues from a specific software release in production. Sample tools include New Relic, Datadog, Grafana, Wireshark, Splunk, Nagios, or Slack.
