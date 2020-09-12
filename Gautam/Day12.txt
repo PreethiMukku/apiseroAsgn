@@ -17,7 +17,7 @@ JMS
 ->It enables distributed communication that is loosely coupled, reliable, and asynchronous.
 
 Oauth
-->OAuth is an open standard for access delegation, 
+->OAuth is an open standard for access delegation.
 ->It iscommonly used as a way for Internet users to grant websites or applications access to their information on other websites but without giving them the passwords.
 
 Fanout
