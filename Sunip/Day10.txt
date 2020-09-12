@@ -85,7 +85,8 @@ AutoScaling : Reinitializing instances automatically
 Scaleup policy: Increase in instances/machines/servers.
 		In  upscaling if No. of requests or networkIn or (it could be any parameters set) based on which it increases
 		 the Number of instances/machines/servers automatically for max limit we have set. Ex 5 instances.
-
+		 Parameters include 1) Network 2)Cpu usage
+		 
 ScaleDown policy: Decrease in instance/machines/servers.
 		In  ScaleDown if No. of requests or networkIn or (it could be any parameters set) based on which it Decreases 
 		the Number of instances/machines/servers automatically for min limit we have set. Ex 2 instances.
