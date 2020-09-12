@@ -1,0 +1,49 @@
+Devops -> development + operations
+Development -> Deployment ->Testing
+Tools
+Devops => Business agility + Technical innovation + Infrastructure
+
+Application development 
+  ->Development environment
+  ->Test environment
+  ->QA environment
+  ->Production environment
+
+SDLC Phases
+  Waterfall model: Document oriented
+  -> Planning -> find scope,calculate
+  -> System analysis
+  -> System Design
+  -> Implementation
+  -> Testing
+  -> Development
+  -> Maintenance
+
+ V-model
+
+ Agile Development: https://agilemanifesto.org/
+ Agile model: feedback kind of model
+   Discover->Design->Develop->Test => Repeat at every stage
+ Agile manifesto: 
+  "Individuals and interactions" over processes and tools
+  "Working software" over comprehensive documentation
+  "Customer collaboration" over contract negotiation
+  "Responding to change" over following a plan
+ Agile principles
+ Agile tools -> Jira agile, Agile workbench etc..
+ Spiral vs Agile
+   -> In agile at every phase we deliver the working software model to the customer
+   -> In spiral the delivery happens after the end of all phases
+ When to use agile and when not to use
+
+UAT -> User Acceptance Testing
+	Product end-user does UAT -> Beta programs
+	It is different from customer feedback, UAT is done in every development phase
+	UAT should occur early and often
+	Shouldn't focus on bugs or deffects
+	Communicate feedback 
+Jira 
+  Bug and issue tracker
+  Issue tracker, Reports, Dashboards
+  Issue types -> Bug, Feature, Task, Improvement
+	
