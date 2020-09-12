@@ -1,0 +1,234 @@
+-DevOps describes a culture and set of processes that bring development and operations teams together to complete software development. 
+It allows organizations to create and improve products at a faster pace than they can with traditional software development approaches.
+
+(****Scenario were DevOps comw into picture)
+
+
+---]Monolithic ---->(24hrs) ---------> weblogic	---]Monolithic ---->(24hrs) ---------> weblogic
+   Development------->Deployment------>Testing	   Development------->Deployment------>Testing
+      (Deployer------->Adminstration)	      (Deployer------->Adminstration)
+ ex :- Java-----> javac ---->war file -------> tomcat.
+	---] Business Agility :-
+
+
+1)Time-to market Accelaration :-	
+One of the biggest reasons to run any project with an Agile approach is to take distance from any form of waste to win time.
+The incentive to win time comes simply from the market.
+
+
+2)Rapid prototypin :-	
+Rapid prototyping is an agile strategy used throughout the product development process. With this approach, 
+3-dimensional prototypes of a product or feature are created and tested in an attempt to optimize characteristics like shape, size, and overall usability.
+
+
+3)Experimentation :-	
+Organizational learning happens when people question the way things are, try things together and make meaning together. 
+Since there is no one way to “do Agile” but many ways to practice Agility, experimentation explores what works and what doesn't for the people involved.
+
+
+4)Flexible partnering :-	This means that the more partners there are, the more money they can put into the business, which will allow better flexibility and more potential for growth.
+It also means more potential profit, which will be equally shared between the partners. 
+
+
+5)iot/ios support :-	
+The Internet of things (IoT) is a system of interrelated computing devices, mechanical and digital machines provided with unique identifiers (UIDs) and the ability to transfer data over a network 
+without requiring human-to-human or human-to-computer interaction.
+
+ ---Technical innovation :-
+
+Technological innovation is the process where an organization (or a group of people working outside a structured organization) 
+embarks in a journey where the importance of technology as a source of innovation has been identified 
+as a critical success factor for increased market competitiveness.
+
+
+
+
+- Infrastructure choice :-	An Agile IT infrastructure is one that is designed to support rapid deployment and provisioning, and incremental upgrades and improvements. 
+It takes its name from the development methodology made famous in the 2001 Manifesto for Agile Software Development.
+
+
+
+
+
+
+ ex :- Java-----> javac ---->war file -------> tomcat.
+
+
+
+
+-]Application Development :-	
+Agile software development refers to software development methodologies centered round the idea of iterative development, 
+where requirements and solutions evolve through collaboration between self-organizing cross-functional teams. ...
+Scrum and Kanban are two of the most widely used Agile methodologies.
+It is dependent on the below environment :-
+
+
+1)Development environment 
+
+2)QA Environment
+
+
+3)Testing Environment  
+
+
+
+
+
+4)Production Environment 
+
+
+ ex :- Java-----> javac ---->war file -------> tomcat.
+----]DevOps Technology Categories :-	----]DevOps Technology Categories :-
+
+
+ collaboration tool :- 	 
+ ex:-Skype,slack etc
+
+
+
+
+Issue tracking :-	Issue tracking(rapid reponse)and (visiblity) :-
+ex:-Jira,Redmine etc.
+
+
+
+
+source control :-	
+
+ex:-Github etc.
+--------------------------------------------------------------------
+***********Scenario where Devops tool can be used )
+
+
+-]  Aws/server1 --------->CPU(128) + GB RAM--------->good for monolithic 	-]  Aws/server1 --------->CPU(128) + GB RAM--------->good for monolithic 
+(microservice)---------->small code base -------->alot of overhead	(microservice)---------->small code base -------->alot of overhead
+@@ -81,7 +109,7 @@ source control :-
+
+7)Operation and Maintenance :-
+
+--------------------------------------------------------------------------------------------
+
+
+-------] V- model :-	-------] V- model :-
+
+
+7 @@ Module Design  <----------------------->Unit Testing
+
+
+                                       CODING	                                       CODING
+
+
+
+--------------------------------------------------------------------------------------------------
+----------]Agile Method (feedback mechanism):-	----------]Agile Method (feedback mechanism):-
+
+
+
+
+ Brainstorm--->Discover----->Design ------>Development----->QA-------->Test -----
+-]Principle and Manifestor of Agile :-	
+
+
+
+
+Manifesto :-
+
+
+
+
+    Individuals and interactions over processes and tools
+
+
+    Working software over comprehensive documentation
+
+
+    Customer collaboration over contract negotiation
+
+
+    Responding to change over following a plan
+
+
+
+
+Principle :-
+
+
+-]   UAT  (User Acceptance Testing) :-	
+
+
+    Our highest priority is to satisfy the customer through early and continuous delivery of valuable software.
+
+
+    Welcome changing requirements, even late in development. Agile processes harness change for the customer's competitive advantage.
+
+
+    Deliver working software frequently, from a couple of weeks to a couple of months, with a preference to the shorter timescale.
+
+
+    Business people and developers must work together daily throughout the project.
+
+
+    Build projects around motivated individuals. Give them the environment and support they need, and trust them to get the job done.
+
+
+    importance of UAT :-	    The most efficient and effective method of conveying information to and within a development team is face-to-face conversation.
+
+
+    Working software is the primary measure of progress.
+
+
+    Agile processes promote sustainable development. The sponsors, developers, and users should be able to maintain a constant pace indefinitely.
+    Simplicity--the art of maximizing the amount of work not done--is essential.
+
+    The best architectures, requirements, and designs emerge from self-organizing teams.
+
+    At regular intervals, the team reflects on how to become more effective, then tunes and adjusts its behavior accordingly.
+
+
+
+
+ex:- video needed to be downloaded before watching (earlier) <----------  Changed as UAT demanded it.	
+
+
+
+
+
+
+-]   UAT  (User Acceptance Testing) :-
+
+User Acceptance Testing (UAT) is one of the last stages of the software development life cycle.
+It is performed after the software has been thoroughly tested. It is sometimes known as End User Testing.
+
+
+
+
+    Importance of UAT :-
+    UAT is important because it helps demonstrate that required business functions are operating in a manner suited to real-world circumstances and usage.
+    If the expected outcome is not achieved during testing, the item will be documented and sent back to the developers for repair.
+
+
+
+
+
+ex:- video needed to be downloaded before watching (earlier) <----------  Changed as UAT demanded it.
+
+---------------------------------------------------------------------------------------------------------
+------]JIRA (BUG AND ISSUE TRACKER)  :
+
+
+
+
+   3 parts(component) of JIRA :-	   
+
+
+1)JIRA CORE :-	1)JIRA CORE 
+
+
+2)JIRA SOFTWARE :-	2)JIRA SOFTWARE 
+
+
+
+
+3)JIRA SERVICE DESK :-	
+
+    Continuous attention to technical excellence and good design enhances agility.
