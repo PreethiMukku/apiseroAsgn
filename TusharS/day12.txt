@@ -1,0 +1,66 @@
+day 12
+
+Integration
+is a key software development life cycle (SDLC) strategy.
+Integration testing encompasses all aspects of a software system's performance,
+functionality and reliability. Most unit-tested software systems are comprised
+of integrated components that are tested for error isolation due to grouping.
+
+Security
+Software security is an idea implemented to protect software against malicious attack and other hacker risks so that the software continues to function correctly under such potential risks. Security is necessary to provide integrity, authentication and availability
+
+Messaging
+
+JMS (Java Message Service) is an API that provides the facility to create, send and read messages.
+ It provides loosely coupled, reliable and asynchronous communication.
+
+Messaging Domains
+There are two types of messaging domains in JMS.
+
+Point-to-Point Messaging Domain
+Publisher/Subscriber Messaging Domain
+1) Point-to-Point (PTP) Messaging Domain
+In PTP model, one message is delivered to one receiver only. Here, Queue is used as a message oriented middleware (MOM).
+
+The Queue is responsible to hold the message until receiver is ready.
+
+In PTP model, there is no timing dependency between sender and receiver.
+
+
+2) Publisher/Subscriber (Pub/Sub) Messaging Domain
+In Pub/Sub model, one message is delivered to all the subscribers. It is like broadcasting. Here, Topic is used as a message oriented middleware that is responsible to hold and deliver messages.
+
+In PTP model, there is timing dependency between publisher and subscriber.
+
+ 	
+Asynchronous messaging,
+sometimes called “async messaging”, refers to people using messaging platforms to contact each other without both parties needing to be concurrently active in the conversation.
+
+Loose Coupling
+
+ome advantages of making your code loosely coupled include:
+
+Better Testability
+Because your code isn't dependent on other objects and they are just passed in, this makes your unit tests easier to write.
+Easy-to-understand code
+When your code is decoupled from other objects, they are usually passed in or dependency injected into the code. Your code provides a self-documenting service to your users.
+Swappable components
+While most developers don't think about a plug-in architecture, this is ultimately what developers strive to achieve. If you want to swap out the Oracle database component with a SQL Server component, if developed properly, it can be done easily.
+Scalability
+As your system grows, you can provide a diverse number of components to plug into your application, making it more scalable. There is a term I use when a system can't scale properly. It's called "painting yourself into a corner" where you need to re-evaluate your design.
+Isolated Code/Features
+Adding new features to a system means that you can write additional code without breaking existing functionality and feel safe writing it.
+
+
+
+FanOut FanIn
+
+Fan-out/fan-in lets services invoke an arbitrary number of other services providing a set of callback services to be executed once all of the target services complete.
+
+Optionally, additional callbacks can be invoked each time a service from the original target list finished execution.
+
+Target services run in parallel, asynchronously, and are not notified of each other’s execution progress. Any callbacks configured also run asynchronously without blocking each other.
+
+Its a structural metrics which measure inter-module complexities. Fan-in: Is the number of modules that call a given module. Fan-out: Is the numbers of modules that called by a given module.
+
+Ex:Uber,etc
