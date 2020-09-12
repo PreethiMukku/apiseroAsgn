@@ -42,10 +42,13 @@ Cloud Servies:
 eg gmail.
 
 AWS - EC2
-EC2 instances are created and we have multiple ways to create a Machine image based
-on our needs. To make use of the different instances, you need to make sure to set the security rules as well. 
+EC2 instances are created on the portal and we have multiple ways to create a Machine image based
+on our needs(Linux/Tomcat/Ubuntu...). To make use of the different instances, you need to make sure to set the security rules as well. 
 Auto Scaling is one of the main things we discussed today. AWS Auto scaling allows you to create multiple instances. 
 It will ask you to define minimum,maximum and desired capacity. 
 So let's say you are told to make minimum capacity as 1, desired capacity as 1 and maximum as 5. 
 AWS monitors the requests coming to our server and lets say that requests are normal, it only initializes single 
-EC2 instance  
+EC2 instance at the beggining and based on the increasing load, it creates multiple instances. Once the load reduces it also stops and terminates the extra instances created.
+On the other hand, we discussed about AWS load balancer and how to create it on AWS platform. We need to connect the ip of load balancer from client and the LB will distribute the 
+requests between multiple servers. We need to connect multiple machine instances to the ELB. The dedicated servers distributed the total load and helps in failover conditions.
+
