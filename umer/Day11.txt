@@ -1,0 +1,108 @@
+
+------------------------------------------------------------DevOps-------------------------------------------------------------------------------------------------------
+
+-> Why DevOps
+   Before we know what DevOps is, it is very important to know how DevOps came into existence. 
+   Before DevOps, we had the waterfall model and the agile model for software development. 
+
+-> Waterfall Model
+  The waterfall model can be defined as a sequential process in the development of a system or software that follows a top-down approach.
+  This model was a straight forward and linear model. The waterfall model had various phases such as Requirement Definition, Software Design, Implementation, Testing, Deployment, and Maintenance.
+  Software development companies that used the waterfall model approach, had to spend a lot of time to get their product right. 
+  That is because unless you complete a particular phase, you could not proceed to the next phase. Also, the working software was delivered only after the final phase of this model.
+  This model was only suitable for projects which had stable requirements.
+  By stable, I mean that requirements will not change with the time. But in today’s world, this is a very unlikely thing because requirements keep on changing from time to time. 
+  These were a few drawbacks of the waterfall model.
+
+-> AGILE Methodology
+  Next came the agile methodology of software development. Agile methodology is a practice that promotes continuous iteration of development and testing throughout the software development life cycle of the project.
+  Both development and testing activities are concurrent, unlike the Waterfall model. While the Agile approach brought agility to development, it was lost on Operations which did not come up to speed with agile practices.
+  There was a lack of collaboration between Developers and Operation Engineers and this slowed down the development process and releases. 
+  Software companies had begun to realize the need for better collaboration between the teams and faster delivery of software. This gave birth to the DevOps approach. 
+  DevOps enabled continuous software delivery with less complex problems to fix and faster resolution of problems.
+
+ -> What is DevOps?
+ - DevOps is an evolving philosophy and framework that encourages faster, better application development 
+    faster release of new or revised software features or products to customers.
+ - promotes collaboration between Development and Operations Team to deploy code to production faster in an automated & repeatable way.
+ - The word 'DevOps' is a combination of two words 'development' and 'operations.
+ - DevOps helps to increases an organization's speed to deliver applications and services. 
+ - It allows organizations to serve their customers better and compete more strongly in the market.
+
+-> DevOps Lifecycle
+  1. Continuous Development – 
+   This is the phase that involves ‘planning‘ and ‘coding‘ of the software. The vision of the project is decided during the planning phase and the developers begin developing the code for the application.
+   There are no DevOps tools that are required for planning, but there are a number of tools for maintaining the code.
+   The code can be written in any language, but it is maintained by using Version Control tools. Maintaining the code is referred to as Source Code Management.
+   The most popular tools used are Git, SVN, Mercurial, CVS, and JIRA. Also tools like Ant, Maven, Gradle can be used in this phase for building/ packaging the code into an executable file that can be forwarded to any of the next phases.
+  
+  2. Continuous Testing – 
+    This is the stage where the developed software is continuously tested for bugs. For Continuous testing, automation testing tools like Selenium, TestNG, JUnit, etc are used.
+    These tools allow QAs to test multiple code-bases thoroughly in parallel to ensure that there are no flaws in the functionality. After testing, the code is continuously integrated with the existing code.
+  
+  3. Continuous Integration –
+     This stage is the heart of the entire DevOps life cycle. It is a software development practice in which the developers require to commit changes to the source code more frequently. This may be on a daily or a weekly basis.
+     Every commit is then built and this allows early detection of problems if they are present. Building code not only involves compilation but it also includes code review, unit testing, integration testing, and packaging.
+     The code supporting new functionality is continuously integrated with the existing code. Since there is continuous development of software,
+     the updated code needs to be integrated continuously as well as smoothly with the systems to reflect changes to the end-users.
+     Jenkins is a very popular tool used in this phase. Whenever there is a change in the Git repository, Jenkins fetches the updated code and it prepares a build of that code which is an executable file in the form of a war or a jar. 
+     This build is then forwarded to the test server or the production server.
+
+  4. Continuous Deployment –
+     This is the stage where the code is deployed to the production servers. It is also important to ensure that the code is correctly deployed on all the servers.
+     Containerization tools help in achieving Continuous Deployment (CD).
+
+  5. Continuous Monitoring –
+     This is a very crucial stage of the DevOps life cycle where you continuously monitor the performance of your application. Here vital information about the use of the software is recorded.
+     This information is processed to recognize the proper functionality of the application.
+     This practice involves the participation of the Operations team who will monitor the user activity for bugs or any improper behavior of the system.
+     The popular tools used for this are Splunk, ELK Stack, Nagios, NewRelic and Sensu. These tools help you monitor the application’s performance.
+
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+  
+ -> User Acceptance Testing (UAT)
+    User Acceptance Testing (UAT) is a type of testing performed by the end user or the client to verify/accept the software system before moving the software application to the production environment.
+    UAT is done in the final phase of testing after functional, integration and system testing is done. It doesnot focus on errors.
+   
+ -> Who Performs UAT?
+   - client
+   - end user
+
+ -> Need of User Acceptance Testing
+   Need of User Acceptance Testing arises once software has undergone Unit, Integration and System testing because developers might have built software based on requirements document by their own understanding 
+   and further required changes during development may not be effectively communicated to them, so for testing whether the final product is accepted by client/end-user, user acceptance testing is needed.
+ 
+ -> UAT workflow
+    1. Palnning
+     - Make sure to have all information in one place in order to set up a realistic UAT plan.
+     - You need to plan who of your team is involved in the UAT yUAT execution as well as ensure that all responsibilities and tasks are known.
+     - Every person involved in the UAT process should have a clear understanding of what his or her responsibility is.
+     - While executing the defined UAT test cases you need to make sure to have a workflow in place which deals with bugs, issues, and other problems.
+    2. Execution
+     - The test cases can be executed in one-on-one sessions via Skype or any other video calling software. 
+     - During the sessions, you will gain a lot of quantitative and – even more important – qualitative data from your users.
+    3. Documentation
+     - Executing and documenting your User Acceptance tests should happen at the same time.
+     - clearly define responsibilities for ensuring the implementation of your users’ feedback.
+    4. Evaluation
+     - During this phase you need to evaluate if the defined criteria are tested and met.
+    5. Reporting
+     - The main goal is to gather insights and lessons learned which will help you to improve your future test cases and UAT workflows.
+
+-> JIRA
+  JIRA is a tool developed by Australian Company Atlassian. This software is used for bug tracking, issue tracking, and project management. 
+  The name "JIRA" is actually inherited from the Japanese word "Gojira" which means "Godzilla". The basic use of this tool is to track issue and bugs related to your software and Mobile apps.
+  It is also used for project management. The JIRA dashboard consists of many useful functions and features which make handling of issues easy.
+
+
+
+
+
+
+
+
+
+
+
+
+
