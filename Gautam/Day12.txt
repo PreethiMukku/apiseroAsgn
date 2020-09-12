@@ -1,0 +1,29 @@
+Integration
+->It is the process integrating many sub systems into one system.
+->all system function as a single system.
+->The main reason for organizations to use integration is their need to improve productivity and quality of their operations. 
+
+Security
+->It is an idea implemented to protect software against malicious attack and other hacker risks so that the software continues to function correctly. 
+
+Advantages of Integration
+->Increased productivity
+->Lower cost
+->Improved customer satisfaction.
+->One stop service.
+
+JMS
+->The Java Message Service (JMS) API is a messaging standard that allows application components based on the Java Platform Enterprise Edition (Java EE) to create, send, receive, and read messages.
+->It enables distributed communication that is loosely coupled, reliable, and asynchronous.
+
+Oauth
+->OAuth is an open standard for access delegation, 
+->It iscommonly used as a way for Internet users to grant websites or applications access to their information on other websites but without giving them the passwords.
+
+Fanout
+->Fan-out refers to the maximum number of output signals that are fed by the output equations. 
+
+Fanin
+->Fan-in refers to the maximum number of input signals that feed the input 
+
+
