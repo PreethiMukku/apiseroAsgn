@@ -1,0 +1,77 @@
+DevOps -> Development + Operations
+
+- When there was monolith applications, there was each phase one after other so making it easy. And since there was one codebase and the environment was same, 
+the deployment was easy.
+- Development->Deployment->Testing
+- In Micro services, if suppose there are 20 micro services there would be 20 different environment. So we need to have a different deployment strategy.
+- Now we go for end-to-end development. (Development+Deployment)
+
+Business Agility:
+- Time-to-Market Acceleration.
+- Experimentation
+- Rapid Prototyping 
+- Flexible Partnering
+- IoT/IoS Support
+-Technical Innovation
+Technological innovation is the process where an organization (or a group of people working outside a structured organization) 
+embarks in a journey where the importance of technology as a source of innovation has been identified 
+as a critical success factor for increased market competitiveness.
+-Infrastructure Choice
+
+System Developement Life Cycle (SDLC):
+Waterfall Model :
+	Planning
+	System Analysis and Requirements.
+	System Design
+	Developement
+	Integration and Testing
+	Implementation
+	Operation and Maintainence
+When is waterfall model apt:
+- Requirements are not changing frequently
+- Application is not complicated and big
+- Project is short
+- Requirement is clear
+- Environment is stable
+- Technology and tools used are not dynamic and is stable
+- Resources are available and trained
+AGILE:
+Agile is an iterative approach to project management and software development that helps teams deliver value to their customers faster and with fewer headaches. 
+Instead of betting everything on a "big bang" launch, an agile team delivers work in small, but consumable, increments. 
+Requirements, plans, and results are evaluated continuously so teams have a natural mechanism for responding to change quickly.
+
+Manifesto :-
+    -Individuals and interactions over processes and tools
+    -Working software over comprehensive documentation
+    -Customer collaboration over contract negotiation
+    -Responding to change over following a plan
+
+Principle :-
+    1. Our highest priority is to satisfy the customer through early and continuous delivery of valuable software.
+    2. Welcome changing requirements, even late in development. Agile processes harness change for the customer's competitive advantage.
+    3. Deliver working software frequently, from a couple of weeks to a couple of months, with a preference to the shorter timescale.
+    4. Business people and developers must work together daily throughout the project.
+    5. Build projects around motivated individuals. Give them the environment and support they need, and trust them to get the job done.
+    6. The most efficient and effective method of conveying information to and within a development team is face-to-face conversation.
+    7. Working software is the primary measure of progress.
+    8. Agile processes promote sustainable development. The sponsors, developers, and users should be able to maintain a constant pace indefinitely.
+    9. Continuous attention to technical excellence and good design enhances agility.
+    10. Simplicity--the art of maximizing the amount of work not done--is essential.
+    11. The best architectures, requirements, and designs emerge from self-organizing teams.
+    12. At regular intervals, the team reflects on how to become more effective, then tunes and adjusts its behavior accordingly.
+
+Agile not to be used when:
+	-The outcome of your project is stable and well understood. 
+	-Your customer doesn’t want Agile. 
+	-Your company cannot support Agile. 
+	-Your organization cannot support daily collaboration. 
+	-The company structure cannot support cross-functional teams.
+
+User Acceptance Testing (UAT) is a type of testing performed by the end user or the client to verify/accept the software system before moving the software application to the production environment.
+UAT is done in the final phase of testing after functional, integration and system testing is done.	
+
+Jira:
+- Jira is used for issue tracking and managing the issues with in a project.
+- We can have a team, were an individual can raise issue/bugs/errors and assign it to someone in the team to solve it.
+- Further the assignee can also sub assign the task.
+- Once the bug is solved it is closed and notified to the user.
