@@ -1,0 +1,85 @@
+DEVOPS INTRODUCTION
+
+DevOps is a culture which promotes collaboration between Development and Operations Team to deploy code to production faster in an automated & repeatable way. 
+The word 'DevOps' is a combination of two words 'development' and 'operations.'
+
+DevOps helps to increases an organization's speed to deliver applications and services.
+It allows organizations to serve their customers better and compete more strongly in the market.
+
+
+Customer ------>Build->Test->Release----->Customer
+
+
+When to adopt DevOps?
+DevOps should be used for large distributed applications such as eCommerce sites or applications hosted on a cloud platform.
+
+When not to adopt DevOps?
+It should not be used in a mission-critical application like bank, power and other sensitive data sites. 
+Such applications need strict access controls on the production environment,
+a detailed change management policy, access control policy to the data centers.
+
+AGILE
+
+Agile software development refers to a group of software development methodologies based on iterative development,
+where requirements and solutions evolve through collaboration between self-organizing cross-functional teams. 
+Agile methods or Agile processes generally promote a disciplined project management process that encourages frequent inspection and adaptation, 
+a leadership philosophy that encourages teamwork, self-organization and accountability, 
+a set of engineering best practices intended to allow for rapid delivery of high-quality software,
+and a business approach that aligns development with customer needs and company goals.
+
+AGILE MANIFESTO
+
+1. Satisfying the customer is the top priority
+2. Welcome changing requirements, even late in development
+3. Deliver working software frequently
+4. Development and business must work together
+5. Build projects around motivated people
+6. Face-to-face communication is the most efficient and effective method of conveying information
+7. The primary measure of success is working software
+8. Agile processes promote sustainable development
+9. Maintain continuous attention to technical excellence and good design
+10. Simplicity is essential
+11. The best architectures, requirements, and designs emerge from self-organizing teams
+12. Regularly reflect on work, then tune and adjust behavior
+
+Similarities
+
+Both are software development methodologies; there is no disputing this.
+Agile has been around for over 20 years, and DevOps came into the picture fairly recently.
+Both believe in fast software development, and their principles are based on how fast software can be developed without causing harm to the customer or operations.
+
+Differences
+
+Software development, testing, and deployment happen in both DevOps and agile. However, pure agile tends to stop after these three stages.
+In contrast, DevOps includes operations, which happen continually. Therefore, monitoring and software development are also continuous.
+In agile, separate people are responsible for developing, testing, and deploying the software. 
+In DevOps, the DevOps engineering role is are responsible for everything; development is operations, and operations is development.
+
+JIRA
+JIRA is a project management tool used for issues and bugs tracking system. It is widely used as an issue-tracking tool for all types of testing.
+
+JIRA - Dashboard
+After logging into JIRA, the Dashboard is the first page that shows up. The Dashboard is customized by the Admin. Based on the roles, the admin can set the access of JIRA.
+Even the admin has the right to change colors and the logo of JIRA.
+
+ISSUES IN JIRA
+
+JIRA is a project management tool and uses issues to track all the tasks. An issue helps to track all works that underlie in a project.
+In real time, every work or task either technical, non-technical, support or any other type of a project in JIRA are logged as an issue.
+
+An issue can be dependent on the organization and requirements −
+
+Story of a project
+Task of a story
+Sub-task of a story
+A defect or bug can be an issue
+Helpdesk Ticket can be logged as issue
+Leave Request
+
+Type of Reports
+JIRA has categorized reports in four levels, which are −
+
+1. Agile
+2. Issue Analysis
+3. Forecast & Management
+4. others
