@@ -1,0 +1,216 @@
+Integration :-
+
+Integration in software engineering means combining software parts (so-called subsystems) into one system. 
+Integrated systems demonstrate better performance comparing to the sum of all independent ones.
+
+
+
+why Integration ??
+
+--]Needs Multiple Data entries into multiple systems. Spends a lot of time/manpower to maintain the data in multiple systems. 
+Due to Multiple systems, human interaction chances of mistakes are more. The data doesn't flow timely manner from one system to another.
+
+
+(** scenario were integration come into place)
+
+-]Airlines office (jetairways)
+------>reservatin counter ------->software 
+------>rich client --------> (Apllication + Mysql(db))
+Business Requirement-------->scalability --------> Rich client 1 ------->
+                                                                            (single Mysql) shared database
+                                        Rich client 2 ------->
+
+-]Airlines ------->cities------>Multiple flight ---------->multiple city officies
+                                             Rich client 1 ------->
+                                                                            componet on my server (single Mysql)                                                                                                                shared database
+                                        Rich client 2 ------->
+                                          Rich client 3 ------>
+
+
+-]Airline ------------> Rich------------->Thin client
+web/browser ----------------->servlet/jsp-----------component server (1 db)
+(client)
+
+-]Infosys (inpicture for booking )----------->flight booking------->team(5-20)--->location a to location b.
+
+
+*******]problem :- webclient (from ,to,date,name)has to be entered for each client
+
+Customization expectation ------------>b-b request
+
+*******]Solution:- (from,to,date,loc a,loc b,names(5-20))-------->In one transaction.
+
+
+-]Add one more web pae (web/browser client)------>jsp/servlet------->component server(1Db)
+
+
+
+THINK ---->Java (object oriented code)-------------->Service oriented code (Bottom up approach)
+where code is giving first pirority than desgin(interface)requirement.
+
+------------------------------------------------------------------------------------------------------------
+-] consider Makemytrip :-
+
+services-------------->how to connect to different airlines
+-------------------->Interfcae/restapi they offer
+
+then code is approached (TopDown Approach)----------->Integration in picture
+****)this is where (Modify) the current available resource says "integration".
+
+----------------------------------------------------------------------------------------------------------------
+
+-] Scenario where no rollback and cancelation come into picture in service orientation :-
+
+ex:-
+   HDFC -------------------->ICICI
+              (transaction)
+
+-]Open the connection(HDFC)
+ DECREASE THE AMONT
+close the connection 
+                                                                 (Distributed system)                                                           
+
+-]open the connection (ICICI)
+increase the amount 
+close the connection
+
+******} service offered is compensation 
+ex:- when atm machine is unable to withdraw money ...
+
+-------------------------------------------------------------------------------------------------------------------------------
+
+-] Review Mysystem for sustainability:-
+----------------------> provide service 
+-------------------> start design of system.
+-------------------------------------------------------------------------------------------------------
+**********] case study :-
+
+----------------->jetairways 
+                         ------------>data -private string(from,to,date,passenger)
+
+
+-----------------> Makemytrip ------------> data (from,to,day,mont,year)
+
+
+
+---------------->clear trip -------------------> data(from (cityname),to (cityname),datewithtimestamp,details (1+))
+
+
+solution :-
+
+1. don't get tightly coupled with mmt/ct
+2.design your own interface
+  Jetairways internal system ---------->Myinterface
+
+
+MMT---------->MMTAdapter 
+[
+convert mmt data to Myinterface
+]
+
+
+CT-------------> clearAdapter 
+[
+convert CT data to MyInterface
+check city ----------->pune--->pnq
+]
+
+----------------------------------------------------------------------------------------------------------------------
+-----------] Dynamic approach 
+MMT ----------------->5 airlines -------------------->Tools/software/framework
+---------------------------> workflow
+
+code approach -----------> for each loop
+------------------------------------->(parameters)--------->conversion
+send get request(url)
+wait for getting data (thread)
+convert/format
+--------------------------------->collected------------>send it to my data
+
+but problems that would occur :- not connected,time out,70% data has comeback etc
+
+-------------------------------------------------------------------------------------------------------------------------------
+
+-] Messaging :--
+
+Messaging is a method of communication between software components or applications. A messaging system is a peer-to-peer facility: 
+A messaging client can send messages to, and receive messages from, any other client. Messaging enables distributed communication that is loosely coupled.
+
+
+ Java Messaging System (JMS) :-
+
+JMS (Java Message Service) is an API that provides the facility to create, send and read messages.
+It provides loosely coupled, reliable and asynchronous communication. JMS is also known as a messaging service.
+
+
+
+ex:-
+
+Gmail account (server 1) ----------email---------------> gmail acount(server2)
+(logged in)                                                                  (logged off)
+
+(so email will be stored in intermediate buffer storage (ex:- JMS))
+when server 2 is on the email will be reterieved .
+
+-]asynchronous (Messaging):- Synchronous Messagine broken into two layers .
+
+ex:-
+ a------>gmail
+                       --------------------->(Messaging server) 
+                                                                           --------------------------->b@apisero 
+********]points to be considered :-
+1. Guarantted Message delivery
+2. No loss of Messages
+
+
+-] Types of Communication Support :-
+
+point to point (p2p) (1 reciever only)
+
+publish subscribe (ps) (Data loss might occur)
+
+***] as per JMS perpesctive you will always loss data .
+ex:- radio station playing song at 10 wont be played at 12 for you . (so data is lossed)
+
+ex:- Atm card swipe at terminal 
+  (message to server -----------> processs 
+                                                                <---------------------- response )
+----------------------------------------------------------------------------------------------------------------------------------
+-] Security :-
+
+Security is an idea implemented to protect software against malicious attack and other hacker risks so that the software continues to function correctly
+under such potential risks. Security is necessary to provide integrity, authentication and availability
+
+(client)(SSL format) (accdetails)------------------>MMT---------------------->AIR ASIA(ssl,auth)
+Jet   (ssl,auth)------->payment gateway.
+
+ex:- Login to katakoda-------------->sign up options or sign up with katakoda .
+****] so options are providing Acc maintanence as service(security) to katakoda.
+
+
+
+-] O-Auth :-
+
+OAuth 2 is an authorization framework that enables applications to obtain limited access to user accounts on an HTTP service, 
+such as Facebook, GitHub, and DigitalOcean. It works by delegating user authentication to the service that hosts the user account,
+and authorizing third-party applications to access the user account. OAuth 2 provides authorization flows for web and desktop applications, and mobile devices.
+
+-------------------------------------------------------------------------------------------------------------------------------------------
+
+-] FanIn and FanOut :-
+
+
+FanIn :- Is the number of modules that call a given module.
+
+FanOut :-Is the numbers of modules that called by a given module. 
+This metrics can applied both at module level and function level this metrics just puts a number on how complex is interlinking of different modules or functions.
+
+ex:- 
+
+FanOut ------------------------------->4 airline
+
+request ---------------------->send -------------------------->4 airline
+(collection of data as one unit) <------------------ Conversion of format <------------ response   
+
+
+------------------------------------------------------------------------------------------------------------------------------------------------
