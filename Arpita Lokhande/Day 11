@@ -1,0 +1,202 @@
+DevOps--->
+
+-Developement + operations combined together for better software development by breaking wall of confusion between developer team and operation team
+-DevOps are used to improve developement process life cycle and earlier product release.
+-some devops follows agile methodology.
+
+******************************************************************************
+
+Application Developement->
+
+1.Developement Environment->
+-source control is used and configured.
+
+2.Test Environment->
+-Here we perform controlled testing.
+
+3. QA environment->
+-We test against data, h/w and s/w and allow users to test.
+
+4. Production Environment->
+-Application available for use.
+
+*******************************************************************************
+
+Business Agility--->
+
+1. Time to Time acceleration
+-Handling developement with agile makes time consumption lesser.
+
+2.Rapid Prototyping
+-prototypes are created and tested at earliest.
+
+3.Experimentation
+-Experimenting on various methodologies and practices.
+
+4.Flexible Partnering
+-more the partnership, more the profit.
+
+5.iot/ios support->
+-Internet of Things support, e.g Home security system.
+
+********************************************************************************
+Technical Innovations->
+-Polygot enablement
+-DevOps automation
+-API support
+
+-collaboration tools- 
+slack,skype,etc
+
+-We can use Issue tracking->
+jira,redmine.
+
+-For source control - 
+github
+
+Containers->
+-virtualisation
+-storage with security and integrity on cloud platforms.
+
+************************************************************************************
+
+Software Developement Life Cycle------>
+
+1.Planning--->
+-Find out the scope of the problem and determine solutions.
+
+2.System Analysis and Requirements----->
+-Functional requirements of project or solution are determined.
+-Also the system analysis takes place.
+-Expectations of end user are taken in consideration.
+
+3.Systems Design---->
+-It describes specifications, features  and operations that will satisfy the functional requirements.
+-The system to be built is proposed.
+
+4.Developement--->
+-In this phase actual developement starts.
+- This completes the initial phase of developement.
+
+5. Integration and Testing--->
+-Quality Assurance Professionals team is involved.
+-System integration and system testing are performed hence to make sure to meet functional requirements.
+
+6.Implementation--->
+-In this phase, the most of the code is written.
+-getting components from old system to new system.
+
+7.Operations and Maintainance--->
+-THis is last phase where end user involved.
+-They specify if they want better performance and other functionalities.
+-According to that operations and maintainance is done.
+
+Waterfall model-->
+1.Requirement Analysis
+2.System design
+3.Implementation
+4.Testing
+5.Deployment
+6.Maintainance.
+
+-Disadvantage of waterfall model is that after completing one phase and move to next, we cannot go back again.
+-Hence client on spot requirements are not taken in consideration. No scope for agility.
+
+V- model-->
+
+requirement Analysis <---------------------Acceptance test design-----------------------> Acceptance Testing
+
+  system Design <-------------------------System test design--------------------------->System Testing
+
+     Architecture Design <-------------Integration Test design-------------->Integration and Testing
+
+	       Module Design  <---------unit test design----------->Unit Testing
+				
+					    --coding---
+
+
+- In V model, along with all design modules, testing designs are also created for them parallely.
+
+************************************************************************************************
+Agile Methedology------>
+
+Principles of Agile-->
+
+-Our highest priority is to satisfy the customer through early and continuous delivery of valuable software.
+-Welcome changing requirements, even late indevelopment. Agile processes harness change for the customer's competitive advantage.
+-Deliver working software frequently, from a couple of weeks to a couple of months, with a preference to the shorter timescale.
+-Business people and developers must work together daily throughout the project.
+-Build projects around motivated individuals.Give them the environment and support they need, and trust them to get the job done.
+-The most efficient and effective method of conveying information to and within a development team is face-to-face conversation.
+-Working software is the primary measure of progress.
+-Agile processes promote sustainable development. The sponsors, developers, and users should be able to maintain a constant pace indefinitely.
+-Continuous attention to technical excellence and good design enhances agility.
+-Simplicity: the art of maximizing the amount of work not done--is essential.
+-The best architectures, requirements, and designs emerge from self-organizing teams.
+-At regular intervals, the team reflects on how to become more effective, then tunes and adjusts its behavior accordingly.
+
+Agile Methodology gives Advantages --->
+-Faster customer delivery.
+-Developement and testing can go hand in hand.
+-Constant customer communication and support.
+-CHnaging environments are adopted.
+-Project risk is low.
+
+Agile is not appropriate when->
+1. Small scale project and client requirements are fixed and well understood.
+2. Team does not know agile.
+3. Client does not want agile methodology.
+4. Daily collaboration with customer is not possible.
+
+
+*******************************************************************************************
+
+User Acceptance Testing (UAT)-------->
+
+-User Acceptance is not performed by professional testers, it is performed by end-users.
+-It is carried out after final developement of application and system testing.
+-UAT is performed because there might be some end user side expectations developers are unaware of.
+-Impact the application gives to end user is measured and how the end user is thinking can be configured.
+
+How to perform UAT well---->
+
+1.Set clear expectations.
+-developers should know client expectations well.
+
+2.UAT should occur early and often.
+-this would give both developer and end user an advantage to know the processing better.
+
+3.Find relevant test participants.
+-Test participants should be limited hence to avoid confusion.
+-Example Beta testing.
+
+4.Prepare Test Assignments.
+
+5.Don't focus on finding defects.
+-more focus should be on developement done.
+
+6.Clarify all findings.
+-consider and clarify the end-user's opinions and explain them the functionalities in proper manner.
+
+7.Communicate Feedback.
+-Communicate feedback between end user and developer hence developer can consider the end user feedback about application.
+
+****************************************************************************************8
+
+JIRA------>
+
+1.Before jira was used for only issue tracking and bug tracker.
+2. Now Jira is used also for testcases management, use cases performed, functional requirements for agile software developement.
+
+-https://jira.spring.io/projects/BATCH/issues/BATCH-2659?filter=allopenissues
+
+Jira Core: Jira project management platform.
+Jira Software: Agile functionality along with Jira Core.
+Jira Service Desk: Request desk for customers or team to collaborate.
+
+-In jira software->
+- we created a project, added collaborators to it.
+-a bug is reported by a person and assigned it to other collaborator(assignee)
+-This assignee gets notified, works on the bug,task given and updates the status---> to do, in process, Done.
+-Collaborators can also generate reports, leave comments for better interaction.
+
