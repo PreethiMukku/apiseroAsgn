@@ -3,21 +3,7 @@ The practice of using a network of remote servers hosted on the Internet to stor
 Cloud computing is the delivery of different services through the Internet. These resources include tools and applications like data storage, servers, databases, networking, and software.
 As long as an electronic device has access to the web, it has access to the data and the software programs to run it.
 
--->Types of Cloud services
-
-1)IAAS :-Infrastructure as a service (IaaS) is a cloud computing offering in which a vendor provides users access to computing resources such as servers, storage and networking.
-Organizations use their own platforms and applications within a service provider's infrastructure.
-ex:-Amazon(EC2) ,Aws,Google computing engine .
-
-2)PAAS :-In the Platform-as-a-Service (PaaS) model, developers essentially rent everything they need to build an application, relying on a cloud provider for development tools, infrastructure, and operating systems.
-This is one of the three service models of cloud computing.
-ex:-online compilers ,w3school,Mysql by Aws IRDS .
-
-3)SAAS:-Software as a service (SaaS) is a software distribution model in which a third-party provider hosts applications and makes them available to customers over the Internet. 
-SaaS is one of three main categories of cloud computing, alongside infrastructure as a service and platform as a service (IaaS and PaaS).
-ex:-Google drive,Zoom video call,office365 .
-
-Characteristics
+Characteristics-->
  
 1)on demand self services -->
 Cloud computing provides resources on demand, i.e. when the consumer wants it. This is made possible by self-service and automation. 
@@ -46,6 +32,20 @@ ncluding billing, effective use of resources, or overall predictive planning.
 6)Multi Tenacity -->
 Multiple customers of a cloud vendor are using the same computing resources.
 Despite the fact that they share resources, cloud customers aren't aware of each other, and their data is kept totally separate.
+
+-->Types of Cloud services
+
+1)IAAS :-Infrastructure as a service (IaaS) is a cloud computing offering in which a vendor provides users access to computing resources such as servers, storage and networking.
+Organizations use their own platforms and applications within a service provider's infrastructure.
+ex:-Amazon(EC2) ,Aws,Google computing engine .
+
+2)PAAS :-In the Platform-as-a-Service (PaaS) model, developers essentially rent everything they need to build an application, relying on a cloud provider for development tools, infrastructure, and operating systems.
+This is one of the three service models of cloud computing.
+ex:-online compilers ,w3school,Mysql by Aws IRDS .
+
+3)SAAS:-Software as a service (SaaS) is a software distribution model in which a third-party provider hosts applications and makes them available to customers over the Internet. 
+SaaS is one of three main categories of cloud computing, alongside infrastructure as a service and platform as a service (IaaS and PaaS).
+ex:-Google drive,Zoom video call,office365 .
 
 
 COMMUNICATION between CLIENT and SERVER  ???
