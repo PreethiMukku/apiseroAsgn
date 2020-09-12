@@ -1,0 +1,51 @@
+Why Cloud?
+Machine -> Servers -> Cluster 
+Client ---------------> LB(IP)--------------------> s1,s2,s3
+		  Software/Hardware
+			Host			3 Quality Machines
+
+
+1. Purchasing all these machines -> Service
+	-> 1. Service - pay/Usage
+	-> 2. Cost
+	-> 3. Maintain -> Installation, Configuration,H/w and S/w support
+
+Cloud -
+Essential characteristics - 
+1. On demand self services 
+2. Resource Pooling
+3. Rapid Elasticity
+4. Measured Service
+5. Multi Tenacity  
+
+Virtualization - can offer huge hardware/software support. 
+	-> Different OS 
+	-> Different RAM
+In virtualization, you have only one Huge hardware where you virtualize it into small parts
+based on the OS and memory you need. 
+Most countries have set up this hardware setup. Types of setup:
+	-> Regional- within each region you have multiple ZONES
+		-> Zones (Minimum 2 zones)
+
+With your device(laptop/desktop) you can connect to any region. 
+After connecting you ask for an Instance of the machine
+You install dependencies and softwares like MySQL for our need. 
+
+Cloud Servies:
+	-> Infrastructure as a Server(IAAS)
+		-> Storage(harddisk)-->Processing (server) -> Network
+	-> Platform as a Service (PAAS)
+		Along with Machine instance, also the middlewares and runtimes are provided where we can use those to have our own application. 
+		eg We can have MySQL RDS directly instead of having a machine and then installing and configuring it on our own.
+	-> Software as a Service (SAAS)
+		The instance machines, resources,middleware and runtime everytime and we can directly use the software as a service.
+eg gmail.
+
+AWS - EC2
+EC2 instances are created and we have multiple ways to create a Machine image based
+on our needs. To make use of the different instances, you need to make sure to set the security rules as well. 
+Auto Scaling is one of the main things we discussed today. AWS Auto scaling allows you to create multiple instances. 
+It will ask you to define minimum,maximum and desired capacity. 
+So let's say you are told to make minimum capacity as 1, desired capacity as 1 and maximum as 5. 
+AWS monitors the requests coming to our server and lets say that requests are normal, it only initializes single 
+EC2 instance  
