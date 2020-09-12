@@ -1,0 +1,126 @@
+1.DevOps Introduction:
+DevOps is one of the most crucial software practices for building,automating and testing your software project. 
+It is the combination of cultural philosophies, practices, and tools that increases an organization’s ability to deliver applications and services at high velocity. 
+
+Customer --------------------------------->Build->Test->Release----------------------------Customer
+         ----------------------------------Plan<-Monitor<.................................
+         
+We discussed some benefits of DevOps as follows:
+1. Speed
+2. Rapid Delivery
+3. Reliability
+4. Scale
+5. Improved Collaboration
+6. Security
+
+Key aspects: 
+1. Business Agility
+-Time-to market Accelaration 
+-Rapid prototypin 
+-Experimentation 
+-Flexible partnering 
+-iot/ios support 
+2. Technical Innovation
+Technological innovation is the process where an organization (or a group of people working outside a structured organization) 
+embarks in a journey where the importance of technology as a source of innovation has been identified 
+as a critical success factor for increased market competitiveness.
+
+3. Infrastructure Choice
+
+Key Categories in DevOps:
+-Plan. This phase helps define business value and requirements. Sample tools include Jira or Git to help track known issues and perform project management.
+-Code. This phase involves software design and the creation of software code. Sample tools include GitHub, GitLab, Bitbucket, or Stash.
+-Build. In this phase, you manage software builds and versions, and use automated tools to help compile and package code for future release to production. Sample tools include Docker, Ansible, Puppet, Chef, Gradle, Maven, or JFrog Artifactory.
+-Test. This phase involves continuous testing (manual or automated) to ensure optimal code quality. Sample tools include JUnit, Codeception, Selenium, Vagrant, TestNG, or BlazeMeter.
+-Deploy. This phase can include tools that help manage, coordinate, schedule, and automate product releases into production. Sample tools include Puppet, Chef, Ansible, Jenkins, Kubernetes, OpenShift, OpenStack, Docker, or Jira.
+-Operate. This phase manages software during production. Sample tools include Ansible, Puppet, PowerShell, Chef, Salt, or Otter.
+-Monitor. This phase involves identifying and collecting information about issues from a specific software release in production. Sample tools include New Relic, Datadog, Grafana, Wireshark, Splunk, Nagios, or Slack.
+
+software development life cycle 
+	-Waterfall model 
+		-planning 
+		-System Analysis and Requirement 
+		-System Design 
+		-Development
+		-Integration and Testing 
+		-Implementation (DEPLOYMENT)
+		-Operation and Maintenance 
+
+
+	-V model :
+	
+		-requirement Analysis <------> Acceptance Testing
+
+		-system Design <-------------->System Testing
+
+		-Architecture Design <-------->Integration and Testing
+
+		-Module Design  <------------->Unit Testing
+
+AGILE:
+Agile is an iterative approach to project management and software development that helps teams deliver value to their customers faster and with fewer headaches. 
+Instead of betting everything on a "big bang" launch, an agile team delivers work in small, but consumable, increments. 
+Requirements, plans, and results are evaluated continuously so teams have a natural mechanism for responding to change quickly.
+
+Manifesto :-
+    -Individuals and interactions over processes and tools
+    -Working software over comprehensive documentation
+    -Customer collaboration over contract negotiation
+    -Responding to change over following a plan
+
+Principle :-
+    1. Our highest priority is to satisfy the customer through early and continuous delivery of valuable software.
+    2. Welcome changing requirements, even late in development. Agile processes harness change for the customer's competitive advantage.
+    3. Deliver working software frequently, from a couple of weeks to a couple of months, with a preference to the shorter timescale.
+    4. Business people and developers must work together daily throughout the project.
+    5. Build projects around motivated individuals. Give them the environment and support they need, and trust them to get the job done.
+    6. The most efficient and effective method of conveying information to and within a development team is face-to-face conversation.
+    7. Working software is the primary measure of progress.
+    8. Agile processes promote sustainable development. The sponsors, developers, and users should be able to maintain a constant pace indefinitely.
+    9. Continuous attention to technical excellence and good design enhances agility.
+    10. Simplicity--the art of maximizing the amount of work not done--is essential.
+    11. The best architectures, requirements, and designs emerge from self-organizing teams.
+    12. At regular intervals, the team reflects on how to become more effective, then tunes and adjusts its behavior accordingly.
+
+Agile not to be used when:
+	-The outcome of your project is stable and well understood. 
+	-Your customer doesn’t want Agile. 
+	-Your company cannot support Agile. 
+	-Your organization cannot support daily collaboration. 
+	-The company structure cannot support cross-functional teams.
+User Acceptance Testing (UAT) 
+User Acceptance Testing (UAT) is one of the last stages of the software development life cycle.
+It is performed after the software has been thoroughly tested. It is sometimes known as End User Testing.
+And they have just one main job: Testing if the application works for your users.
+5 key Steps:
+Planning- 
+  ->Planning & time management
+  ->Staff requirements
+  ->Communication & Issue strategy
+  ->UAT Checklist
+Execution
+  ->The test cases can be executed in one-on-one sessions via Skype or any other video calling software. 
+    During the sessions, you will gain a lot of quantitative and – even more important – qualitative data from your users.
+Documentation
+  ->The implementation of your users’ feedback is another key factor.A lot of our customers have set up Usersnap for this step.
+  Bugs, feedback, and other abnormalities can be documented on your user’s browser screen. An easy-to-use project dashboard allows your colleagues to get a good overview of important issues. 
+  Making sure to delegate and assign priorities is another key thing here.
+Evaluation
+  ->The evaluation phase is a pretty extensive one, since each and every single test case needs to be analyzed and put into context.
+Reporting & Lessons Learned
+  ->The main goal is to gather insights and lessons learned which will help you to improve your future test cases and UAT workflows.
+  You might also start building relationships with some of your UAT testers during that phase as they are a helpful source for further feedback and insights.
+
+Jira
+Jira is a bug and issue tracker for your projects. You can support any kind of framework on the platform and add it as the project. 
+After that you can add users to collaborate on the project for testing and resolving issues. 
+The users can be created in company hierarchy structure. 
+The platforms offers users to create issue as a BUG,IMPROVEMENT,NEW FEATURE etc based on its priority level (Very High/High/Medium/Low/Very Low)
+The issues are assigned to a user and he can add comments and creates sub tasks on that particular issue. 
+The issue can be seen on the OPEN issue tab on the user profile. 
+Users also get a feature to add comments on the on going task issue. You can add code,media and attach it with the issue. 
+Users can mark it as done and a notification is sent to the person who has assigned you this task and moved to the DONE section. 
+3 main components:
+1. JIRA Core
+2. JIRA Software
+3. JIRA Service Desk
