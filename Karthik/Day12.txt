@@ -1,0 +1,33 @@
+Integration:
+- Integration is connecting different services or components into our system. 
+- Previously we had component based architecture, were the entire components were built with in. 
+- Now moving towards SOA, integration plays an important role as we need to integrate many services into our system. 
+
+- As we move towards Service oriented architecture, there is high chances of us having B2B communication in our application. 
+- So we go with a top to bottom approach and here we need to first think of all the integrations i.e. third party serives, APIS, B2B communication 
+that is going to happen with our application and accordingly design and code it. 	
+- Therefore we need integration as communication between different websites is important.
+
+Messaging:
+- Messaging APIs are used when two software applications want to communicate with each other. 
+- They exchange data between themselves. It follows asynchronous messaging i.e. even if both are not connected, the message is been shared. 
+- Sender sends the message, it is been stored in queue and the message pops up to the receiver once he connects.
+
+eg JMS
+P2P(Point to Point)
+1. Guranteed delivery
+2. There is only one receiver
+3. After the message is received by the receiver,it is deleted from the queue.
+
+Publish Subscribe Model
+1. Many receivers.
+2. No guranteed delivery.
+
+Security: 
+- For security we take care of SSL between different websites. 
+- And access token and other authorization is done to maintain security between two applications while they are communicating.
+
+FanIn: Multiple responses are combined into one single output.
+eg. Data from different 3rd party services may be different, we combine it to one dta format within a interface.
+
+FanOut: One request is sent and we get multiple responses.
