@@ -1,0 +1,115 @@
+DevOps
+==> Software Development + IT Operations
+-> To shorten the development cycles and support CI/CD
+
+-----> Business Agility:
+Time to Market Acceleration
+Experimentation 
+Rapid Prototyping
+Flexible Partnering
+IOT/IOS Support
+-----> Technical innovation :
+	An organization embarks on a journey where the importance of technology as a source of innovation has been identified as a critical success factor for increased market competitiveness.
+-----> Infrastructure choice :
+	An Agile IT infrastructure is one that is designed to support rapid deployment and provisioning, and incremental upgrades and improvements. 
+
+So DevOps = Business Agility + Technical innovation  + Infrastructure choice
+
+-> Heavily helpful in terms of microservices as we might user various code bases.
+--> Containers are smaller units of a server.
+
+-> Scrum and Kanban are the most widely used Agile methodologies.
+
+For Collaboration :
+Teams
+Slack
+
+For Code:
+Github
+Bitbucket
+
+Issue Tracking:
+Jira
+Redmine
+Bugzilla
+
+
+--=> Infrastructure as code 
+	- To automate the CI/CD that are repetitive
+	- Ex: Vagrant Code
+
+Software Development Life Cycle
+	 
+	SDLC phases:
+	1. Planning
+	2. Analysis and Requirement 
+	3. Design
+	4. Development
+	5. Testing
+	6. Deployment
+	7. Maintenance
+
+-> Waterfall model -> Only when requirements are concise.
+
+AGILE:
+-> Adaption to changes and working on those.
+
+--> An agile methodology is an approach to project management that uses 4 key pillars and 12 principles to organize projects. 
+
+REF: https://agilemanifesto.org/
+
+"" Individuals and interactions over processes and tools
+Working software over comprehensive documentation
+Customer collaboration over contract negotiation
+Responding to change over following a plan ""
+
+
+Principles behind the Agile Manifesto
+Our highest priority is to satisfy the customer
+through early and continuous delivery
+of valuable software.
+
+Welcome changing requirements, even late in
+development. Agile processes harness change for
+the customer's competitive advantage.
+
+Deliver working software frequently, from
+a couple of weeks to a couple of months, with a
+preference to the shorter timescale.
+
+Business people and developers must work
+together daily throughout the project.
+
+Build projects around motivated individuals.
+
+Give them the environment and support they need,
+and trust them to get the job done.
+
+The most efficient and effective method of
+conveying information to and within a development
+team is face-to-face conversation.
+
+Working software is the primary measure of progress.
+Agile processes promote sustainable development.
+
+The sponsors, developers, and users should be able
+to maintain a constant pace indefinitely.
+
+Continuous attention to technical excellence
+and good design enhances agility.
+
+Simplicity--the art of maximizing the amount
+of work not done--is essential.
+
+The best architectures, requirements, and designs
+emerge from self-organizing teams.
+
+At regular intervals, the team reflects on how
+to become more effective then tunes and adjusts
+its behavior accordingly.
+
+User acceptance testing (UAT):
+--> Done by the customer to be sure that their requirements are fulfilled.
+
+JIRA:
+-> Designed to help teams of all types manage work.
