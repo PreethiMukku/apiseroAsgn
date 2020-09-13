@@ -1,0 +1,39 @@
+Integration :
+Combining software modules simply the subparts of software together into one system is called integration.
+It helps in faster and efficient performance.
+Easy to use and distribute the software fastly.
+Maintain a single source repository where all source code is maintained.
+
+JMS:
+-The Java Message Service (JMS) API is a messaging standard that allows application components based on the Java Platform Enterprise Edition (Java EE)
+-helps to create, send, receive, and read messages.
+-It enables distributed communication that is loosely coupled, reliable, and asynchronous.
+
+
+Messaging Domains:
+ Messaging enables distributed communication that is loosely coupled.
+ a@gamil.com---->gmail server----> b@gamil.com
+ should have guaranteed delivery
+ no loss of messages data.
+
+Point-to-point:
+1 -> 1 messaging 
+The queue is used as middleware
+The Queue is held responsible until the receiver is ready.
+
+ Pub/Sub:
+1 -> * messaging
+The topic is used as message-oriented middleware.
+
+
+OAuth:
+OAuth 2 is an authorization framework that enables applications to obtain limited access to user accounts on an HTTP service.
+Ex: Facebook, Google, Microsoft
+
+FanIn:
+The number of modules that call a given module.
+whenever a request goes where shows the live availability and then all accept that request comes.
+
+FanOut:
+The numbers of modules are called by a given module.
+whenever a request comes all live availability like in zomato if u search for cake shows all the live restaurents having cake in stock.
