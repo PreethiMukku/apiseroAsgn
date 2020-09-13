@@ -1,0 +1,108 @@
+Integration:
+	Integration is a process of merging two or more software systems either mono-directional or bi-directional so that data/functionality flows between that systems smoothly.
+
+Why Integration:
+	The main reason for organizations to use system integration is their need to improve productivity and quality of their operations.
+	The goal is to get the organizations various IT systems to talk to each other through the integration, to speed up information flows and reduce operational costs for the organization.
+	
+Concerns:
+	Different perspectives from different business units. Each team has its own set of responsibilities and may use different applications or systems to fulfil them.
+	A systems integration model must seek to establish a management model and access to data that is useful for all, in order to satisfy all needs.
+	The team responsible for integrating the systems not only needs to respond to the demands of the business itself but must go further and design an integration with a standardized view of the data within the company.
+	Many companies have monolithic architecture systems, which work with inherited and interlaced systems, which cannot be replaced so easily.
+	Choosing the right tool, getting this decision right makes huge differences in terms of speed of integration, functionality and cost.
+	The chosen tool should allow for seamless integration between on-premise and cloud-based applications.
+	Scalability and maintenance, system integration must not only look to the present, but also to the future.
+	It is not enough to respond to current functional requirements, but it must be prepared to respond to future performance, maintenance, reuse and scalability requirements.
+	
+API:
+	API is the acronym for Application Program Interface, which is a software intermediary that allows two disparate applications to communicate each other.
+	In simple words to say, API does the work same as the translator.
+	
+Web-Servcie API:
+	A web service is a system or software that uses an address, i.e., URL on the World Wide Web, to provide access to its services.
+
+SOAP(Simple Object Access Protocol) API:
+	This is a protocol that uses XML as a format to transfer data.
+	Its main function is to define the structure of the messages and methods of communication.
+	It also uses WSDL (Web Services Definition Language), in a machine-readable document to publish a definition of its interface.
+	
+REST(Representational State Transfer) API:
+	REST is a software architectural style that defines a set of constraints to be used for creating Web services.
+	Web services that conform to the REST architectural style, called RESTful Web services, provide interoperability between computer systems on the internet.
+	One of the key factor for need of REST APIs is that they provide a great deal of flexibility.
+	Data is not tied to resources or methods, so REST can handle multiple types of calls, return different data formats and even change structurally with the correct implementation of hypermedia.
+	This flexibility allows developers to build an API that meets your needs while also meeting the needs of very diverse customers.
+	
+	REST api uses five types of methods to do CRUD operations:
+		POST - Create records
+		GET - Read records
+		PUT - Update/Replace entire records
+		PATCH - Update partial records
+		DELETE - Delete records
+	
+	There are 6 key constraints to think about when considering whether a RESTful API is the right type of API for your needs:		
+		Client-Server:
+			This constraint operates on the concept that the client and the server should be separate from each other and allowed to evolve individually.
+		
+		Stateless:
+			Calls can be made independently of one another, and each call contains all of the data necessary to complete itself successfully.
+		
+		Cache:
+			 Because a stateless API can increase request overhead by handling large loads of incoming and outbound calls, a REST API should be designed to encourage the storage of cacheable data.
+		
+		Uniform Interface:
+			The key to the decoupling client from server is having a uniform interface that allows independent evolution of the application without having the application’s services, or models and actions, tightly coupled to the API layer itself.
+		
+		Layered System:
+			REST APIs have different layers of their architecture working together to build a hierarchy that helps create a more scalable and modular application.
+		
+		Code on Demand:
+			Code on Demand allows for code or applets to be transmitted via the API for use within the application.
+			
+Messaging:
+	Messaging is a method of communication between software components or applications.
+	A messaging system is a peer-to-peer facility. A messaging client can send messages to, and receive messages from, any other client.
+	Each client connects to a messaging agent that provides facilities for creating, sending, receiving, and reading messages.
+	
+JMS(Java Messaging Servcie):
+	The Java Message Service (JMS) API is a messaging standard that allows application components based on the Java Platform Enterprise Edition (Java EE) to create, send, receive, and read messages.
+	It enables distributed communication that is loosely coupled, reliable, and asynchronous.
+	
+Requirement of JMS:
+	Generally, user sends message to application. But, if we want to send message from one application to another, we need to use JMS API.
+	Consider a scenario, one application A is running in INDIA and another application B is running in USA.
+	To send message from A application to B, we need to use JMS.
+	
+Advantage of JMS
+	Asynchronous: To receive the message, client is not required to send request. Message will arrive automatically to the client.
+	Reliable: It provides assurance that message is delivered.
+	
+Messaging Domains
+	Point-to-Point Messaging Domain:
+		In PTP model, one message is delivered to one receiver only. Here, Queue is used as a message oriented middleware (MOM).
+		The Queue is responsible to hold the message until receiver is ready.
+		In PTP model, there is no timing dependency between sender and receiver.
+		
+	Publisher/Subscriber Messaging Domain:
+		In Pub/Sub model, one message is delivered to all the subscribers., it is like broadcasting.
+		Here, Topic is used as a message oriented middleware that is responsible to hold and deliver messages.
+		In PTP model, there is timing dependency between publisher and subscriber.
+
+Coupling:
+	Coupling refers to the usage of an object by another object. It can also be termed as collaboration.
+	This dependency of one object on another object to get some task done can be classified into the following two types :
+		Tight coupling:
+			When an object creates the object to be used, then it is a tight coupling situation.
+			As the main object creates the object itself, this object can not be changed from outside world easily marked it as tightly coupled objects.
+
+		Loose coupling:
+			When an object gets the object to be used from the outside, then it is a loose coupling situation.
+			As the main object is merely using the object, this object can be changed from the outside world easily marked it as loosely coupled objects.
+	
+Fan Out:
+	Fan-Out refers to spreading a task to multiple destinations in parallel.
+	Using the Pipelines API, fan-out can be achieved elegantly by yielding a new pipeline for every task you wish to execute.
+	
+Fan In:
+	Fan-In implies waiting for a collection of related tasks to complete before continuing processing.
