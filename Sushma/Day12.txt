@@ -1,0 +1,136 @@
+Day 12
+
+Integration Concepts
+
+1. Airlines office (Jet Airways):
+
+	-> Reservation counter ->software for that -> Rich Client
+	-> Rich Client -> Application + Database(Mysql)
+	-> Scalability -> Rich Client-1 
+	(Business requirement)          -----> Shared Mysql database
+					  Rich Client-2
+
+- If business requirement increases it wouldn't be easy to give access to database for every Rich client
+
+2. Airline ---> 4 different offices ---> multiple flights ---> multiple city offices
+				across cities    
+				
+
+4 offices in Bglr: 
+
+Rich client
+Rich client  ----------->  Component(server) -----------> 1 database
+Rich client                Adv:(shared code)
+Rich client				(Component Architecture)
+
+3. Airline -> Rich client -> Thin client
+
+Rich Client ------------------------------------------------- Component Server ------------- 1 Database
+web/Browser client------------ servlet/jsp tomcat ----------- Component Server ------------- 1 Database
+
+- your business -> Consumer (directly requests you)
+
+4. Infosys -> Flight booking -> Team (5...20) -> Loc A -> Loc B
+customization expectations -> B-B request 
+Web/Browser Client ------------ servlet/jsp tomcat --------- Component Server ------------- 1 Database
+                                write web page ------------- Component Server ------------- 1 Database
+								One more service ----------- Component Server ------------- 1 Database
+								Rest Service --------------- Component Server ------------- 1 Database
+- This is business to business communication
+
+ Java (Object Oriented Code) ------------ > Service Oriented Code  ====> Bottom-up Approach
+ 
+MakeMyTrip:  ===> Integration with various websites
+- How to connect to different airlines
+- Interface/Rest API do they offer
+- Bulk booking
+- Loose coupling
+- Payment Gateway service (op)
+
+Services -> Code ====> Top-Down Approach
+
+5. MakeMyTrip:
+	-> Expose a service for booking of flight
+	-> Expose a service for cancel booking of your flight
+
+6. Review my system for sustainability
+	-> Provide as service (Study Makemytrip  ----> Check interface)
+								 Cleartrip
+	-> Start design of your REST API
+
+- Asynchronous: Server and Client need not be connected at the same time
+
+Messaging:
+- Guaranteed delievery of messages
+- No loss of messages
+- Message is asynchronously connected to synchronous, when come back will ping me again
+
+Types of communications support:
+Point-to-point messaging: 
+	- Different domains for communication (message queues, senders, and receivers)
+	- Each message is send to a specific queue, and receiving systems consume messages from the queues established to hold their messages
+	- Queues retain all messages sent to them until the messages are consumed by the receiver or expire
+	- No data loss
+		
+Publish subscribe:
+	- Applications send message to a message broker called Topic
+	- Topic publishes the message to all the subscribers. Topic retains the messages until it is delivered to the systems at the receiving end
+	- Loosely coupled
+	- Data loss
+	- Zoom - send messages to everyone
+	- whoever has joined, all of them get the particular message
+	Ex: Youtube
+
+Java Messaging Service (JMS):
+	- Java message service enables loosely coupled communication between two or more systems
+	- It provides reliable and asynchronous form of communication
+	- There will be one server and the data is stored in the server
+	- lose the message
+	- one - many communications
+	
+- Send message to server
+	-> Process (Check credit card is valid or not)
+	-> After process done
+	<------------ Approval/Not approval
+	
+Java Message System:
+Security
+ MakeMyTrip --- wants to talk to ---> Air Asia (SSL)
+ A/c details ----> MakeMyTrip ----> Air Asia (SSL, auth)
+  (SSL)								Jet Airways (SSL, Auth)
+  
+- Message enablement and security
+- Github is providing authentication on service
+
+OAuth:
+- OAuth 2 is an authorization framework that enables applications to obtain limited access to user accounts on an HTTP service, such as Facebook, GitHub, and DigitalOcean. It works by delegating user authentication to the service that hosts the user account, and authorizing third-party applications to access the user account. OAuth 2 provides authorization flows for web and desktop applications, and mobile devices
+
+OAuth Roles:
+OAuth defines four roles:
+	- Resource Owner
+	- Client
+	- Resource Server
+	- Authorization Server
+	
+Resource Owner: User
+The resource owner is the user who authorizes an application to access their account. The application’s access to the user’s account is limited to the “scope” of the authorization granted (e.g. read or write access).
+
+Resource / Authorization Server: API
+The resource server hosts the protected user accounts, and the authorization server verifies the identity of the user then issues access tokens to the application.
+
+From an application developer’s point of view, a service’s API fulfills both the resource and authorization server roles. We will refer to both of these roles combined, as the Service or API role.
+
+Client: Application
+The client is the application that wants to access the user’s account. Before it may do so, it must be authorized by the user, and the authorization must be validated by the API
+
+FanOut:
+- Number of load gates connected to the output driving gate
+- Gates with large fanout are slower
+
+FanIN:
+- The number if inputs to the gate
+- Gates with large fan-in are bigger and slower
+
+
+
+
