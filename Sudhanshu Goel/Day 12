@@ -1,0 +1,50 @@
+Integration :
+
+- the process of bringing together the component sub-systems into one system
+- all system function as a single system.
+- with the use of integration we can improve productivity and quality of the software operations 
+
+An example of Integration System is 
+
+Infosys --> Flight booking--> Team(5..20)--> LocA-->LocB
+	customization expectation----> B-B request
+	Web/ Browser Client------------Servlet/jsp--------------component(Server)--------1 Db	
+					tomcat
+					Write web page-----------component(Server)--------1 Db	
+					service()----------------component(Server)--------1 Db
+					
+Messaging 
+
+- It is the exchange of message s (specially-formatted data describing events, requests, and replies) 
+to a messaging server , which acts as a message exchange program for client programs.
+
+Example as Java Message Service ( JMS ) provides messaging interfaces and services.
+
+There are two major messaging server models: the point-to-point model and the publish/subscribe model.
+
+P2P(Point to Point)
+1. It ensures the guranteed delivery
+2. There is only one receiver
+3. A queue is maintained and once receiver gets the messaage then it is deleted from the queue.
+
+Example is Gmail 
+
+Publish Subscribe Model
+1. Many receivers.
+2. No guranteed delivery.
+
+Example is You Tube 
+
+OAuth 
+
+- OAuth is an open-standard authorization protocol or framework that describes how unrelated servers and services can safely allow authenticated access 
+their assets without actually sharing the initial, related, single login credential
+-We should use OAuth if we are building a service where you need to use a user's private data that is stored on another system
+- Ex: Facebook, Google, Microsoft
+
+FanIn:
+Is the number of modules that call a given module
+
+FanOut:
+ Is the numbers of modules that called by a given module LIke we have Google Finance it need to fetch the dynamic data from various places and then show it 
+ 
