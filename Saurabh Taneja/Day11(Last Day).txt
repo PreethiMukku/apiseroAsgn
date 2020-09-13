@@ -1,0 +1,54 @@
+-----------------------------------------Integration-----------------------------------------------
+**Integration is connecting different services or components into one system. 
+**Previously we had component based architecture, were the entire components were built with in. 
+**Now moving towards SOA, integration plays an important role as we need to integrate many services into our system. 
+
+- As we move towards Service oriented architecture, there is high chances of us having B2B communication in our application. 
+- So we go with a top to bottom approach and here we need to first think of all the integrations i.e. third party serives, APIS, B2B communication 
+that is going to happen with our application and accordingly design and code it. 	
+- Therefore we need integration as communication between different websites is important.
+
+Messaging:
+- Messaging APIs are used when two software applications want to communicate with each other. 
+- They exchange data between themselves. It follows asynchronous messaging i.e. even if both are not connected, the message is been shared. 
+- Sender sends the message, it is been stored in queue and the message pops up to the receiver once he connects.
+
+
+------Some advantages of making your code loosely coupled include--------------
+
+1)Better Testability
+Because your code isn't dependent on other objects and they are just passed in, this makes your unit tests easier to write.
+Easy-to-understand code
+2)When your code is decoupled from other objects, they are usually passed in or dependency injected into the code. Your code provides a self-documenting service to your users.
+3)Swappable components
+While most developers don't think about a plug-in architecture, this is ultimately what developers strive to achieve. If you want to swap out the Oracle database component with a SQL Server component, if developed properly, it can be done easily.
+4)Scalability
+As your system grows, you can provide a diverse number of components to plug into your application, making it more scalable. There is a term I use when a system can't scale properly. It's called "painting yourself into a corner" where you need to re-evaluate your design.
+Isolated Code/Features
+Adding new features to a system means that you can write additional code without breaking existing functionality and feel safe writing it.
+
+eg JMS
+P2P(Point to Point)
+1. Guranteed delivery
+2. There is only one receiver
+3. After the message is received by the receiver,it is deleted from the queue.
+
+Publish Subscribe Model
+1. Many receivers.
+2. No guranteed delivery.
+
+Security: 
+- For security we take care of SSL between different websites. 
+- And access token and other authorization is done to maintain security between two applications while they are communicating.
+
+FanOut FanIn
+
+Fan-out/fan-in lets services invoke an arbitrary number of other services providing a set of callback services to be executed once all of the target services complete.
+
+Optionally, additional callbacks can be invoked each time a service from the original target list finished execution.
+
+Target services run in parallel, asynchronously, and are not notified of each other’s execution progress. Any callbacks configured also run asynchronously without blocking each other.
+
+Its a structural metrics which measure inter-module complexities. Fan-in: Is the number of modules that call a given module. Fan-out: Is the numbers of modules that called by a given module.
+
+Ex:Uber,etc
