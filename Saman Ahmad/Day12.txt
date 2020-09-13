@@ -1,0 +1,139 @@
+                             ------------------------------------- Introduction to Integration-------------------------------------
+
+Integration in software engineering means combining software parts (so-called subsystems) into one system.
+A holistic application delivers greater functional significance. It’s more convenient to distribute and use. 
+
+eg:--
+consider the following situation where integration will be required for implementing the software for Jet Airways Airline.
+
+
+Airline Office(Jet Airways)
+- Reservation Counter---> software for that---> Rich Client
+- Rich Client-------->Application + db(MySQL)
+- Business Requirement---> Rich Client 1
+					---------------> 
+							Shared Db
+					--------------->
+------------------------------------------------------------------------------------------------
+2. Airline-->Cities--->Multiple flights---> multiple city offices
+	Rich Client
+	Rich Client---------------------------------------component (Server)---------------1 Db
+	Rich Client					(Shared Code)(component)
+	Rich Client
+-------------------------------------------------------------------------------------
+3. Airline--->Rich --->Thin Client
+	Rich Client------------------------------------------component (Server)---------------1 Db
+	Web/Browser Client-----------Servlet/jsp-------------component (Server)---------------1 Db
+					tomcat
+	Client-------------------------------
+	
+---------------------------------------------------------------------------------------------------
+4. Infosys --> Flight booking--> Team(5..20)--> LocA-->LocB
+	customization expectation----> B-B request
+	Web/ Browser Client------------Servlet/jsp--------------component(Server)--------1 Db	
+					tomcat
+					Write web page-----------component(Server)--------1 Db	
+					service()----------------component(Server)--------1 Db
+---------------------------------------------------------------------------------------------------
+
+
+Solution:
+
+Certain data feilds (from,to,date,loc a,loc b,names(5-20)))--------> one transaction
+Add one more web pae (web/browser client)------>jsp/servlet------->component server(1Db)
+Bottom up approach:--code is giving first pirority than desgin(interface)requirement.
+
+
+--->don't get tightly coupled with mmt/ct
+---->design your own interface
+----->Jetairways internal system ---------->Myinterface
+
+
+
+------------------------------------------------------------------------------------------------------------
+Makemytrip:
+
+services---------- ------------------------->how to connect to different airlines
+---------------------------------------------->Interfcae/restapi they offer
+ code is approached (TopDown Approach)----------->Integration in picture
+
+
+
+5. MakeMyTrip
+	Expose a service  for booking of flight
+	Expose a service fir cancel booking of your flight
+	Web. Browser Client -------------servlet/jsp--------------component(Server)--------1 Db	
+					tomcat
+					 Write web page-----------component(Server)--------1 Db	
+					Restservice()----------------component(Server)
+
+
+---------------------------------------------------------------------------------------------------------------------------
+
+Example:------>
+ 				 HDFC ------------------------------------------------>ICICI
+              							(transaction)
+
+	1.Open the connection(HDFC)
+	  decrease the amount
+	  close the connection 
+                                                                 
+	2.open the connection (ICICI)
+	  increase the amount 
+	  close the connection
+
+------------------called as compensation workflow
+
+--------------------------------------------------------MESSAGING--------------------------------------------------
+Messaging is a method of communication between software components or applications.
+A messaging system is a peer-to-peer facility: A messaging client can send messages to, and receive messages from, any other client. 
+Each client connects to a messaging agent that provides facilities for creating, sending, receiving, and reading messages.
+
+Messaging enables distributed communication that is loosely coupled.
+A component sends a message to a destination, and the recipient can retrieve the message from the destination
+However, the sender and the receiver do not have to be available at the same time in order to communicate. 
+the sender does not need to know anything about the receiver; nor does the receiver need to know anything about the sender.
+The sender and the receiver need to know only which message format and which destination to use.
+Messaging differs from tightly coupled technologies,as Remote Method Invocation (RMI), which require an application to know a remote application’s methods.
+Messaging also differs from electronic mail (email), which is a method of communication between people or between software applications and people.
+Messaging is used for communication between software applications or software components.
+
+
+
+1) Point-to-Point (PTP) Messaging Domain
+	In this message is delivered to one receiver only.
+	Queue is used as a message oriented middleware(MOM), which is responsible to hold the message until receiver is ready.
+	no timing dependency between sender and receiver.
+
+
+2) Publisher/Subscriber (Pub/Sub) Messaging Domain
+	In this, one message is delivered to all the subscribers(broadcasting). 
+	Here, Topic is used as a message oriented middleware that is responsible to hold and deliver messages.
+	timing dependency between publisher and subscriber.
+
+
+---------------------------------------------Asynchronous messaging:----------------------------------------------------------
+		also called “async messaging”, refers to people using messaging platforms to contact each other without both parties needing 
+		to be concurrently active in the conversation.
+
+
+-----------------------------------------------------------------------OAuth---------------------------------------------
+OAuth is an authorization framework that enables a third-party application to obtain a limited access to an HTTP service.”
+OAuth is an open standard protocol for authentication that allows a user to use Internet service functions,
+ such as those provided by Facebook or Twitter, within other applications (desktop, web, mobile, etc.)
+
+eg:--   Mother : User of the application.
+	Father : User’s signed up account site.( OAuth provider )
+	Son : Third party client , aka owner of the application.( OAuth client )
+
+So basically when a user grants permission to the third party website( OAuth client ), 
+Your OAuth provider( facebook, twitter, linkedin, github, etc ) provides a so called “ code ”.
+ Specifically, it is a string which is used by the third party client to fake the OAuth Provider that the ‘ User ’ has grant permission
+ to access some info of his account. As a result, the user gets logged in to the Third party website.
+
+------------------------------------------------------------Fan-in Fan-Out------------------------------------------------------------------
+
+Its a structural metrics which measure inter-module complexities. 
+			1)Fan-in:  Is the number of modules that call a given module.
+			2)Fan-out:  Is the numbers of modules that called by a given module.
+
