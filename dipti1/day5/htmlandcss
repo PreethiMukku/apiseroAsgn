@@ -1,0 +1,35 @@
+HTML AND CSS
+-----------------------------------------------------------------------------------------
+
+  A request is sent from client side to the server, that  url sent as the request to html ,response is sent back by the server. 
+  
+Client -----------------------------------------------------Server
+
+Browser <-------------HTML Response --------->Static Content(which do not change)
+
+HTML, CSS, Javascript is used for client side coding. 
+
+The core business logic is written in server in laguages like  JSP
+
+ HTML:
+ Stands for HyperText Markup Language used for client side code to create web pages. 
+ <head>: All the headers are given by <h> tag..There are total 6 tags from h1-h6.Where h1 is bigger and h6 is smaller.
+
+<body>: Includes actual content of the we page.
+
+ <a>: Used for hyperlinks.
+
+<img>: <img> tag is used to include the image into the webpage. 
+
+If we want to include link of image then use <src> tag.
+
+ CSS: Cascading Style Sheets 
+ 
+Used for styling the pages.
+
+There are 2 types of css file.
+
+	1.Internal  css-which uses <style> tag and that is included within html file.i.e it is part 	of the html code.
+	2.External css-Whose file is excluded from html code.we can provide link of that css file into html code to access it.
+
+Javascript: Is used for client side validations.
