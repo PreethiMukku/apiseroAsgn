@@ -1,0 +1,159 @@
+DevOps:
+	DevOps word in itself is a combination of two words one is Development and other is Operations.
+	It is neither an application nor a tool instead, it is just a culture to promote development and Operation process collaboratively.
+	As a result of DevOps implementation, the speed to deliver applications and services has increased.
+	DevOps enables organizations to serve their customers strongly and better in the market.
+	In other words, we can say that DevOps is the process of alignment of IT and development operations with better and improved communication.
+
+Factors that improve by use of DevOps:
+	Predictability: DevOps decreases the failure rate of new product releases.
+	Maintainability: The process improves the overall recovery rate at the time of the release event.
+	Improved Quality: DevOps improves the quality of product development by incorporating infrastructure issues.
+	Lower Risk: Security aspects are incorporated in SDLC, and the number of defects gets decreased across the product
+	Cost Efficient: Cost efficiency is improved due to DevOps that is always an aspiration of every business organization.
+	Stability: DevOps implementation offers a stable and secure operational state.
+	Streamlined Delivery Process: As DevOps provides streamlined software delivery, marketing effort is reduced up to 50%.
+	
+DevOps Lifecycle Phases:
+	Development
+		This is the first stage of DevOps lifecycle in which development of application takes place constantly.
+		The entire development process is broken down into small steps or development cycles.
+		As a result of this, the speed of software development and delivery is increased.
+
+	Testing
+		Selenium like testing tools is used to speed up the overall testing process by quick identification of errors and fixing the bugs.
+
+	Integration
+		New functionalities are integrated with the prevailing code, and testing of new code takes place.
+		Continuous integration and testing help in the continuous development process.
+
+	Deployment
+		Continuous deployment is the part of DevOps lifecycle.
+		When it is performed in the right way, then it can affect the overall functioning of a high traffic website.
+
+	Monitoring
+		Inappropriate system behavior is managed by monitoring.
+		Through proper monitoring, the bugs are found and fixed in a hassle-free way.
+		
+User Acceptance Testing(UAT):
+	UAT is a type of testing performed by the end user or the client to verify/accept the software system before moving the software application to the production environment.
+	UAT is the final stage of any software development life cycle.
+	This is when actual users test the software to see if it is able to carry out the required tasks it was designed to address in real-world situations.
+	UAT tests adherence to customer's requirements.
+	UAT testers aim to validate changes that were made against original requirements.
+
+Purpose of UAT:
+	The main Purpose of UAT is to validate end to end business flow.
+	It does not focus on cosmetic errors, spelling mistakes or system testing.
+	UAT is carried out in a separate testing environment with production-like data setup.
+	It is kind of black box testing where two or more end-users will be involved.
+	
+Need of UAT:
+	Need of User Acceptance Testing arises once software has undergone Unit, Integration and System testing.
+	Because developers might have built software based on requirements document by their own understanding.
+	Further required changes during development may not be effectively communicated to them
+	So for testing whether the final product is accepted by client/end-user, user acceptance testing is needed.
+	
+How to do UAT:
+	UAT is done by the intended users of the system or software.
+	This type of Software Testing usually happens at the client location which is known as Beta Testing.
+	Once Entry criteria for UAT are satisfied, following are the tasks need to be performed by the testers:
+		Analysis of Business Requirements
+		Creation of UAT test plan
+		Identify Test Scenarios
+		Create UAT Test Cases
+		Preparation of Test Data(Production like Data)
+		Run the Test cases
+		Record the Results
+		Confirm business objectives
+		
+Best Practices for UAT:
+	Prepare UAT plan early in the project life cycle
+	Prepare Checklist before the UAT starts
+	Conduct Pre-UAT session during System Testing phase itself
+	Set the expectation and define the scope of UAT clearly
+	Test End to End business flow and avoid system tests
+	Test the system or application with real-world scenarios and data
+	Think as an Unknown user to the system
+	Perform Usability Testing
+	Conduct Feedback session and meeting before moving to production
+		
+Agile:
+	Agile is an iterative approach to project management and software development that helps teams deliver value to their customers faster and with fewer headaches.
+	Instead of delivering entire project at a time, an agile team delivers work in small, but consumable, increments.
+	Requirements, plans, and results are evaluated continuously so teams have a natural mechanism for responding to change quickly.
+	
+Agile Manifesto:
+	The Agile Manifesto is a statement of core values ​​and principles for software development.
+	The Agile Manifesto for software development was set up in 2001 and it is a declaration of 4 values and 12 principles that serve as a guide for people in agile software development.
+
+Values of Agile:
+	Individuals and interactions over processes and tools
+	Working software over comprehensive documentation
+	Customer collaboration over contract negotiation
+	Responding to change over following a plan
+	
+Principles of Agile:
+	Customer satisfaction through early and continuous software delivery
+	Accommodate changing requirements throughout the development process
+	Frequent delivery of working software
+	Collaboration between the business stakeholders and developers throughout the project
+	Support, trust, and motivate the people involved
+	Enable face-to-face interactions
+	Working software is the primary measure of progress
+	Agile processes to support a consistent development pace
+	Attention to technical detail and design enhances agility
+	Simplicity
+	Self-organizing teams encourage great architectures, requirements, and designs
+	Regular reflections on how to become more effective
+
+Agile Project Management:
+	It is a methodology that is commonly used to deliver complex projects due to its adaptiveness.
+	It emphasizes collaboration, flexibility, continuous improvement, and high quality results.
+	It aims to be clear and measurable by using six main deliverables to track progress and create the product.
+
+Deliverables of Agile Project Management:
+	Product vision statement: A summary that articulates the goals for the product.
+	Product roadmap: The high-level view of the requirements needed to achieve the product vision.
+	Product backlog: Ordered by priority, this is the full list of what is needed to be done to complete your project.
+	Release plan: A timetable for the release of a working product.
+	Sprint backlog: The user stories, goals, and tasks linked to the current sprint.
+	Increment: The working product functionality that is presented to the stakeholders at the end of the sprint, and could potentially be given to the customer.
+	
+Jira:
+	JIRA is an issue and project tracking software to plan, track and manage your projects.
+	JIRA is mainly used by agile development teams to customize workflows, and team collaboration.
+	
+Jira in its entirety is based on 3 concepts:
+	Issue:
+		A Jira 'issue' refers to a single work item of any type or size that is tracked from creation to completion.
+		For example, an issue could be a feature being developed by a software team, a to-do item for a marketing team, or a contract that needs to be written by a legal team.
+	Project:
+		A project is, quite simply, a collection of issues that are held in common by purpose or context.
+		Issues grouped into projects can be configured in a variety of ways, ranging from visibility restrictions to available workflows.
+		Jira Software projects are flexible working spaces that allow you to group like issues by team, business unit, product, or stream of work.
+	Workflow:
+		Workflows represent the sequential path an issues takes from creation to completion.
+	
+Users of Jira:
+	Software developers
+	Project managers
+	SCRUM masters
+	
+Use Cases of jira:
+	Bug tracking
+	Project management
+	Product management
+	Process management
+	Task management
+	Software development
+	Agile software development
+	
+Some of the Integrations of Jira:
+	Slack
+	GitHub
+	
+Hosting Options:
+	Cloud
+	Server
+	Data Center
