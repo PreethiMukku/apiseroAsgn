@@ -1,0 +1,35 @@
+Integration :
+Combining software parts (so-called subsystems) into one system.
+Better performance.
+Convenient to distribute and use.
+
+JMS:
+
+Java Message Service) is an API that provides the facility to create, send, and read messages.
+Loosely Coupled.
+Async.
+Reliable.
+
+
+Messaging Domains:
+ Messaging enables distributed communication that is loosely coupled.
+ 
+==> Point-to-point:
+1 -> 1 messaging 
+The queue is used as middleware
+The Queue is held responsible until the receiver is ready.
+
+==> Pub/Sub:
+1 -> * messaging
+The topic is used as message-oriented middleware.
+
+
+OAuth:
+OAuth 2 is an authorization framework that enables applications to obtain limited access to user accounts on an HTTP service.
+Ex: Facebook, Google, Microsoft
+
+FanIn:
+The number of modules that call a given module.
+
+FanOut:
+The numbers of modules are called by a given module.
