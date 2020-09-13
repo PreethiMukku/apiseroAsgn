@@ -1,0 +1,52 @@
+----------Integration---------------
+-> It is a process of combining two or more services in order to have simple and efficient flow of information between two entities. It is basically employed for Business to Business transaction.
+
+-> Integration is a step by step process for any new establishment or firm. One cannot incorporate a fully developed integration network at the initiation of the busibess. This is because of the lack of resources in the initial phases. The step by step process for a airline company integration deveopment is explained in the next section.
+
+1. Airlines office -> one city. 
+-> Here, in the initial phase the counter is opened and operational only in one city. In such a situation one cannot invest in using a thin client because it is unnecessary for the requirement.
+-> A rich client is used to follow the transactions at the counter. This rich client is an application which is linked to a database which holds the information required for booking a flight ticket.
+-> If in the near future due to business requirement the number of customers are increased then the number of counters is to be increased which also means that the number of rich clients has to be increased. However, all these rich clients are linked or connected via a coomon or shared database.
+
+2. Airline office -> multiple cities.
+-> In this scenario the airline office has launched a number of counters in multiple cities. This is usually seen when the business starts to expand. However, the information required for the booking a ticket is common in all the cities. 
+-> The flights also have multiple operating places in these multiple places. A rich client has to be developed in all the multiple cities. These rich clients has to be linked with a common database. 
+-> These database has to e connected to the rich client using the shared code between them.
+
+3. Migration from rich client to thin client.
+-> This is usually observed when the business has expanded to the extent that the rich client cannot handle the load. In this case a server is developed to book the tickets.
+-> By this method, the customers can quickly book their tickets.
+->The above three cases are an example of Business to Consumer request. This is only observed only when the business is dealing with a single consumer. There are not much customization required in these above cases.
+-> Web/Browser client -----> Servelet/jsp/tomcat----->component (server)-----> Database.
+
+4. Business to Business Request.
+-> Suppose there is a web client say, MakeMyTrip which provides the airlines ticket facility from multiple destinations and multiple flight carriers. Now, if a company wants to book tickets to its team of 30 members it would be a time consuming task from the above process. Hence, these two business may collaborate on specific contract.
+-> Customizations are done by MakeMyTrip of the company vased on business request. The information of the 20 members can be directly linked to the MakeMyTrip portal, which makes the task of booking the ticket easier and quick.
+-> This is known as the Bottom-Up approach wherein the code is developed for the services which are later thought about for customization.
+-> Top-Down approach is when MakeMyTrip thinks about the services it would offer to its consumers and then develop a code for it.
+
+5. Airlines comapnies and multiple web clients.
+-> A airline company, say AirAsia has a given format of storing the deatails of the flight, its from and to locations, customer informations and etc. It sends and requires the data from the web clients in these stipulated format.
+-> Now when MakeMyTrip and Clear Trip which has two different ways of incorporating data sends the request to AirAsia, it would be quite impossible for AirAsia to understand their specific formats. AirAsia also cannot keep on preparing its code according to the feasibility of the other multiple web clients.
+-> Hence, there is an adapter between the AirAsia portal and the web clients where the format is changed in a specific way such that AirAsia can respond to it apprporiately. Usually a Rest service is used for this process.
+
+6. Review the system for Sustainability.
+-> Provide services to the multiple web clients in appropriate manner.
+-> Design your REST API in such a way that it is user friendly and easy to access.
+
+- Messaging.
+-> Messaging is usually done using the JMS or any other means. The important feature of messaging is that it should be asyncronous.
+-> Asyncronous messaging simply means that the server and the client need not be connected at the same time.
+-> Suppose a mail is sent from a@gmail.com to b@gmail.com. This mail is initially stored in the common mail box in between these two mail id. Once b is connected to the server, the mail is dropped to him and the mail in the common mail server is deleted. 
+-> The message in the mail server cannot be deleted with delivering it to b. It offers guaranteed delivery with no loss of message.
+
+- Types of Communication Support.
+1. Point to Point (P2P) -> There is only one reciever and it offers guaranteed delivery.
+2. Publish Sunscribe -> The message is sent to many users who are basically called as subscribers. There is a loss of data in this type.
+
+- Security.
+-> The security is a major concern in every step of integration since it may lead to loss of data if not attended to it wisely.
+-> OAuth - It is a method of providing limited access to information to a web client via using another web service. For example, logging in to Unacademy using the google id restricts the information provided to unacademy.
+
+- Fan in -> Many requests are sent to only one user/server.
+- Fan out -> One request is sent to many users/servers.
