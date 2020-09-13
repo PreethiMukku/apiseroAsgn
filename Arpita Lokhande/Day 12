@@ -1,0 +1,103 @@
+For building application like MakeMyTrip, we can use following strategies.
+
+1.Airlines office
+->reservation counter ->software for it-> rich client
+-> rich client -> application + db(Mysql)
+
+
+Business requirement -> rich client 1 .... shared database
+                        rich client 2.....
+
+-Here if business requirement increases it wouldn't be easy to give access to database for every rich client.
+
+
+2. Airline->cities->multiple flights -> multiple offices
+
+
+Rich client
+Rich client
+Rich client------------------Component(server)------------ 1 database
+Rich client                   (shared code)(component architecture)
+Rich client
+
+-multiple rich clients connected to one component for business logic which has access to database.
+
+
+
+3.Airline->Rich client-> thin client
+
+Rich-------------- ------------------------------component server------------- 1db
+web client------------servlet/jsp tomcat---------component server------------- 1db
+
+-Business->Consumer
+-here rich client connects to component and then to database,
+-while for web client or thin client, there has to be a middle entity for connecting it to server component.
+
+
+
+4. Infosys -> Flight booking -> Team (5...20) -> Loc A-> Loc B
+   customization expectations -> B-B request 
+   web client------------servlet/jsp tomcat---------component server------------- 1db
+                          write web page---------=component server--------------1db
+
+-This is business to business communication.
+
+******************************
+java---obejct oriented code------------service oriented code
+MakeMyTrip-->
+-Connecting to airlines
+-Different interfaces
+-loose coupling
+
+***************************************************
+
+Integration--->
+-Connecting our application with different service components.
+-SOA mostly has business to business communications.
+-hence there is need of integration with services, APIs etc.
+
+Messaging-
+
+1.there should always be messaging server.
+2. there must be only one receiver for the message.
+3. Messaging is basically communication between software applications or components.
+eg, JMS
+
+**************************************************
+JMS(Java Messaging Service)
+
+-allows application components based on the Java Platform Enterprise Edition (Java EE) to create, send, receive, and read messages. 
+-Messaging can be asynchronous.
+-It allows distributed communication which is loosely coupled.
+-It is reliable, it makes sure that message is delivered once and only once.
+
+P2P-->point to point
+-gauranted delivery
+
+PS-->Published subscriber
+-no guranted delivery.
+-we lose the messages.
+
+*****************************
+
+FanOut--->
+-As soon as the request is received, this request should be forwarded(fan out) to other
+-Eg. Uber request-->fan out request to all nearby drivers.
+
+-Makemytrip--take request from user-->send request to airlines
+
+
+FanIn--->
+-response from airlines--->collect data as one unit.
+
+              ------------1 channel--modify------
+one request---------------2 channel--modify--------> Aggregator
+              -------------3 channel--modify------
+
+
+**************************************
+
+OAuth--->
+-OAuth is a way to get access to protected data from an application.
+-Just like we can connect google account with facebook, github, linkedIn, etc.
+-Here instead of asking user for password and ID, we can connect user's account with other accounts.
