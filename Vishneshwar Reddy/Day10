@@ -82,3 +82,10 @@ Cons of Ec2:
 	This service is a bit difficult to consume. New users need a big learning curve to use this service effectively.
 	UI for EC2 service is a little complex and at many places, it misses detailed explanation.
 	Sometimes it takes too long to create images of EC2 instances. This keeps your EC2 up for that extra time. When instances are heavy, it penalizes a lot of money.
+	
+Auto-scaling:
+	Amazon EC2 Auto Scaling helps you maintain application availability and allows you to automatically add or remove EC2 instances according to conditions you define.
+	You can use the fleet management features of EC2 Auto Scaling to maintain the health and availability of your fleet.
+	You can also use the dynamic and predictive scaling features of EC2 Auto Scaling to add or remove EC2 instances.
+	Dynamic scaling responds to changing demand and predictive scaling automatically schedules the right number of EC2 instances based on predicted demand.
+	Dynamic scaling and predictive scaling can be used together to scale faster.
