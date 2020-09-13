@@ -1,0 +1,59 @@
+1. Airlines office(JetAirways)
+->Reservation counter -> software for that -> Rich client
+-> Rich client ->Application +db(MYSQL)
+->Scalability -> Rich Client 1
+							--->Shared Database
+				 Rich Client 2
+
+2. Airline->Cities>Multiples flights->multiple city offices
+	Rich Client
+	Rich Client--------------component(server)(shared code)----------1Db
+	Rich Client
+	Rich Client
+
+3. Airline->Rich->Thin Client
+	Rich Client--------->COmponent(server)------>1 Db
+	Web/Browser Client--------->Servlet/jsp/tomcat---->Component(server)------1 Db
+	Business->Consumer
+	
+4. Infosys -> Flight booking ->Team(5 to 20)
+   Cutomization expectations-> B-B request
+   Web/Browser Client--------->Servlet/jsp/tomcat---->Component(server)------1 Db
+   
+5. MakeMy Trip
+ -> Expose a service for booking of your flight
+ -> Expose a service for cancel booking of your flight
+
+---------------------------content missing
+	
+Design a system->MMT
+-->First Launch->Design
+which airlines I connect toclike 4 airlines
+I will create interface to connect with these 4 airlines to get data
+If airlines goes increased in future it will create complex structre ,SO  We have to use readymade software for this entir workflow
+
+
+in asynchornous my client nd my server didnt connnct at same time
+
+
+#gmail
+a@gmail.com-------------------------asynchornous(broken into parts)-----------b@apisero.com
+a@gmail----gmail server------apisero supooort------------b@apisero.com
+connections: a to gmail , gmail to apisero, apisero to b
+a@gmail.com----GMAIL SERVER
+				-------(Stored msg in b's mailbox)
+				1. Messaging: gurantee delivery
+				2. No loss of messages
+				
+Point to point : send message to one person at a time, gurantee delivery, once reciver
+Public scubscibe: data losss in this,no gurantee delivery, more like boadcast exmple: gmail group,channel subscription,live class going on but we cannt able to login we lost data studied in class.
+
+#FanOut: 1 input , n output
+on MMT we serach for flight  by adding source, destination, date... it gives you details about 4 airlines
+so  1:n(no of airlines)--->fanout
+
+#FanIn: collecting data as a one unit
+
+
+
+				
