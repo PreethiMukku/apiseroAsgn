@@ -1,0 +1,104 @@
+					---> ---> > INTEGRATION ---> ---> > 
+
+--> It is a process of combining two or more services in order to have simple and efficient flow of information between two entities. 
+It is basically employed for Business to Business transaction.
+
+--> Integration is a step by step process for any new establishment or firm. 
+One cannot incorporate a fully developed integration network at the initiation of the busibess.
+This is because of the lack of resources in the initial phases. The step by step process for a airline company integration deveopment is explained in the next section.
+
+eg:--
+consider the following situation where integration will be required for implementing the software for Jet Airways Airline.
+
+
+For building application like MakeMyTrip, we can use following strategies.
+
+1.Airlines office
+-->reservation counter -->software for it--> rich client
+--> rich client --> application + db(Mysql)
+
+
+Business requirement --> rich client 1 .... shared database
+                        rich client 2.....
+
+-Here if business requirement increases it wouldn't be easy to give access to database for every rich client.
+
+
+2. Airline-->cities-->multiple flights --> multiple offices
+
+
+Rich client
+Rich client
+Rich client------------------Component(server)------------ 1 database
+Rich client                   (shared code)(component architecture)
+Rich client
+
+-multiple rich clients connected to one component for business logic which has access to database.
+
+
+
+3.Airline-->Rich client--> thin client
+
+Rich-------------- ------------------------------component server------------- 1db
+web client------------servlet/jsp tomcat---------component server------------- 1db
+
+-Business-->Consumer
+-here rich client connects to component and then to database,
+-while for web client or thin client, there has to be a middle entity for connecting it to server component.
+
+
+
+4. Infosys --> Flight booking --> Team (5...20) --> Loc A--> Loc B
+   customization expectations --> B-B request 
+   web client------------servlet/jsp tomcat---------component server------------- 1db
+                          write web page---------=component server--------------1db
+
+-This is business to business communication.
+
+
+MakeMyTrip--->
+-Connecting to airlines
+-Different interfaces
+-loose coupling
+
+
+
+Messaging-
+
+1.there should always be messaging server.
+2. there must be only one receiver for the message.
+3. Messaging is basically communication between software applications or components.
+eg, JMS
+
+
+JMS(Java Messaging Service)
+
+-allows application components based on the Java Platform Enterprise Edition (Java EE) to create, send, receive, and read messages. 
+-Messaging can be asynchronous.
+-It allows distributed communication which is loosely coupled.
+-It is reliable, it makes sure that message is delivered once and only once.
+
+P2P--->point to point
+-gauranted delivery
+
+PS--->Published subscriber
+-no guranted delivery.
+-we lose the messages.
+
+FanIn---->
+-response from airlines---->collect data as one unit.
+
+              ------------1 channel--modify------
+one request---------------2 channel--modify---------> Aggregator
+              -------------3 channel--modify------
+
+FanOut---->
+-As soon as the request is received, this request should be forwarded(fan out) to other
+-Eg. Uber request--->fan out request to all nearby drivers.
+
+-Makemytrip--take request from user--->send request to airlines
+
+OAuth---->
+-OAuth is a way to get access to protected data from an application.
+-Just like we can connect google account with facebook, github, linkedIn, etc.
+-Here instead of asking user for password and ID, we can connect user's account with other accounts
