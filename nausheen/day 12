@@ -1,0 +1,85 @@
+integration: The need for application integration stems from the need to move data between applications. 
+This includes transferring data from one application to another in a scheduled, ongoing way, or for moving data once from a legacy system into something new. 
+Or, in short, application integration is used to make life easier.
+
+Definition :
+
+JMS : Java Message Service is an API that is part of Java EE for sending messages between two or more clients.  There are many JMS providers such as OpenMQ (glassfish’s default), HornetQ(Jboss), and ActiveMQ.
+
+RabbitMQ: is an open source message broker software which uses the AMQP standard and is written by Erlang.
+
+Messaging Model:
+
+JMS supports two models: one to one and publish/subscriber. RabbitMQ supports the AMQP model which has 4 models : direct, fanout, topic, headers.
+
+Data types:
+
+JMS supports 5 different data types but RabbitMQ supports only the binary data type.
+
+Workflow strategy:
+
+In AMQP, producers send to the exchange then the queue, but in JMS, producers send to the queue or topic directly.
+
+Technology compatibility:
+
+JMS is specific for java users only, but RabbitMQ supports many technologies.
+
+When Is a Message Broker Needed?
+If you want to control data feeds.
+ For example, the number of registrations in any system.
+
+When the task is to send data to several applications and avoid direct use of their API.
+
+When you need to complete processes in a defined order, like a transactional system.
+
+What is the difference between JMS and MQ?
+The difference being that JMS messages have some standard header fields at the begining of the message buffer and "native" mq messages contain just the data your program sent to the buffer. 
+Performance is not the only reason to send plain 
+messages (MQ format) without the JMS Headers from JMS Client to MQ Server.
+
+
+TYPES OF COMMUNICATION:
+
+1.POINT TO POINT   <------>
+>guranteed delivery
+>1 receiver
+
+2.PUBLISH/SUBSCRIBE  (broadcast)
+>Posibility of data loss(zoom chats)
+
+OAuth 2 is an authorization framework that enables applications to
+ obtain limited access to user accounts on an HTTP service, such as Facebook, GitHub, and DigitalOcean. 
+It works by delegating user authentication to the service
+ that hosts the user account, and authorizing third-party applications to access the user account.
+ OAuth 2 provides authorization flows for web and desktop applications, and mobile devices.
+
+This informational guide is geared towards application developers, and provides an overview of OAuth 2 roles, authorization grant types, use cases, and flows.
+
+Let’s get started with OAuth Roles!
+
+OAuth Roles
+OAuth defines four roles:
+
+Resource Owner
+Client
+Resource Server
+Authorization Server
+We will detail each role in the following subsections.
+
+Resource Owner: User
+The resource owner is the user who authorizes an application to access their account. The application’s access to the user’s account is limited to the “scope” of the authorization granted (e.g. read or write access).
+
+Resource / Authorization Server: API
+The resource server hosts the protected user accounts, and the authorization server verifies the identity of the user then issues access tokens to the application.
+
+From an application developer’s point of view, a service’s API fulfills both the resource and authorization server roles. We will refer to both of these roles combined, as the Service or API role.
+
+Client: Application
+The client is the application that wants to access the user’s account. Before it may do so, it must be authorized by the user, and the authorization must be validated by the API.
+
+
+Fanout:Fan-in refers to the maximum number of input signals that feed 
+Fan-out refers to the maximum number of output signals that are fed by the output.
+
+
+https://cs.au.dk/~amoeller/WWW/webservices/GoogleSearch.wsdl
