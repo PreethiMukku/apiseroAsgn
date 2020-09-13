@@ -1,0 +1,88 @@
+INTEGRATION AND ITS USE
+--------------------------------------------------------------
+
+We get all data in one place.
+Connecting our application with different services.
+SOA mostly has business to business communications.
+
+1.Airlines office(JET AIRWAYS)
+reservation counter --->software ---> rich client
+ rich client ---> application + database
+
+scalability:
+ 		application1-------
+			            	shared database
+		application2-------
+
+2. airline---->cities---->multiple flights ----> multiple offices
+
+
+Rich client
+Rich client
+Rich client------------------Component(server)------------ 1 database
+Rich client                   	(business logic)
+Rich client
+
+
+3. Airline---->Rich client----> thin client/RIA
+
+
+
+web client------------servlet/jsp---------component server------------- database
+
+Business---->Consumer
+Here B2B logic ic created which will be consume by consumer.
+
+
+
+4. Infosys wants----> Flight booking -----> Team (10...20) -> inbulk(do not want to details again and again)(req)
+  uses B2B LOGIC
+  Different arlines contains different languages for code so it should be combine with one interface.
+
+
+
+java---OOPS------------SOA
+
+For eg:  MakeMyTrip
+
+	  Different airlines  support
+	  supports bulk of entries
+    
+---------------------------------------------------------------------------------------------
+Case studey of different flights which need input in different forms.
+	1. so we need to design in such a way that it should include both input interfaces in one by the help of design adapther.
+	2. use of wrapper class which can convert one data type to another.
+-----------------------------------------------------------------------------------------------	
+
+Messaging-
+	1.Uses messaging server
+	2. must be only one receiver for the message.
+	3.supports asynchrous messaging
+	4. can communicate within application or outside application.
+
+Eg:   JMS(Java Messaging Service)
+
+	allows application  to create, send, receive, and read messages. 
+	It is reliable, it makes sure that message is delivered.
+  
+Types:
+
+	1.point to point		2.Published subscriber
+	gauranted delivery		Chances of loosing information.
+
+
+FanIN/FanOUT:
+	                	|------------------
+		                |------------------
+------------------>	|-------------------		FANOUT
+		                |-------------------
+	                 	|-------------------
+Eg. Uber request
+
+------------------------->|
+------------------------>-|				FANIN
+------------------------->|----------------------->
+------------------------->|
+------------------------->|
+
+Eg:Respnses of google form collected at one location.
