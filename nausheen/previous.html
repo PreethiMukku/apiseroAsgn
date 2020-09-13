@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Hello world !!</title>
+
+<style>
+h1 {
+  color: blue;
+  font-family: courier;
+  font-size: 300%;
+  
+ table {
+ border: 1px solid black;
+
+  width:100%;}
+}
+table, th, td {
+  border: 4px solid black;
+  border-collapse: collapse;
+  background: white;
+}
+th, td {
+  padding: 15px;
+  text-align: left;
+}
+
+</style>
+</head>
+<body style="background-color:rgba(255, 99, 71, 0.5);">
+<h1>Welcome to my World </h1>
+<p>2020- "COVID-19 pandemic" </p>
+<p style="color:red;">For any info on covid visit- <br> <a href="https://www.who.int/emergencies/diseases/novel-coronavirus-2019">Visit WHO</a></p>
+<img src="coo.jpg" alt="covid on earth">
+
+<h2>Covid meter</h2>
+<table>
+<tr>
+    <th>COUNTRY</th>
+    <th>TOTAL CASES</th>
+    <th>TOTAL DEATHS</th>
+    <th>TOTAL RECOVERED</th>
+  </tr>
+  <tr>
+    <td>INDIA</td>
+    <td>39,36,747</td>
+    <td>68,569</td>
+    <td>3,037,151</td>
+  </tr>
+  <tr>
+    <td>USA</td>
+    <td>6,335,244</td>
+    <td>191,058</td>
+    <td>3,575,096</td>
+  </tr>
+<tr>
+ <td>BRAZIL</td>
+    <td>4,046,150</td>
+    <td>124729</td>
+    <td>3,247,610</td>
+  </tr>
+</table>
+<h3 style="color:blue;"> Enter the details</h3>
+
+<form>
+<label for="empno">Employee no:</label><br>
+  <input type="number" id="empno" name="empno"><br>
+  <label for="empname">Employee name:</label><br>
+  <input type="text" id="empname" name="empname"><br>
+  <label for="sal">Salary:</label><br>
+  <input type="number" id="sal" name="sal"><br>
+  
+  <h4 style="color:blue;"> Languages known</h4>
+  
+  <input type="checkbox" id="language1" name="langauge1" value="English">
+  <label for="language1"> Iam fluent in English</label><br>
+  <input type="checkbox" id="language2" name="language2" value="Hindi">
+  <label for="vehicle2"> Iam fluent in Hindi</label><br>
+  <input type="checkbox" id="language3" name="language3" value="other">
+  <label for="vehicle3"> Iam fluent in other language</label><br>
+  
+  <h5 style="color:blue;">Select a location</h4>
+  
+  <input type="radio" id="location1" name="location1" value="Pune">
+  <label for="location1"> I live in Pune</label><br>
+ 
+  <input type="radio" id="location2" name="location2" value="Mumbai">
+  <label for="location2"> I live in Mumbai</label><br>
+  <input type="radio" id="location3" name="location3" value="Other">
+  <label for="location3"> I live in other place</label><br>
+  
+  <h6 style="color:blue;">Degree</h4>
+  <input list="degree" name="degree">
+  <datalist id="degree">
+    <option value="BE">
+    <option value="Btech">
+    <option value="BCA">
+    <option value="ME">
+    <option value="Mtech">
+  </datalist>
+  <input type="submit"><br>
+  
+  
+ <input type="submit" value="Submit">
+</form>
+
+</body>
+</html>
