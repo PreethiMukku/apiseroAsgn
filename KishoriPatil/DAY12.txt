@@ -1,0 +1,119 @@
+
+Integration
+	-Connecting our application with different services.
+	-SOA mostly has B TO B communications.
+	-combining software parts 
+
+
+EX:following situation where integration will be required for implementing the software.
+
+
+Airline Office(Jet Airways)
+	- Reservation Counter---> software for that 
+	- Rich Client 1-------->Application + db(MySQL)
+	- Business Requirement----scalability----- Rich Client 1 and 2 have Shared Database
+
+
+
+
+2. Airline-->add to Cities--->Multiple flights---> multiple city offices
+
+	Rich Client--------------component (on my Server)---------------1 Db
+	Rich Client		          (Shared Code)(component)
+	
+
+
+
+3. Airline------>Rich --to->Thin Client
+	
+
+	Web/Browser Client--------Servlet/jsp---------component my Server---------1 Db
+					tomcat
+	
+
+
+
+4. Infosys wants--> Flight booking--> team(5..20)--> LocA--to--LocB
+	-problem:-seperate from ---to information has to be entered for each seat
+
+	-expectation----> B-B request
+	Web/ Browser Client--------- Write one web page-----------component(Server)--------1 Db	
+    (one transaction for group booking)service()----------------component(Server)--------1 Db
+
+
+-----------------------------------------------
+INTERFACES :
+	-jetairways: private string(from,to,date,passenger)
+	-Makemytrip : (from,to,day,mont,year)
+	-clear trip : (from (cityname),to (cityname),datewithtimestamp,details (1+))
+
+
+Solution for above problem is as follow:
+Bottom up approach(JAVA):
+	-code is giving first pirority then comes  desgin requirement(interface).
+	-don't tightly coupled with makemytrip /clear trip
+	-design your own interface:--Myinterface
+
+	-convert makemytrip and clear trip data to Myinterface using mmt and ct adapters
+	-send get request---wait for getting data --convert/format--data collected-----send it to my data interface
+
+
+
+-----------------------------------------------	
+now consider Makemytrip:
+
+services----->how to connect to different airlines
+	-------->connect using Interfce/restAPI they offer
+ 	code is approached (TopDown Approach)----------->Integration in picture
+
+	-service  for booking
+	-service for cancel  booking
+	-Web. Browser Client ---------Restservice()--------component(Server)--------1 Db	
+					
+
+----------------------------------------------------------------------
+compensation workflow:
+
+EX: HDFC -------(transaction)----->ICICI         							
+
+1.Open the connection(HDFC)----decrease the amount----close the connection 
+
+2.open the connection (ICICI)--increase the amount----close the connection
+
+if transaction not succeded in icici then you get your money in hdfc back is called as compensation
+
+--------------------------------------------------------------
+
+
+Messaging:
+	-communication between software components or applications.
+	-enables distributed communication that is loosely coupled.
+	-a send message(gmail) ---Messaging server-----b get message(apisero)
+
+Messaging Types:
+	-point to point
+		-delivered to one receiver 
+		-gauranted delivery
+	-Published subscriber
+		-message is delivered to all the subscribers
+		-Chances of loosing information.
+
+JMS:
+	-JMS is the standard messaging API
+	-Asynchronous messaging
+	-reliable and message delivery is sure.
+
+security:
+clientuse SSL format to send accdetails--to--MMT-------AIR ASIA(ssl,auth)
+Jet(ssl,auth)------->payment gateway
+
+OAuth 
+	-authorization framework that enables a third-party application to obtain a limited access to an HTTP service.
+	-open standard protocol for authentication that allows a user to use Internet service functions, such as those provided by Facebook, within other applications 
+
+------------------------------------------------------
+Fan out:
+	makemytrip sent request to 4 airline
+ 
+Fan in:
+	-taking responce from all airlines and Conversion of format to mmt i.e collection of data from all airlines as one unit to makemytrip 
