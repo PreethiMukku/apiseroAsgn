@@ -1,0 +1,36 @@
+Integration
+	B2B communication(MakemyTrip)
+	System depends on inter-communication of various websites 
+Service orientation
+	Distributed Transactions not possible if we have totally remote databases
+  Compensation should be followed if any failure of a transaction
+
+Designing of RESTAPI
+
+JMS => Java Messaging System => is standard messaging API for JEE platform
+Communication between microservices
+Asynchronous message transfer 
+Guaranteed delivery of message
+
+Async=> client and server need not be connected at same time
+	When client isn't available, data is stored to retain and send it to client when available
+	eg: when mail receiver is unavailable then all the mails would be stored in mail server 
+	    and once the receiver is online then all mails are sent to receiver
+
+Types of messaging:
+  -> Point to point communication =>(private messaging in zoom)
+  -> Publish subscriber => Broadcasting, one-many communication, chance of loosing of date(data won't be available all the time)
+			   Eg: Radio-Fm channel, TV programs 
+
+OAuth
+ Authorization framework that enables applications to obtain limited access to user accounts on an HTTP service
+
+FanOut
+  -> The numbers of modules are called by a given module
+  -> B2B happens live => collects live data(dynamic data)
+  -> Sends different requests to get live data
+  -> eg: Uber sends fanout req to all available drivers
+  -> eg: Policybazaar.com
+
+FanIn:
+The number of modules that call a given module
